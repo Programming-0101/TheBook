@@ -85,7 +85,7 @@ The following examples are used to illustrate this topic.
 
 ![Hello World Driver](code\samples\A.HelloWorld_Driver.cs)
 
-![Comments](code/samples/A.Comments.cs)
+![Comments](https://raw.githubusercontent.com/Programming-0101/TheBook/master/manuscript/code/samples/A.Comments.cs)
 
 
 
