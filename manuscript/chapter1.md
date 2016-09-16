@@ -21,7 +21,7 @@ Since computer programs are all about handling information, it is important to u
 These different kinds of information can be said to be primitive. They represent the most basic kind of data that today's computer programs have to deal with. These three kinds of information can be further subdivided into fundamental data types:
 
 |=========================|=======================================================|
-| Category of Information |	Basic Data Types                                      |
+| Category of Information | Basic Data Types                                      |
 |=========================|=======================================================|
 | Numeric                 | Integer - whole numbers                               |
 |                         |-------------------------------------------------------|
@@ -46,21 +46,25 @@ The final concept is one that has already been alluded to: the idea of a data ty
 
 This brings up an important consideration: The data type of a variable should be appropriate for the kind of information the variable is intended to hold. There is a close relationship between variables, values and data types, even though those three ideas refer to different things. Cups are used to hold liquids; plates are used to hold food; and a balloon is used to hold a gas. It would be entirely inappropriate (if not impossible) to use a balloon to hold a piece of cake! Using these analogies, the concepts of variable, value and data type can be clearly distinguished:
 
-Variable	Value	Data Type
-Cup	Orange Juice	Liquid
-Plate	Black Forest Cake	Food
-Balloon	Helium	Gas
+
+| Variable | Value             | Data Type |
+|----------|-------------------|-----------|
+| Cup      | Orange Juice      | Liquid    |
+| Plate    | Black Forest Cake | Food      |
+| Balloon  | Helium            | Gas       |
 
 Returning to the way these concepts are used in a computer program, the following table gives some examples of variables and values for the data types fundamental to most high-level programming languages.
 
-Variable	Value	Data Type
-Age	25	Integer
-PI	3.14159	Real
-Cost	$4.95	Currency
-Gender	'M'	Character
-Title	"Computer Basics 101"	String
-Success	True	Boolean
-Rules About Variables, Values and Data Types
+Variable | Value                 | Data Type
+---------|-----------------------|----------
+Age      | 25                    | Integer
+PI       | 3.14159               | Real
+Cost     | $4.95                 | Currency
+Gender   | 'M'                   | Character
+Title    | "Computer Basics 101" | String
+Success  | True                  | Boolean
+
+### Rules About Variables, Values and Data Types
 
 It has been stated that while variables, values and data types are distinct concepts, they are closely related. This close association between these concepts allows us to work with and manipulate information. Before we can begin working with these concepts in a simple program, however, we need to establish some basic rules about how to work with variables, values and data types.
 
@@ -117,19 +121,34 @@ Some arithmetic operations, such as calculating the remainder of a division oper
 
 The following chart summarizes key arithmetic operations and their corresponding symbols as used in the more common high-level programming languages. The chart also shows some of the more complex operations and the names of the library functions used to calculate them (for specific details on using functions, see the documentation for the corresponding language). In addition, the arithmetic operations are shown as they typically appear in logical problem-solving diagrams such as flowcharts.
 
-Arithmetic Operation	Symbols / Function Calls
-C++	C#	Jscript	Visual Basic	SQL	Flowcharting
-Addition	+	+	+	+	+	+
-Subtraction	-	-	-	-	-	-
-Multiplication	*	*	*	*	*	X
-Division	/	/	/	/	/	/
-Remainder of Division	% [a]	%	%	Mod	MOD(Division Expression)	Remainder Of (Division Expression) or Mod
-Square Root	sqrt( )	Math.Sqrt( )	sqrt( )	Sqr( )	SQR( )	Square Root Symbol
-Exponential Notation (Power)	pow( )	Math.Pow( )	pow( )	^	POWER( )	 
-Sine	sin( )	Math.Sin( )	sin( )	Sin( )	SIN( )	Sine( )
-Cosine	cos( )	Math.Cos( )	cos( )	Cos( )	COS( )	Cosine( )
-Tangent	tan( )	Math.Tan( )	tan( )	Tan( )	TAN( )	Tangent( )
-Parenthesis (affects order of operation)	( )	( )	( )	( )	( )	( )
+|==========================================|================================================================================================|
+| Arithmetic Operation                     | Symbols / Function Calls                                                                       |
+|==========================================|=========|==============|==============|==============|==========================|==============|
+|                                          | C++     | C#           | JavaScript   | Visual Basic | SQL                      | Flowcharting |
+|==========================================|=========|==============|==============|==============|==========================|==============|
+| Addition                                 | +       | +            | +            | +            | +                        | +            |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Subtraction                              | -       | -            | -            | -            | -                        | -            |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Multiplication                           | *       | *            | *            | *            | *                        | X            |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Division                                 | /       | /            | /            | /            | /                        | /            |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Remainder of Division                    | % [a]   | %            | %            | Mod          | MOD(Division Expression) | Mod          |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Square Root                              | sqrt( ) | Math.Sqrt( ) | Math.sqrt( ) | Sqr( )       | SQR( )                   |              |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Exponential Notation (Power)             | pow( )  | Math.Pow( )  | Math.pow( )  | ^            | POWER( )                 |              |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Sine                                     | sin( )  | Math.Sin( )  | Math.sin( )  | Sin( )       | SIN( )                   | Sine( )      |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Cosine                                   | cos( )  | Math.Cos( )  | Math.cos( )  | Cos( )       | COS( )                   | Cosine( )    |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Tangent                                  | tan( )  | Math.Tan( )  | Math.tan( )  | Tan( )       | TAN( )                   | Tangent( )   |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
+| Parenthesis (affects order of operation) | ( )     | ( )          | ( )          | ( )          | ( )                      | ( )          |
+|==========================================|=========|==============|==============|==============|==========================|==============|
+
 [a] (for integers only)
 
 The only "arithmetic" operation that is typically applied to string data types is addition. The addition of two strings is usually interpreted as the concatenation (joining together) of the two string values into a single string value.
