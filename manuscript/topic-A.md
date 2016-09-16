@@ -89,7 +89,7 @@ namespace Topic.A.Examples
 ```
 
 {class:"sample"}
-![Nothingness](./code/samples/A.Nothingness.cs)
+![Nothingness](A.Nothingness.cs)
 
 {class:"sample"}
 ![Salutation](code\samples\A.Salutation.cs)
