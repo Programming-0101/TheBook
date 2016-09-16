@@ -14,13 +14,13 @@ Besides handling user I/O, computer programs can also do file or database I/O. C
 
 Since computer programs are all about handling information, it is important to understand something about the different kinds of information programs deal with. Essentially, most information falls into one of the following categories:
 
-- Numeric information (e.g.: a person's age or the price of a vehicle)
-- Textual information (e.g.: the title of a book)
-- Conceptual information (e.g.: truth - whether a statement is considered true or false)
+* Numeric information (e.g.: a person's age or the price of a vehicle)
+* Textual information (e.g.: the title of a book)
+* Conceptual information (e.g.: truth - whether a statement is considered true or false)
 
 These different kinds of information can be said to be primitive. They represent the most basic kind of data that today's computer programs have to deal with. These three kinds of information can be further subdivided into fundamental data types:
 
-|=========================|=======================================================|
+|:========================|:======================================================|
 | Category of Information | Basic Data Types                                      |
 |=========================|=======================================================|
 | Numeric                 | Integer - whole numbers                               |
@@ -46,12 +46,11 @@ The final concept is one that has already been alluded to: the idea of a data ty
 
 This brings up an important consideration: The data type of a variable should be appropriate for the kind of information the variable is intended to hold. There is a close relationship between variables, values and data types, even though those three ideas refer to different things. Cups are used to hold liquids; plates are used to hold food; and a balloon is used to hold a gas. It would be entirely inappropriate (if not impossible) to use a balloon to hold a piece of cake! Using these analogies, the concepts of variable, value and data type can be clearly distinguished:
 
-
-| Variable | Value             | Data Type |
-|----------|-------------------|-----------|
-| Cup      | Orange Juice      | Liquid    |
-| Plate    | Black Forest Cake | Food      |
-| Balloon  | Helium            | Gas       |
+Variable | Value             | Data Type
+---------|-------------------|----------
+Cup      | Orange Juice      | Liquid
+Plate    | Black Forest Cake | Food
+Balloon  | Helium            | Gas
 
 Returning to the way these concepts are used in a computer program, the following table gives some examples of variables and values for the data types fundamental to most high-level programming languages.
 
@@ -70,8 +69,8 @@ It has been stated that while variables, values and data types are distinct conc
 
 The first rule has already been alluded to in the previous section: The data type of a value must match the data type of the variable that stores the value. This rule is closely related to a second rule: A variable and its data type must be declared before the variable can be used. Whenever a variable name is first identified in a computer program, the data type of the variable must be declared. Stating, or declaring, what the data type of a variable is will allow a computer program to know two things:
 
-- How much computer memory must be set aside for the variable's value.
-- How to interpret a value stored in a variable.
+* How much computer memory must be set aside for the variable's value.
+* How to interpret a value stored in a variable.
 
 A variable cannot be used until it is declared, and once a variable's data type has been identified it can only hold values that match that data type. For example, if a variable called Status has been declared as a character, then it can only hold a character value (such as 'T' or '5'). Any attempt to store a value of a different type (such as "Temporary") in Status would produce an error in the computer program.
 
@@ -87,11 +86,11 @@ Notice, however, the qualification to this rule: in a given scope. In general, s
 
 In summary, the basic rules for variables, values and data types are:
 
-- Any value stored in a variable must be of the same data type as the variable.
-- Variables must be declared before they can be used.
-- A variable's data type can only be declared once.
-- Each primitive variable can only hold one value at a given time.
-- Each variable must have a distinct name.
+* Any value stored in a variable must be of the same data type as the variable.
+* Variables must be declared before they can be used.
+* A variable's data type can only be declared once.
+* Each primitive variable can only hold one value at a given time.
+* Each variable must have a distinct name.
 
 ## Programming Languages and Coding Instructions
 
@@ -121,9 +120,10 @@ Some arithmetic operations, such as calculating the remainder of a division oper
 
 The following chart summarizes key arithmetic operations and their corresponding symbols as used in the more common high-level programming languages. The chart also shows some of the more complex operations and the names of the library functions used to calculate them (for specific details on using functions, see the documentation for the corresponding language). In addition, the arithmetic operations are shown as they typically appear in logical problem-solving diagrams such as flowcharts.
 
-|==========================================|================================================================================================|
+{caption:"Comparison of Arithmetic Operators in different Programming Languages"; class:"table"}
+|:=========================================|:===============================================================================================|
 | Arithmetic Operation                     | Symbols / Function Calls                                                                       |
-|==========================================|=========|==============|==============|==============|==========================|==============|
+|==========================================|:=======:|:============:|:============:|:============:|:========================:|:============:|
 |                                          | C++     | C#           | JavaScript   | Visual Basic | SQL                      | Flowcharting |
 |==========================================|=========|==============|==============|==============|==========================|==============|
 | Addition                                 | +       | +            | +            | +            | +                        | +            |
@@ -134,11 +134,11 @@ The following chart summarizes key arithmetic operations and their corresponding
 |------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
 | Division                                 | /       | /            | /            | /            | /                        | /            |
 |------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Remainder of Division                    | % [a]   | %            | %            | Mod          | MOD(Division Expression) | Mod          |
+| Remainder of Division                    | % [^a]  | %            | %            | Mod          | MOD(Division Expression) | Mod          |
 |------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Square Root                              | sqrt( ) | Math.Sqrt( ) | Math.sqrt( ) | Sqr( )       | SQR( )                   |              |
+| Square Root                              | sqrt( ) | Math.Sqrt( ) | Math.sqrt( ) | Sqr( )       | SQR( )                   | `\sqrt{ }`$  |
 |------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Exponential Notation (Power)             | pow( )  | Math.Pow( )  | Math.pow( )  | ^            | POWER( )                 |              |
+| Exponential Notation (Power)             | pow( )  | Math.Pow( )  | Math.pow( )  | ^            | POWER( )                 | `x^2`$       |
 |------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
 | Sine                                     | sin( )  | Math.Sin( )  | Math.sin( )  | Sin( )       | SIN( )                   | Sine( )      |
 |------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
@@ -149,7 +149,7 @@ The following chart summarizes key arithmetic operations and their corresponding
 | Parenthesis (affects order of operation) | ( )     | ( )          | ( )          | ( )          | ( )                      | ( )          |
 |==========================================|=========|==============|==============|==============|==========================|==============|
 
-[a] (for integers only)
+[^a]: Used with whole numbers only
 
 The only "arithmetic" operation that is typically applied to string data types is addition. The addition of two strings is usually interpreted as the concatenation (joining together) of the two string values into a single string value.
 
