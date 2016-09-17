@@ -192,5 +192,112 @@ namespace Topic.A.Examples
 }
 ```
 
+## Practice Exercises
 
+* OuterSpace – This class is the simplest possible class (and, coincidentally, one of the most useless).
+* AnsweringMachine – The AnsweringMachine class provides a method to give an answer to an incoming phone call.
+  Driver – This class is the driver for the AnsweringMachine class.
+* Salutation – This is the Salutation class that was previously demonstrated.
+  HelloWorld_Driver – This class is the driver for the Salutation class.
+
+### OuterSpace
+
+This class is the simplest possible class (and, coincidentally, one of the most useless). 
+
+**Problem Statement:**
+
+Create a class called OuterSpace. This class has no members at all (it is empty, like outer space). Add a multi-line comment at the beginning that should include your full name as the author of the class. Also make an XML comment for the class as a whole.
+
+### AnsweringMachine
+
+The AnsweringMachine class provides a method to give an answer to an incoming phone call. 
+
+**Problem Statement:**
+
+Create the AnsweringMachine class so that it can provide a default answer for an incoming phone call as well as a customizable answer. The methods should be named answer and they should return a String. There should be two methods in total, and both of them should be declared as static. The actual content of the default message can be whatever you choose, while the customizable method will receive a single String argument that has the name of the person receiving the message. Also create a driver that demonstrates the AnsweringMachine in a Console environment. 
+
+Use the following details to guide your solution. 
+
+*Method Detail*
+
+* `public static string Answer()`
+  Provides a standard default message for the answering machine. 
+
+  **Returns:**
+  A String that instructs the caller to leave a message.
+* `public static string Answer(string name)`
+  Provides a customizable message for the answering machine.
+
+  To use this method, supply a person's name, and this name will be incorporated into the message that is returned. For example,
+  `System.Console.WriteLine(AnsweringMachine.Answer("Bob");`
+
+  **Parameters:**
+  `name` - A String that is the name of the person being called.
+  **Returns:**
+  A String that instructs the caller to leave a message for the person with the supplied name.
+
+### Salutation and HelloWorld_Driver
+
+In each of the single-line comments above a line of code, enter a phrase or sentence in English that describes what is done in that line of code.
+
+**Salutation**
+
+```csharp
+// Instructions: Enter comments in each blank to describe the following code
+// _____________________________________________________
+namespace Topic.A.Exercises
+{
+
+    // _____________________________________________________________________
+    public class Salutation
+    {
+        // _________________________________________________________________
+        public static string Greeting()
+        {
+            // _____________________________________________________________
+            return "Hello World!";
+        } // end of Greeting()
+
+        // _________________________________________________________________
+        public static string Greeting(string name)
+        {
+            // _____________________________________________________________
+            return "Hello " + name;
+        } // end of Greeting(string)
+
+        // _________________________________________________________________
+        public static string Farewell()
+        {
+            // _____________________________________________________________
+            return "So long!";
+        } // end of Farewell()
+    } // end of Salutation class
+}
+```
+
+**HelloWorld_Driver**
+
+```csharp
+// Instructions: Enter comments in each blank to describe the following code
+// _____________________________________________________
+namespace Topic.A.Exercises
+{
+    // _____________________________________________________
+    public class HelloWorld_Driver
+    {
+        // ________________________________________________________________________
+        public static void main(string[] args)
+        {
+            // ____________________________________________________________________
+            System.Console.WriteLine(Salutation.Greeting());
+            // ____________________________________________________________________
+            System.Console.WriteLine(Salutation.Greeting("Bob"));
+            // ____________________________________________________________________
+            System.Console.WriteLine(); // print a blank line
+            // ____________________________________________________________________
+            System.Console.WriteLine(Salutation.Farewell());
+        }
+    }
+}
+```
 
