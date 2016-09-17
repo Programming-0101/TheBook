@@ -28,11 +28,11 @@ These different kinds of information can be said to be primitive. They represent
 |                         | Real - numbers with fractional components             |
 |                         |-------------------------------------------------------|
 |                         | Currency - numbers representing monetary values       |
-|=========================|:======================================================|
+|-------------------------|:------------------------------------------------------|
 | Textual                 | Character - a single letter or symbol                 |
 |                         |-------------------------------------------------------|
 |                         | String - a set of characters (with or without spaces) |
-|=========================|:======================================================|
+|-------------------------|:------------------------------------------------------|
 | Conceptual              | Boolean - true/false, yes/no, on/off                  |
 |=========================|=======================================================|
 
