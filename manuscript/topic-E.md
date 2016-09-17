@@ -74,9 +74,7 @@ The following examples are used to illustrate this topic.
 10. StockItem - This class represents an item that is part of an inventory. The item has an item name, a cost and a profit margin (which can be positive or negative). By using the profit margin, it can derive the price of the item. This example illustrates rounding. 
 11. Die - This class represents a single six-sided die. This example is used to illustrate random number generation and casting. 
 12. ParkingCounter - This class represents a simple counter to monitor whether a parking lot is full or not; it tracks vehicles entering and leaving the parking lot and allows the counter to be reset when the lot is full or empty. This class illustrates increment and decrement operators and/or the assignment increment or assignment decrement operators. 
-13. QuadradicEquation - This class is used to solve for the two possible values of a quadratic formula where quadradic equals zero. It is based off of the following formula.
-  ! -tba-image-](E-QuadraticFormula.png) 
-  This sample illustrates order of operations and parentheses.
+13. QuadradicEquation - This class is used to solve for the two possible values of a quadratic formula where quadradic equals zero. This sample illustrates order of operations and parentheses.
 
 ### Calculator
 
@@ -93,7 +91,7 @@ The solution must meet the following requirements:
 
 Use the following class diagram when creating your solution. Since this class does not have properties or fields, make the methods static.
 
-! -tba-image-Calculator Class Diagram](E-Calculator.png)
+![Calculator Class Diagram](E-Calculator.png)
 
 ```csharp
 public class Calculator
@@ -126,7 +124,7 @@ The solution must meet the following requirements (new requirements are in **bol
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Person Class Diagram](E-Person.png)
+![Person Class Diagram](E-Person.png)
  
 ```csharp
 public class Person
@@ -185,7 +183,7 @@ The solution must meet the following requirements (new requirements are in **bol
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Account Class Diagram](E-Account.png)
+![Account Class Diagram](E-Account.png)
 
 ```csharp
   public void Withdraw(double amount)
@@ -217,7 +215,7 @@ The solution must meet the following requirements:
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-ElapsedTime Class Diagram](E-ElapsedTime.png)
+![ElapsedTime Class Diagram](E-ElapsedTime.png)
 
 ```csharp
 public class ElapsedTime
@@ -277,7 +275,7 @@ On a piece of paper, evaluate the following expressions to show the final value 
 
 The solution for question 2 is provided as an example. Use the accompanying class diagram when creating your coded solution as proof of your final answers.
 
-! -tba-image-](E-ExpressionResolutionBreakdown.png) ! -tba-image-](E-Resolve-Expressions.png)
+![](E-ExpressionResolutionBreakdown.png) ![](E-Resolve-Expressions.png)
 
 ```csharp
 namespace Topic.E.Examples
@@ -327,7 +325,7 @@ Write the code for the Circle class. The solution must meet the following requir
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Circle Class Diagram](E-Circle.png)
+![Circle Class Diagram](E-Circle.png)
  
 ```csharp
 using System;
@@ -367,7 +365,7 @@ Write the code for the Square class. The solution must meet the following requir
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Square Class Diagram](E-Square.png)
+![Square Class Diagram](E-Square.png)
 
 ```csharp
 namespace Topic.E.Examples
@@ -408,7 +406,7 @@ Write the code for the Fraction class. The solution must meet the following requ
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Fraction Class Diagram](E-Fraction.png)
+![Fraction Class Diagram](E-Fraction.png)
 
 ```csharp
 public class Fraction
@@ -464,7 +462,7 @@ Write the code for the Angle class. The solution must meet the following require
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Angle Class Diagram](E-Angle.png)
+![Angle Class Diagram](E-Angle.png)
 
 ```csharp
 using System;
@@ -522,7 +520,7 @@ Write the code for the StockItem class. The solution must meet the following req
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-StockItem Class Diagram](E-StockItem.png)
+![StockItem Class Diagram](E-StockItem.png)
  
 ```csharp
 using System;
@@ -570,7 +568,7 @@ Write the code for the Die class. The solution must meet the following requireme
 
 Use the following class diagram when creating your solution. Note that this uses the Random class as a private static field.
 
-! -tba-image-Die Class Diagram](E-Die.png)
+![Die Class Diagram](E-Die.png)
 
 ```csharp
 using System;
@@ -612,7 +610,7 @@ Write the code that will monitor vehicles entering and leaving a parking lot. Th
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-ParkingCounter Class Diagram](E-ParkingCounter.png) 
+![ParkingCounter Class Diagram](E-ParkingCounter.png) 
 
 ```csharp
 namespace Topic.E.Examples
@@ -662,7 +660,7 @@ namespace Topic.E.Examples
 
 This class is used to solve for the two possible values of a quadratic formula where quadratic equals zero. It is based off of the following formula.
 
-! -tba-image-](E-QuadraticFormula.png)
+![](E-QuadraticFormula.png)
 
 This sample illustrates order of operations and parentheses.
 
@@ -672,7 +670,7 @@ Write the code that will represent a quadratic equation that has a higher and lo
 
 For `ax^2 + bx + c = 0`$, the value of ***x*** is given by
 
-! -tba-image-](E-QuadraticFormula.png)
+![](E-QuadraticFormula.png)
  
 More information on the quadratic formula can be found at http://www.purplemath.com/modules/quadform.htm.
 
@@ -689,7 +687,7 @@ The solution must meet the following requirements:
 
 Use the accompanying class diagram when creating your solution.
 
-! -tba-image-QuadraticEquation Class Diagram](E-QuadradicEquation.png)
+![QuadraticEquation Class Diagram](E-QuadradicEquation.png)
 
 ```csharp
 using System;
@@ -774,7 +772,7 @@ The solution must meet the following requirements:
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Calculator Class Diagram](E-Calculator-2.png)
+![Calculator Class Diagram](E-Calculator-2.png)
 
 ### Fraction
 
@@ -805,7 +803,7 @@ As an assist, the following code can be used for the multiplication method.
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Fraction Class Diagram](E-Fraction-2.png)
+![Fraction Class Diagram](E-Fraction-2.png)
 
 ### Square
 
@@ -820,7 +818,7 @@ Write the code needed to add the ability for a Square to determine the length of
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Square Class Diagram](E-Square-2.png)
+![Square Class Diagram](E-Square-2.png)
 
 ### Coordinate
 
@@ -840,7 +838,7 @@ Write the code needed to represent a geographical co-ordinate for longitude and 
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Coordinate Class Diagram](E-Coordinate.png)
+![Coordinate Class Diagram](E-Coordinate.png)
 
 ### PaintEstimator
 
@@ -859,7 +857,7 @@ Write the code needed to help a painter to estimate the number of paint cans to 
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-PaintEstimator Class Diagram](E-PaintEstimator.png)
+![PaintEstimator Class Diagram](E-PaintEstimator.png)
 
 ## BulkItem
 
@@ -891,7 +889,7 @@ Modify the Die class from the examples to support multi-sided die other than jus
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Die Class Diagram](E-Die-2.png)
+![Die Class Diagram](E-Die-2.png)
 
 ### RoundingCalculator
 
@@ -917,7 +915,7 @@ Write the code needed to provide rounding of various degrees of accuracy. The so
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-RoundingCalculator Class Diagram](E-RoundingCalculator.png)
+![RoundingCalculator Class Diagram](E-RoundingCalculator.png)
 
 ### GenericRoundingCalculator
 
@@ -939,7 +937,7 @@ Write the code needed to perform rounding to either whole numbers or fractions a
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-GenericRoundingCalculator Class Diagram](E-GenericRoundingCalculator.png)
+![GenericRoundingCalculator Class Diagram](E-GenericRoundingCalculator.png)
 
 ### PeopleCounter
 
@@ -958,7 +956,7 @@ Write the code needed to track people entering and leaving a store. It must be a
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-PeopleCounter Class Diagram](E-PeopleCounter.png)
+![PeopleCounter Class Diagram](E-PeopleCounter.png)
 
 ### ScoreCard
 
@@ -991,7 +989,7 @@ Write the code for the Cylinder class that meets the following requirements:
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Cylinder Class Diagram](E-Cylinder.png)
+![Cylinder Class Diagram](E-Cylinder.png)
 
 ### Cone
 
@@ -1011,7 +1009,7 @@ Note that the portion `sqrt(r^2 + h^2)`$ is known as the slant height.
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-Cone Class Diagram](E-Cone.png)
+![Cone Class Diagram](E-Cone.png)
 
 ### GravityCalculator
 
@@ -1036,7 +1034,7 @@ Write the code needed to convert Earth weights to their equivalent for the other
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-GravityCalculator Class Diagram](E-GravityCalculator.png)
+![GravityCalculator Class Diagram](E-GravityCalculator.png)
 
 ### CurrencyCalculator
 
@@ -1057,13 +1055,13 @@ A currency exchange store at the international airport needs a program to conver
 
 To illustrate the possible exchange rates, please refer to the following images.
 
-! -tba-image-Currency exchange rates sourced from http://www.x-rates.com](E-CurrencyExchange.png)
+![Currency exchange rates sourced from http://www.x-rates.com](E-CurrencyExchange.png)
 
-! -tba-image-](E-CurrencyAmericanDollar.png)
+![](E-CurrencyAmericanDollar.png)
 
 Use the following class diagram when creating your solution.
 
-! -tba-image-CurrencyCalculator Class Diagram](E-CurrencyCalculator.png)
+![CurrencyCalculator Class Diagram](E-CurrencyCalculator.png)
 
 As a starter, you can use the following code to begin creating your class.
 

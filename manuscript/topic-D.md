@@ -52,11 +52,11 @@ The unit tests for these classes are included in the solution folder under the "
 
 This simple class was used to introduce the idea of encapsulation (private fields with public getters and setters). This example uses a constructor for ensuring the state of an object when it is instantiated (created). In this topic, it is used to demonstrate unit testing. The following diagram represents the last design for the Person class, as completed in the exercises portion of the previous topic.
 
-! -tba-image-Previous Person Class Diagram](D-Person.png)
+![Previous Person Class Diagram](D-Person.png)
 
 The supplied unit tests check all of this previously documented behaviour, but they also check to see if the Person class has overridden the `ToString()` method. Because this requirement is new, and has not yet been implemented, the unit tests show this as a "failed test." The following diagram is the design that the unit tests are evaluating.
 
-! -tba-image-Person Class Diagram](D-Person-1.png)
+![Person Class Diagram](D-Person-1.png)
 
 Should…
 * Instantiate (build) from constructor
@@ -70,7 +70,7 @@ Should…
 
 This simple class also illustrates encapsulation, but with some of the fields being read-only. This class uses a constructor (which is also necessary for getting state into fields which do not have corresponding setter methods).
 
-! -tba-image-Account Class Diagram](D-Account.png)
+![Account Class Diagram](D-Account.png)
 
 Should…
 * Get Bank Name
@@ -85,7 +85,7 @@ Should…
 
 This class reinforces the idea of encapsulation and constructors. It also demonstrates the idea of overloading the default ToString() method that every class inherits from the Object class.
 
-! -tba-image-Student Class Diagram](D-Student.png)
+![Student Class Diagram](D-Student.png)
 
 Should…
 * Get/Set Name
@@ -98,7 +98,7 @@ Should…
 
 ### Employee
 
-! -tba-image-Employee Class Diagram](D-Employee.png)
+![Employee Class Diagram](D-Employee.png)
 
 Should…
 * Get/Set First Name
@@ -110,7 +110,7 @@ Should…
 
 ### Company
 
-! -tba-image-Company Class Diagram](D-Company.png)
+![Company Class Diagram](D-Company.png)
 
 Should…
 * Get/Set Name
@@ -135,7 +135,7 @@ For this exercise, take the code solutions you created in the previous topic and
 
 This simple class was used to introduce the idea of encapsulation (private fields with public properties). This example uses a constructor for ensuring the state of an object when it is instantiated (created). It also demonstrates the overriding of the ToString() method inherited from the Object method.
 
-! -tba-image-Person Class Diagram](D-Person-2.png)
+![Person Class Diagram](D-Person-2.png)
 
 Should…
 * Instantiate (build) from constructor
@@ -146,7 +146,7 @@ Should…
 
 ### CanadianAddress
 
-! -tba-image-CanadianAddress Class Diagram](D-CanadianAddress.png)
+![CanadianAddress Class Diagram](D-CanadianAddress.png)
 
 Should…
 * Instantiate (build) from Constructor
@@ -155,7 +155,7 @@ Should…
 
 ### Course
 
-! -tba-image-Course Class Diagram](D-Course.png)
+![Course Class Diagram](D-Course.png)
  
 Should…
 * Instantiate from Constructor
@@ -163,7 +163,7 @@ Should…
 
 ### ExamResult
 
-! -tba-image-ExamResult Class Diagram](D-ExamResult.png)
+![ExamResult Class Diagram](D-ExamResult.png)
 
 Should…
 * Instantiate from Constructor
@@ -174,7 +174,7 @@ Should…
 
 ### LabResult
 
-! -tba-image-LabResult Class Diagram](D-LabResult.png)
+![LabResult Class Diagram](D-LabResult.png)
  
 Should…
 * Instantiate from Constructor
