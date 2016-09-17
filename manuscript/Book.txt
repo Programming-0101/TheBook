@@ -6,4 +6,5 @@ topic-C.md
 topic-E.md
 topic-F.md
 topic-G.md
+topic-H.md
 log-summary.md

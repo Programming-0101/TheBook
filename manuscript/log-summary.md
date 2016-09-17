@@ -593,3 +593,18 @@ Explain why property setters are a good place for throwing exceptions.
 
 Identify when constructors should throw exceptions directly.
 : Whenever a field has a property setter that performs validation, the constructor should use that setter to store information in the field. If no property setter is available to process the parameter values sent through the constructor, then the constructor should perform its own validation on those parameters.
+
+## Topic H - Case Structures
+
+#### General Programming Concepts and Terms
+
+Describe the syntax of the switch statement
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Discuss the limitations of the switch statement in C# and the available alternatives for the times that we can’t use a switch statement
+: Switch statements only work with integral data types (such as char and int).
+: The individual case values must be constants; variable expressions are not allowed for the matching cases.
+: Switch statements only check for exact matches (meaning that there is an implied “is-equal-to” comparison); other relational comparisons, such as greater than or less than, are not allowed.
+: When it is not possible to use switch statements, case structures can be written up as nested and/or stacked if-else structures to make use of the if-else statement.
+
+## Topic I
