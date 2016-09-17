@@ -2,4 +2,6 @@ audience.md
 chapter1.md
 topic-A.md
 topic-B.md
+topic-C.md
+topic-E.md
 log-summary.md

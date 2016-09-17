@@ -225,29 +225,29 @@ List three levels of scope
 ### General Programming Concepts and Terms
 
 Explain the role of testing as it applies to software development 
-: Testing is a form of “quality assurance” in which steps are taken to verify that a program is behaving or working as intended.
-: Testing has traditionally been treated as a “follow-up” activity that takes place after a program is written. Currently, other approaches, such as TDD (Test-Driven Development) place the “testing” activity at the start of the programming efforts, thereby integrating tests as a driving element in software development.
+: Testing is a form of "quality assurance" in which steps are taken to verify that a program is behaving or working as intended.
+: Testing has traditionally been treated as a "follow-up" activity that takes place after a program is written. Currently, other approaches, such as TDD (Test-Driven Development) place the "testing" activity at the start of the programming efforts, thereby integrating tests as a driving element in software development.
 
 Define and compare the terms "compile-time error" and "run-time error" 
-: A “compile-time error” is an error where a program does not “compile”. In other words, compile-time errors are due to code that does not follow the rules of the programming language.
-: A “run-time error” is an error where a running program does not produce the desired result. In other words, run-time errors are due to logical errors in a computer program. Sometimes these errors are “fatal” (meaning that they result in “abnormal program termination” – the program “crashes”). Other times the errors are subtle; the subtle errors can be the most difficult to detect, particularly when relying on “manual” verification, such as found with ad-hoc test drivers.
+: A "compile-time error" is an error where a program does not "compile". In other words, compile-time errors are due to code that does not follow the rules of the programming language.
+: A "run-time error" is an error where a running program does not produce the desired result. In other words, run-time errors are due to logical errors in a computer program. Sometimes these errors are "fatal" (meaning that they result in "abnormal program termination" – the program "crashes"). Other times the errors are subtle; the subtle errors can be the most difficult to detect, particularly when relying on "manual" verification, such as found with ad-hoc test drivers.
 
 Define the term "test driver" 
-: A “test driver” is a driver (which is a program with a main method) whose sole purpose is to “test” the components of a program. Test drivers provide a simple “ad-hoc” form of testing. Test drivers are basically considered “throw-away” programs, as their usefulness does not extend beyond the tests.
+: A "test driver" is a driver (which is a program with a main method) whose sole purpose is to "test" the components of a program. Test drivers provide a simple "ad-hoc" form of testing. Test drivers are basically considered "throw-away" programs, as their usefulness does not extend beyond the tests.
 
 Create simple ad-hoc test drivers to test for run-time errors 
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
 Define the term "TDD" 
-: TDD refers to “Test Driven Development”. Test Driven Development is an approach to programming that starts with creating “unit tests” that reflect the business and design requirements of a program, and then writing the classes and methods that will pass the unit tests. The idea here is to help drive the programmer toward code that “stays on focus” of the needs of and solutions for a given problem.
+: TDD refers to "Test Driven Development". Test Driven Development is an approach to programming that starts with creating "unit tests" that reflect the business and design requirements of a program, and then writing the classes and methods that will pass the unit tests. The idea here is to help drive the programmer toward code that "stays on focus" of the needs of and solutions for a given problem.
 
 Compare and contrast Test Drivers and Unit Tests
 : Test Drivers are small programs with a main() that tests classes by creating objects, calling methods, and output results to the console.
-: Unit Tests are small “units” (which are simply methods)  that calls methods on objects and classes and “tests” if they work as intended by running “asserts”. Unit Tests display the results of the test in Red/Green/Yellow results, where Red ( ) represents run-time errors, Yellow ( ) represents ignored tests, and Green ( ) represents success.
+: Unit Tests are small "units" (which are simply methods)  that calls methods on objects and classes and "tests" if they work as intended by running "asserts". Unit Tests display the results of the test in Red/Green/Yellow results, where Red ( ) represents run-time errors, Yellow ( ) represents ignored tests, and Green ( ) represents success.
 
 Define the terms "false positive" and "false negative" 
-: A “false positive” is a test result that shows success for a test which in reality should be a failure.
-: A “false negative” is a test result that shows failure for a test which in reality should be a success.
+: A "false positive" is a test result that shows success for a test which in reality should be a failure.
+: A "false negative" is a test result that shows failure for a test which in reality should be a success.
 : Both false positives and false negatives are a result of an error in the unit test (or test driver).
 
 List three downfalls of using Test Drivers 
@@ -262,7 +262,7 @@ Identify four benefits of using Unit Tests
 : Increases productivity (by focusing development efforts) 
 : Captures design requirements in code 
 : Increases programmer confidence when modifying and expanding code
-: Easily isolate smaller parts (“units”) of the program for verification; these tests can run independently of each other (even if the other tests have compiler issues with the classes being tested).
+: Easily isolate smaller parts ("units") of the program for verification; these tests can run independently of each other (even if the other tests have compiler issues with the classes being tested).
 
 Add unit testing libraries and unit testing packages to existing programs 
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
@@ -276,7 +276,197 @@ Diagnose and correct software problems by using unit tests
 
 ## Topic E - Expressions and Math
 
-###  
+### OOP Basics
+
+Explain how method overloading is applied to constructors
+: Using overloaded constructors means that it is possible to create objects in "different ways". What this means is that when a class has an overloaded constructor, anytime we wish to instantiate (create) an object using the new keyword, we must be explicit about which constructor we are invoking (calling).
+
+### General Programming Concepts and Terms
+
+Name at least three kinds of program statements commonly seen in all high-level programming languages
+: Declaration/initialization statements
+: Assignment statements
+: Flow-control statements
+
+Distinguish between Variables, Values and Data Types
+: Variables act as "containers" for values, allowing programmers to access and manipulate the value via the variable.
+: A Value is simply a piece of data. It may be simple (such as a number or some text), or it may be complex (that is, based on a class).
+: Data Types are "blueprints" or "templates" that describe what values "look like" and how they "work".
+: When a variable is declared to be of a certain data type, this means that the variable is only allowed to hold values that match that data type.
+
+List the five basic rules governing variables, values and data types
+: Any value stored in a variable must be of the same data type as the variable.
+: Variables must be declared before they can be used.
+: A variable’s data type can only be declared once.
+: Each primitive variable can only hold one value at a given time.
+: Each variable must have a distinct name.
+
+List the intrinsic (built-in) data types in C#
+: Textual data types: char
+: Numeric data types: int, long, short, byte, double, float
+: Conceptual data types: bool
+
+Explain what is meant by the phrase "type extensibility"
+: Modern languages are able to define brand new data types (classes), thereby increasing the ability to manage complex information and perform complex operations.
+
+Define the terms Reference Type and Value Type as they apply to data types in C#
+: A "value type" is a data type whose information is stored "directly" in a variable. In memory, this means that there is only one direct location in memory where the data is stored. The only data types that are "value types" are those that are built into the language: char, int, byte, short, long, double, float, and bool.
+  For example, in the following statements,
+    `double count;`
+    `count = 0;`
+  the value of zero is stored directly at the memory location labelled count.
+: A "reference type" is a data type whose information is stored and accessible only "indirectly" through the variable. Whenever you declare a "reference type" variable, that variable actually stores a memory address of where the "actual" object is stored. The "actual" object is only created using the new keyword; that new keyword will set aside a separate, "new", area of memory which is then accessed "indirectly" through the "reference type" variable.
+  For example, in the following statements,
+    `Car hotrod;`
+    `hotrod = new Car();`
+  the first line creates a single memory location, labelled hotrod, which will store the address to a Car object. The second line creates the actual Car object somewhere in memory and then the address to that object is stored in the hotrod variable.
+  All classes, whether those supplied in the C# library (such as the String and Date classes) or those created by you, are "reference types". 
+
+Define the term Identifier
+: An identifier is the term used to refer to some "named" item in your code. Typically, we apply the term identifier to variable names, field names, property names and method names.
+
+Create and initialize variables in C#
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Explain what is meant by the terms "scope" and "lifetime" as they apply to variables
+: Scope refers to the "context" in which a variable is accessible. Fields are variables with "Class Scope", meaning that they are accessible to all the methods from within the class; properties, methods and constructors also have class scope. Parameters and variables declared within a method have "local scope", meaning that they can only be accessed by code from within the method that they are declared in.
+: Lifetime refers to the period of time from when a variable is first declared to the time that they are "destroyed". For fields, their lifetime exists as long as the object in which they are declared. For parameters and local variables, they exist only as long as there is still code to be executed in the method to which they belong; as soon as the method "returns" or exits, these local variables and parameters are destroyed.
+
+Describe what is meant by the term "expression"
+: An expression is any combination of literal values (literal strings or numbers), variables, operators, or method calls which return a value. An expression can be as simple as a single variable or literal value, or it can be as complex as a long mathematical expression that involves calls to various methods.
+: An important characteristic of expressions is to note that they are always reduced to a single value by the computer.
+
+Explain the difference between program statements and expressions as well as how the two relate to each other
+: A program statement represents a complete instruction that the compiler can translate into machine language. An analogy can be made that a program statement is like a sentence: Just as a sentence communicates a complete thought or idea, so a program statement represents a complete instruction.
+: An expression is not a complete instruction; rather it is a combination of values, variables, method calls, and operators that will eventually be reduced to a single "value" by the computer. Expressions are often a part of program statements, and their role in program statements is akin to the role of phrases in English sentences: A phrase is not, by itself, a complete thought or idea; it must exist in a context in order to have its complete meaning. In a similar way, expressions play a part in the grammar of various kinds of program statements, providing a way of generating values that will be used by the program statement.
+
+List the four general sets of operators in C#
+: Assignment, Arithmetic, Relational, and Logical
+
+Describe the two basic rules of using arithmetic operators that every compiler must follow.
+: For an arithmetic operator to work, both sides of the operator must be the same data type.
+: The resulting value of an arithmetic operation is of the same data type as the operands involved in the operation.
+
+Use the arithmetic operators to create arithmetic expressions
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Explain what is meant by "integer division" and how that can be useful in solving particular problems regarding numbers.
+: "Integer division" is the term for what occurs when both operands of a division operation are whole numbers (which can apply to byte, int, short, and long data types). Because the basic rule of arithmetic operations is that the data type of the final value of an operation is the same as that of the operands, any time we divide one whole number by another whole number, the result is a whole number: Any "fractional portion" is automatically discarded.
+  For example,
+  `1 / 3 -> 0`
+  `7 / 2 -> 3`
+
+Explain the purpose of the modulus (%) operator.
+: The modulus operator (%) is used to find the remainder of a division operation. This operator is typically used with integers.
+
+List and describe how to use the various assignment operators in C#
+: All assignment operators require a variable on the left side and an expression on the right side. Assignment operators take the final value of the expression on the right and stores that value in the variable on the left.
+: =
+  This is the standard assignment operator. It performs a simple assignment of the value on the right to the variable on the left.
+: +=
+  This assignment operator takes the value on the right and adds it to the value already existing in the variable on the left. For example
+  `x += y;`
+  is the same as writing
+  `x = x + y;`
+: -=
+  This assignment operator takes the value on the right and subtracts it from the value already existing in the variable on the left. For example
+  `x -= y;`
+  is the same as writing
+  `x = x - y;`
+: *=
+  This assignment operator takes the value on the right and multiplies it to the value already existing in the variable on the left. For example
+  `x *= y;`
+  is the same as writing
+  `x = x * y;`
+: /=
+  This assignment operator takes the value on the right and divides it into the value already existing in the variable on the left. For example
+  `x /= y;`
+  is the same as writing
+  `x = x / y;`
+: %/
+  This assignment operator takes the value on the right and divides it into the value already existing in the variable on the left to generate the remainder. For example
+  `x %= y;`
+  is the same as writing
+  `x = x % y;`
+
+Explain the difference between binary and unary operators
+: Binary operators require a variable or value on both sides of the operator.
+: Unary operators only require a variable or value on one side of the operator for it to perform its operation.
+
+Demonstrate understanding of operator precedence and how to override the default precedence of the arithmetic operators
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Summarize and distinguish the rules for automatic type conversion involving arithmetic operators and the assignment operator
+: Automatic type conversion takes place for the data types that are built in to the programming language.
+: The basic rule of automatic type conversion involving arithmetic operators is that if two operands of a binary operator are of different data types, then the value of the one that is "smaller" is "upsized" to the data type of the "larger" operand.
+: For the assignment operators, automatic type conversion is limited to only allowing the right-hand value to be converted to the data type of the variable on the left-hand side. Type conversion cannot convert a value from the right hand side if that value’s data type is larger than the data type of the left hand side; if the right hand side is a larger data type than the left hand side, then a compiler error is generated that states the value cannot "fit" into the variable on the left.
+
+Determine the final data type for expressions involving mixed data types and type conversion
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Describe "type casting" and explain how to use it appropriately.
+: Type casting is where we explicitly tell the compiler to "re-interpret" a particular value as a different data type than what the compiler is currently treating it as.
+: Type casting is appropriate when we want to avoid integer division in order to retain the fractional portion in the final result. For example, if the variables numerator and denominator are both integers, it is appropriate to use type casting in the following line of code:
+  `double value = (double) (numerator) / denominator;`
+: It is also appropriate when we need to "downcast" a value from a larger data type to a smaller data type (and can do so safely).
+: Note that type casting does not (and can not) change the data type of a variable; type casting is only a re-interpretation of a value.
+: Note that type casting is not the same as converting. For example, any attempt to type cast the char value of the character ‘4’ to an int will not produce a numeric value of 4; rather, it will produce the numeric value of 52 (which is the underlying decimal value for the character ‘4’).
+
+Compare and contrast the prefix and postfix behaviour of the unary arithmetic operators
+: …
+
+Identify and explain how to use the common Math library routines (for Power, Square Root, Absolute, random numbers, pi, trigonometry, and the various types of rounding)
+: …
+
+Use Math rounding methods with arithmetic expressions to round real numbers to a specific precision
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Create random whole number values within a specific range
+: …
+
+Use type casting appropriately in C#
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Create constants in C#
+: Constants in C# are created using the keyword final and assigning the value to the constant at the time that it is declared. For example, to create a constant value for GST, you could code the following:
+  `const double GST = 0.05; // 5% GST`
+
+Explain how arithmetic operations affect character values in C#
+: Because the char data type is regarded as one of the "integral" data types, along with int, short and long, any arithmetic operations on char values will manipulate the underlying value as if it were simply a whole number.
+  (Note: "Integral" data types are data types without a fractional component.)
+
+List the most common math functions of the Math class
+: …
+
+Demonstrate how to use the various Math functions in simple programs
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+List and describe some of the commonly used fields and methods of the String class
+: .ToUpper() – returns a String that has all the characters converted to their upper-case equivalents.
+: .ToLower() – returns a String that has all the characters converted to their lower-case equivalents.
+: .Trim() – returns a String that has all leading and trailing whitespace removed from the original String.
+: .Chars(int index) – returns the character at the index position for the string. (All strings have the first character as index position zero.)
+: .Substring(int beginIndex) and .Substring(int beginIndex, int endIndex) – returns a string that is the text inside of the first string beginning at a specified index. (All strings have the first character as index position zero.)
+: .Length – returns the total number of characters in the string.
+
+Demonstrate how to use "String Arithmetic" (concatenation)
+: To concatenate two or more strings, use the plus (+) operator.
+: To append one string onto another, simply add the string to be appended to the end of the original string. For example, to append "ing" to the word "end" in order to produce "ending", you could do the following:
+  `String myWord = "end";`
+  `myWord = myWord + "ing"`
+: To pre-pend one string on another, add the string to be prepended to the start of the original string. For example, to prepend "un" to the word "imaginative" so as to produce "unimaginative", you would do the following:
+  `String myWord = "imaginative";`
+  `myWord = "un" + myWord;`
+
+List the equivalent "wrapper" classes for each of the primitive types.
+: `Integer` for `int`
+: `Character` for `char`
+: `Double` for `double`
+: `Byte` for `byte`
+: `Long` for `long`
+: `Short` for `short`
+: `Float` for `float`
+
 
 ## Topic F - If-Else Structures
 
