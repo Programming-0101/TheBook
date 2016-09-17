@@ -33,7 +33,7 @@ The following daily LOGs are covered in this package.
 * Use unit tests to validate the requirements of a class’ design and behaviour
 * Diagnose and correct software problems by using unit tests 
 
-## Code Samples – Documentation
+## Code Samples
 
 The following examples are used to illustrate this topic.
 

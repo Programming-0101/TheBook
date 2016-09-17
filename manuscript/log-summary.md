@@ -219,7 +219,6 @@ List three levels of scope
 : Local scope – All the variables and parameters of a method are accessible only to the body of the method; local variables and parameters are not accessible to other methods.
 : Block scope – All the variables declared inside a block are only accessible to the code inside that block. A block of code is denoted by being enclosed by a set of curly braces – { }.
  
-
 ## Topic D - Debugging and Testing
 
 ### General Programming Concepts and Terms
@@ -470,4 +469,74 @@ List the equivalent "wrapper" classes for each of the primitive types.
 
 ## Topic F - If-Else Structures
 
-### 
+### General Programming Concepts and Terms
+
+Describe and draw a diagram of the If-Then-Else logical structure
+: ...
+
+Identify the programming statement that corresponds to the If-Then-Else logical structure.
+: The if-else statement is used for If-Then-Else logical structures in C#.
+
+Translate If-Then-Else structures into code.
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Describe what is meant by a "conditional expression"
+: A conditional expression is any expression which results in a Boolean (true/false) value.
+
+List the operator precedence for mixing logical, arithmetic, and relational operations
+: Logical Not (!), Arithmetic, Relational, Logical And/Or
+
+List the relational operators
+: >, >=, ==, <=, <
+: Greater Than (>)
+: Greater Than or Equal To (>=)
+: Is Equal To (==)
+: Less Than or Equal To (<=)
+: Less Than (<)
+
+List the logical operators
+: &&, ||, !
+: And (&&)
+: Or (||)
+: Not (!)
+
+Use relational, logical, and arithmetic operators to construct conditional expressions
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Demonstrate an understanding of operator precedence in conditional expressions
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Use statement blocks to allow nesting program statements into control structures
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+Define the term "boundary condition" as it relates to if-else statements and testing
+: A "boundary condition" is also known as a "fence-post condition".
+: The "boundary" is the border of a range of values that are regarded as "acceptable" for some variable. For example, if a particular variable named percent is to represent a range of values from zero through 100 inclusive, then the "boundary" values are zero and 100.
+  A boundary condition, then, is a test or comparison that is made against some boundary values. For example,
+
+```csharp
+if(percent >= 0 && percent <= 100)
+{
+    // code to perform if true
+}
+else
+{
+    // code to perform if false
+}
+```
+
+Identify the correct way to compare or check the contents of strings in conditional expressions
+: The proper way to compare String values is to use the .Equals(), .CompareTo() and .IsNullOrEmpty() methods.
+: Generally, the relational operators (==, <, etc) should not be used directly on string values.
+
+List and describe the commonly used fields and methods of the String class that would be used in if-else statements
+: .Equals(String) – returns a Boolean, true or false, as to whether the two strings are or are not equal.
+: .Equals(String, StringComparison) – returns a Boolean, true or false, as to whether the two strings are or are not equal, according to the value of the StringComparison argument (which includes values to ignore any differences in upper and lower case).
+: .CompareTo(String anotherString) – compares two strings "lexographically" (that is, alphabetically) and returns either
+  a. a zero if they are the same, or 
+  b. a negative number if anotherString is greater than the first string, or
+  c. a positive number if anotherString is less than the first string
+: .IsNullOrEmpty(string) – returns true if the string is an empty string (""), false if it is not an empty string.
+: .IsNullOrWhiteSpace(string) – (only in .NET 4.0 and higher) returns true if the string is null, an empty string (""), or all "whitespace" (tab, newline) characters; false if it is not.
+: .Length – returns the total number of characters in the string.
+
