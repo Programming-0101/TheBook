@@ -22,17 +22,17 @@ These different kinds of information can be said to be primitive. They represent
 
 |:========================|:======================================================|
 | Category of Information | Basic Data Types                                      |
-|=========================|=======================================================|
+|=========================|:======================================================|
 | Numeric                 | Integer - whole numbers                               |
 |                         |-------------------------------------------------------|
 |                         | Real - numbers with fractional components             |
 |                         |-------------------------------------------------------|
 |                         | Currency - numbers representing monetary values       |
-|-------------------------|-------------------------------------------------------|
+|=========================|:======================================================|
 | Textual                 | Character - a single letter or symbol                 |
 |                         |-------------------------------------------------------|
 |                         | String - a set of characters (with or without spaces) |
-|-------------------------|-------------------------------------------------------|
+|=========================|:======================================================|
 | Conceptual              | Boolean - true/false, yes/no, on/off                  |
 |=========================|=======================================================|
 
@@ -157,4 +157,4 @@ Besides performing assignment statements and expressions, programming languages 
 
 ## Summary
 
-Information comes in various forms and programmers can create both simple and complex sets of instructions to manipulate that information. Successful computer programs combine the best techniques for user I/O, information processing, and persistent storage in order to meet the needs of individuals and businesses. Grasping the basic concepts of computer programs – variables, values, data types, I/O, assignments and expressions, and control statements – is fundamental to the efficient and effective development of computer software.
+Information comes in various forms and programmers can create both simple and complex sets of instructions to manipulate that information. Successful computer programs combine the best techniques for user I/O, information processing, and persistent storage in order to meet the needs of individuals and businesses. Grasping the basic concepts of computer programs - variables, values, data types, I/O, assignments and expressions, and control statements - is fundamental to the efficient and effective development of computer software.
