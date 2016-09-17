@@ -4,4 +4,6 @@ topic-A.md
 topic-B.md
 topic-C.md
 topic-E.md
+topic-F.md
+topic-G.md
 log-summary.md
