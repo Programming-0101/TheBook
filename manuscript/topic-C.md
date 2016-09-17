@@ -61,27 +61,27 @@ The following class diagrams detail the design of these examples.
 
 This simple class illustrates and introduces the idea of encapsulation (private fields with public properties). This example does not have a constructor. This example includes a driver. The driver is also used to illustrate how, with only fields & getter/setter methods, an object can be in an "unknown" (and invalid) state as soon as it is created; this idea is introduced to show the need for a constructor, and opens the discussion of the idea of a "default constructor".
 
-![Person Class Diagram](C-Person.png)
+! -tba-image-Person Class Diagram](C-Person.png)
 
 ### Account
 
 This simple class also illustrates encapsulation, but with some of the fields being read-only. This necessitates the presence of a constructor. This example includes a driver which shows that a class is in a "known state" as soon as it is created.
 
-![Account Class Diagram](C-Account.png)
+! -tba-image-Account Class Diagram](C-Account.png)
 
 ### Student
 
 This class reinforces the idea of encapsulation and constructors. It also introduces the idea of overloading the default ToString() method that every class inherits from the Object class. This example includes a driver with multiple objects, showing how the use of constructors makes it easier to create many objects in a few lines of code.
 
-![Student Class Diagram](C-Student.png)
+! -tba-image-Student Class Diagram](C-Student.png)
 
 ### Company and Employee
 
 These are other classes similar to the Person and Student classes, but the Employee class uses Auto-Implemented properties (new since C# 3.0). Lastly, these classes "share" a driver, illustrating the fact that any given "program" typically uses more than one class.
  
-![Company Class Diagram](C-Company.png)
+! -tba-image-Company Class Diagram](C-Company.png)
 
-![Employee Class Diagram](C-Employee.png) 
+! -tba-image-Employee Class Diagram](C-Employee.png) 
 
 ## Practice Exercises
 
@@ -98,7 +98,7 @@ This simple class illustrates and introduces the idea of encapsulation (private 
 
 Extend the Person class from the example to include a constructor that takes in a first and last name as well as an age in the parameter list.
 
-![Person Class Diagram](C-Person-2.png)
+! -tba-image-Person Class Diagram](C-Person-2.png)
  
 ### Account
 
@@ -108,7 +108,7 @@ Extend the Account class from the example to include more information.
 
 Extend the Account class from the example to include more information. Specifically, include an AccountType:String, BankName:String, BranchNumber:Integer, and InstitutionNumber:Integer. Base your solution on the following class diagram.
 
-![Account Class Diagram](C-Account-2.png)
+! -tba-image-Account Class Diagram](C-Account-2.png)
 
 Also modify the driver to make use of the added information.
 
@@ -125,7 +125,7 @@ This class represents an address for some place in Canada.
 
 Create the CanadianAddress class so that it can represent the majority of possible addresses that some place may have in Canada. Design the class to use auto-implemented properties as specified in this class diagram. No constructor is required for this class.
 
-![CanadianAddress Class Diagram](C-CanadianAddress.png)
+! -tba-image-CanadianAddress Class Diagram](C-CanadianAddress.png)
  
 Also create a driver for testing this class; you may use any name for the driver as long as it is not already mentioned in this namespace. In the driver, create two instances of the CanadianAddress class that represent your current address as well as the address of your school (use hard-coded data). 
 
@@ -137,7 +137,7 @@ This class represents a post-secondary course with a theory (exam) and a lab por
 
 Create the Course class so that it represents a post-secondary course. Design the class to have auto-implemented properties and a constructor as specified in this class diagram. Note that the auto-implemented properties should have their "set" implementations marked as private.
 
-![Course Class Diagram](C-Course.png)
+! -tba-image-Course Class Diagram](C-Course.png)
  
 Also create a driver for testing this class; you may use any name for your driver as long as it is not already mentioned in this namespace. In the driver, instantiate all of the first term classes you are taking and populate those objects with data (use hard-coded data). 
 
@@ -153,7 +153,7 @@ Use an auto-implemented property for the MarksEarned; use fields as the "backing
 
 Note that the following properties should not have "set" implementations: TotalMarks, LabNumber, LabWeight, and StudentId. 
 
-![LabResult Class Diagram](C-LabResult.png)
+! -tba-image-LabResult Class Diagram](C-LabResult.png)
 
 Here are some XML comments to describe the ToString( ) method.
 
@@ -184,7 +184,7 @@ Create the ExamResult class so that it represents the results of an exam written
 
 Use auto-implemented properties for the entire class. Note that only the following properties should have private "set" implementations: TotalMarks, ExamName, ExamWeight, and StudentId.
 
-![ExamResult Class Diagram](C-ExamResult.png)
+! -tba-image-ExamResult Class Diagram](C-ExamResult.png)
  
 Also create a driver for testing this class; you may use any name for the driver as long as it is not already mentioned in this namespace. In the driver, instantiate all of the exams you have taken to date in this course and populate those objects with data (use hard-coded data); if you need to, you may create fake data for the driver. 
 
