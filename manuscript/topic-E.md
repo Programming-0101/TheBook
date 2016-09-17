@@ -612,7 +612,7 @@ Write the code that will monitor vehicles entering and leaving a parking lot. Th
 
 Use the following class diagram when creating your solution.
 
-![ParkingCounter Class Diagram](E-ParkingCounter.bmp) 
+![ParkingCounter Class Diagram](E-ParkingCounter.png) 
 
 ```csharp
 namespace Topic.E.Examples
