@@ -1,4 +1,4 @@
-### Topic C – Starting Classes
+# Topic C – Starting Classes
 
 ## Overview
 
