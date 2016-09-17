@@ -79,6 +79,10 @@ The following examples are used to illustrate this topic.
 
 ---
 
+### Nothingness
+
+This class represents the absolute minimum code required to code a class. Even though it's not a very "useful" class, it does provide and introduction to the ideas of classes, keywords and identifiers.
+
 ```csharp
 namespace Topic.A.Examples
 {
@@ -90,6 +94,10 @@ namespace Topic.A.Examples
 ```
 
 ---
+
+### HelloWorld
+
+This adaptation of the classic "Hello World" program illustrates static methods. This example includes and introduces the concept of a "driver".
 
 ```csharp
 namespace Topic.A.Examples
@@ -131,6 +139,10 @@ namespace Topic.A.Examples
 ```
 
 ---
+
+### Comments
+
+This class is not really "functional", but is intended to illustrate the basic types of comments allowed in the programming language.
 
 ```csharp
 /*
