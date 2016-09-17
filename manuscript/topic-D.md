@@ -14,7 +14,7 @@ Regardless of whether the developer uses test drivers or unit tests, it is impor
 
 Note: For this course, students will be provided with unit tests and will not be expected to have to write their own unit tests. The unit tests supplied to students will use nUnit 2.5.7 which is already installed in the lab. To use these libraries at home, simply install nUnit 2.5.7 on your home computer.
 
-### Daily LOGs
+### LOGs
 
 The following daily LOGs are covered in this package.
 
