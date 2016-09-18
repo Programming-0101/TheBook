@@ -751,11 +751,22 @@ Describe the common situations in which the foreach statement is typically used
 : TBA
 
 Identify the major benefit of using Generics
-:	Type Safety –
+: Type Safety –
 
 List the major benefits of using collections instead of arrays
-:	Collections such as List<T> can grow in capacity whenever items are added
-:	Collections such as List<T> do not need special management of the boundaries (such as the index of the upper limit of an array)
-:	Collections provide simple methods for quick adding and removing of "elements"
+: Collections such as List<T> can grow in capacity whenever items are added
+: Collections such as List<T> do not need special management of the boundaries (such as the index of the upper limit of an array)
+: Collections provide simple methods for quick adding and removing of "elements"
 
+## Topic L - Arrays - Not Sorted
+
+### General Programming Concepts and Terms
+
+Describe what makes an array different from other collections in C#
+: The programmer is responsible to manage the boundaries of the array when manipulating the array’s contents.
+: Arrays do not automatically “re-size” when “adding” or “removing” elements; the size of the array is fixed at the time the array is created.
+
+Describe the situations in which arrays are preferable over the use of collections
+: Arrays are preferred whenever multi-dimensional data is required (such as 2D, 3D, or n-dimensional data is needed)
+: Arrays are sometimes preferred whenever the size (number of elements) is unlikely to change and/or whenever the array is based on a primitive data type or an enumeration.
 
