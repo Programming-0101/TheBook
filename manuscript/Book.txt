@@ -21,4 +21,5 @@ part-4.md
 topic-N.md
 topic-O.md
 topic-P.md
+part-5.md
 log-summary.md
