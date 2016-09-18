@@ -14,8 +14,8 @@ Explain the purpose of classes in computer programs
 : Classes allow programmers to define their own complex data types, complete with their own internal data (fields) and behaviours (methods).
 
 Describe the primary keywords used in declaring a class
-: public/private – identifies whether the class is visible to other code; public means all other code can see this class, while private means 
-: class – declares that this is a class definition (tells the compiler to interpret this as a new "classification" or "kind" of data type; that is, a complex ) 
+: public/private - identifies whether the class is visible to other code; public means all other code can see this class, while private means 
+: class - declares that this is a class definition (tells the compiler to interpret this as a new "classification" or "kind" of data type; that is, a complex ) 
 
 Define the term "method" and give an example
 : A method is a set of instructions that manipulate information. 
@@ -215,9 +215,9 @@ Create simple class diagrams to represent classes
 ### General Programming Concepts and Terms
 
 List three levels of scope 
-: Class scope – All the fields and methods of a class share a common class scope, and are accessible to any and all methods of a class.
-: Local scope – All the variables and parameters of a method are accessible only to the body of the method; local variables and parameters are not accessible to other methods.
-: Block scope – All the variables declared inside a block are only accessible to the code inside that block. A block of code is denoted by being enclosed by a set of curly braces – { }.
+: Class scope - All the fields and methods of a class share a common class scope, and are accessible to any and all methods of a class.
+: Local scope - All the variables and parameters of a method are accessible only to the body of the method; local variables and parameters are not accessible to other methods.
+: Block scope - All the variables declared inside a block are only accessible to the code inside that block. A block of code is denoted by being enclosed by a set of curly braces - { }.
  
 ## Topic D - Debugging and Testing
 
@@ -229,7 +229,7 @@ Explain the role of testing as it applies to software development
 
 Define and compare the terms "compile-time error" and "run-time error" 
 : A "compile-time error" is an error where a program does not "compile". In other words, compile-time errors are due to code that does not follow the rules of the programming language.
-: A "run-time error" is an error where a running program does not produce the desired result. In other words, run-time errors are due to logical errors in a computer program. Sometimes these errors are "fatal" (meaning that they result in "abnormal program termination" – the program "crashes"). Other times the errors are subtle; the subtle errors can be the most difficult to detect, particularly when relying on "manual" verification, such as found with ad-hoc test drivers.
+: A "run-time error" is an error where a running program does not produce the desired result. In other words, run-time errors are due to logical errors in a computer program. Sometimes these errors are "fatal" (meaning that they result in "abnormal program termination" - the program "crashes"). Other times the errors are subtle; the subtle errors can be the most difficult to detect, particularly when relying on "manual" verification, such as found with ad-hoc test drivers.
 
 Define the term "test driver" 
 : A "test driver" is a driver (which is a program with a main method) whose sole purpose is to "test" the components of a program. Test drivers provide a simple "ad-hoc" form of testing. Test drivers are basically considered "throw-away" programs, as their usefulness does not extend beyond the tests.
@@ -441,12 +441,12 @@ Demonstrate how to use the various Math functions in simple programs
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
 List and describe some of the commonly used fields and methods of the String class
-: .ToUpper() – returns a String that has all the characters converted to their upper-case equivalents.
-: .ToLower() – returns a String that has all the characters converted to their lower-case equivalents.
-: .Trim() – returns a String that has all leading and trailing whitespace removed from the original String.
-: .Chars(int index) – returns the character at the index position for the string. (All strings have the first character as index position zero.)
-: .Substring(int beginIndex) and .Substring(int beginIndex, int endIndex) – returns a string that is the text inside of the first string beginning at a specified index. (All strings have the first character as index position zero.)
-: .Length – returns the total number of characters in the string.
+: .ToUpper() - returns a String that has all the characters converted to their upper-case equivalents.
+: .ToLower() - returns a String that has all the characters converted to their lower-case equivalents.
+: .Trim() - returns a String that has all leading and trailing whitespace removed from the original String.
+: .Chars(int index) - returns the character at the index position for the string. (All strings have the first character as index position zero.)
+: .Substring(int beginIndex) and .Substring(int beginIndex, int endIndex) - returns a string that is the text inside of the first string beginning at a specified index. (All strings have the first character as index position zero.)
+: .Length - returns the total number of characters in the string.
 
 Demonstrate how to use "String Arithmetic" (concatenation)
 : To concatenate two or more strings, use the plus (+) operator.
@@ -530,15 +530,15 @@ Identify the correct way to compare or check the contents of strings in conditio
 : Generally, the relational operators (==, <, etc) should not be used directly on string values.
 
 List and describe the commonly used fields and methods of the String class that would be used in if-else statements
-: .Equals(String) – returns a Boolean, true or false, as to whether the two strings are or are not equal.
-: .Equals(String, StringComparison) – returns a Boolean, true or false, as to whether the two strings are or are not equal, according to the value of the StringComparison argument (which includes values to ignore any differences in upper and lower case).
-: .CompareTo(String anotherString) – compares two strings "lexographically" (that is, alphabetically) and returns either
+: .Equals(String) - returns a Boolean, true or false, as to whether the two strings are or are not equal.
+: .Equals(String, StringComparison) - returns a Boolean, true or false, as to whether the two strings are or are not equal, according to the value of the StringComparison argument (which includes values to ignore any differences in upper and lower case).
+: .CompareTo(String anotherString) - compares two strings "lexographically" (that is, alphabetically) and returns either
   a. a zero if they are the same, or 
   b. a negative number if anotherString is greater than the first string, or
   c. a positive number if anotherString is less than the first string
-: .IsNullOrEmpty(string) – returns true if the string is an empty string (""), false if it is not an empty string.
-: .IsNullOrWhiteSpace(string) – (only in .NET 4.0 and higher) returns true if the string is null, an empty string (""), or all "whitespace" (tab, newline) characters; false if it is not.
-: .Length – returns the total number of characters in the string.
+: .IsNullOrEmpty(string) - returns true if the string is an empty string (""), false if it is not an empty string.
+: .IsNullOrWhiteSpace(string) - (only in .NET 4.0 and higher) returns true if the string is null, an empty string (""), or all "whitespace" (tab, newline) characters; false if it is not.
+: .Length - returns the total number of characters in the string.
 
 ## Topic G - Raising Exceptions
 
@@ -569,11 +569,11 @@ Describe the role that exceptions play in a computer program
 
 Identify the three most commonly used Exception types used in this course.
 : .NET Framework
-  **ArgumentException** – Typically thrown whenever an argument passed to a parameter does not have an "acceptable" value.
+  **ArgumentException** - Typically thrown whenever an argument passed to a parameter does not have an "acceptable" value.
 For example, if a method has a parameter called "percent", it might perform validation to ensure that the value is not less than zero or greater than 100. If the value is not valid, it may be appropriate to throw an ArgumentException.
-  **ArgumentNullException** – Typically thrown whenever an object is checked for and found to be "null". 
+  **ArgumentNullException** - Typically thrown whenever an object is checked for and found to be "null". 
 (ArgumentNullException will be discussed in the topic on Enumerations and Composition.)
-  *Exception** – This represents a general exception, and can be used whenever there is no other suitable exception type.
+  *Exception** - This represents a general exception, and can be used whenever there is no other suitable exception type.
 
 ### OOP Basics
 
@@ -604,7 +604,107 @@ Describe the syntax of the switch statement
 Discuss the limitations of the switch statement in C# and the available alternatives for the times that we can’t use a switch statement
 : Switch statements only work with integral data types (such as char and int).
 : The individual case values must be constants; variable expressions are not allowed for the matching cases.
-: Switch statements only check for exact matches (meaning that there is an implied “is-equal-to” comparison); other relational comparisons, such as greater than or less than, are not allowed.
+: Switch statements only check for exact matches (meaning that there is an implied "is-equal-to" comparison); other relational comparisons, such as greater than or less than, are not allowed.
 : When it is not possible to use switch statements, case structures can be written up as nested and/or stacked if-else structures to make use of the if-else statement.
 
-## Topic I
+## Topic I Enumerations and Composition
+
+### General Programming Concepts and Terms
+
+Define the term Enumeration
+: An enumeration is a simple program-defined data type with a limited set of possible values. Enumerations represent information that is "conceptual" in nature (as opposed to information that is textual, numeric, or complex).
+  For example, a coin has two sides that are commonly referred to as HEADS and TAILS. Rather than creating two constant strings with the values "Heads" and "Tails" and a String variable called FaceShowing, you can use an enumeration.
+: There are two parts to enumerations:
+  a. The name of the enumeration, which is the name of the new data type; this is sometimes referred to as the "enumerated data type".
+  b. A set of enumerated values, which represent all of the possible values for a variable of that enumerated type. These values act like "constants" that can be used to distinguish different "states" for the conceptual data.
+
+List the benefits of using enumerations
+: **Type Safety** - Enumerations allow a program to be "type safe", meaning that there is less likelihood of creating logical errors or other mistakes through the use of constants or literal values.
+: **Code Readability** - Enumerations make code more readable than constants or literal values (like integers).
+: **Compatibility with Switch Statements** - Enumerations are compatible with switch statements, making them a great option for describing distinct values for matching against different cases. Because enumerations are like constants, and are treated as integral data types by the compiler, they are often the best choice when working with case structures.
+: **Useful as Flags** - Because the programmer can associate specific integer values to the enumerated values, it is possible to use an enumerated data type to create complex "flags" for representing distinct "states" that can be combined together.
+  For example, if you had an enumerated type such as the following, you could combine two states together in a variable’s value to represent distinct but compatible states, such as `ACTIVE` and `MEDIUM_PRIORITY`.
+
+```csharp
+enum Status
+{
+    INACTIVE = 0
+    ACTIVE = 1
+    LOW_PRIORITY = 2
+    MEDIUM_PRIORITY = 4
+    HIGH_PRIORITY = 8
+}
+```
+
+Describe where and when enumerations are used
+: Enumerations are used wherever a clearly defined set of values can be "classified" and used to represent conceptual information.
+: Enumerations should be used whenever you might be inclined to use a set of two or more constants to represent distinct "states" or values for comparing against a variable.
+
+  For example, if you want to represent the two sides of a coin, it is better to use an enumeration for the coin’s HEADS and TAILS sides, rather than declaring some String or integer constants. The problem with using strings or simple integers to represent possible coin faces is that any variable that is defined as a string or integer can have values that won’t match either of the declared constants, as in this example:
+
+  ```csharp
+  const string Heads = "Heads";
+  const string Tails = "Tails";
+  // There is nothing preventing "invalid" values for the following coin face...
+  string theFaceShowingOnTheCoin = "Sailboat";
+  ```
+
+  An enumerated type called `CoinFace` with the values `HEADS` and `TAILS` is better, because any variable declared of type `CoinFace` can only have the values defined in the enumeration.
+
+  ```csharp
+  // The only other possible value that could be assigned is
+  // CoinFace.TAILS
+  CoinFace theFaceShowingOnTheCoin = CoinFace.HEADS;
+  ``
+
+Compare and contrast enumerations and classes
+: Enumerations and classes both define new data types that can be used by our program to represent custom data. However, while classes are useful in describing complex data types (that is, data types with assorted fields and that can perform various tasks), enumerations are only used to create new data types that are simple in nature. Enumerations only define a set of possible values, and each variable defined by an enumeration can only hold one of those possible values at any given time; there is no inner complexity to enumerations, as there is with classes.
+
+Use enumerations to define simple data types that are conceptual in nature and that have a limited set of possible "values"
+: Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
+
+### OOP Basics
+
+Describe the idea of Composition
+: Composition refers to the situation where one or more of the fields in a class are objects. All classes are capable of having objects as fields, rather than just using the simple primitive types that come with the language.
+  For example, if a class called Address represents some mailing address, another class, such as Student, Company, School, or Business, could have a field whose data type is Address.
+
+List the benefits of Composition
+: Composition is an aspect of modern programming languages that makes it possible to create new data types (classes) of ever increasing complexity.
+: Composition also makes it possible to get better code re-use, because classes can be more distinct, rather than overlapping. For example, both Students and Employees can have Addresses, so it is not necessary to code individual fields in the Student and Employee class for each part of an address; rather, a common type (called Address) can be shared by both classes.
+
+  ```csharp
+  public class Employee {
+      // ... other fields, followed by these Address fields:
+      public string street { get; set; }
+      public string city { get; set; }
+      public string province { get; set; }
+      // ... etc.
+  }
+
+  public class Student {
+      // ... other fields, followed by these Address fields:
+      public string street { get; set; }
+      public string city { get; set; }
+      public string province { get; set; }
+      // ... etc.
+  }
+  ```
+
+  These could be coded like this:
+
+  ```csharp
+  public class Employee {
+      // ... other fields, followed by these Address fields:
+      public Address mailingAddress { get; set; }
+  }
+
+  class Student {
+      // ... other fields, followed by these Address fields:
+      public Address homeAddress { get; set; }
+  }
+  ```
+
+  : *advanced benefit* - Composition promotes the "Has-A" approach to designing objects rather than the "Is-A" design approach that makes use of inheritance. This "Has-A" approach gives programmers more flexibility in their coding and promotes the use of Design Patterns.
+
+## Topic J - 
