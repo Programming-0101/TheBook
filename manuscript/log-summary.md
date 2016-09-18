@@ -53,10 +53,10 @@ Perform simple output to the console using System.Console
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
 Identify the basic structure of a simple C# program
-: A C# program must consist of at least one class and have a single "main" method as the program’s entry point. Typically, a C# program will consist of a "driver" (the class that has the main method) and other classes used to represent objects (data) in the program.
+: A C# program must consist of at least one class and have a single "main" method as the program's entry point. Typically, a C# program will consist of a "driver" (the class that has the main method) and other classes used to represent objects (data) in the program.
 
 Explain what is meant by a "driver"
-: A "driver" is a method or set of methods that "run" or control the execution of a program; it’s responsibility is to direct and maintain the "lifetime" of a program, and makes use of classes and objects to achieve the purpose of the program. Every driver begins its execution in a method called "main" (which is the name given for the entry point for every computer program).
+: A "driver" is a method or set of methods that "run" or control the execution of a program; it's responsibility is to direct and maintain the "lifetime" of a program, and makes use of classes and objects to achieve the purpose of the program. Every driver begins its execution in a method called "main" (which is the name given for the entry point for every computer program).
 
 Explain what is meant by a "case-sensitive" programming language
 : A case-sensitive language is one  where the compiler regards "identical" words as different if they differ only in their case. In other words, a case-sensitive language will regard two identifiers are distinct if the only difference is whether they are spelled with upper- or lower-case characters. For example, HelloWorld and Helloworld will be regarded as different because one has a capital "W" and the other has a lower-case "w".
@@ -102,11 +102,11 @@ Add existing files to a project
 
 Define the term "object" as used in OOP
 : An object is an instance of a class.
-: Each object has its own "state" (values) for its fields, and all objects based on any given class are distinct from each other. The internal values (state)for an object’s fields can be changed independently of other objects of the same class.
+: Each object has its own "state" (values) for its fields, and all objects based on any given class are distinct from each other. The internal values (state)for an object's fields can be changed independently of other objects of the same class.
 
 Describe the syntax of static and non-static method declarations
-: Static methods are "shared" by all instances (objects) of a class, and can be called without even having to have an instance of the method’s class.
-: Non-static methods, on the other hand, can only be called for a given object (instance of a class) and will "act on" (or "act on behalf of") that object (and any other objects are not affected by the given object’s method call).
+: Static methods are "shared" by all instances (objects) of a class, and can be called without even having to have an instance of the method's class.
+: Non-static methods, on the other hand, can only be called for a given object (instance of a class) and will "act on" (or "act on behalf of") that object (and any other objects are not affected by the given object's method call).
 
 Compare and contrast the syntax for method declarations (implementations) vs. method calls (for both static and non-static methods)
 : …
@@ -189,7 +189,7 @@ Describe the syntax of a class constructor
 : TBA…
 
 Identify when a class constructor is "called"
-: A class’ constructor is never explicitly "called" in the traditional sense of "invoking" (calling) a method on a class. Rather, the class constructor is "called" when an object is instantiated using the new keyword.
+: A class' constructor is never explicitly "called" in the traditional sense of "invoking" (calling) a method on a class. Rather, the class constructor is "called" when an object is instantiated using the new keyword.
 
 Define the term "class scope" as used in OOP 
 : Class scope is the idea that all of the methods and fields of a class are accessible to all the methods in a class.
@@ -198,8 +198,8 @@ Define the term "local scope" as used in OOP
 : Local scope is the idea that all of the variables declared in a parameter list and inside of the body of a method are only accessible from within that method. In other words, parameters and "local variables" are only accessible from within the method (or block of code) in which they were declared.
 
 Define the term "state" as applied to objects used in OOP 
-: "State" is the idea that objects have an "internal value" at any given point in time (as viewed from outside the class’ methods). In other words, an object has "state" simply because it has fields which hold (or "store") information.
-: Objects are responsible for ensuring that their internal state is always valid (or "stable") at the end of each method’s execution.
+: "State" is the idea that objects have an "internal value" at any given point in time (as viewed from outside the class' methods). In other words, an object has "state" simply because it has fields which hold (or "store") information.
+: Objects are responsible for ensuring that their internal state is always valid (or "stable") at the end of each method's execution.
 
 Define the term "override" as used in OOP
 : Override is a term used to indicate that a class is re-defining the behaviour of a method that it is inheriting from a base class.
@@ -266,7 +266,7 @@ Identify four benefits of using Unit Tests
 Add unit testing libraries and unit testing packages to existing programs 
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
-Use unit tests to validate the requirements of a class’ design and behaviour
+Use unit tests to validate the requirements of a class' design and behaviour
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
 Diagnose and correct software problems by using unit tests 
@@ -296,7 +296,7 @@ Distinguish between Variables, Values and Data Types
 List the five basic rules governing variables, values and data types
 : Any value stored in a variable must be of the same data type as the variable.
 : Variables must be declared before they can be used.
-: A variable’s data type can only be declared once.
+: A variable's data type can only be declared once.
 : Each primitive variable can only hold one value at a given time.
 : Each variable must have a distinct name.
 
@@ -398,7 +398,7 @@ Demonstrate understanding of operator precedence and how to override the default
 Summarize and distinguish the rules for automatic type conversion involving arithmetic operators and the assignment operator
 : Automatic type conversion takes place for the data types that are built in to the programming language.
 : The basic rule of automatic type conversion involving arithmetic operators is that if two operands of a binary operator are of different data types, then the value of the one that is "smaller" is "upsized" to the data type of the "larger" operand.
-: For the assignment operators, automatic type conversion is limited to only allowing the right-hand value to be converted to the data type of the variable on the left-hand side. Type conversion cannot convert a value from the right hand side if that value’s data type is larger than the data type of the left hand side; if the right hand side is a larger data type than the left hand side, then a compiler error is generated that states the value cannot "fit" into the variable on the left.
+: For the assignment operators, automatic type conversion is limited to only allowing the right-hand value to be converted to the data type of the variable on the left-hand side. Type conversion cannot convert a value from the right hand side if that value's data type is larger than the data type of the left hand side; if the right hand side is a larger data type than the left hand side, then a compiler error is generated that states the value cannot "fit" into the variable on the left.
 
 Determine the final data type for expressions involving mixed data types and type conversion
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
@@ -409,7 +409,7 @@ Describe "type casting" and explain how to use it appropriately.
   `double value = (double) (numerator) / denominator;`
 : It is also appropriate when we need to "downcast" a value from a larger data type to a smaller data type (and can do so safely).
 : Note that type casting does not (and can not) change the data type of a variable; type casting is only a re-interpretation of a value.
-: Note that type casting is not the same as converting. For example, any attempt to type cast the char value of the character ‘4’ to an int will not produce a numeric value of 4; rather, it will produce the numeric value of 52 (which is the underlying decimal value for the character ‘4’).
+: Note that type casting is not the same as converting. For example, any attempt to type cast the char value of the character ‘4' to an int will not produce a numeric value of 4; rather, it will produce the numeric value of 52 (which is the underlying decimal value for the character ‘4').
 
 Compare and contrast the prefix and postfix behaviour of the unary arithmetic operators
 : …
@@ -546,13 +546,13 @@ List and describe the commonly used fields and methods of the String class that 
 
 Describe how object-oriented programs run.
 : A computer program is a set of instructions for manipulating information.
-: Every computer program has a single starting (or entry) point called the Main method. The main method is responsible to "run" (or "execute) the program, and when the main method exits, the program closes and stops "running". The length of time that a program is running is called its "lifetime". As a program runs, it executes instructions in the program’s code, one at a time; this is called the "flow of execution".
+: Every computer program has a single starting (or entry) point called the Main method. The main method is responsible to "run" (or "execute) the program, and when the main method exits, the program closes and stops "running". The length of time that a program is running is called its "lifetime". As a program runs, it executes instructions in the program's code, one at a time; this is called the "flow of execution".
 : During the lifetime of a program, the main method creates objects and calls methods on those objects. Each method is basically a set of instructions to be executed. Those methods can, in turn, create other objects and call other methods.
 : Whenever a method is called, the operating system keeps track of which method is calling another method through something known as a "call stack".
 
 Describe what is meant by a "call stack".
 : A call stack is a mechanism to track which method is calling another method while the program is running. Call stacks allow the computer to know where to "return to" when a method exits.
-: At any given point during the program’s execution, the method that is currently executing is referred to as the "called method". When the called method exits, it returns control back to the "calling method", thereby allowing the calling method to continue its own execution.
+: At any given point during the program's execution, the method that is currently executing is referred to as the "called method". When the called method exits, it returns control back to the "calling method", thereby allowing the calling method to continue its own execution.
 : Whenever a method calls another method, the "calling method" pauses and waits for the "called method" to finish; once the called method returns, the calling method will resume executing its own code.
 
 Define the term "Exception"
@@ -579,17 +579,17 @@ For example, if a method has a parameter called "percent", it might perform vali
 
 Explain why methods (including constructors) should perform validation of their parameter values
 : One of the principles of object-oriented design is that objects must be responsible for ensuring that their fields have correct values. This is known as ensuring a "valid state" for an object.
-: Typically, the values that are stored in fields come in through the parameters of a constructor or a method. Because objects are responsible for ensuring a valid state, the class’ methods must check all parameters that might allow "invalid" data to be passed in.
+: Typically, the values that are stored in fields come in through the parameters of a constructor or a method. Because objects are responsible for ensuring a valid state, the class' methods must check all parameters that might allow "invalid" data to be passed in.
 
 Explain the significance of raising an exception in the constructor
-: If an exception is thrown from a constructor (or passes through it on its way up the call stack), the object’s construction is interrupted. Because the construction of that object is interrupted, the object does not get instantiated.
+: If an exception is thrown from a constructor (or passes through it on its way up the call stack), the object's construction is interrupted. Because the construction of that object is interrupted, the object does not get instantiated.
 
 Use exceptions as part of the validation of parameter values in methods and constructors.
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
 Explain why property setters are a good place for throwing exceptions.
 : Generally speaking, the only method that should directly modify a field is the property setter associated with the field. Because of this principle, the property setter is the ideal place to perform validation and to throw exceptions. When validation takes place here, it eliminates the need for duplicating the validation elsewhere in the class.
-: Validating input and throwing exceptions from within setters is a good way to follow the ***DRY*** principle: "**D**on’t **R**epeat **Y**ourself".
+: Validating input and throwing exceptions from within setters is a good way to follow the ***DRY*** principle: "**D**on't **R**epeat **Y**ourself".
 
 Identify when constructors should throw exceptions directly.
 : Whenever a field has a property setter that performs validation, the constructor should use that setter to store information in the field. If no property setter is available to process the parameter values sent through the constructor, then the constructor should perform its own validation on those parameters.
@@ -601,7 +601,7 @@ Identify when constructors should throw exceptions directly.
 Describe the syntax of the switch statement
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
-Discuss the limitations of the switch statement in C# and the available alternatives for the times that we can’t use a switch statement
+Discuss the limitations of the switch statement in C# and the available alternatives for the times that we can't use a switch statement
 : Switch statements only work with integral data types (such as char and int).
 : The individual case values must be constants; variable expressions are not allowed for the matching cases.
 : Switch statements only check for exact matches (meaning that there is an implied "is-equal-to" comparison); other relational comparisons, such as greater than or less than, are not allowed.
@@ -623,7 +623,7 @@ List the benefits of using enumerations
 : **Code Readability** - Enumerations make code more readable than constants or literal values (like integers).
 : **Compatibility with Switch Statements** - Enumerations are compatible with switch statements, making them a great option for describing distinct values for matching against different cases. Because enumerations are like constants, and are treated as integral data types by the compiler, they are often the best choice when working with case structures.
 : **Useful as Flags** - Because the programmer can associate specific integer values to the enumerated values, it is possible to use an enumerated data type to create complex "flags" for representing distinct "states" that can be combined together.
-  For example, if you had an enumerated type such as the following, you could combine two states together in a variable’s value to represent distinct but compatible states, such as `ACTIVE` and `MEDIUM_PRIORITY`.
+  For example, if you had an enumerated type such as the following, you could combine two states together in a variable's value to represent distinct but compatible states, such as `ACTIVE` and `MEDIUM_PRIORITY`.
 
 ```csharp
 enum Status
@@ -640,7 +640,7 @@ Describe where and when enumerations are used
 : Enumerations are used wherever a clearly defined set of values can be "classified" and used to represent conceptual information.
 : Enumerations should be used whenever you might be inclined to use a set of two or more constants to represent distinct "states" or values for comparing against a variable.
 
-  For example, if you want to represent the two sides of a coin, it is better to use an enumeration for the coin’s HEADS and TAILS sides, rather than declaring some String or integer constants. The problem with using strings or simple integers to represent possible coin faces is that any variable that is defined as a string or integer can have values that won’t match either of the declared constants, as in this example:
+  For example, if you want to represent the two sides of a coin, it is better to use an enumeration for the coin's HEADS and TAILS sides, rather than declaring some String or integer constants. The problem with using strings or simple integers to represent possible coin faces is that any variable that is defined as a string or integer can have values that won't match either of the declared constants, as in this example:
 
   ```csharp
   const string Heads = "Heads";
@@ -707,4 +707,55 @@ List the benefits of Composition
 
   : *advanced benefit* - Composition promotes the "Has-A" approach to designing objects rather than the "Is-A" design approach that makes use of inheritance. This "Has-A" approach gives programmers more flexibility in their coding and promotes the use of Design Patterns.
 
-## Topic J - 
+## Topic J - Looping Structures
+
+### General Programming Concepts and Terms
+
+Identify the C# statements that correspond to Do-While and Do-Until logical structures
+: TBA
+
+Translate Do-While structures into code
+: TBA
+
+Translate Do-Until structures into code
+: TBA
+
+Identify and distinguish the parts of the for statement in code
+: TBA
+
+Describe the common situations in which the for statement is used
+: TBA
+
+Demonstrate how the various looping statements can be interchanged with slight alterations of the logical structures to maintain the overall logic of a given routine.
+: TBA
+
+## Topic K - Looping and Collections
+
+### OOP Basics
+
+Define the term Generics as used in C# and give an example
+: TBA
+
+### General Programming Concepts and Terms
+
+Describe what is meant by a "collection" class and give an example
+: TBA
+
+List and describe the common methods of collection classes such as the List<T>
+: TBA
+
+Identify the parts of the foreach statement
+: TBA
+
+Describe the common situations in which the foreach statement is typically used
+: TBA
+
+Identify the major benefit of using Generics
+:	Type Safety –
+
+List the major benefits of using collections instead of arrays
+:	Collections such as List<T> can grow in capacity whenever items are added
+:	Collections such as List<T> do not need special management of the boundaries (such as the index of the upper limit of an array)
+:	Collections provide simple methods for quick adding and removing of "elements"
+
+
