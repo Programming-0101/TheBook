@@ -1,8 +1,12 @@
 audience.md
+part-0.md
 chapter1.md
+chapter2.md
+part-1.md
 topic-A.md
 topic-B.md
 topic-C.md
+part-2.md
 topic-E.md
 topic-F.md
 topic-G.md

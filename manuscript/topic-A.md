@@ -1,5 +1,3 @@
-# OOP As A Foundation #
-
 # Topic A - Starting Classes
 
 ## Overview
