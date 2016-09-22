@@ -2,13 +2,17 @@
 
 ## Introduction
 
-What is a computer program? A computer program is basically a set of instructions for manipulating information. To be of any value, the information used by a computer program must have a way to get into the program (input) and get out of the program (output). That may sound too simplistic, but ultimately it is entirely accurate; even the most sophisticated computer program can do nothing more than process information (albeit, in a very fast and efficient way), and no matter how cool the program looks, if there is no way to put information into it and get information out of it then it’s not of much use to anyone.
+What is a computer program? A computer program is basically a **set of instructions** for manipulating **information**. To be of any value, the information used by a computer program must have a way to get into the program (input) and get out of the program (output). That may sound too simplistic, but ultimately it is entirely accurate; even the most sophisticated computer program can do nothing more than process information (albeit, in a very fast and efficient way), and no matter how cool the program looks, if there is no way to put information into it and get information out of it then it’s not of much use to anyone.
 
 The most familiar kind of input and output (or I/O) in a computer program comes from the user. Textual information is entered (input) from the user via the keyboard and displayed (output) to the user via the monitor. Other means of user I/O can include computer mice, microphones, speakers, printers, fax machines, Braille readers, touch screens, stylus, etc.
 
 Besides handling user I/O, computer programs can also do file or database I/O. Computer files and databases allow information to be persistent. Information is said to be persistent when it can be stored outside of the computer program and later retrieved for further processing. The combination of a) user I/O, b) fast and accurate processing, and c) persistent information storage is what makes computer programs so useful.
 
 ## Variables, Values and Data Types
+
+> "... manipulating ***information***."
+
+At the heart of all computer programs is the idea of **information** or ***data***. This is especially true in Object-Oriented Programming languages. With information being such a critical component of computer programs, it's important to understand what we mean by *information*.
 
 ### It's All About Information
 
@@ -38,11 +42,11 @@ These different kinds of information can be said to be primitive. They represent
 
 Any meaningful handling of information requires the understanding of three related (but distinct) concepts: variables, values, and data types.
 
-In order for a computer program to manipulate information, it needs a way to hold or refer to information. This is the concept of a variable. A variable is a name or identifier used to refer to a single piece of information. It acts like a container that allows a program to refer to a piece of information indirectly, without being dependent on the exact content of that information. One analogy is that a variable is like a cup: a cup can be used to hold different kinds of liquids (water, juice, or even motor oil). The cup is independent of the liquid (the cup can even be empty), but it provides an effective way of working with a liquid (for example, measuring the amount of water used in a recipe).
+In order for a computer program to manipulate information, it needs a way to hold or refer to information. This is the concept of a **variable**. A variable is a name or identifier used to refer to a single piece of information. It acts like a container that allows a program to refer to a piece of information indirectly, without being dependent on the exact content of that information. One analogy is that a variable is like a cup: a cup can be used to hold different kinds of liquids (water, juice, or even motor oil). The cup is independent of the liquid (the cup can even be empty), but it provides an effective way of working with a liquid (for example, measuring the amount of water used in a recipe).
 
-Besides the idea of a variable that can hold information, there is the concept of a value. Unlike a variable (which is only used to refer to a piece of information), a value is the specific information contained in a variable. Returning to the previous analogy of a cup, a value is like the specific liquid inside the cup (variable). What does a particular cup hold? Is it water or motor oil? The cup is not what's really important; what's important is what is in the cup (especially if you are making a recipe!).
+Besides the idea of a variable that can hold information, there is the concept of a **value**. Unlike a variable (which is only used to refer to a piece of information), a value is the specific information contained in a variable. Returning to the previous analogy of a cup, a value is like the specific liquid inside the cup (variable). What does a particular cup hold? Is it water or motor oil? The cup is not what's really important; what's important is what is in the cup (especially if you are making a recipe!).
 
-The final concept is one that has already been alluded to: the idea of a data type. A data type refers to the kind of information that a variable can hold. For example, the kind of material that a cup is designed to hold is a liquid. The description "liquid" is a description of the type of content that the cup can hold. A plate, on the other hand, is designed to hold a different kind of material - something that is solid (such as a steak or chicken cordon bleu). More specifically, the "data type" that a plate is intended to hold is "food" and steak would qualify as a type of food while motor oil would not. Notice that the concept of data type (e.g.: "food") can be applied to both the variable (plate) and the value (steak).
+The final concept is one that has already been alluded to: the idea of a **data type**. A data type refers to the kind of information that a variable can hold. For example, the kind of material that a cup is designed to hold is a liquid. The description "liquid" is a description of the type of content that the cup can hold. A plate, on the other hand, is designed to hold a different kind of material - something that is solid (such as a steak or chicken cordon bleu). More specifically, the "data type" that a plate is intended to hold is "food" and steak would qualify as a type of food while motor oil would not. Notice that the concept of data type (e.g.: "food") can be applied to both the variable (plate) and the value (steak).
 
 This brings up an important consideration: The data type of a variable should be appropriate for the kind of information the variable is intended to hold. There is a close relationship between variables, values and data types, even though those three ideas refer to different things. Cups are used to hold liquids; plates are used to hold food; and a balloon is used to hold a gas. It would be entirely inappropriate (if not impossible) to use a balloon to hold a piece of cake! Using these analogies, the concepts of variable, value and data type can be clearly distinguished:
 
@@ -74,7 +78,9 @@ The first rule has already been alluded to in the previous section: The data typ
 
 A variable cannot be used until it is declared, and once a variable's data type has been identified it can only hold values that match that data type. For example, if a variable called Status has been declared as a character, then it can only hold a character value (such as 'T' or '5'). Any attempt to store a value of a different type (such as "Temporary") in Status would produce an error in the computer program.
 
-A third rule that is related to the second is that once a variable's data type has been declared, its data type cannot be changed. This is because a variable's data type tells the computer how to interpret the variable's value (e.g.: is it a character or a number?), and any attempt to change the data type would result in a misinterpretation of the previously stored value.
+A third rule that is related to the second is that once a variable's data type has been declared, its data type cannot be changed.[^a] This is because a variable's data type tells the computer how to interpret the variable's value (e.g.: is it a character or a number?), and any attempt to change the data type would result in a misinterpretation of the previously stored value.
+
+[^a]: The rule that "*once a variable's data type has been declared, its data type cannot be changed*" is true for those programming languages which are described as ***type-safe***, such as C#, Java and VB.Net. Other modern languages, such as JavaScript, do not have this rule.
 
 Another rule is that each primitive variable in a computer program can only hold a single value at any given moment in time. The reason for this rule is so that the computer knows what value to supply when a variable is used in the program. In fact, when a primitive variable's data type is declared, the computer sets aside enough memory to store only one value - no more! If a new value is stored in the variable, then any previously stored value is lost. This also gives an advantage to the programmer - it is easier to plan for and test a computer program if you can predict what value will be stored in the variable. Since a variable can only hold one value at a time, it is not unusual for a computer program to use many variables.
 
@@ -94,21 +100,27 @@ In summary, the basic rules for variables, values and data types are:
 
 ## Programming Languages and Coding Instructions
 
-### Basic Data Manipulation
+> "... a set of ***instructions*** ..."
 
-Through variables, a computer program has the ability to manipulate the values stored in those variables. This manipulation of stored information is accomplished by giving the computer specific instructions on what manipulations to perform.
+### What Programmers Write
 
-#### Languages
+Programmers write **code** in plain-text files known as *source files*. The language that a programmer use to write code is called a **programming language**. Just as with human languages, there are many different programming languages. Some examples of modern programming languages are **C#** (the language used in this book), **Java**, **Visual Basic .Net**, **SQL**, and **JavaScript**. In addition, many other programming languages have been developed over the years such as Python, Lisp, Fortran, Cobol, Haskell, C, C++, and many more.
 
-The exact form that the instructions will take depends on the programming language that is used. These instructions are then examined by a special program (a compiler, an assembler, or an interpreter) and translated into machine language. Machine language consists of a series of ones (1) and zeros (0) which act as on and off switches in the computer's memory. These on and off switches change other information that is stored in memory, resulting in the manipulation of information.
+Each programming language defines their own words (called **keywords**), punctuation and grammar rules (or **syntax**). And like human languages, programming languages typically promote certain "world-views" or perspectives on how code should be written. Some languages emphasize the **steps** involved in manipulating information (a *Procedural* perspective). Others put the emphasis on the information itself (as in most *Object-Oriented* programming languages).
 
-The on and off switches in computer memory represent the flow of electricity through the computer. Millions and billions of these switches (also known as "gates" - no relation to Bill) are arranged on tiny computer chips in highly sophisticated patterns to allow for the organized flow of electricity. It is this organized flow of ones and zeros that allow us to use these machines for fast and efficient information processing.
+In all cases, programming languages allow us to write ***instructions*** that manipulate ***data**. Through variables, a computer program has the ability to manipulate the values stored in those variables. This manipulation of stored information is accomplished by giving the computer specific instructions on what manipulations to perform.
+
+### What Computers "See"
 
 Programming languages allow programmers to give instructions to a computer in a form that is more familiar to and easier to use by the programmer. Today's programming languages are known as high-level languages because they incorporate simple words with familiar meanings in English, such as if, else, while, do, and return. Low-level languages, such as Assembler, use more cryptic commands and are much closer to machine language, thereby making them harder for programmers to work with.
 
-#### Doing the Math
+The exact form that the instructions will take depends on the programming language that is used. These instructions are then examined by a special program (a compiler, an assembler, or an interpreter) and translated into **machine language**. Machine language consists of a series of ones (1) and zeros (0) which act as on and off switches in the computer's memory. These on and off switches change other information that is stored in memory, resulting in the manipulation of information.
 
-High-level programming languages (such as C++, C#, and Visual Basic) make it relatively easy to manipulate the values of variables. Assignment statements tell the computer to store specific values into specific variables. Assignment statements are often used with expressions, which are combinations of variables, values, and/or operators (such as Arithmetic operators). It is through expressions and assignment statements that the bulk of a computer's work is done.
+The on and off switches in computer memory represent the flow of electricity through the computer. Millions and billions of these switches (also known as "gates" - no relation to Bill) are arranged on tiny computer chips in highly sophisticated patterns to allow for the organized flow of electricity. It is this organized flow of ones and zeros that allow us to use these machines for fast and efficient information processing.
+
+### Doing the Math
+
+High-level programming languages (such as C++, C#, and Visual Basic) make it relatively easy to manipulate the values of variables. **Assignment statements** tell the computer to store specific values into specific variables. Assignment statements are often used with **expressions**, which are combinations of variables, values, and/or operators (such as Arithmetic operators). It is through expressions and assignment statements that the bulk of a computer's work is done.
 
 Expressions allow new values to be computed based on existing values. For example, if a variable called Cost has the value $5.95 and another variable called Markup has a value of 2.0, then a mathematical expression such as Cost * Markup can be used to create a new value - $11.90 (the Cost multiplied by the Markup value). Using this expression in an assignment statement, this resulting value of the expression can then be stored in another variable:
 
@@ -118,38 +130,36 @@ All numeric information can be used with the common arithmetic operators of addi
 
 Some arithmetic operations, such as calculating the remainder of a division operation, are only applicable to certain types of numeric information. Some languages supply a special symbol to represent these operations while other languages require the use of special library functions to perform the math. Complex arithmetic operations, such as calculating the sine of an angle, are typically done using library functions. Library functions are simply specialized routines or sets of instructions that can be called upon to do the required calculations.
 
-The following chart summarizes key arithmetic operations and their corresponding symbols as used in the more common high-level programming languages. The chart also shows some of the more complex operations and the names of the library functions used to calculate them (for specific details on using functions, see the documentation for the corresponding language). In addition, the arithmetic operations are shown as they typically appear in logical problem-solving diagrams such as flowcharts.
+The following chart summarizes key arithmetic operations and their corresponding symbols as used in the more common high-level programming languages. The chart also shows some of the more complex operations and the names of the library functions used to calculate them (for specific details on using functions, see the documentation for the corresponding language).
 
 {caption:"Comparison of Arithmetic Operators in different Programming Languages"; class:"table"}
-|:=========================================|:===============================================================================================|
-| Arithmetic Operation                     | Symbols / Function Calls                                                                       |
-|==========================================|:=======:|:============:|:============:|:============:|:========================:|:============:|
-|                                          | C++     | C#           | JavaScript   | Visual Basic | SQL                      | Flowcharting |
-|==========================================|=========|==============|==============|==============|==========================|==============|
-| Addition                                 | +       | +            | +            | +            | +                        | +            |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Subtraction                              | -       | -            | -            | -            | -                        | -            |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Multiplication                           | *       | *            | *            | *            | *                        | X            |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Division                                 | /       | /            | /            | /            | /                        | /            |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Remainder of Division                    | % [^a]  | %            | %            | Mod          | MOD(Division Expression) | Mod          |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Square Root                              | sqrt( ) | Math.Sqrt( ) | Math.sqrt( ) | Sqr( )       | SQR( )                   | `\sqrt{ }`$  |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Exponential Notation (Power)             | pow( )  | Math.Pow( )  | Math.pow( )  | ^            | POWER( )                 | `x^2`$       |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Sine                                     | sin( )  | Math.Sin( )  | Math.sin( )  | Sin( )       | SIN( )                   | Sine( )      |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Cosine                                   | cos( )  | Math.Cos( )  | Math.cos( )  | Cos( )       | COS( )                   | Cosine( )    |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Tangent                                  | tan( )  | Math.Tan( )  | Math.tan( )  | Tan( )       | TAN( )                   | Tangent( )   |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|--------------|
-| Parenthesis (affects order of operation) | ( )     | ( )          | ( )          | ( )          | ( )                      | ( )          |
-|==========================================|=========|==============|==============|==============|==========================|==============|
-
-[^a]: Used with whole numbers only
+|:=========================================|:================================================================================|
+| Arithmetic Operation                     | Symbols / Function Calls                                                        |
+|==========================================|:=======:|:============:|:============:|:============:|:========================:|
+|                                          | C++     | C#           | JavaScript   | Visual Basic | SQL                      |
+|==========================================|=========|==============|==============|==============|==========================|
+| Addition                                 | +       | +            | +            | +            | +                        |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Subtraction                              | -       | -            | -            | -            | -                        |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Multiplication                           | *       | *            | *            | *            | *                        |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Division                                 | /       | /            | /            | /            | /                        |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Remainder of Division                    | %       | %            | %            | Mod          | MOD(Division Expression) |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Square Root                              | sqrt( ) | Math.Sqrt( ) | Math.sqrt( ) | Sqr( )       | SQR( )                   |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Exponential Notation (Power)             | pow( )  | Math.Pow( )  | Math.pow( )  | ^            | POWER( )                 |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Sine                                     | sin( )  | Math.Sin( )  | Math.sin( )  | Sin( )       | SIN( )                   |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Cosine                                   | cos( )  | Math.Cos( )  | Math.cos( )  | Cos( )       | COS( )                   |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Tangent                                  | tan( )  | Math.Tan( )  | Math.tan( )  | Tan( )       | TAN( )                   |
+|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Parenthesis (affects order of operation) | ( )     | ( )          | ( )          | ( )          | ( )                      |
+|==========================================|=========|==============|==============|==============|==========================|
 
 The only "arithmetic" operation that is typically applied to string data types is addition. The addition of two strings is usually interpreted as the concatenation (joining together) of the two string values into a single string value.
 
