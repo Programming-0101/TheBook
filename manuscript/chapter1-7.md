@@ -5,10 +5,15 @@
 The many small rules in the C# programming language is its ***grammar***. These rules specify the accepted way to write C# code. Individually, each rule in itself is not enough to produce complete working code. Instead, the rules are like building blocks, offering various ways to assemble or construct your code.
 
 Take, for example, some of the grammar around **variable declarations** and **program statements**. A simplified grammar for declaring a variable in C# would look like this:
-***`  dataType variableName`***
+
+> ***  dataType variableName***
+
 We would have to supply both a data type and a variable name to declare a variable. Thus, if we wanted to store a whole number to represent a count, we could use the `int` keyword and write the following:
+
 `  int count`
+
 By itself, this variable declaration is not enough to produce a complete instruction in C#. We have to combine the *variable declaration* grammar with the grammar for a *program statement* in order to make a single instruction telling the computer to create the variable. In general, a program statement must be a statement that ends with a semicolon (`;`). In other words, the *program statement* grammar requires the semicolon as "punctuation", much in the same way that English sentences must end in a period. Thus, our completed syntax for creating a variable would be
+
 `  int count;`
 
 The formal grammar for C# is actually quite large and complex. In fact, the grammars for most programming languages are so complex that they require another "language" to describe the grammar. An early and fairly standard language or means to express grammars is the **Bakus-Naur Form**, or *BNF*.
