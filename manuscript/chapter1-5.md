@@ -6,12 +6,12 @@ C# (pronounced 'See-sharp') is a programming language developed by Microsoft and
 
 Category      | C# Data Type
 --------------|--------------------------------------
-Whole numbers | `int long short byte`{format: csharp}
-Real numbers  | `double single float`{format: csharp}
+Whole numbers | `int long short byte`
+Real numbers  | `double single float`
 --------------|--------------------------------------
-Text          | `char string`{format: csharp}
+Text          | `char string`
 --------------|--------------------------------------
-Conceptual    | `boolean`{format: csharp}
+Conceptual    | `boolean`
 
 ***Instructions*** are always placed inside of **methods**. In fact, a method can be defined as *a named set of instructions*. Methods can never exist all on their own; they have to be placed inside of some kind of context (or **scope**), and they are typically placed inside of **classes**. Classes, themselves, are one of the main means by which we can declare *complex* data types (which, in turn, can be used to declare *objects* designed to hold and process sets of data).
 
@@ -25,7 +25,7 @@ Speaking of starting points, it's important to note that every computer program 
 
 Let's look at an example. The following code is a complete program that performs a simple task - displaying the text "Hello World" in a console window.
 
-![Hello World in C#](1.HelloWorld.cs)
+![Hello World in C#](1-HelloWorld.cs)
 
 The name of the class is `MyFirstProgram` and it contains only one method - `Main` - which is the starting point of the program. That method contains a single instruction telling the computer to display the text "Hello World" to the user.
 
@@ -38,7 +38,7 @@ Notice that besides the name of the class and the Main method, there are various
 
 The order in which we place our instructions within a method is important. All of the instructions are processed **sequentially** - one after the other. Look at this simple example:
 
-![Price Calculation](1.PriceCalculation.cs)
+![Price Calculation](1-PriceCalculation.cs)
 
 In the main method are three lines of code (lines 5-7) which run sequentially. If I change the order of these instructions, then the program won't run correctly. In fact, changing the order might even violate part of the C# grammer, creating what's called a **syntax error**, and the computer won't be able to run the program at all!
 

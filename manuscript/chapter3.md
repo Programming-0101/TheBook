@@ -136,7 +136,7 @@ When you run the program, you should see the result as shown in the following sc
 
 ![](3-Part-1-Output.png)
 
-# Part 2
+## Part 2
 
 A big aspect of developing computer programs is the work of modifying existing code that you or others have written. In this part of the tutorial, we'll revisit the BankAccount and DemoDriver classes to add and take advantage of a new method on the BankAccount class: ToString().
 
