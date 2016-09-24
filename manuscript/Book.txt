@@ -2,6 +2,7 @@ audience.md
 part-0.md
 chapter1.md
 chapter1-5.md
+chapter1-7.md
 chapter2.md
 chapter3.md
 part-1.md
