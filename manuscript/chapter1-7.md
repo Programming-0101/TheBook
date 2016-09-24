@@ -2,7 +2,7 @@
 
 > A language **grammar** is a set of small rules that can be combined to produce a **syntax**.
 
-The many small rules in the C# programming language is its ***grammar**. These rules specify the accepted way to write C# code. Individually, each rule in itself is not enough to produce complete working code. Instead, the rules are like building blocks, offering various ways to assemble or construct your code.
+The many small rules in the C# programming language is its ***grammar***. These rules specify the accepted way to write C# code. Individually, each rule in itself is not enough to produce complete working code. Instead, the rules are like building blocks, offering various ways to assemble or construct your code.
 
 Take, for example, some of the grammar around **variable declarations** and **program statements**. A simplified grammar for declaring a variable in C# would look like this:
 {blockquote}
@@ -21,10 +21,6 @@ The formal grammar for C# is actually quite large and complex. In fact, the gram
 
 For our purposes, we will present a much more *simplified* grammar. You can think of it as a modified BNF. The following sections express much of the grammar we will encounter as we begin our Objects-First introduction to C#. Check the appendix for the complete set of simplified C# grammar used in this book.
 
-## Classes and Class Members
-
-
-
 ## Common Grammar Elements
 
 * Program Statements
@@ -32,6 +28,14 @@ For our purposes, we will present a much more *simplified* grammar. You can thin
 * Assignment Statements
 * Expressions
 * Namespaces
+
+## Classes and Class Members
+
+* Class
+* field
+* property
+* method
+* constructor
 
 ## Flow-Control Statements
 
