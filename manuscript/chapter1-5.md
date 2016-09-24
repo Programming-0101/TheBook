@@ -25,7 +25,15 @@ Speaking of starting points, it's important to note that every computer program 
 
 Let's look at an example. The following code is a complete program that performs a simple task - displaying the text "Hello World" in a console window.
 
-![Hello World in C#](1-HelloWorld.cs)
+```csharp
+public class MyFirstProgram
+{
+    public static void Main(string[] args)
+    {
+        System.Console.WriteLine("Hello World");
+    }
+}
+```
 
 The name of the class is `MyFirstProgram` and it contains only one method - `Main` - which is the starting point of the program. That method contains a single instruction telling the computer to display the text "Hello World" to the user.
 
@@ -38,7 +46,17 @@ Notice that besides the name of the class and the Main method, there are various
 
 The order in which we place our instructions within a method is important. All of the instructions are processed **sequentially** - one after the other. Look at this simple example:
 
-![Price Calculation](1-PriceCalculation.cs)
+```csharp
+public class PriceCalculation
+{
+    public static void Main(string[] args)
+    {
+        double price = 12.95, total;
+        total = price * 10;
+        System.Console.WriteLine("The total price is " + total);
+    }
+}
+```
 
 In the main method are three lines of code (lines 5-7) which run sequentially. If I change the order of these instructions, then the program won't run correctly. In fact, changing the order might even violate part of the C# grammer, creating what's called a **syntax error**, and the computer won't be able to run the program at all!
 
