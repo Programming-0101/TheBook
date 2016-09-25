@@ -22,14 +22,80 @@ For our purposes, we will present a much more *simplified* grammar. You can thin
 
 ## Common Grammar Elements
 
-Program Statements
+### Program Statements and Statement blocks
 
-* Variable Declarations
-* Assignment Statements
-* Expressions
-* Namespaces
+Individual instructions are known as **Program Statements**. The instructions can be short and simple, or they can be long an complex. In either case, the program statement must end in a semicolon (;). These individual instructions run sequentially, one after the other, so the order of individual instructions is important.
+
+Besides individual instructions, we can group individual statements into **Statement Blocks**. A statement block is a set of zero or more program statements that are enclosed in a set of curly braces (`{ }`). Statement blocks are frequently used with **Flow Control Statements** (such as the `if` and `for` statements).
+
+### Variable Declarations
+
+Before a variable can be used, it must be *declared*. Declaring a variable tells the compiler to
+
+* set aside room in memory to store information,
+* treat that data as a specific data type, and
+* refer to that information by the variable name
+
+The grammar for declaring variables is as follows.
+
+```csharp
+dataType variableName [= expression] [, ...]
+```
+
+A **Variable Declaration** defines a new variable where
+: `dataType` is any built-in or programmer-defined data type.
+: `variableName` is
+: an optional initial value may be assigned, as denoted by `[= expression]`, where `expression` is any valid C# expression whose final data type matches the variable's data type. When a variable is declared and initialized at the same time, it is called a **Variable Initialization**.
+: additional variable names (with or without initial values) can be declared using a comma-separated list. All variables are of the same data type as the first variable in the list.
+
+### Assignment Operation
+
+```csharp
+variableName assignmentOperator expression
+```
+
+**Assignment Operations** are operations where a value is assigned or stored in a variable.
+: `variableName` is the name of the variable that will receive/store the value.
+: `assignmentOperator` is one of the following:
+  **`=`** Equals
+  **`+=`** Plus-Equals
+  **`-=`** Minus-Equals
+  **`*=`** Multiply-Equals
+  **`/=`** Divide-Equals
+  **`%=`** Modulus-Equals
+: `expression` is any valid C# expression whose final data type matches the variable's data type.
+: An assignment operation is made into an **assignment statement** by adding a semicolon to the end of the operation. For example,
+  `total = price * quantity;`
+
+### Expressions
+
+An **Expression** is any combination of *literal values*, *variable names*, *operators* (such as the arithmetic operators), and/or *method calls* (where the method returns a value). When an expression is processed by the computer, a single value is produced. This value can then be used in whatever operation the expressions occurs. For example, the value might be passed into a method as part of a method call, or it might be placed in a variable as part of an assignment statement.
+
+### Namespace Declaration and Using Statements
+
+```csharp
+namespace Name
+{
+    // Classes, enumerations, or other programmer-defined data types
+}
+```
+
+A **Namespace Declaration** groups ***programmer-defined*** data types where
+: The `Name` of the namespace can be one or more dot-separated names. For example, the following are all valid names for namespaces.
+  `System`
+  `System.Collections`
+  `MyGame`
+  `MyGame.GameRules`
+
+**Namespaces** are used to group classes and other programmer-defined data types into a single named group. The reason for grouping programmer-defined data types into namespaces is to prevent what are called "naming collisions". A naming collision is where two or more classes or other programmer-defined data types are given the same name. In other words, you cannot have two classes named `Circle` in the same namespace. However, if you place those two classes in different namespaces, then that is acceptable because the compiler will then be able to distinguish between the two classes based on the namespace they belong to.
+
+Whenever a class or other data type is placed in a namespace, that namespace becomes part of the ***fully-qualified*** name of the data type. For example, if a class named `Circle` is placed in a namespace called `Geometry.Shapes`, then the fully qualified name of the class is `Geometry.Shapes.Circle`.
+
+ 
 
 ## Classes and Class Members
+
+As an object-oriented language, classes play a very prominent part of the code we write in C#. It is within classes, for example, that we place variables (also called *fields*) and methods (which are "*named* sets of instructions"). One of the first things that classes give us developers is a *context* or ***scope*** for the code that we write. Classes are also building blocks, acting as blueprints for new and complex data types that we as programmers can create as we develop richer and more complex computer programs. Classes permeate all the code that we write in C# and are so fundamental that you can't even write a "Hello World" program without them.
 
 ### Class Definition
 
