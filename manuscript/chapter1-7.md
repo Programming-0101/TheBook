@@ -18,11 +18,11 @@ By itself, this variable declaration is not enough to produce a complete instruc
 
 The formal grammar for C# is actually quite large and complex. In fact, the grammars for most programming languages are so complex that they require another "language" to describe the grammar. An early and fairly standard language or means to express grammars is the **Bakus-Naur Form**, or *BNF*.
 
-For our purposes, we will present a much more *simplified* grammar. You can think of it as a modified BNF. The following sections express much of the grammar we will encounter as we begin our Objects-First introduction to C#. Check the appendix for the complete set of simplified C# grammar used in this book.
+For our purposes, we will present a much more *simplified* grammar. The following sections express the bulk of the C# grammar used in this introduction to programming fundamentals in C#.
 
 ## Common Grammar Elements
 
-How to read the grammars.
+Most of the grammar rules in C# are quite short, defining the order of **keywords**, **identifiers** and **symbols**. In the following grammars, the use of square brackets (**`[]`**) indicate an optional part of the syntax for the grammar rule; those square brackets are *not* actual symbols in the final syntax of the grammar. With each of the rules is a very brief explanation. Later chapters will go into more depth and provide examples of how to use these grammars.
 
 ---
 
@@ -103,6 +103,14 @@ A **Namespace Declaration** groups ***programmer-defined*** data types where
 
 Whenever a class or other data type is placed in a namespace, that namespace becomes part of the ***fully-qualified*** name of the data type. For example, if a class named `Circle` is placed in a namespace called `Geometry.Shapes`, then the fully qualified name of the class is `Geometry.Shapes.Circle`.
 
+Namespaces allow us to isolate our classes and other data types into groups. All of the classes/data types in a given namespace can automatically reference each other. To reference or use data types in other namespaces, we must either use their fully-qualified names or *include* them through the **Using Statement**.
+
+```csharp
+using NamespaceName;
+```
+
+The using statement allows access to all the data types in referenced namespace. Using statements are typically placed at the beginning of a file. The `NamespaceName` is simply the complete name of the namespace that contains the classes or data types that we want to access.
+
 ---
 
 ## Classes and Class Members
@@ -174,9 +182,9 @@ In other situations, a property may merely have a getter where the body of the g
 
 A **Property Declaration** identifies a *static* or *instance* member of the class where
 : `[accessModifier]` is either `public`{format: csharp}, `private`{format: csharp}, `protected`{format: csharp}, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
-: `[static]`{format:csharp} is an optional keyword. If present, the Property is *shared* among all instances of the class. If absent (which is the common case) then the Property is an *instance* member and one is created every time an object based on the class is created.
+: `[static]`{format:csharp} is an optional keyword. If present, the Property is *shared* among all instances of the class. If absent (which is the common case) then the Property is an *instance* member.
 : `dataType` is any built-in data type or the name of a programmer-defined data type.
-: `PropertyName` is a the name you give to the member property. By convention, private Property are given an underscore as a prefix to the name.
+: `PropertyName` is a the name you give to the member property.
 : `Body of getter` is a set of instructions that must ultimately return a value of the same data type as the property.
 : `Body of the setter` is a set of instructions that can process incoming data that is in the `value`{format:csharp} keyword. A typical implementation will store that data into the property's backing store.
 
@@ -190,21 +198,44 @@ Autoimplemented properties are properties where the compiler takes care of the g
 
 A **Property Declaration** identifies a *static* or *instance* member of the class where
 : `[accessModifier]` is either `public`{format: csharp}, `private`{format: csharp}, `protected`{format: csharp}, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
-: `[static]`{format:csharp} is an optional keyword. If present, the Property is *shared* among all instances of the class. If absent (which is the common case) then the Property is an *instance* member and is tied to a specific created every time an object based on the class is created.
+: `[static]`{format:csharp} is an optional keyword. If present, the Property is *shared* among all instances of the class. If absent (which is the common case) then the Property is an *instance* member.
 : `dataType` is any built-in data type or the name of a programmer-defined data type.
-: `PropertyName` is a the name you give to the member property. By convention, private Property are given an underscore as a prefix to the name.
-
----
-
-### Constructors
-
-TBA
+: `PropertyName` is a the name you give to the member property.
 
 ---
 
 ### Method Declarations
 
-TBA
+```csharp
+[accessModifier] [static] returnType MethodName(ParameterList)
+{
+    // body of method
+}
+```
+
+A **Method Declaration** defines a *named* set of instructions.
+: `[accessModifier]` is either `public`{format: csharp}, `private`{format: csharp}, `protected`{format: csharp}, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
+: `[static]`{format:csharp} is an optional keyword. If present, the method is *shared* among all instances of the class. If absent (which is the common case) then the method is an *instance* member.
+: `returnType` is any built-in data type or the name of a programmer-defined data type. The return type signifies the kind of information that the method will return. If the method does not return any information, then the keyword `void` is used as the return type.
+: `MethodName` is a the name you give to the method.
+: `ParameterList` is a comma-separated list of individual variable declarations.
+
+---
+
+### Constructors
+
+```csharp
+[accessModifier] ClassName(ParameterList)
+{
+    // body of constructor
+}
+```
+
+A **Constructor** is a set of instructions used when **instantiating** (creating) an object.
+: `[accessModifier]` is either `public`{format: csharp}, `private`{format: csharp}, `protected`{format: csharp}, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
+: `ClassName` - All constructors use the name of the class to which they belong as the name of the constructor.
+: `ParameterList` is a comma-separated list of individual variable declarations.
+: Classes never return any information - they are simply blocks of instructions used to set up the **initial state** of the object.
 
 ## Flow-Control Statements
 
