@@ -22,11 +22,17 @@ For our purposes, we will present a much more *simplified* grammar. You can thin
 
 ## Common Grammar Elements
 
+How to read the grammars.
+
+---
+
 ### Program Statements and Statement blocks
 
 Individual instructions are known as **Program Statements**. The instructions can be short and simple, or they can be long an complex. In either case, the program statement must end in a semicolon (;). These individual instructions run sequentially, one after the other, so the order of individual instructions is important.
 
 Besides individual instructions, we can group individual statements into **Statement Blocks**. A statement block is a set of zero or more program statements that are enclosed in a set of curly braces (`{ }`). Statement blocks are frequently used with **Flow Control Statements** (such as the `if` and `for` statements).
+
+---
 
 ### Variable Declarations
 
@@ -48,6 +54,8 @@ A **Variable Declaration** defines a new variable where
 : an optional initial value may be assigned, as denoted by `[= expression]`, where `expression` is any valid C# expression whose final data type matches the variable's data type. When a variable is declared and initialized at the same time, it is called a **Variable Initialization**.
 : additional variable names (with or without initial values) can be declared using a comma-separated list. All variables are of the same data type as the first variable in the list.
 
+---
+
 ### Assignment Operation
 
 ```csharp
@@ -67,9 +75,13 @@ variableName assignmentOperator expression
 : An assignment operation is made into an **assignment statement** by adding a semicolon to the end of the operation. For example,
   `total = price * quantity;`
 
+---
+
 ### Expressions
 
 An **Expression** is any combination of *literal values*, *variable names*, *operators* (such as the arithmetic operators), and/or *method calls* (where the method returns a value). When an expression is processed by the computer, a single value is produced. This value can then be used in whatever operation the expressions occurs. For example, the value might be passed into a method as part of a method call, or it might be placed in a variable as part of an assignment statement.
+
+---
 
 ### Namespace Declaration and Using Statements
 
@@ -91,11 +103,13 @@ A **Namespace Declaration** groups ***programmer-defined*** data types where
 
 Whenever a class or other data type is placed in a namespace, that namespace becomes part of the ***fully-qualified*** name of the data type. For example, if a class named `Circle` is placed in a namespace called `Geometry.Shapes`, then the fully qualified name of the class is `Geometry.Shapes.Circle`.
 
- 
+---
 
 ## Classes and Class Members
 
 As an object-oriented language, classes play a very prominent part of the code we write in C#. It is within classes, for example, that we place variables (also called *fields*) and methods (which are "*named* sets of instructions"). One of the first things that classes give us developers is a *context* or ***scope*** for the code that we write. Classes are also building blocks, acting as blueprints for new and complex data types that we as programmers can create as we develop richer and more complex computer programs. Classes permeate all the code that we write in C# and are so fundamental that you can't even write a "Hello World" program without them.
+
+---
 
 ### Class Definition
 
@@ -115,6 +129,8 @@ A **Class Definition** describes a new data type where
 : `FieldDeclarations`, `PropertyDeclarations`, `Constructors` and `MethodDeclarations` are all optional and can appear in any order.
   See the related grammars below to see how they are defined.
 
+---
+
 ### Field Declarations
 
 ```csharp
@@ -127,6 +143,8 @@ A **Field Declaration** identifies a *static* or *instance* member variable of t
 : `dataType` is any built-in data type or the name of a programmer-defined data type.
 : `_FieldName` is a the name you give to the member variable. By convention, private fields are given an underscore as a prefix to the name.
 : `constantExpression` is an optional expression that generates data whose value can be determined at compile time. Being a constant expression does *not* mean that the field is a constant, only that the initial value stored in the field is a constant and can be known at compile time *before* the program runs.
+
+---
 
 ### Property Declarations
 
@@ -176,9 +194,13 @@ A **Property Declaration** identifies a *static* or *instance* member of the cla
 : `dataType` is any built-in data type or the name of a programmer-defined data type.
 : `PropertyName` is a the name you give to the member property. By convention, private Property are given an underscore as a prefix to the name.
 
+---
+
 ### Constructors
 
 TBA
+
+---
 
 ### Method Declarations
 
