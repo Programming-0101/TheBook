@@ -6,7 +6,7 @@ This topic introduces enumerations and composition. The following new keywords a
 
 * enum
 
-This topic will reveal how enumerations allow programmers to define new data types and values to represent conceptual information. This topic als  * discusses the concept of composition, describing how composition is simply the use of objects as fields in a class.
+This topic will reveal how enumerations allow programmers to define new data types and values to represent conceptual information. This topic also discusses the concept of composition, describing how composition is simply the use of objects as fields in a class.
 
 
 ### LOGs
@@ -35,7 +35,7 @@ This topic will reveal how enumerations allow programmers to define new data typ
 ### Composition:
 
 1. Address + Student + GenderType – This revised version of the Student class now has an Address field. The address field is new; although similar to the CanadianAddress class, the Address class is simpler and more "generic" (having "State" instead of "Province" and "ZipCode" instead of "PostalCode").
-2. ImproperFraction + MixedNumber + ProperFraction – In this sample, the idea of a Fraction class is made more specific by replacing it with three more specific types of numbers: MixedNumber, ProperFraction, and ImproperFraction. A MixedNumber is made up of a whole number and a ProperFraction. A MixedNumber can als  * be expressed as or derived from an ImproperFraction. The reciprocal of a ProperFraction is an ImproperFraction and the reciprocal of an ImproperFraction is a ProperFraction.
+2. ImproperFraction + MixedNumber + ProperFraction – In this sample, the idea of a Fraction class is made more specific by replacing it with three more specific types of numbers: MixedNumber, ProperFraction, and ImproperFraction. A MixedNumber is made up of a whole number and a ProperFraction. A MixedNumber can also be expressed as or derived from an ImproperFraction. The reciprocal of a ProperFraction is an ImproperFraction and the reciprocal of an ImproperFraction is a ProperFraction.
 
 ##Coin + CoinFace
 
@@ -380,7 +380,7 @@ public class Student
 
 ### ImproperFraction + MixedNumber + ProperFraction
 
-In this sample, the idea of a Fraction class is made more specific by replacing it with three more specific types of numbers: MixedNumber, ProperFraction, and ImproperFraction. A MixedNumber is made up of a whole number and a ProperFraction. A MixedNumber can als  * be expressed as or derived from an ImproperFraction. The reciprocal of a ProperFraction is an ImproperFraction and the reciprocal of an ImproperFraction is a ProperFraction.
+In this sample, the idea of a Fraction class is made more specific by replacing it with three more specific types of numbers: MixedNumber, ProperFraction, and ImproperFraction. A MixedNumber is made up of a whole number and a ProperFraction. A MixedNumber can also be expressed as or derived from an ImproperFraction. The reciprocal of a ProperFraction is an ImproperFraction and the reciprocal of an ImproperFraction is a ProperFraction.
 
 **Problem Statement**
 

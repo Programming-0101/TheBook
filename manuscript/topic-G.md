@@ -35,7 +35,7 @@ This topic will demonstrate objects that are capable of validating information s
 4. Die – Only accepts from 4 to 20 sides for a die.
 5. Person – First and last names cannot be empty and the birth date cannot be in the future. This illustrates putting the validation on the setters and calling the setters from the constructor (to reduce the duplication of code).
 6. Student – Gender must be 'M' or 'F' (and will be converted to upper-case). The student name and program cannot be empty. The student ID must be 9 digits. The GPA must be between 0.0 and 9.0 (inclusive).
-7. ParkingCounter – Only accepts positive, non-zero counts for available parking spaces and number of cars. Also, the number of cars must not exceed the number of parking spaces. The rules for the number of cars must als  * apply for cars entering and leaving the parking lot.
+7. ParkingCounter – Only accepts positive, non-zero counts for available parking spaces and number of cars. Also, the number of cars must not exceed the number of parking spaces. The rules for the number of cars must also apply for cars entering and leaving the parking lot.
 8. StockItem – Represents an inventory item that is kept in stock. The item's description, cost and profit margin are all part of the class design. Empty descriptions and zero or negative costs, as well as profit margins less than -100, are not allowed.
 9. Account – The following account information is now verified when the class is created:
   a. Bank name and account type cannot be empty
@@ -264,7 +264,7 @@ Write the code for the Student class. The class must now ensure that the supplie
 * **Should reject negative GPAs and GPAs over 9**
 * **Should require a nine-digit student ID**
 
-This class reinforces the idea of encapsulation and constructors. It als  * demonstrates the idea of overloading the default `ToString()` method that every class inherits from the Object class.
+This class reinforces the idea of encapsulation and constructors. It also demonstrates the idea of overloading the default `ToString()` method that every class inherits from the Object class.
  
 ```csharp
 public class Student
@@ -367,7 +367,7 @@ public class Student
 
 ### ParkingCounter
 
-Only accepts positive, non-zero counts for available parking spaces and number of cars. Also, the number of cars must not exceed the number of parking spaces. The rules for the number of cars must als  * apply for cars entering and leaving the parking lot.
+Only accepts positive, non-zero counts for available parking spaces and number of cars. Also, the number of cars must not exceed the number of parking spaces. The rules for the number of cars must also apply for cars entering and leaving the parking lot.
 
 **Problem Statement**
 
