@@ -29,9 +29,11 @@ The following examples are used to illustrate this topic.
 1. StockItem - This class represents an item that is part of an inventory. The item has an item name, a cost and a profit margin (which can be positive or negative). By using the profit margin, it can derive the price of the item. The class can also report if the item is priced at or below cost. 
 2. Account - This class illustrates simple if structure in handling withdrawals; withdrawals are only made when the amount does not exceed the balance and the overdraft. It also identifies if the account is overdrawn. 
 3. Person - This adaptation of the person class checks the age of the person to see if the person's life stage is infant, toddler, preschooler, school age, or adult. 
-4. Fraction - This class now ensures that any negative denominators have their negative sign "moved" to the numerator. It also recognizes whether a fraction is proper (numerator less than denominator) or not. 
+4. Fraction - This class now ensures that any negative denominators have their negative sign "moved" to the numerator. It also recognizes whether a fraction is proper (numerator less than denominator) or not and provides a method to express the fraction as a mixed number string. 
 5. Angle - This version of the Angle class includes an attribute to identify the type of the angle as either acute, right, obtuse, straight, reflex, full rotation, or undefined. 
 6. ParkingCounter - This class represents a simple counter to monitor whether a parking lot is full or not; it tracks vehicles entering and leaving the parking lot and allows the counter to be reset when the lot is full or empty. This class illustrates increment and decrement operators and/or the assignment increment or assignment decrement operators.
+7. MemoryAddress - This class represents a single memory address in both its base 10 and hexadecimal value.
+8. Color - This class represents a color as three base-10 RGB values and as a single hexadecimal value.
 
 ### StockItem
 
@@ -167,7 +169,7 @@ Use the following class diagram when creating your solution.
 
 ### Fraction
 
-This class now ensures that any negative denominators have their negative sign "moved" to the numerator. It also recognizes whether a fraction is proper (numerator less than denominator) or not. 
+This class now ensures that any negative denominators have their negative sign "moved" to the numerator. It also recognizes whether a fraction is proper (numerator less than denominator) or not and provides a method to express the fraction as a mixed number string. 
 
 **Problem Statement**
 
@@ -183,6 +185,7 @@ Write the code for the Fraction class. The solution must meet the following requ
 * Should divide its existing value by another fraction
 * **Should affix the sign for negative fractions onto the numerator only**
 * **Should identify if the fraction is a proper fraction**
+* **Should express the fraction as a mixed number string**
 
 Use the following class diagram when creating your solution.
 
@@ -216,6 +219,17 @@ Use the following class diagram when creating your solution.
                 proper = false;
             return proper;
         }
+    }
+
+    public override string ToString()
+    {
+        string stringValue = "";
+        if(IsProper)
+            stringValue += (Numerator / Denominator) + " and " 
+                         + (Numerator % Denominator) + "/" + Denominator;
+        else
+            stringValue += Numerator + "/" + Denominator;
+        return stringValue;
     }
 ```
 
@@ -323,6 +337,173 @@ Use the following class diagram when creating your solution.
             PeakOccupancy = numberOfCars;
     }
 ```
+
+### MemoryAddress
+
+This class represents a single memory address in both its base 10 and hexadecimal value.
+
+**Base ten** is the common number system that we use in every day life. Base ten uses the digits 0-9 and the concept of the *position* of a digit occupying some multiple of ten. Thus, for the number 129 there is a hundreds-position (10^2), a tens-position (10^1) and a ones-position (10^0).
+
+```text
+129 base 10
+||\
+|\ \_ 10^0 * 9 =>   9
+| \
+\  \_ 10^2 * 2 =>  20
+ \
+  \
+   \_ 10^3 * 1 => 100
+                 ====
+                  129
+```
+
+Converting a value from one base to another (such as base-10 to base-16) involves thinking about the digit positions of the target base. Base 16 uses the digits 0-9 along with the letters A through F for the range of hex values zero to fifteen. Each digit position in a base-16 number can hold a value of 0 to F. Thus, a digit in the ones position is worth 1 times the digit. A two-digit hex value would have the sixteens-position (16^1) and a ones-position (16^0). A three-digit hex value would add onto that a two-hundred-and-fifty-sixth-position (16^2). For example, to convert the number 679 base 10 to a base 16, you would follow these steps.
+
+* Divide the original number by the two-hundred-and-fifty-sixth-position (16^2). Then use the remainder in calculating the next position (16^1). `\include{longdiv} \longdiv{679}{256}`$
+* Dividing the previous steps remainder (167) by 16 gives the result of 10, which is the hex-digit of `A`. `\include{longdiv} \longdiv{167}{16}`$
+* The remainder of that last step is the ones-position
+* Thus, the base-10 value 679 is `2B9` in base-16.
+
+```text
+2B9 base 16
+||\
+|\ \_ 16^0 * 9  =>    9
+| \
+\  \_ 16^2 * 11 =>  176
+ \
+  \
+   \_ 16^3 * 2  =>  512
+                   ====
+                    679 base 10
+```
+
+The following class demonstrates a small memory address (up to four hexadecimal digits) as a `short` and a string representation of hexadecimal.
+
+```csharp
+    public class MemoryAddress
+    {
+        public short Base10Value { get; private set; }
+        public string HexValue
+        {
+            get
+            {
+                string hex = "0x";
+                // A short number in hexadecimal 
+                // will be at most 4 digits
+                //    FFFF
+                //    ||||
+                //    |||- 16^0 =>    1
+                //    ||-- 16^1 =>   16
+                //    |--- 16^2 =>  256
+                //    ---- 16^3 => 4096
+                int value = Base10Value;
+                int portion = value / 4096;
+                hex += ToHexDigit(portion);
+                value -= portion;
+                portion = value / 256;
+                hex += ToHexDigit(portion);
+                value -= portion;
+                portion = value / 16;
+                hex += ToHexDigit(portion);
+                portion = value % 16;
+                hex += ToHexDigit(portion);
+                return hex;
+            }
+        }
+
+        public MemoryAddress(short address)
+        {
+            Base10Value = address;
+        }
+
+        private static string ToHexDigit(int number)
+        {
+            string result;
+            if (number < 10)
+                result = number.ToString();
+            else if (number == 10)
+                result = "A";
+            else if (number == 11)
+                result = "B";
+            else if (number == 12)
+                result = "C";
+            else if (number == 13)
+                result = "D";
+            else if (number == 14)
+                result = "E";
+            else if (number == 15)
+                result = "F";
+            else // Should never happen...
+                result = "";
+
+            return result;
+        }
+    }
+```
+
+### Color
+
+This class represents a color as three base-10 RGB values and as a single hexadecimal value.
+
+**Problem Statement**
+
+Create a data type to represent a color as both base-10 RBG values and as a hexadecimal value.
+
+```csharp
+    public class Color
+    {
+        public byte Red { get; private set; }
+        public byte Blue { get; private set; }
+        public byte Green { get; private set; }
+
+        public string Hex
+        {
+            get
+            {
+                string converted = "#";
+                converted += ToHexDigit((byte)(Red / _Base16))
+                           + ToHexDigit((byte)(Red % _Base16));
+                converted += ToHexDigit((byte)(Blue / _Base16))
+                           + ToHexDigit((byte)(Blue % _Base16));
+                converted += ToHexDigit((byte)(Green / _Base16))
+                           + ToHexDigit((byte)(Green % _Base16));
+                return converted;
+            }
+        }
+
+        private static byte _Base16 = (byte)16;
+        private static string ToHexDigit(byte number)
+        {
+            string result;
+            if (number < 10)
+                result = number.ToString();
+            else if (number == 10)
+                result = "A";
+            else if (number == 11)
+                result = "B";
+            else if (number == 12)
+                result = "C";
+            else if (number == 13)
+                result = "D";
+            else if (number == 14)
+                result = "E";
+            else if (number == 15)
+                result = "F";
+            else
+                result = "";
+
+            return result;   
+        }
+
+        public Color(byte red, byte blue, byte green)
+        {
+            Red = red;
+            Blue = blue;
+            Green = green;
+        }
+    }
+```
+
 
 ## Practice Excercises
 
