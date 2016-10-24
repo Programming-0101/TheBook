@@ -3,6 +3,7 @@ part-0.md
 chapter1.md
 chapter1-5.md
 chapter1-7.md
+console-1.md
 chapter2.md
 chapter3.md
 part-1.md
@@ -17,6 +18,7 @@ topic-H.md
 part-3.md
 topic-I.md
 topic-J.md
+console-2.md
 topic-K.md
 topic-L.md
 topic-M.md

@@ -1,4 +1,4 @@
-# TopicE – Expressions and Math
+# Topic E – Expressions and Math
 
 ## Overview
 
