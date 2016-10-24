@@ -10,6 +10,7 @@ part-1.md
 topic-A.md
 topic-B.md
 topic-C.md
+topic-D.md
 part-2.md
 topic-E.md
 topic-F.md
