@@ -27,5 +27,11 @@ part-4.md
 topic-N.md
 topic-O.md
 topic-P.md
+topic-Q.md
+topic-R.md
 part-5.md
+topic-S.md
+topic-T.md
+topic-U.md
+part-9.md
 log-summary.md

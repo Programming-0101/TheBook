@@ -34,6 +34,7 @@ The following examples are used to illustrate this topic.
 6. ParkingCounter - This class represents a simple counter to monitor whether a parking lot is full or not; it tracks vehicles entering and leaving the parking lot and allows the counter to be reset when the lot is full or empty. This class illustrates increment and decrement operators and/or the assignment increment or assignment decrement operators.
 7. MemoryAddress - This class represents a single memory address in both its base 10 and hexadecimal value.
 8. Color - This class represents a color as three base-10 RGB values and as a single hexadecimal value.
+9. Base16 - This class represents an integer value as a base-16 hexadecimal number.
 
 ### StockItem
 
