@@ -1,4 +1,0 @@
-# Topic R - Inheritance
-
-
-

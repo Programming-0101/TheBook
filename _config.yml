@@ -1,0 +1,7 @@
+sortkey: order
+encoding: utf-8
+gems:
+  - github-pages
+collections:
+  manuscript:
+    output: true
