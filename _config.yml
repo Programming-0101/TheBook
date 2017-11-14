@@ -2,6 +2,10 @@ sortkey: order
 encoding: utf-8
 gems:
   - github-pages
-collections:
-  manuscript:
-    output: true
+defaults:
+  -
+    scope:
+      path: "" # an empty string means all files in the project
+    values:
+      layout: "default"
+      publish: "true"

@@ -1,242 +1,541 @@
-- title: Topic
-  - title: A
-    - title: Examples
-      - title: Nothingness
-      - title: HelloWorld
-      - title: Comments
-    - title: Practice
-      - title: OuterSpace
-      - title: AnsweringMachine
-      - title: Salutation
-  - title: B
-    - title: Examples
-      - title: Salutation
-      - title: Person
-      - title: Account
-      - title: Comments
-      - title: Student
-      - title: Employee
-    - title: Practice
-      - title: AnsweringMachine
-      - title: Account
-      - title: CanadianAddress
-      - title: Course
-      - title: ExamResult
-      - title: LabResult    
-  - title: C
-    - title: Examples
-      - title: Person
-      - title: Account
-      - title: Student
-      - title: Employee
-    - title: Practice
-      - title: Person
-      - title: Account
-      - title: CanadianAddress
-      - title: Course
-      - title: ExamResult
-      - title: LabResult
-  - title: D
-    - title: Examples
-      - title: Person
-      - title: Account
-      - title: Student
-      - title: Employee
-      - title: Company
-    - title: Practice
-      - title: Person
-      - title: CanadianAddress
-      - title: Course
-      - title: ExamResult
-      - title: LabResult
-  - title: E
-    - title: Examples
-      - title: Calculator
-      - title: Person
-      - title: Account
-      - title: ElapsedTime
-      - title: ResolveExpressions
-      - title: Circle
-      - title: Square
-      - title: Fraction
-      - title: Angle
-      - title: StockItem
-      - title: Die
-      - title: ParkingCounter
-      - title: QuadradicEquation
-    - title: Practice
-      - title: Calculator
-      - title: Fraction
-      - title: Square
-      - title: Coordinate
-      - title: PaintEstimator
-      - title: BulkItem
-      - title: Die
-      - title: RoundingCalculator
-      - title: GenericRoundingCalculator
-      - title: PeopleCounter
-      - title: ScoreCard
-      - title: Cylinder
-      - title: Cone
-      - title: GravityCalculator
-      - title: CurrencyCalculator
-  - title: F
-    - title: Examples
-      - title: StockItem
-      - title: Account
-      - title: Person
-      - title: Fraction
-      - title: Angle
-      - title: ParkingCounter
-      - title: MemoryAddress
-      - title: Color
-      - title: Base16
-    - title: Practice
-      - title: Rectangle
-      - title: HazardousMaterial
-      - title: CurrencyCalculator
-      - title: GravityCalculator
-  - title: G
-    - title: Examples
-      - title: Fraction
-      - title: Square
-      - title: Circle
-      - title: Die
-      - title: Person
-      - title: Student
-      - title: ParkingCounter
-      - title: StockItem
-      - title: Account
-    - title: Practice
-      - title: Account
-      - title: Rectangle
-      - title: Cone
-      - title: Course
-      - title: Cylinder
-      - title: HazardousMaterial
-      - title: ExamResult
-      - title: LabResult
-      - title: PeopleCounter
-      - title: BulkItem
-  - title: H
-    - title: Examples
-      - title: LetterGrade
-      - title: Rating
-    - title: Practice
-      - title: BahamaLetterGrade
-      - title: Feedback
-      - title: HazardousMaterial
-  - title: I
-    - title: Examples
-      - title: Coin
-      - title: Account
-      - title: LetterGrade
-      - title: Address
-      - title: ImproperFraction
-    - title: Practice
-      - title: LetterGrade
-      - title: HazardousMaterial
-      - title: CanadianAddress
-      - title: Employee
-      - title: Company
-  - title: J
-    - title: Examples
-      - title: Aggregator
-      - title: Math
-      - title: Fraction
-      - title: GuessingGame
-    - title: Practice
-      - title: Aggregator
-      - title: Math
-      - title: GuessingGame
-  - title: K
-    - title: Examples
-      - title: Math
-      - title: PhoneBook
-      - title: ClassList
-      - title: MultipleChoiceMarker
-      - title: BankStatement
-      - title: DeckOfCards
-    - title: Practice
-      - title: PhoneBook 
-      - title: Registrar
-      - title: BookBag
-      - title: DeckOfCards
-  - title: L
-    - title: Examples
-      - title: Math
-      - title: PhoneBook
-      - title: ClassList
-      - title: MultipleChoiceMarker
-      - title: BankStatement
-      - title: DeckOfCards
-    - title: Practice
-      - title: PhoneBook 
-      - title: Registrar
-      - title: BookBag
-      - title: DeckOfCards
-      - title: CD
-  - title: M
-    - title: Examples
-      - title: BranchVault
-      - title: PhoneBook
-      - title: ClassList
-      - title: BankStatement
-    - title: Practice
-      - title: PhoneBook
-      - title: Registrar
-      - title: CDLibrary
-  - title: N
-    - title: Examples
-      - title: CD
-      - title: RunningTime
-      - title: TextFormatter
-      - title: MusicInfoFormatter
-    - title: Practice
-      - title: TextFormatter
-      - title: Humanizer
-  - title: O
-    - title: Examples
-      - title: PhoneNumberFileAdapter
-      - title: StudentFileAdapter
-      - title: BookFileAdapter
-      - title: SafetyDepositBoxFileAdapter
-    - title: Practice
-      - title: PersonFileAdapter
-      - title: SongFileAdapter
-  - title: P
-    - title: Examples
-      - title: DemoTestingForExceptions
-      - title: DemoBookFileAdapter
-      - title: MediaPlayer
-    - title: Practice
-      - title: Testing Suite
-      - title: Working Program
-  - title: Q
-    - title: Examples
-      - title: Swapping
-      - title: Sorting
-      - title: Searching
-    - title: Practice
-
-  - title: R
-    - title: Examples
-
-    - title: Practice
-
-  - title: S
-    - title: Examples
-
-    - title: Practice
-
-  - title: T
-    - title: Examples
-
-    - title: Practice
-
-  - title: U
-    - title: Examples
-
-    - title: Practice
-
-  
+toc:
+  - title: OOP Foundations
+    pathpart: /Topic
+    subfolderitems:
+      - title: A - Starting Classes
+        pathpart: /A
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Nothingness
+                pathpart: /Nothingness
+              - title: HelloWorld
+                pathpart: /HelloWorld
+              - title: Comments
+                pathpart: /Comments
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: OuterSpace
+                pathpart: /OuterSpace
+              - title: AnsweringMachine
+                pathpart: /AnsweringMachine
+              - title: Salutation
+                pathpart: /Salutation
+      - title: B - Starting Classes
+        pathpart: /B
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Salutation
+                pathpart: /Salutation
+              - title: Person
+                pathpart: /Person
+              - title: Account
+                pathpart: /Account
+              - title: Comments
+                pathpart: /Comments
+              - title: Student
+                pathpart: /Student
+              - title: Employee
+                pathpart: /Employee
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: AnsweringMachine
+                pathpart: /AnsweringMachine
+              - title: Account
+                pathpart: /Account
+              - title: CanadianAddress
+                pathpart: /CanadianAddress
+              - title: Course
+                pathpart: /Course
+              - title: ExamResult
+                pathpart: /ExamResult
+              - title: LabResult
+                pathpart: /LabResult    
+      - title: C - Starting Classes
+        pathpart: /C
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Person
+                pathpart: /Person
+              - title: Account
+                pathpart: /Account
+              - title: Student
+                pathpart: /Student
+              - title: Employee
+                pathpart: /Employee
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: Person
+                pathpart: /Person
+              - title: Account
+                pathpart: /Account
+              - title: CanadianAddress
+                pathpart: /CanadianAddress
+              - title: Course
+                pathpart: /Course
+              - title: ExamResult
+                pathpart: /ExamResult
+              - title: LabResult
+                pathpart: /LabResult
+  - title: Calculated Confidence
+    pathpart: /Topic
+    subfolderitems:
+      - title: Testing &amp; Debugging
+        pathpart: /D
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Person
+                pathpart: /Person
+              - title: Account
+                pathpart: /Account
+              - title: Student
+                pathpart: /Student
+              - title: Employee
+                pathpart: /Employee
+              - title: Company
+                pathpart: /Company
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: Person
+                pathpart: /Person
+              - title: CanadianAddress
+                pathpart: /CanadianAddress
+              - title: Course
+                pathpart: /Course
+              - title: ExamResult
+                pathpart: /ExamResult
+              - title: LabResult
+                pathpart: /LabResult
+      - title: Expressions &amp; Math
+        pathpart: /E
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Calculator
+                pathpart: /Calculator
+              - title: Person
+                pathpart: /Person
+              - title: Account
+                pathpart: /Account
+              - title: ElapsedTime
+                pathpart: /ElapsedTime
+              - title: ResolveExpressions
+                pathpart: /ResolveExpressions
+              - title: Circle
+                pathpart: /Circle
+              - title: Square
+                pathpart: /Square
+              - title: Fraction
+                pathpart: /Fraction
+              - title: Angle
+                pathpart: /Angle
+              - title: StockItem
+                pathpart: /StockItem
+              - title: Die
+                pathpart: /Die
+              - title: ParkingCounter
+                pathpart: /ParkingCounter
+              - title: QuadradicEquation
+                pathpart: /QuadradicEquation
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: Calculator
+                pathpart: /Calculator
+              - title: Fraction
+                pathpart: /Fraction
+              - title: Square
+                pathpart: /Square
+              - title: Coordinate
+                pathpart: /Coordinate
+              - title: PaintEstimator
+                pathpart: /PaintEstimator
+              - title: BulkItem
+                pathpart: /BulkItem
+              - title: Die
+                pathpart: /Die
+              - title: RoundingCalculator
+                pathpart: /RoundingCalculator
+              - title: GenericRoundingCalculator
+                pathpart: /GenericRoundingCalculator
+              - title: PeopleCounter
+                pathpart: /PeopleCounter
+              - title: ScoreCard
+                pathpart: /ScoreCard
+              - title: Cylinder
+                pathpart: /Cylinder
+              - title: Cone
+                pathpart: /Cone
+              - title: GravityCalculator
+                pathpart: /GravityCalculator
+              - title: CurrencyCalculator
+                pathpart: /CurrencyCalculator
+  - title: Alternate Paths of Logic
+    pathpart: /Topic
+    subfolderitems:
+      - title: If-Else Structures
+        pathpart: /F
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: StockItem
+                pathpart: /StockItem
+              - title: Account
+                pathpart: /Account
+              - title: Person
+                pathpart: /Person
+              - title: Fraction
+                pathpart: /Fraction
+              - title: Angle
+                pathpart: /Angle
+              - title: ParkingCounter
+                pathpart: /ParkingCounter
+              - title: MemoryAddress
+                pathpart: /MemoryAddress
+              - title: Color
+                pathpart: /Color
+              - title: Base16
+                pathpart: /Base16
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: Rectangle
+                pathpart: /Rectangle
+              - title: HazardousMaterial
+                pathpart: /HazardousMaterial
+              - title: CurrencyCalculator
+                pathpart: /CurrencyCalculator
+              - title: GravityCalculator
+                pathpart: /GravityCalculator
+      - title: Raising Exceptions
+        pathpart: /G
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Fraction
+                pathpart: /Fraction
+              - title: Square
+                pathpart: /Square
+              - title: Circle
+                pathpart: /Circle
+              - title: Die
+                pathpart: /Die
+              - title: Person
+                pathpart: /Person
+              - title: Student
+                pathpart: /Student
+              - title: ParkingCounter
+                pathpart: /ParkingCounter
+              - title: StockItem
+                pathpart: /StockItem
+              - title: Account
+                pathpart: /Account
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: Account
+                pathpart: /Account
+              - title: Rectangle
+                pathpart: /Rectangle
+              - title: Cone
+                pathpart: /Cone
+              - title: Course
+                pathpart: /Course
+              - title: Cylinder
+                pathpart: /Cylinder
+              - title: HazardousMaterial
+                pathpart: /HazardousMaterial
+              - title: ExamResult
+                pathpart: /ExamResult
+              - title: LabResult
+                pathpart: /LabResult
+              - title: PeopleCounter
+                pathpart: /PeopleCounter
+              - title: BulkItem
+                pathpart: /BulkItem
+      - title: Case Structures
+        pathpart: /H
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: LetterGrade
+                pathpart: /LetterGrade
+              - title: Rating
+                pathpart: /Rating
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: BahamaLetterGrade
+                pathpart: /BahamaLetterGrade
+              - title: Feedback
+                pathpart: /Feedback
+              - title: HazardousMaterial
+                pathpart: /HazardousMaterial
+  - title: OOP As Building Blocks
+    pathpart: /Topic
+    subfolderitems:
+      - title: Enumerations &amp; Composition
+        pathpart: /I
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Coin
+                pathpart: /Coin
+              - title: Account
+                pathpart: /Account
+              - title: LetterGrade
+                pathpart: /LetterGrade
+              - title: Address
+                pathpart: /Address
+              - title: ImproperFraction
+                pathpart: /ImproperFraction
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: LetterGrade
+                pathpart: /LetterGrade
+              - title: HazardousMaterial
+                pathpart: /HazardousMaterial
+              - title: CanadianAddress
+                pathpart: /CanadianAddress
+              - title: Employee
+                pathpart: /Employee
+              - title: Company
+                pathpart: /Company
+  - title: Repetition
+    pathpart: /Topic
+    subfolderitems:
+      - title: Looping Structures
+        pathpart: /J
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Aggregator
+                pathpart: /Aggregator
+              - title: Math
+                pathpart: /Math
+              - title: Fraction
+                pathpart: /Fraction
+              - title: GuessingGame
+                pathpart: /GuessingGame
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: Aggregator
+                pathpart: /Aggregator
+              - title: Math
+                pathpart: /Math
+              - title: GuessingGame
+                pathpart: /GuessingGame
+      - title: Looping &amp; Collections
+        pathpart: /K
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Math
+                pathpart: /Math
+              - title: PhoneBook
+                pathpart: /PhoneBook
+              - title: ClassList
+                pathpart: /ClassList
+              - title: MultipleChoiceMarker
+                pathpart: /MultipleChoiceMarker
+              - title: BankStatement
+                pathpart: /BankStatement
+              - title: DeckOfCards
+                pathpart: /DeckOfCards
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: PhoneBook
+                pathpart: /PhoneBook 
+              - title: Registrar
+                pathpart: /Registrar
+              - title: BookBag
+                pathpart: /BookBag
+              - title: DeckOfCards
+                pathpart: /DeckOfCards
+  - title: Arrays
+    pathpart: /Topic
+    subfolderitems:
+      - title: Unsorted Arrays
+        pathpart: /L
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Math
+                pathpart: /Math
+              - title: PhoneBook
+                pathpart: /PhoneBook
+              - title: ClassList
+                pathpart: /ClassList
+              - title: MultipleChoiceMarker
+                pathpart: /MultipleChoiceMarker
+              - title: BankStatement
+                pathpart: /BankStatement
+              - title: DeckOfCards
+                pathpart: /DeckOfCards
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: PhoneBook
+                pathpart: /PhoneBook 
+              - title: Registrar
+                pathpart: /Registrar
+              - title: BookBag
+                pathpart: /BookBag
+              - title: DeckOfCards
+                pathpart: /DeckOfCards
+              - title: CD
+                pathpart: /CD
+      - title: Sorted Arrays
+        pathpart: /M
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: BranchVault
+                pathpart: /BranchVault
+              - title: PhoneBook
+                pathpart: /PhoneBook
+              - title: ClassList
+                pathpart: /ClassList
+              - title: BankStatement
+                pathpart: /BankStatement
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: PhoneBook
+                pathpart: /PhoneBook
+              - title: Registrar
+                pathpart: /Registrar
+              - title: CDLibrary
+                pathpart: /CDLibrary
+  - title: Applied Classes &amp; Flow Control
+    pathpart: /Topic
+    subfolderitems:
+      - title: Modularization &amp; Utility Classes
+        pathpart: /N
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: CD
+                pathpart: /CD
+              - title: RunningTime
+                pathpart: /RunningTime
+              - title: TextFormatter
+                pathpart: /TextFormatter
+              - title: MusicInfoFormatter
+                pathpart: /MusicInfoFormatter
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: TextFormatter
+                pathpart: /TextFormatter
+              - title: Humanizer
+                pathpart: /Humanizer
+      - title: File I/O
+        pathpart: /O
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: PhoneNumberFileAdapter
+                pathpart: /PhoneNumberFileAdapter
+              - title: StudentFileAdapter
+                pathpart: /StudentFileAdapter
+              - title: BookFileAdapter
+                pathpart: /BookFileAdapter
+              - title: SafetyDepositBoxFileAdapter
+                pathpart: /SafetyDepositBoxFileAdapter
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: PersonFileAdapter
+                pathpart: /PersonFileAdapter
+              - title: SongFileAdapter
+                pathpart: /SongFileAdapter
+      - title: Exception Handling
+        pathpart: /P
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: DemoTestingForExceptions
+                pathpart: /DemoTestingForExceptions
+              - title: DemoBookFileAdapter
+                pathpart: /DemoBookFileAdapter
+              - title: MediaPlayer
+                pathpart: /MediaPlayer
+          - title: Practice
+            pathpart: /Practice
+            subfolderitems:
+              - title: Testing Suite
+                pathpart: /TestingSuite
+              - title: Working Program
+                pathpart: /WorkingProgram
+      - title: Simple Algorithms
+        pathpart: /Q
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+            subfolderitems:
+              - title: Swapping
+                pathpart: /Swapping
+              - title: Sorting
+                pathpart: /Sorting
+              - title: Searching
+                pathpart: /Searching
+          - title: Practice
+            pathpart: /Practice
+  - title: SOLID Programming
+    pathpart: /Topic
+    subfolderitems:
+      - title: Inheritance
+        pathpart: /R
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+          - title: Practice
+            pathpart: /Practice
+      - title: SOLID Principles
+        pathpart: /S
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+          - title: Practice
+            pathpart: /Practice
+      - title: Beyond Classes
+        pathpart: /T
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+          - title: Practice
+            pathpart: /Practice
+      - title: OOP Design Patterns
+        pathpart: /U
+        subfolderitems:
+          - title: Examples
+            pathpart: /Examples
+          - title: Practice
+            pathpart: /Practice
