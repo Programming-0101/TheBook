@@ -1,2 +1,0 @@
-# Topic S - SOLID Principles
-
