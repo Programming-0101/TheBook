@@ -3,7 +3,7 @@ module.exports = {
     description: 'An Object-Oriented Introduction to Programming in C#', // rendered in <meta>
     // Defaults:
     base: '/TheBook/',
-    dest: '.vuepress/dist',
+    dest: 'gh-pages',
     themeConfig: {
         lastUpdated: 'Last updated on', // string | boolean
         nav: [
