@@ -9,5 +9,7 @@ vuepress build docs
 
 cd docs/.vuepress/dist
 
-git commit -a -m "Publish site"
+git commit -a -m "Publish site updates"
+
+git push
 ```
