@@ -22,4 +22,4 @@ This is an ALPHA Early Release of this book.
 
 # How to Use This Book
 
-This book consists of [Teaching](Teach/ReadMe.md) and [Code Samples](Topic/ReadMe.md). However you prefer to learn, whether by example or explanation, this book aims to be a comprehensive introduction to the fundamentals of programming.
+This book consists of [Teaching](Teach/) and [Code Samples](Topic/). However you prefer to learn, whether by example or explanation, this book aims to be a comprehensive introduction to the fundamentals of programming.
