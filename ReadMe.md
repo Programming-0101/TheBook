@@ -9,5 +9,5 @@ vuepress build docs
 
 cd docs/.vuepress/dist
 
-git push -f git@github.com:Programming-0101/TheBook.git master:gh-pages
+git commit -a -m "Publish site"
 ```
