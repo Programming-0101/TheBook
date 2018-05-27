@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: Raising Exceptions
 ---
 # Topic G – Raising Exceptions
 

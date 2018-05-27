@@ -1,7 +1,7 @@
 ---
-title: TBA
+title: Starting Classes (Part C)
 ---
-# Topic C – Starting Classes
+# C – Starting Classes
 
 ## Overview
 

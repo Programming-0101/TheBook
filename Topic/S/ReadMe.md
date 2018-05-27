@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: SOLID Principles
 ---
 # Topic S - SOLID Principles
 

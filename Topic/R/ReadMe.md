@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: Inheritance
 ---
 # Topic R - Inheritance
 

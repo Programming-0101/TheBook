@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: Other Types
 ---
 # Topic T - Other Types
 

@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: Arrays - Sorted
 ---
 # Topic M - Arrays - Sorted
 

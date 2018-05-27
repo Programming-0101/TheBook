@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Hello VuePress',
-    description: 'Just playing around', // rendered in <meta>
+    title: 'Programming Fundamentals',
+    description: 'An Object-Oriented Introduction to Programming in C#', // rendered in <meta>
     // Defaults:
     base: '/',
     dest: '.vuepress/dist',
@@ -9,11 +9,12 @@ module.exports = {
         nav: [
             { text: 'The Book', link: '/Teach/' },
             { text: 'The Code', link: '/Topic/' },
-            { text: 'Home', link: '/' },
+            { text: 'About', link: '/About/' },
         ],
         sidebar: {
             '/Teach/': [
-                // 'chapter1',
+                '',
+                'chapter1',
                 'chapter1-5',
                 'chapter1-7',
                 'console-1',
@@ -23,8 +24,9 @@ module.exports = {
             '/Topic/': [
                 'A/', 'B/', 'C/', 'D/', 'E/', 'F/', 'G/', 'H/', 'I/', 'J/', 'K/', 'L/', 'M/', 'N/', 'O/', 'P/', 'Q/', 'R/', 'S/', 'T/', 'U/'
             ],
-            '/':
-            ['', 'About']
+            '/About/':
+            ['', 'audience', 'colophon', 'log-summary', 'appendix-grammar', '_todo']
+            // ['ReadMe', 'audience', 'colophon', 'log-summary', 'appendix-grammar', '_todo']
         }
     }
   }

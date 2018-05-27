@@ -1,7 +1,7 @@
 ---
-title: TBA
+title: Enumerations and Composition
 ---
-# Topic I –Enumerations and Composition
+# Topic I – Enumerations and Composition
 
 ## Overview
 

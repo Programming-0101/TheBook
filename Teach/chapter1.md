@@ -1,28 +1,24 @@
 ---
-layout: default
-order: 1
 title: What is a Computer Program?
 description: Computer programming is not magic - it's methodical. Here we lay a foundation upon which to understand programming from an Object Oriented perspective.
-navtitle: Foundations
-navid: ch1
-nav:
-  - Data
-  - Programming Languages
-  - What Programmers Write
-  - What Computers "See"
-  - Doing the Math
 ---
 # What is a Computer Program
 
+::: tip Repeat After Me:
+A computer program is a ***set of instructions*** for manipulating ***information***.
+:::
+
 ## Introduction
 
-What is a computer program? A computer program is basically a **set of instructions** for manipulating **information**. To be of any value, the information used by a computer program must have a way to get into the program (input) and get out of the program (output). That may sound too simplistic, but ultimately it is entirely accurate; even the most sophisticated computer program can do nothing more than process information (albeit, in a very fast and efficient way), and no matter how cool the program looks, if there is no way to put information into it and get information out of it then it’s not of much use to anyone.
+What is a computer program? A computer program is basically a **set of instructions** for manipulating **information**.
+
+To be of any value, the information used by a computer program must have a way to get into the program (input) and get out of the program (output). That may sound too simplistic, but ultimately it is entirely accurate; even the most sophisticated computer program can do nothing more than process information (albeit, in a very fast and efficient way), and no matter how cool the program looks, if there is no way to put information into it and get information out of it then it’s not of much use to anyone.
 
 The most familiar kind of input and output (or I/O) in a computer program comes from the user. Textual information is entered (input) from the user via the keyboard and displayed (output) to the user via the monitor. Other means of user I/O can include computer mice, microphones, speakers, printers, fax machines, Braille readers, touch screens, stylus, etc.
 
 Besides handling user I/O, computer programs can also do file or database I/O. Computer files and databases allow information to be persistent. Information is said to be persistent when it can be stored outside of the computer program and later retrieved for further processing. The combination of a) user I/O, b) fast and accurate processing, and c) persistent information storage is what makes computer programs so useful.
 
-## <a id="ch1-1"></a>Variables, Values and Data Types
+## Variables, Values and Data Types
 
 > "... manipulating ***information***."
 
@@ -38,21 +34,14 @@ Since computer programs are all about handling information, it is important to u
 
 These different kinds of information can be said to be primitive. They represent the most basic kind of data that today's computer programs have to deal with. These three kinds of information can be further subdivided into fundamental data types:
 
-|:========================|:======================================================|
 | Category of Information | Basic Data Types                                      |
-|=========================|:======================================================|
+|-------------------------|:------------------------------------------------------|
 | Numeric                 | Integer - whole numbers                               |
-|                         |-------------------------------------------------------|
 |                         | Real - numbers with fractional components             |
-|                         |-------------------------------------------------------|
 |                         | Currency - numbers representing monetary values       |
-|-------------------------|:------------------------------------------------------|
 | Textual                 | Character - a single letter or symbol                 |
-|                         |-------------------------------------------------------|
 |                         | String - a set of characters (with or without spaces) |
-|-------------------------|:------------------------------------------------------|
 | Conceptual              | Boolean - true/false, yes/no, on/off                  |
-|=========================|=======================================================|
 
 Any meaningful handling of information requires the understanding of three related (but distinct) concepts: variables, values, and data types.
 
@@ -112,11 +101,11 @@ In summary, the basic rules for variables, values and data types are:
 * Each primitive variable can only hold one value at a given time.
 * Each variable must have a distinct name.
 
-## <a id="ch1-2"></a>Programming Languages and Coding Instructions
+## Programming Languages and Coding Instructions
 
 > "... a set of ***instructions*** ..."
 
-### <a id="ch1-3"></a>What Programmers Write
+### What Programmers Write
 
 Programmers write **code** in plain-text files known as *source files*. The language that a programmer use to write code is called a **programming language**. Just as with human languages, there are many different programming languages. Some examples of modern programming languages are **C#** (the language used in this book), **Java**, **Visual Basic .Net**, **SQL**, and **JavaScript**. In addition, many other programming languages have been developed over the years such as Python, Lisp, Fortran, Cobol, Haskell, C, C++, and many more.
 
@@ -124,7 +113,7 @@ Each programming language defines their own words (called **keywords**), punctua
 
 In all cases, programming languages allow us to write ***instructions*** that manipulate ***data**. Through variables, a computer program has the ability to manipulate the values stored in those variables. This manipulation of stored information is accomplished by giving the computer specific instructions on what manipulations to perform.
 
-### <a id="ch1-4"></a>What Computers "See"
+### What Computers "See"
 
 Programming languages allow programmers to give instructions to a computer in a form that is more familiar to and easier to use by the programmer. Today's programming languages are known as high-level languages because they incorporate simple words with familiar meanings in English, such as if, else, while, do, and return. Low-level languages, such as Assembler, use more cryptic commands and are much closer to machine language, thereby making them harder for programmers to work with.
 
@@ -132,7 +121,7 @@ The exact form that the instructions will take depends on the programming langua
 
 The on and off switches in computer memory represent the flow of electricity through the computer. Millions and billions of these switches (also known as "gates" - no relation to Bill) are arranged on tiny computer chips in highly sophisticated patterns to allow for the organized flow of electricity. It is this organized flow of ones and zeros that allow us to use these machines for fast and efficient information processing.
 
-### <a id="ch1-5"></a>Doing the Math
+### Doing the Math
 
 High-level programming languages (such as C++, C#, and Visual Basic) make it relatively easy to manipulate the values of variables. **Assignment statements** tell the computer to store specific values into specific variables. Assignment statements are often used with **expressions**, which are combinations of variables, values, and/or operators (such as Arithmetic operators). It is through expressions and assignment statements that the bulk of a computer's work is done.
 
@@ -148,33 +137,19 @@ The following chart summarizes key arithmetic operations and their corresponding
 
 > Comparison of Arithmetic Operators in different Programming Languages
 
-|:=========================================|:================================================================================|
-| Arithmetic Operation                     | Symbols / Function Calls                                                        |
-|==========================================|:=======:|:============:|:============:|:============:|:========================:|
-|                                          | C++     | C#           | JavaScript   | Visual Basic | SQL                      |
-|==========================================|=========|==============|==============|==============|==========================|
-| Addition                                 | +       | +            | +            | +            | +                        |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Subtraction                              | -       | -            | -            | -            | -                        |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Multiplication                           | *       | *            | *            | *            | *                        |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Division                                 | /       | /            | /            | /            | /                        |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Remainder of Division                    | %       | %            | %            | Mod          | MOD(Division Expression) |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Square Root                              | sqrt( ) | Math.Sqrt( ) | Math.sqrt( ) | Sqr( )       | SQR( )                   |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Exponential Notation (Power)             | pow( )  | Math.Pow( )  | Math.pow( )  | ^            | POWER( )                 |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Sine                                     | sin( )  | Math.Sin( )  | Math.sin( )  | Sin( )       | SIN( )                   |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Cosine                                   | cos( )  | Math.Cos( )  | Math.cos( )  | Cos( )       | COS( )                   |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Tangent                                  | tan( )  | Math.Tan( )  | Math.tan( )  | Tan( )       | TAN( )                   |
-|------------------------------------------|---------|--------------|--------------|--------------|--------------------------|
-| Parenthesis (affects order of operation) | ( )     | ( )          | ( )          | ( )          | ( )                      |
-|==========================================|=========|==============|==============|==============|==========================|
+| Arithmetic Operation     | C++     | C#           | JavaScript   | Visual Basic | SQL                      |
+|--------------------------|---------|--------------|--------------|--------------|--------------------------|
+| Addition                 | +       | +            | +            | +            | +                        |
+| Subtraction              | -       | -            | -            | -            | -                        |
+| Multiplication           | *       | *            | *            | *            | *                        |
+| Division                 | /       | /            | /            | /            | /                        |
+| Remainder of Division    | %       | %            | %            | Mod          | MOD(Division Expression) |
+| Square Root              | sqrt( ) | Math.Sqrt( ) | Math.sqrt( ) | Sqr( )       | SQR( )                   |
+| Exponential Notation (Power) | pow( )  | Math.Pow( )  | Math.pow( )  | ^            | POWER( )             |
+| Sine                     | sin( )  | Math.Sin( )  | Math.sin( )  | Sin( )       | SIN( )                   |
+| Cosine                   | cos( )  | Math.Cos( )  | Math.cos( )  | Cos( )       | COS( )                   |
+| Tangent                  | tan( )  | Math.Tan( )  | Math.tan( )  | Tan( )       | TAN( )                   |
+| Parenthesis (affects order of operation) | ( )     | ( )          | ( )          | ( )          | ( )      |
 
 The only "arithmetic" operation that is typically applied to string data types is addition. The addition of two strings is usually interpreted as the concatenation (joining together) of the two string values into a single string value.
 

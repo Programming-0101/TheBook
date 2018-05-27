@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: Simple Algorithms
 ---
 # Topic Q - Simple Algorithms
 

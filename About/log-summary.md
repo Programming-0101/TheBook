@@ -1,3 +1,6 @@
+---
+title: Learning Outcome Guide
+---
 # Learning Outcome Guide Review
 
 Learning Outcome Guides (LOGs) are an excellent tool for instructors in the classroom and for students when they are reviewing their notes for each class. A Learning Outcome Guide is simply a list of specific things that the student (or reader, in this case) should be able to do or understand as a result of learning the material. LOGs give the learner the ability to self-check their progress ("Can I do *X*?").
@@ -487,18 +490,18 @@ List the operator precedence for mixing logical, arithmetic, and relational oper
 : Logical Not (!), Arithmetic, Relational, Logical And/Or
 
 List the relational operators
-: >, >=, ==, <=, <
-: Greater Than (>)
-: Greater Than or Equal To (>=)
-: Is Equal To (==)
-: Less Than or Equal To (<=)
-: Less Than (<)
+: `>`, `>=`, `==`, `<=`, `<`
+: Greater Than (`>`)
+: Greater Than or Equal To (`>=`)
+: Is Equal To (`==`)
+: Less Than or Equal To (`<=`)
+: Less Than (`<`)
 
 List the logical operators
-: &&, ||, !
-: And (&&)
-: Or (||)
-: Not (!)
+: `&&`, `||`, `!`
+: And (`&&`)
+: Or (`||`)
+: Not (`!`)
 
 Use relational, logical, and arithmetic operators to construct conditional expressions
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
@@ -527,7 +530,7 @@ else
 
 Identify the correct way to compare or check the contents of strings in conditional expressions
 : The proper way to compare String values is to use the .Equals(), .CompareTo() and .IsNullOrEmpty() methods.
-: Generally, the relational operators (==, <, etc) should not be used directly on string values.
+: Generally, the relational operators (==, `<`, etc) should not be used directly on string values.
 
 List and describe the commonly used fields and methods of the String class that would be used in if-else statements
 : .Equals(String) - returns a Boolean, true or false, as to whether the two strings are or are not equal.
@@ -741,7 +744,7 @@ Define the term Generics as used in C# and give an example
 Describe what is meant by a "collection" class and give an example
 : TBA
 
-List and describe the common methods of collection classes such as the List<T>
+List and describe the common methods of collection classes such as the `List<T>`
 : TBA
 
 Identify the parts of the foreach statement
@@ -754,8 +757,8 @@ Identify the major benefit of using Generics
 : Type Safety –
 
 List the major benefits of using collections instead of arrays
-: Collections such as List<T> can grow in capacity whenever items are added
-: Collections such as List<T> do not need special management of the boundaries (such as the index of the upper limit of an array)
+: Collections such as `List<T>` can grow in capacity whenever items are added
+: Collections such as `List<T>` do not need special management of the boundaries (such as the index of the upper limit of an array)
 : Collections provide simple methods for quick adding and removing of "elements"
 
 ## Topic L - Arrays - Not Sorted
