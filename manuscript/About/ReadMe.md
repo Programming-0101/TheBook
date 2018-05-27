@@ -19,3 +19,5 @@ The essence of this OOP-First approach are seen in what I call the ["ABCs of Cla
 # The Author
 
 My name is ***Dan Gilleland***, and I've been teaching computer programming for almost 20 years. My own foundations in programming go back to the late 1970's. I also run a part-time side business called ***Dynamic Generation*** offering software consulting services.
+
+![](../images/ball-457334_640.jpg)
