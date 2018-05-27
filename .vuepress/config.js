@@ -2,7 +2,7 @@ module.exports = {
     title: 'Programming Fundamentals',
     description: 'An Object-Oriented Introduction to Programming in C#', // rendered in <meta>
     // Defaults:
-    base: '/',
+    base: '/TheBook/',
     dest: '.vuepress/dist',
     themeConfig: {
         lastUpdated: 'Last updated on', // string | boolean
