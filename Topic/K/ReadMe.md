@@ -5,11 +5,11 @@ title: TBA
 
 ## Overview
 
-This topic provides further examples of looping logic, but involves the use of collections. All of these samples make use of the List<T> class to maintain a collection or group of objects.
+This topic provides further examples of looping logic, but involves the use of collections. All of these samples make use of the `List<T>` class to maintain a collection or group of objects.
 
-The List<T> class is a Generic class, meaning that the item in the angled brackets - <T> - is a placeholder for the name of the actual class that is being managed in the List. For example, to have a list of Integers we would declare that as List<Integer>. Likewise, if we wanted a list of Student objects, it would be declared as List<Student>.
+The `List<T>` class is a Generic class, meaning that the item in the angled brackets - `<T>` - is a placeholder for the name of the actual class that is being managed in the List. For example, to have a list of Integers we would declare that as `List<int>`. Likewise, if we wanted a list of Student objects, it would be declared as `List<Student>`.
 
-The List<T> class supports a number of methods and properties for working with the collection.
+The `List<T>` class supports a number of methods and properties for working with the collection.
 
 * Add() – Used to add an item to the collection
 * [index] – Used to retrieve an item in the collection
@@ -25,7 +25,7 @@ The List<T> class supports a number of methods and properties for working with t
 #### General Programming Concepts and Terms
 
 * Describe what is meant by a “collection” class and give an example
-* List and describe the common methods of collection classes such as the List<T>
+* List and describe the common methods of collection classes such as the `List<T>`
 * Identify the parts of the foreach statement
 * Describe the common situations in which the foreach statement is typically used
 * Identify the major benefit of using Generics
