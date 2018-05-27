@@ -1,5 +1,5 @@
 ---
-title: Inheritance
+title: (R) Inheritance
 ---
 # Topic R - Inheritance
 

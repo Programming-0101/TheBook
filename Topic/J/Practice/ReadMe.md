@@ -1,3 +1,6 @@
+---
+title: Practice
+---
 # Practice Exercises
 
 1. Aggregator – countItems(), minValue()

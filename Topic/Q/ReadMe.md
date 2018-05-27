@@ -1,5 +1,5 @@
 ---
-title: Simple Algorithms
+title: (Q) Simple Algorithms
 ---
 # Topic Q - Simple Algorithms
 
