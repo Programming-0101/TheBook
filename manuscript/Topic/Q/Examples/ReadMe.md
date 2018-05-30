@@ -3,7 +3,7 @@ title: Examples
 ---
 # Code Samples
 
-* Swapping
-* Sorting
-* Searching
+* [Swapping](Swapping.md)
+* [Sorting](Sorting.md)
+* [Searching](Searching.md)
 
