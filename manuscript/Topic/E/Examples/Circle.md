@@ -14,7 +14,7 @@ Write the code for the Circle class. The solution must meet the following requir
 
 Use the following class diagram when creating your solution.
 
-![Circle Class Diagram](E-Circle.png)
+![Circle Class Diagram](./E-Circle.png)
  
 ```csharp
 using System;

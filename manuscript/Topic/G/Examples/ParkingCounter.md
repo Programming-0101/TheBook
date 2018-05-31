@@ -25,7 +25,7 @@ Write the code that will monitor vehicles entering and leaving a parking lot. Th
 
 Use the following class diagram when creating your solution.
 
-![](G-ParkingCounter.png)
+![](./G-ParkingCounter.png)
 
 ```csharp
     public ParkingCounter(int parkingSpots)

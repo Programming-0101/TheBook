@@ -18,9 +18,9 @@ The ClassList example maintains an array of students for a particular course by 
 * Supporting Classes
   * Student - 
 
-![](L-Student.png)
+![](./L-Student.png)
 
-![](L-ClassList.png)
+![](./L-ClassList.png)
 
 ```csharp
 public class ClassList

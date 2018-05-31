@@ -15,4 +15,4 @@ Write the code to provide validation for the Cylinder class that meets the follo
 
 Use the following class diagram when creating your solution.
  
-![](G-Cylinder.png)
+![](./G-Cylinder.png)

@@ -26,7 +26,7 @@ On a piece of paper, evaluate the following expressions to show the final value 
 
 The solution for question 2 is provided as an example. Use the accompanying class diagram when creating your coded solution as proof of your final answers.
 
-![](E-ExpressionResolutionBreakdown.png) ![](E-Resolve-Expressions.png)
+![](./E-ExpressionResolutionBreakdown.png) ![](./E-ResolveExpressions.png)
 
 ```csharp
 namespace Topic.E.Examples

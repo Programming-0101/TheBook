@@ -25,4 +25,4 @@ Write the code needed to provide rounding of various degrees of accuracy. The so
 
 Use the following class diagram when creating your solution.
 
-![RoundingCalculator Class Diagram](E-RoundingCalculator.png)
+![RoundingCalculator Class Diagram](./E-RoundingCalculator.png)

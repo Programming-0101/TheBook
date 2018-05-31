@@ -9,7 +9,7 @@ The Fraction class represents a fraction as two integers: one for the numerator 
 
 * GreatestCommonDenominator() – This private method is used by the Simplify() method to get the greatest common denominator for the numerator and denominator. Remember to allow for dealing with negative fractions (in which case, the negative sign will be on the numerator). This example uses a while statement (though it is possible to re-work the logic to use a do-while statement).
 
-![](J-Fraction.png)
+![](./J-Fraction.png)
  
 ```csharp
     private int GreatestCommonDenominator()

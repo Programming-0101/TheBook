@@ -19,4 +19,4 @@ Write the code to provide validation for the ExamResult class. The solution must
 * **The student ID must be nine digits**
 * **The exam name cannot be an empty string (and must be trimmed)**
 
-![](G-ExamResult.png)
+![](./G-ExamResult.png)

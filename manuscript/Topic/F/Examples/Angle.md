@@ -30,7 +30,7 @@ Angle Range     | Angle Type
 
 Use the following class diagram when creating your solution.
 
-![](F-Angle.png)
+![](./F-Angle.png)
  
 ```csharp
   public string AngleType

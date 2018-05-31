@@ -16,7 +16,7 @@ Write the code needed to represent a coin that could be used in a coin-toss game
 
 Use the following diagram when creating your solution.
 
-![](I-Coin.png)
+![](./I-Coin.png)
 
 ```csharp
 public class Coin

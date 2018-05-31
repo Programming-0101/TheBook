@@ -22,10 +22,10 @@ A currency exchange store at the international airport needs a program to conver
 To illustrate the possible exchange rates, please refer to the following images.
 
 {caption:"Currency exchange rates sourced from http://www.x-rates.com:}
-![](F-CurrencyExchangeRates.png)
+![](./F-CurrencyExchangeRates.png)
 
-![](F-CurrencyAmericanDollar.png) 
+![](./F-CurrencyAmericanDollar.png) 
  
 Use the following class diagram when creating your solution.
 
-![](F-CurrencyCalculator.png)
+![](./F-CurrencyCalculator.png)

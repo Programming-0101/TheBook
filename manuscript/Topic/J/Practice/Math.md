@@ -10,4 +10,4 @@ Expand on the sample Math class by providing methods to perform the following.
 * Power() – Calculate the value of x to the power of y (as in xy). Use looping logic (addition) to get the result.
 * GreatestCommonDenominator() – Find the greatest common denominator between two whole numbers.
 
-![](J-Math-2.png)
+![](./J-Math-2.png)

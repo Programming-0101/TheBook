@@ -11,7 +11,7 @@ Create the ExamResult class so that it represents the results of an exam written
 
 Use auto-implemented properties for the entire class. Note that only the following properties should have private "set" implementations: TotalMarks, ExamName, ExamWeight, and StudentId.
 
-![ExamResult Class Diagram](C-ExamResult.png)
+![ExamResult Class Diagram](./C-ExamResult.png)
  
 Also create a driver for testing this class; you may use any name for the driver as long as it is not already mentioned in this namespace. In the driver, instantiate all of the exams you have taken to date in this course and populate those objects with data (use hard-coded data); if you need to, you may create fake data for the driver. 
 

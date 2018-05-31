@@ -5,7 +5,7 @@ title: TBA
 
 This class reinforces the idea of encapsulation and constructors. It also demonstrates the idea of overloading the default ToString() method that every class inherits from the Object class.
 
-![Student Class Diagram](D-Student.png)
+![Student Class Diagram](./D-Student.png)
 
 Should…
 * Get/Set Name

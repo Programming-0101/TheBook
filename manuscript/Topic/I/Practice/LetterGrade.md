@@ -23,6 +23,6 @@ F     | 0     | F-0 - 0-45%
 
 Use the following class diagram when creating your solution.
 
-![](I-LetterGrade.png)
+![](./I-LetterGrade.png)
 
-![](I-BahamaLetterGrade.png)
+![](./I-BahamaLetterGrade.png)

@@ -16,7 +16,7 @@ For example, if a Numbers object has a set of four values such as 1.0, 5.5, 3.2,
 
 *Note:* This class is already coded for you in the samples.
 
-![](J-Numbers.png)
+![](./J-Numbers.png)
  
 **Aggregator Methods**
 
@@ -26,7 +26,7 @@ The following Aggregator methods will demonstrate looping logic and syntax. All 
 * AverageItems() – This method gets all the values inside of the Numbers object so as to calculate the average value. If no values exist in the Numbers object, then the method returns an average of zero.
 * MaxValue() – This method examines the Numbers object’s values to see which value is the largest. If there are no values inside of the Numbers object, then the method returns the smallest possible value that is supported by the programming language.
 
-![](J-Aggregator.png)
+![](./J-Aggregator.png)
  
 ```csharp
 public class Aggregator

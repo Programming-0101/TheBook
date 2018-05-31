@@ -23,7 +23,7 @@ Write the code for the Fraction class. The solution must meet the following requ
 
 Use the following class diagram when creating your solution.
 
-![](F-Fraction.png)
+![](./F-Fraction.png)
  
 ```csharp
     public Fraction(int numerator, int denominator)

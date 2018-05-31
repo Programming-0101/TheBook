@@ -20,4 +20,4 @@ Write the code that will add another piece of validation to the Account class. T
 
 Use the following class diagram when creating your solution.
 
-![](G-Account-2.png)
+![](./G-Account-2.png)

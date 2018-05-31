@@ -39,126 +39,146 @@ module.exports = {
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/B/'
+                ['/Topic/B/', '(Next →) Topic B']
             ],
             '/Topic/B/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/C/'
+                ['/Topic/A/', '(← Prev) Topic A'],
+                ['/Topic/C/', '(Next →) Topic C']
             ],
             '/Topic/C/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/D/'
+                ['/Topic/B/', '(← Prev) Topic B'],
+                ['/Topic/D/', '(Next →) Topic D']
             ],
             '/Topic/D/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/E/'
+                ['/Topic/C/', '(← Prev) Topic C'],
+                ['/Topic/E/', '(Next →) Topic E']
             ],
             '/Topic/E/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/F/'
+                ['/Topic/D/', '(← Prev) Topic D'],
+                ['/Topic/F/', '(Next →) Topic F']
             ],
             '/Topic/F/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/G/'
+                ['/Topic/E/', '(← Prev) Topic E'],
+                ['/Topic/G/', '(Next →) Topic G']
             ],
             '/Topic/G/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/H/'
+                ['/Topic/F/', '(← Prev) Topic F'],
+                ['/Topic/H/', '(Next →) Topic H']
             ],
             '/Topic/H/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/I/'
+                ['/Topic/G/', '(← Prev) Topic G'],
+                ['/Topic/I/', '(Next →) Topic I']
             ],
             '/Topic/I/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/J/'
+                ['/Topic/H/', '(← Prev) Topic H'],
+                ['/Topic/J/', '(Next →) Topic J']
             ],
             '/Topic/J/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/K/'
+                ['/Topic/I/', '(← Prev) Topic I'],
+                ['/Topic/K/', '(Next →) Topic K']
             ],
             '/Topic/K/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/L/'
+                ['/Topic/J/', '(← Prev) Topic J'],
+                ['/Topic/L/', '(Next →) Topic L']
             ],
             '/Topic/L/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/M/'
+                ['/Topic/K/', '(← Prev) Topic K'],
+                ['/Topic/M/', '(Next →) Topic M']
             ],
             '/Topic/M/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/N/'
+                ['/Topic/L/', '(← Prev) Topic L'],
+                ['/Topic/N/', '(Next →) Topic N']
             ],
             '/Topic/N/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/O/'
+                ['/Topic/M/', '(← Prev) Topic M'],
+                ['/Topic/O/', '(Next →) Topic O']
             ],
             '/Topic/O/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/P/'
+                ['/Topic/N/', '(← Prev) Topic N'],
+                ['/Topic/P/', '(Next →) Topic P']
             ],
             '/Topic/P/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/Q/'
+                ['/Topic/O/', '(← Prev) Topic O'],
+                ['/Topic/Q/', '(Next →) Topic Q']
             ],
             '/Topic/Q/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/R/'
+                ['/Topic/P/', '(← Prev) Topic P'],
+                ['/Topic/R/', '(Next →) Topic R']
             ],
             '/Topic/R/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/S/'
+                ['/Topic/Q/', '(← Prev) Topic Q'],
+                ['/Topic/S/', '(Next →) Topic S']
             ],
             '/Topic/S/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/T/'
+                ['/Topic/R/', '(← Prev) Topic R'],
+                ['/Topic/T/', '(Next →) Topic T']
             ],
             '/Topic/T/': [
                 '',
                 'Examples/',
                 'Practice/',
-                '/Topic/U/'
+                ['/Topic/S/', '(← Prev) Topic S'],
+                ['/Topic/U/', '(Next →) Topic U']
             ],
             '/Topic/U/': [
                 '',
                 'Examples/',
-                'Practice/'
+                'Practice/',
+                ['/Topic/T/', '(← Prev) Topic T']
             ],
             '/About/':
             ['', 'audience', 'colophon', 'log-summary', 'appendix-grammar', '_todo']

@@ -16,4 +16,4 @@ Write the code for the Rectangle class. The solution must meet the following req
 
 Use the following class diagram when creating your solution.
 
-![](F-Rectangle.png)
+![](./F-Rectangle.png)

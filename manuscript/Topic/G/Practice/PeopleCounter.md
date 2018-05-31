@@ -18,4 +18,4 @@ Write the code needed to track people entering and leaving a store. It must be a
 
 Use the following class diagram when creating your solution.
  
-![](G-PeopleCounter.png)
+![](./G-PeopleCounter.png)

@@ -13,7 +13,7 @@ Use an auto-implemented property for the MarksEarned; use fields as the "backing
 
 Note that the following properties should not have "set" implementations: TotalMarks, LabNumber, LabWeight, and StudentId. 
 
-![LabResult Class Diagram](C-LabResult.png)
+![LabResult Class Diagram](./C-LabResult.png)
 
 Here are some XML comments to describe the ToString( ) method.
 

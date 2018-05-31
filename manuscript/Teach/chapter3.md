@@ -9,13 +9,13 @@ This three-part tutorial establishes the foundations of the key grammars around 
 
 This tutorial will walk you through the steps to create a class and an object based on the following design. This first program will demonstrate a BankAccount class and the transfer of money from one bank account to another.
 
-![](3-BankAccount.png)
+![](./3-BankAccount.png)
 
-![](3-Bank.png)
+![](./3-Bank.png)
  
 1) Open up Visual Studio and create a new C# Console Application project. In that project, create a folder called "Tutorial".
 
-![](3-Solution-Explorer.png)
+![](./3-Solution-Explorer.png)
 
 2) Right-click on the Tutorial folder, and create a class called "BankAccount". Edit the BankAccount class so that it has the following code.
 
@@ -134,15 +134,15 @@ namespace ObjectABCs
 
 When you run the program, you should see the result as shown in the following screen-shot.
 
-![](3-Part-1-Output.png)
+![](./3-Part-1-Output.png)
 
 ## Part 2
 
 A big aspect of developing computer programs is the work of modifying existing code that you or others have written. In this part of the tutorial, we'll revisit the BankAccount and DemoDriver classes to add and take advantage of a new method on the BankAccount class: ToString().
 
-![](3-BankAccount-2.png)
+![](./3-BankAccount-2.png)
 
-![](3-Part-2-Output.png)
+![](./3-Part-2-Output.png)
   
 1) Open the BankAccount class and modify it by adding the following ToString() method in the body of the class.
 
@@ -194,13 +194,13 @@ This property has the exact same effect as the following, longer approach of usi
 
 In this part of the tutorial, you will create classes that use auto-implemented properties, as well as regular properties.
 
-![](3-RentalCar.png)
+![](./3-RentalCar.png)
 
-![](3-RentalCompany.png)
+![](./3-RentalCompany.png)
   
 1) Open up Visual Studio and create a new C# Console Application project. In that project, create a folder called "Tutorial".
 
-![](3-Solution-Explorer.png)
+![](./3-Solution-Explorer.png)
  
 2) Create a new class in the Tutorial folder called RentalCar. Edit the class so that it matches the following code.
 
@@ -351,5 +351,5 @@ namespace ObjectABCs
 
 6) Run the program. You should get results similar to the following screenshot.
  
-![](3-Part-3-Output.png)
+![](./3-Part-3-Output.png)
 

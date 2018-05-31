@@ -21,4 +21,4 @@ Write the code needed to perform rounding to either whole numbers or fractions a
 
 Use the following class diagram when creating your solution.
 
-![GenericRoundingCalculator Class Diagram](E-GenericRoundingCalculator.png)
+![GenericRoundingCalculator Class Diagram](./E-GenericRoundingCalculator.png)

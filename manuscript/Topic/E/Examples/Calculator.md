@@ -16,7 +16,7 @@ The solution must meet the following requirements:
 
 Use the following class diagram when creating your solution. Since this class does not have properties or fields, make the methods static.
 
-![Calculator Class Diagram](E-Calculator.png)
+![Calculator Class Diagram](./E-Calculator.png)
 
 ```csharp
 public class Calculator

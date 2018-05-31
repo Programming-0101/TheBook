@@ -12,4 +12,4 @@ title: Practice
   * Class E – Corrosive Material
   * Class F – Dangerously Reactive Material
 * [CurrencyCalculator](CurrencyCalculator.md) – This exercise extends the previous CurrencyCalculator exercise by allowing the conversion from a foreign currency to US dollars.
-* [GravityCalculator](GravityCalculatory.md) – This exercise extends the previous GravityCalculator exercise by allowing the conversion to a weight on Earth from a weight on another planet in our solar system.
+* [GravityCalculator](GravityCalculator.md) – This exercise extends the previous GravityCalculator exercise by allowing the conversion to a weight on Earth from a weight on another planet in our solar system.

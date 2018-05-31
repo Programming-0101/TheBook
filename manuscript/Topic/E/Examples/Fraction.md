@@ -15,7 +15,7 @@ Write the code for the Fraction class. The solution must meet the following requ
 
 Use the following class diagram when creating your solution.
 
-![Fraction Class Diagram](E-Fraction.png)
+![Fraction Class Diagram](./E-Fraction.png)
 
 ```csharp
 public class Fraction

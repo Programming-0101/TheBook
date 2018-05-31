@@ -3,7 +3,7 @@ title: TBA
 ---
 # Company
 
-![Company Class Diagram](D-Company.png)
+![Company Class Diagram](./D-Company.png)
 
 Should…
 * Get/Set Name

@@ -18,4 +18,4 @@ Write the code for the BulkItem class. The solution must meet the following requ
 
 Use the following class diagram when creating your solution.
  
-![](G-BulkItem.png)
+![](./G-BulkItem.png)

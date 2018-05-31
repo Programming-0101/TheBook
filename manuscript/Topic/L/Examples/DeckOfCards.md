@@ -11,9 +11,9 @@ The DeckOfCards class represents a complete deck of cards. When the deck is firs
 * Supporting Classes
   * PlayingCard - The PlayingCard class, along with its two enumerated types CardSuit and CardValue, are the basis for the DeckOfCards class.
 
-![](L-PlayingCard.png)
+![](./L-PlayingCard.png)
 
-![](L-DeckOfCards.png)
+![](./L-DeckOfCards.png)
 
 ```csharp
 public class DeckOfCards

@@ -11,9 +11,9 @@ This class is used for marking multiple choice exams. It takes an array of Multi
 * Supporting Classes
   * MultipleChoice -
 
-![](L-MultipleChoice.png)
+![](./L-MultipleChoice.png)
 
-![](L-MultipleChoiceMarker.png)
+![](./L-MultipleChoiceMarker.png)
  
 ```csharp
     public Mark MarkExam(MultipleChoice[] examAnswers)

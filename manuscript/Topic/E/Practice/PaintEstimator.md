@@ -18,4 +18,4 @@ Write the code needed to help a painter to estimate the number of paint cans to 
 
 Use the following class diagram when creating your solution.
 
-![PaintEstimator Class Diagram](E-PaintEstimator.png)
+![PaintEstimator Class Diagram](./E-PaintEstimator.png)

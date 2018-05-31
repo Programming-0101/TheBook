@@ -19,4 +19,4 @@ Note that the portion `sqrt(r^2 + h^2)`$ is known as the slant height.
 
 Use the following class diagram when creating your solution.
 
-![Cone Class Diagram](E-Cone.png)
+![Cone Class Diagram](./E-Cone.png)

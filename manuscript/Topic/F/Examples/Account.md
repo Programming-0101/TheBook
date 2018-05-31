@@ -16,7 +16,7 @@ Write the code that will represent a simple bank account. The solution must meet
 
 Use the following class diagram when creating your solution.
 
-![Account Class Diagram](F-Account.png)
+![Account Class Diagram](./F-Account.png)
  
 ```csharp
   public double Withdraw(double amount)

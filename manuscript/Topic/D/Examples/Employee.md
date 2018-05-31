@@ -3,7 +3,7 @@ title: TBA
 ---
 # Employee
 
-![Employee Class Diagram](D-Employee.png)
+![Employee Class Diagram](./D-Employee.png)
 
 Should…
 * Get/Set First Name

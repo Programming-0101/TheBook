@@ -19,7 +19,7 @@ Write the code for the Angle class. The solution must meet the following require
 
 Use the following class diagram when creating your solution.
 
-![Angle Class Diagram](E-Angle.png)
+![Angle Class Diagram](./E-Angle.png)
 
 ```csharp
 using System;

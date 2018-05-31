@@ -7,7 +7,7 @@ This sample leverages the existing calculation of a number in the Fibonacci sequ
 
 * FibonacciSequence(Length : Integer) – This method generates the sequence of Fibonacci numbers to a specific length in the sequence.
 
-![](K-Math.png)
+![](./K-Math.png)
 
 ```csharp
 public static List<int> FibonacciSequence(int length)

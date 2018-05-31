@@ -14,4 +14,4 @@ Write the code needed to add the ability for a Square to determine the length of
 
 Use the following class diagram when creating your solution.
 
-![Square Class Diagram](E-Square-2.png)
+![Square Class Diagram](./E-Square-2.png)

@@ -9,7 +9,7 @@ Extend the Account class from the example to include more information.
 
 Extend the Account class from the example to include more information. Specifically, include an AccountType:String, BankName:String, BranchNumber:Integer, and InstitutionNumber:Integer. Base your solution on the following class diagram.
 
-![Account Class Diagram](C-Account-2.png)
+![Account Class Diagram](./C-Account-2.png)
 
 Also modify the driver to make use of the added information.
 

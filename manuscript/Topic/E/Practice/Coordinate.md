@@ -19,4 +19,4 @@ Write the code needed to represent a geographical co-ordinate for longitude and 
 
 Use the following class diagram when creating your solution.
 
-![Coordinate Class Diagram](E-Coordinate.png)
+![Coordinate Class Diagram](./E-Coordinate.png)

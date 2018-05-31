@@ -8,13 +8,13 @@ This class represents a bank statement for a BankAccount for a given month. The 
 
 **Account and BankTransaction**
 
-![](K-Account.png)
+![](./K-Account.png)
 
-![](K-BankTransaction.png)
+![](./K-BankTransaction.png)
 
 **Bank Statement**
 
-![](K-BankStatement.png)
+![](./K-BankStatement.png)
 
 ```csharp
 public class BankStatement

@@ -28,4 +28,4 @@ F          | Dangerously Reactive Material
 
 Use the following class diagram when creating your solution.
 
-![](G-HazardousMaterial.png)
+![](./G-HazardousMaterial.png)

@@ -21,9 +21,9 @@ F     | F - 0-49% - Failure
 
 Use the following class diagram when creating your solution.
 
-![](I-QuebecLetterGrade.png)
+![](./I-QuebecLetterGrade.png)
 
-![](I-LetterGrade.png)
+![](./I-LetterGrade.png)
 
 ```csharp
 public enum LetterGrade

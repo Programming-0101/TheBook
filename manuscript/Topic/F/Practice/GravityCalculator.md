@@ -21,4 +21,4 @@ Write the code needed to convert Earth weights to their equivalent for the other
 
 Use the following class diagram when creating your solution.
 
-![](F-GravityCalculator.png)
+![](./F-GravityCalculator.png)

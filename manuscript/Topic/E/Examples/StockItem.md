@@ -16,7 +16,7 @@ Write the code for the StockItem class. The solution must meet the following req
 
 Use the following class diagram when creating your solution.
 
-![StockItem Class Diagram](E-StockItem.png)
+![StockItem Class Diagram](./E-StockItem.png)
  
 ```csharp
 using System;

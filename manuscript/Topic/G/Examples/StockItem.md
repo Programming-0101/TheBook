@@ -22,7 +22,7 @@ Write the code for adding validation to the StockItem class. The solution must m
 
 Use the following class diagram when creating your solution.
 
-![](G-StockItem.png)
+![](./G-StockItem.png)
  
 ```csharp
     private double _Cost;

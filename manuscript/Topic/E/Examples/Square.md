@@ -14,7 +14,7 @@ Write the code for the Square class. The solution must meet the following requir
 
 Use the following class diagram when creating your solution.
 
-![Square Class Diagram](E-Square.png)
+![Square Class Diagram](./E-Square.png)
 
 ```csharp
 namespace Topic.E.Examples

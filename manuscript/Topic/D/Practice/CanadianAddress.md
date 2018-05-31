@@ -3,7 +3,7 @@ title: TBA
 ---
 # CanadianAddress
 
-![CanadianAddress Class Diagram](D-CanadianAddress.png)
+![CanadianAddress Class Diagram](./D-CanadianAddress.png)
 
 Should…
 * Instantiate (build) from Constructor

@@ -11,9 +11,9 @@ The DeckOfCards class represents a complete deck of cards. When the deck is firs
 
 **PlayingCard and DeckOfCards**
 
-![](K-PlayingCard.png)
+![](./K-PlayingCard.png)
 
-![](K-DeckOfCards.png)
+![](./K-DeckOfCards.png)
 
 ```csharp
 public class DeckOfCards

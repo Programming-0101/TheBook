@@ -5,7 +5,7 @@ title: TBA
 
 This class is used to solve for the two possible values of a quadratic formula where quadratic equals zero. It is based off of the following formula.
 
-![](E-QuadraticFormula.png)
+![](./E-QuadraticFormula.png)
 
 This sample illustrates order of operations and parentheses.
 
@@ -15,7 +15,7 @@ Write the code that will represent a quadratic equation that has a higher and lo
 
 For `ax^2 + bx + c = 0`$, the value of ***x*** is given by
 
-![](E-QuadraticFormula.png)
+![](./E-QuadraticFormula.png)
  
 More information on the quadratic formula can be found at http://www.purplemath.com/modules/quadform.htm.
 

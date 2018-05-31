@@ -20,7 +20,7 @@ Write the code that will monitor vehicles entering and leaving a parking lot. Th
 
 Use the following class diagram when creating your solution.
 
-![](F-ParkingCounter.png)
+![](./F-ParkingCounter.png)
  
 ```csharp
     public int PeakOccupancy { get; private set; }

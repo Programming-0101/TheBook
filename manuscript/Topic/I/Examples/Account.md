@@ -5,7 +5,7 @@ title: TBA
 
 The Account’s account type is n  * longer being represented as a string, but is its own enumeration: AccountType.
 
-![](I-AccountType.png)
+![](./I-AccountType.png)
 
 **Problem Statement**
 
@@ -25,7 +25,7 @@ Write the code that will make the account type a type-safe value for the Account
 
 Use the following class diagram when creating your solution.
 
-![](I-Account.png)
+![](./I-Account.png)
  
 ```csharp
 public class Account

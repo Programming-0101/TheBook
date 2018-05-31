@@ -17,4 +17,4 @@ Write the code to provide validation for the Rectangle class. The solution must 
 
 Use the following class diagram when creating your solution.
  
-![](G-Rectangle.png)
+![](./G-Rectangle.png)

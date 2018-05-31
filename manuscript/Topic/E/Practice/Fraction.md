@@ -30,4 +30,4 @@ As an assist, the following code can be used for the multiplication method.
 
 Use the following class diagram when creating your solution.
 
-![Fraction Class Diagram](E-Fraction-2.png)
+![Fraction Class Diagram](./E-Fraction-2.png)

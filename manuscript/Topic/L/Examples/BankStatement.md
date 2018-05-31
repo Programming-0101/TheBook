@@ -14,15 +14,15 @@ This class represents a bank statement for a BankAccount for a given month. The 
   * BankTransaction - 
   * AccountType -
 
-![](L-Account.png)
+![](./L-Account.png)
 
-![](L-BankTransaction.png)
+![](./L-BankTransaction.png)
 
-![](L-AccountType.png)
+![](./L-AccountType.png)
  
-![](L-BankStatement.png)
+![](./L-BankStatement.png)
 
-![](L-BankTransactionDateComparer.png)
+![](./L-BankTransactionDateComparer.png)
 
 ```csharp
 public class BankStatement

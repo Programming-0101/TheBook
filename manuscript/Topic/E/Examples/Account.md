@@ -17,7 +17,7 @@ The solution must meet the following requirements (new requirements are in **bol
 
 Use the following class diagram when creating your solution.
 
-![Account Class Diagram](E-Account.png)
+![Account Class Diagram](./E-Account.png)
 
 ```csharp
   public void Withdraw(double amount)

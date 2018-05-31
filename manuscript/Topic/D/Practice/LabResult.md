@@ -3,7 +3,7 @@ title: TBA
 ---
 # LabResult
 
-![LabResult Class Diagram](D-LabResult.png)
+![LabResult Class Diagram](./D-LabResult.png)
  
 Should…
 * Instantiate from Constructor

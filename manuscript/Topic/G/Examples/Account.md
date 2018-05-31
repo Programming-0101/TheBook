@@ -27,7 +27,7 @@ Write the code that will add validation to the Account class. The solution must 
 
 Use the following class diagram when creating your solution.
 
-![](G-Account.png)
+![](./G-Account.png)
  
 ```csharp
     public double Balance

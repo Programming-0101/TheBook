@@ -17,7 +17,7 @@ The solution must meet the following requirements (new requirements are in **bol
 
 Use the following class diagram when creating your solution.
 
-![Person Class Diagram](E-Person.png)
+![Person Class Diagram](./E-Person.png)
  
 ```csharp
 public class Person

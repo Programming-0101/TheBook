@@ -17,11 +17,11 @@ The generic Fraction class is now being replaced with a set of three more specif
   * MixedNumber should get the whole number portion as well as the fractional portion
   * MixedNumber should get its value as a real number as well as get its value as an ImproperFraction
 
-![](I-ProperFraction.png)
+![](./I-ProperFraction.png)
 
-![](I-ImproperFraction.png)
+![](./I-ImproperFraction.png)
 
-![](I-MixedNumber.png)
+![](./I-MixedNumber.png)
 
 ```csharp
 public class ProperFraction

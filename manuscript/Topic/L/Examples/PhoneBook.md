@@ -15,11 +15,11 @@ The PhoneBook class provides simple management of an array of PhoneNumber object
   * ArrayFullException - This class is used to indicate that the array is full and no more items can be added to the array.
   * PhoneNumber - This class contains a telephone number and the name that the number is registered to. 
 
-![](L-ArrayFullException.png)
+![](./L-ArrayFullException.png)
 
-![](L-PhoneNumber.png)
+![](./L-PhoneNumber.png)
 
-![](L-PhoneBook.png)
+![](./L-PhoneBook.png)
  
 ```csharp
 public class PhoneBook

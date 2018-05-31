@@ -17,4 +17,4 @@ Write the code for the Cylinder class that meets the following requirements:
 
 Use the following class diagram when creating your solution.
 
-![Cylinder Class Diagram](E-Cylinder.png)
+![Cylinder Class Diagram](./E-Cylinder.png)

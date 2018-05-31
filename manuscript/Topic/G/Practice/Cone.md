@@ -15,4 +15,4 @@ Write the code to provide validation for the Cone class that meets the following
 
 Use the following class diagram when creating your solution.
  
-![](G-Cone.png)
+![](./G-Cone.png)

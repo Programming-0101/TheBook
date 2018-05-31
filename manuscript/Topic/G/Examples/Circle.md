@@ -15,7 +15,7 @@ Write the code for the Circle class. The solution must meet the following requir
 
 Use the following class diagram when creating your solution.
 
-![](G-Circle.png)
+![](./G-Circle.png)
  
 ```csharp
     private double _Diameter;

@@ -17,7 +17,7 @@ Write the code for the Die class. The solution must meet the following requireme
 
 Use the following class diagram when creating your solution.
 
-![](G-Die.png)
+![](./G-Die.png)
  
 ```csharp
     public Die(int sides)

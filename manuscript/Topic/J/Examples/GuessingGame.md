@@ -17,7 +17,7 @@ Objects of this class will store a hidden value between some upper and lower lim
 * GetUpperLimit() – Returns a number representing the upper end (inclusive) of the range of possible values for the hidden value.
 * Guess() – Returns true if the supplied value matches the hidden value, otherwise it returns false.
 
-![](J-SecretNumber.png)
+![](./J-SecretNumber.png)
  
 **GuessingGame**
 
@@ -28,7 +28,7 @@ This class simulates the action of guessing what hidden value is stored inside o
 
 Try creating alternate versions of this GuessingGame that will use a while statement and a for statement in the GuessNumber methods.
 
-![](J-GuessingGame.png)
+![](./J-GuessingGame.png)
  
 ```csharp
 public class GuessingGame

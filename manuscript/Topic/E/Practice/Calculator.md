@@ -18,4 +18,4 @@ The solution must meet the following requirements:
 
 Use the following class diagram when creating your solution.
 
-![Calculator Class Diagram](E-Calculator-2.png)
+![Calculator Class Diagram](./E-Calculator-2.png)

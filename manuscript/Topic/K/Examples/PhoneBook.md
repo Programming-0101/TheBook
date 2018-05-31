@@ -16,11 +16,11 @@ The PhoneBook class provides simple management of a collection of PhoneNumber ob
 
 The PhoneNumber class used in this sample is provided for you. The following class diagram shows the design of this class.
 
-![](K-PhoneNumber.png)
+![](./K-PhoneNumber.png)
  
 **PhoneBook Class**
 
-![](K-PhoneBook.png)
+![](./K-PhoneBook.png)
 
 ```csharp
 public class PhoneBook

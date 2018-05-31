@@ -3,7 +3,7 @@ title: TBA
 ---
 # Course
 
-![Course Class Diagram](D-Course.png)
+![Course Class Diagram](./D-Course.png)
  
 Should…
 * Instantiate from Constructor

@@ -16,4 +16,4 @@ Modify the Die class from the examples to support multi-sided die other than jus
 
 Use the following class diagram when creating your solution.
 
-![Die Class Diagram](E-Die-2.png)
+![Die Class Diagram](./E-Die-2.png)

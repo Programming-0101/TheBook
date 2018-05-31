@@ -5,7 +5,7 @@ title: TBA
 
 This revised version of the Student class now has an Address field. The address field is new; although similar to the CanadianAddress class, the Address class is simpler and more "generic" (having "State" instead of "Province" and "ZipCode" instead of "PostalCode").
 
-![](I-GenderType.png)
+![](./I-GenderType.png)
 
 **Problem Statement**
 
@@ -30,9 +30,9 @@ The solution must meet the following requirements (new requirements are in **bol
 
 Use the following class diagrams to guide your design.
  
-![](I-Address.png)
+![](./I-Address.png)
 
-![](I-Student.png)
+![](./I-Student.png)
  
 ```csharp
 public enum GenderType

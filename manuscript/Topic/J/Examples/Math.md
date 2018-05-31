@@ -8,7 +8,7 @@ The Math class provides methods for the following mathematical algorithms not fo
 * FibonacciNumber() – Returns a number from the Fibonacci sequence for a given position. If the given position is less than or equal to zero, then this method should throw an exception. This example demonstrates the for statement. An alternative version illustrates the do-while statement.
 * IsPerfect() – Indicates whether or not a number is a “perfect” number. A perfect number is a number where the sum of all the factors equals the number. By definition, any number less than 1 (including all negative numbers) are not perfect numbers. This example uses a while statement. An alternative version illustrates a do-while statement.
 
-![](J-Math.png)
+![](./J-Math.png)
 
 ```csharp
 public class Math

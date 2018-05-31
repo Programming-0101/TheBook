@@ -14,4 +14,4 @@ Write the code to provide validation for the Course class. The solution must mee
 * **Should trim spaces from the course name and number**
 * **Should require class hours as well as lab and exam counts to be greater than zero**
 
-![](G-Course.png)
+![](./G-Course.png)

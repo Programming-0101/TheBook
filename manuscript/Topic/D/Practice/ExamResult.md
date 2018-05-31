@@ -3,7 +3,7 @@ title: TBA
 ---
 # ExamResult
 
-![ExamResult Class Diagram](D-ExamResult.png)
+![ExamResult Class Diagram](./D-ExamResult.png)
 
 Should…
 * Instantiate from Constructor

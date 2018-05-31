@@ -20,7 +20,7 @@ Value | Description
 
 Use the following class diagram when creating your solution.
  
-![](H-Rating.png)
+![](./H-Rating.png)
 
 ```csharp
 public class Rating

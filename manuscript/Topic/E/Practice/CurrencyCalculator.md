@@ -20,13 +20,13 @@ A currency exchange store at the international airport needs a program to conver
 
 To illustrate the possible exchange rates, please refer to the following images.
 
-![Currency exchange rates sourced from http://www.x-rates.com](E-CurrencyExchange.png)
+![Currency exchange rates sourced from http://www.x-rates.com](./E-CurrencyExchange.png)
 
-![](E-CurrencyAmericanDollar.png)
+![](./E-CurrencyAmericanDollar.png)
 
 Use the following class diagram when creating your solution.
 
-![CurrencyCalculator Class Diagram](E-CurrencyCalculator.png)
+![CurrencyCalculator Class Diagram](./E-CurrencyCalculator.png)
 
 As a starter, you can use the following code to begin creating your class.
 

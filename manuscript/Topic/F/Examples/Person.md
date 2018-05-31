@@ -25,7 +25,7 @@ Age Range (Years) | Life Stage
 
 Use the following class diagram when creating your solution.
 
-![](F-Person.png)
+![](./F-Person.png)
  
 ```csharp
   public string LifeStage

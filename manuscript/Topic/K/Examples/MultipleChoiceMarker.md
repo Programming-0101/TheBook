@@ -11,13 +11,13 @@ This class is used for marking multiple choice exams. It takes a collection of M
 
 **MultipleChoice and Mark Classes**
 
-![](K-MultipleChoice.png)
+![](./K-MultipleChoice.png)
 
-![](K-Mark.png)
+![](./K-Mark.png)
 
 **MultipleChoiceMarker**
 
-![](K-MultipleChoiceMarker.png)
+![](./K-MultipleChoiceMarker.png)
 
 ```csharp
 public class MultipleChoiceMarker

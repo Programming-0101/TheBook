@@ -14,7 +14,7 @@ Write the code for the Die class. The solution must meet the following requireme
 
 Use the following class diagram when creating your solution. Note that this uses the Random class as a private static field.
 
-![Die Class Diagram](E-Die.png)
+![Die Class Diagram](./E-Die.png)
 
 ```csharp
 using System;

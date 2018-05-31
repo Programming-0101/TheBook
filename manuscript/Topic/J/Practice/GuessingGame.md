@@ -17,7 +17,7 @@ Objects of this class will store a hidden value between some upper and lower lim
 
 *Note:* This class is already coded for you in the samples.
 
-![](J-SecretNumber-2.png)
+![](./J-SecretNumber-2.png)
 
 **GuessingGame**
 
@@ -27,5 +27,5 @@ This class simulates the action of guessing what hidden value is stored inside o
 * GuessUsingHints(MaxAttempts : Integer) – This method will also try to guess the SecretNumber’s hidden value, but it is limited to a maximum number of guesses. This method will return the actual number of attempts it took to find the hidden value, or it will return the GUESS_FAILED constant if it was unable to guess the secret number. Use the GuessWithHint method of the SecretNumber object.
 As an additional exercise, create a simple driver that instantiates a SecretNumber object and supplies it to a GuessingGame object. Show how many attempts it took to guess the hidden number when using hints.
 
-![](J-GuessingGame-2.png)
+![](./J-GuessingGame-2.png)
 

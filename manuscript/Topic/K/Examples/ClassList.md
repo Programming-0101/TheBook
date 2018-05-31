@@ -18,11 +18,11 @@ The ClassList example maintains a list of students for a particular course by of
 
 **Student**
 
-![](K-Student.png)
+![](./K-Student.png)
 
 **ClassList**
 
-![](K-ClassList.png)
+![](./K-ClassList.png)
 
 ```csharp
 public class ClassList

@@ -9,6 +9,6 @@ The Company now has a CanadianAddress.
 
 Modify the Company class to now make use of the CanadianAddress type for the address. Also, create an enumeration for the months of the year for representing the company’s fiscal year end.
  
-![](I-Month.png)
+![](./I-Month.png)
 
-![](I-Company.png)
+![](./I-Company.png)
