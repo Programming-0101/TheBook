@@ -8,24 +8,25 @@ sidebar: false
 
 | Class / Topic | A | B | C |
 |:--------------|:-:|:-:|:-:|
-| Nothingness | [E](A/Examples/Nothingness.md) | | |
-| HelloWorld | [E](A/Examples/HelloWorld.md) | | |
-| Comments | [E](A/Examples/Comments.md) | [E](B/Examples/Comments.md) | |
-| OuterSpace | [P](A/Practice/OuterSpace.md) | | |
+| Account | | [E](B/Examples/Account.md)/[P](B/Practice/Account.md) | [E](C/Examples/Account.md)/[P](C/Practice/Account.md) |
 | AnsweringMachine | [P](A/Practice/AnsweringMachine.md) | [P](B/Practice/AnsweringMachine.md) | |
-| Salutation | [P](A/Practice/Salutation.md) | [E](B/Examples/Salutation.md) | |
-| Person | | [E](B/Examples/Person.md) | [E](C/Examples/Person.md) [P](C/Practice/Person.md) |
-| Account | | [E](B/Examples/Account.md) [P](B/Practice/Account.md) | [E](C/Examples/Account.md) [P](C/Practice/Account.md) |
-| Student | | [E](B/Examples/Student.md) | [E](C/Examples/Student.md) |
-| Employee | | [E](B/Examples/Employee.md) | [E](B/Examples/Company.md) |
-| Company | | [E](B/Examples/Employee.md) | [E](B/Examples/Company.md) |
 | CanadianAddress | | [P](B/Practice/CanadianAddress.md) | [P](C/Practice/CanadianAddress.md) |
+| Comments | [E](A/Examples/Comments.md) | [E](B/Examples/Comments.md) | |
+| Company | | [E](B/Examples/Employee.md) | [E](B/Examples/Company.md) |
 | Course | | [P](B/Practice/Course.md) | [P](C/Practice/Course.md) |
+| Employee | | [E](B/Examples/Employee.md) | [E](B/Examples/Company.md) |
 | ExamResult | | [P](B/Practice/ExamResult.md) | [P](C/Practice/ExamResult.md) |
+| HelloWorld | [E](A/Examples/HelloWorld.md) | | |
 | LabResult | | [P](B/Practice/LabResult.md) | [P](C/Practice/LabResult.md) |
+| Nothingness | [E](A/Examples/Nothingness.md) | | |
+| OuterSpace | [P](A/Practice/OuterSpace.md) | | |
+| Person | | [E](B/Examples/Person.md) | [E](C/Examples/Person.md)/[P](C/Practice/Person.md) |
+| Salutation | [P](A/Practice/Salutation.md) | [E](B/Examples/Salutation.md) | |
+| Student | | [E](B/Examples/Student.md) | [E](C/Examples/Student.md) |
 
 
 
-
-|  | [E](A/Examples/.md) |
-
+<!--
+[E](/Examples/.md)
+[P](/Practice/.md)
+-->
