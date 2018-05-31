@@ -14,6 +14,10 @@ module.exports = {
         docsDir: 'manuscript',
         // defaults to false, set to true to enable
         editLinks: true,
+        algolia: {
+            apiKey: 'a386085150c01c8a8fc7f2823031b371',
+            indexName: 'TheBook'
+        },
         // custom text for edit link. Defaults to "Edit this page"
         editLinkText: 'Help us improve this page!',
         lastUpdated: 'Last updated on', // string | boolean
