@@ -6,8 +6,8 @@ sidebar: false
 
 > In the following table, **E** stands for an *Example* and **P** stands for a *Practice*.
 
-| Class / Topic | A | B | C |
-|:--------------|:-:|:-:|:-:|
+| Class \ Topic | [A](A/) | [B](B/) | [C](C/) |
+|:--------------|:-------:|:-------:|:-------:|
 | Account | | [E](B/Examples/Account.md)/[P](B/Practice/Account.md) | [E](C/Examples/Account.md)/[P](C/Practice/Account.md) |
 | AnsweringMachine | [P](A/Practice/AnsweringMachine.md) | [P](B/Practice/AnsweringMachine.md) | |
 | CanadianAddress | | [P](B/Practice/CanadianAddress.md) | [P](C/Practice/CanadianAddress.md) |
@@ -27,6 +27,6 @@ sidebar: false
 
 
 <!--
-[E](/Examples/.md)
-[P](/Practice/.md)
+[E](/Examples/.md "Example")
+[P](/Practice/.md "Practice")
 -->
