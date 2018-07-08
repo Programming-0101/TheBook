@@ -15,8 +15,8 @@ module.exports = {
         // defaults to false, set to true to enable
         editLinks: true,
         algolia: {
-            apiKey: 'a386085150c01c8a8fc7f2823031b371',
-            indexName: 'VHI7S4MJDQ'
+            apiKey: '58ae96f939fc98b3075a4909c6ae457c',
+            indexName: 'programming_0101'
         },
         // custom text for edit link. Defaults to "Edit this page"
         editLinkText: 'Help us improve this page!',
