@@ -184,6 +184,12 @@ module.exports = {
                 'Practice/',
                 ['/Topic/T/', '(← Prev) Topic T']
             ],
+            '/Topic/V/': [
+                '',
+                'Examples/',
+                'Practice/',
+                ['/Topic/U/', '(← Prev) Topic U']
+            ],
             '/About/':
             ['', 'audience', 'colophon', 'log-summary', 'appendix-grammar', '_todo']
             // ['ReadMe', 'audience', 'colophon', 'log-summary', 'appendix-grammar', '_todo']
