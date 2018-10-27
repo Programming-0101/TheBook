@@ -345,7 +345,7 @@ This class represents a single memory address in both its base 10 and hexadecima
 
 **Base ten** is the common number system that we use in every day life. Base ten uses the digits 0-9 and the concept of the *position* of a digit occupying some multiple of ten. Thus, for the number 129 there is a hundreds-position (10^2), a tens-position (10^1) and a ones-position (10^0).
 
-```text
+```plaintext
 129 base 10
 ||\
 |\ \_ 10^0 * 9 =>   9
@@ -365,7 +365,7 @@ Converting a value from one base to another (such as base-10 to base-16) involve
 * The remainder of that last step is the ones-position
 * Thus, the base-10 value 679 is `2B9` in base-16.
 
-```text
+```plaintext
 2B9 base 16
 ||\
 |\ \_ 16^0 * 9  =>    9
