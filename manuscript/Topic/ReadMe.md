@@ -5,27 +5,27 @@ sidebar: false
 # Topical Examples and Practice Exercises
 
 - [A](A/) - Starting Classes ()
-- [B](A/) - Starting Classes ()
-- [C](A/) - Starting Classes ()
-- [D](A/) - Testing and Debugging
-- [E](A/) - Expressions and Math
-- [F](A/) - If/Else Structures
-- [G](A/) - Raising Exceptions
-- [H](A/) - Case Structures
-- [I](A/) - Enumerations and Composition
-- [J](A/) - Looping Structures
-- [K](A/) - Looping and Collections
-- [L](A/) - Arrays - Not Sorted
-- [M](A/) - Arrays - Sorted
-- [N](A/) - Modularization and Utility Classes
-- [O](A/) - File I/O
-- [P](A/) - Exception Handling
-- [Q](A/) - Simple Algorithms
-- [R](A/) - Inheritance
-- [S](A/) - Solid Principles
-- [T](A/) - Other Types (`struct`, `interface`, `delegate`, Generics)
-- [U](A/) - OOP and Design Patterns
-- [V](A/) - Operator Overloading
+- [B](B/) - Starting Classes ()
+- [C](C/) - Starting Classes ()
+- [D](D/) - Testing and Debugging
+- [E](E/) - Expressions and Math
+- [F](F/) - If/Else Structures
+- [G](G/) - Raising Exceptions
+- [H](H/) - Case Structures
+- [I](I/) - Enumerations and Composition
+- [J](J/) - Looping Structures
+- [K](K/) - Looping and Collections
+- [L](L/) - Arrays - Not Sorted
+- [M](M/) - Arrays - Sorted
+- [N](N/) - Modularization and Utility Classes
+- [O](O/) - File I/O
+- [P](P/) - Exception Handling
+- [Q](Q/) - Simple Algorithms
+- [R](R/) - Inheritance
+- [S](S/) - Solid Principles
+- [T](T/) - Other Types (`struct`, `interface`, `delegate`, Generics, Extension Methods)
+- [U](U/) - OOP and Design Patterns
+- [V](V/) - Operator Overloading
 
 ## Class\Topic Chart
 

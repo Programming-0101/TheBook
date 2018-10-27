@@ -7,3 +7,4 @@ title: (T) Other Types
 - `interface`
 - `delegate`
 - Generics
+- Extension Methods
