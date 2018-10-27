@@ -11,7 +11,7 @@ module.exports = {
         // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
         repoLabel: 'Contribute!',
         // if your docs are not at the root of the repo:
-        docsDir: 'manuscript',
+        // docsDir: 'manuscript',
         // defaults to false, set to true to enable
         editLinks: true,
         algolia: {
