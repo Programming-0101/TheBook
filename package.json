@@ -1,12 +1,17 @@
 {
-  "name": "TheBook",
+  "name": "programming-0101-the-book",
   "version": "1.0.0",
   "description": "An Object-Oriented Introduction to Programming in C#",
   "main": "index.html",
   "repository": "https://github.com/Programming-0101/TheBook.git",
   "author": "dagilleland <dagilleland@users.noreply.github.com>",
   "license": "MIT",
-  "devDependencies": {
+  "scripts": {
+    "test": "vuepress build"
+  },
+  "bugs": {
+    "url": "https://github.com/Programming-0101/TheBook/issues"
+  },  "devDependencies": {
     "vuepress": "^0.14.4"
   }
 }
