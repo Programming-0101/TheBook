@@ -3,7 +3,7 @@ module.exports = {
     description: 'An Object-Oriented Introduction to Programming in C#', // rendered in <meta>
     // Defaults:
     base: '/TheBook/',
-    dest: 'docs',
+    //dest: 'docs',
     themeConfig: {
         // Assumes GitHub. Can also be a full GitLab url.
         repo: 'Programming-0101/TheBook',
