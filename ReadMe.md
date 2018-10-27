@@ -1,19 +1,7 @@
 # Programming 0101 - The Book
 
-This is an e-book all about **Programming Fundamentals**.
+> [![Build Status - Publish Branch](https://travis-ci.org/Programming-0101/TheBook.svg?branch=publish)](https://travis-ci.org/Programming-0101/TheBook)
 
-## Build Pre-requisites
+This is an e-book all about **Programming Fundamentals**. It is published using VuePress and Travis-Ci.
 
-To build this, it is assumed you have `vuepress` and `webpack` installed globally.
-
-## Deploying
-
-```cmd
-vuepress build docs
-
-cd docs/.vuepress/dist
-
-git commit -a -m "Publish site updates"
-
-git push
-```
+Content on this site is a culmination of code samples developed and honed over time by Dan Gilleland circa 2005 to the present.

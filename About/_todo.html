@@ -1,0 +1,4664 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Author To-Do Items | Programming Fundamentals</title>
+    <meta name="description" content="An Object-Oriented Introduction to Programming in C#">
+    
+    
+    <link rel="preload" href="/TheBook/assets/css/styles.f05f7ec7.css" as="style"><link rel="preload" href="/TheBook/assets/js/app.f05f7ec7.js" as="script"><link rel="preload" href="/TheBook/assets/js/110.409ffcd7.js" as="script"><link rel="prefetch" href="/TheBook/assets/css/1.styles.a14faa2f.css"><link rel="prefetch" href="/TheBook/assets/css/109.styles.f0ca3838.css"><link rel="prefetch" href="/TheBook/assets/css/4.styles.c4ed7755.css"><link rel="prefetch" href="/TheBook/assets/js/10.828fe4b7.js"><link rel="prefetch" href="/TheBook/assets/js/100.3b36106e.js"><link rel="prefetch" href="/TheBook/assets/js/101.215efbc0.js"><link rel="prefetch" href="/TheBook/assets/js/102.a8ba9c70.js"><link rel="prefetch" href="/TheBook/assets/js/103.14610d39.js"><link rel="prefetch" href="/TheBook/assets/js/104.d2953da9.js"><link rel="prefetch" href="/TheBook/assets/js/105.b47b6d63.js"><link rel="prefetch" href="/TheBook/assets/js/106.1c88f8d2.js"><link rel="prefetch" href="/TheBook/assets/js/107.ffc8aa07.js"><link rel="prefetch" href="/TheBook/assets/js/108.9f2fa842.js"><link rel="prefetch" href="/TheBook/assets/js/109.f0ca3838.js"><link rel="prefetch" href="/TheBook/assets/js/11.dcaa22a2.js"><link rel="prefetch" href="/TheBook/assets/js/111.7bda649e.js"><link rel="prefetch" href="/TheBook/assets/js/112.7914739f.js"><link rel="prefetch" href="/TheBook/assets/js/113.9396d40a.js"><link rel="prefetch" href="/TheBook/assets/js/114.f40aa26e.js"><link rel="prefetch" href="/TheBook/assets/js/115.0536fbec.js"><link rel="prefetch" href="/TheBook/assets/js/116.061a241a.js"><link rel="prefetch" href="/TheBook/assets/js/117.39104237.js"><link rel="prefetch" href="/TheBook/assets/js/118.5a6c9f6f.js"><link rel="prefetch" href="/TheBook/assets/js/119.70074a8f.js"><link rel="prefetch" href="/TheBook/assets/js/12.c1ebb74f.js"><link rel="prefetch" href="/TheBook/assets/js/120.349c281d.js"><link rel="prefetch" href="/TheBook/assets/js/121.dae35afe.js"><link rel="prefetch" href="/TheBook/assets/js/122.66ecc75c.js"><link rel="prefetch" href="/TheBook/assets/js/123.54b2e8ca.js"><link rel="prefetch" href="/TheBook/assets/js/124.909ff821.js"><link rel="prefetch" href="/TheBook/assets/js/125.17217429.js"><link rel="prefetch" href="/TheBook/assets/js/126.f13ed84a.js"><link rel="prefetch" href="/TheBook/assets/js/127.ecab0229.js"><link rel="prefetch" href="/TheBook/assets/js/128.ec5b7aba.js"><link rel="prefetch" href="/TheBook/assets/js/129.b185ea47.js"><link rel="prefetch" href="/TheBook/assets/js/13.08208df2.js"><link rel="prefetch" href="/TheBook/assets/js/130.9d9fd416.js"><link rel="prefetch" href="/TheBook/assets/js/131.5aec124f.js"><link rel="prefetch" href="/TheBook/assets/js/132.74262bfc.js"><link rel="prefetch" href="/TheBook/assets/js/133.0bed9560.js"><link rel="prefetch" href="/TheBook/assets/js/134.978174c9.js"><link rel="prefetch" href="/TheBook/assets/js/135.d0c2edd0.js"><link rel="prefetch" href="/TheBook/assets/js/136.f6c3db4b.js"><link rel="prefetch" href="/TheBook/assets/js/137.3553b69b.js"><link rel="prefetch" href="/TheBook/assets/js/138.d49ddc95.js"><link rel="prefetch" href="/TheBook/assets/js/139.9dd7f7cf.js"><link rel="prefetch" href="/TheBook/assets/js/14.e8e44ec9.js"><link rel="prefetch" href="/TheBook/assets/js/140.f6ae652f.js"><link rel="prefetch" href="/TheBook/assets/js/141.67f167bc.js"><link rel="prefetch" href="/TheBook/assets/js/142.54a701ba.js"><link rel="prefetch" href="/TheBook/assets/js/143.1f861a9d.js"><link rel="prefetch" href="/TheBook/assets/js/144.1e290b81.js"><link rel="prefetch" href="/TheBook/assets/js/145.f942d37c.js"><link rel="prefetch" href="/TheBook/assets/js/146.0f8349ce.js"><link rel="prefetch" href="/TheBook/assets/js/147.e79bfa1c.js"><link rel="prefetch" href="/TheBook/assets/js/148.db45ef82.js"><link rel="prefetch" href="/TheBook/assets/js/149.7c6f3423.js"><link rel="prefetch" href="/TheBook/assets/js/15.6b2400ab.js"><link rel="prefetch" href="/TheBook/assets/js/150.43bf35e0.js"><link rel="prefetch" href="/TheBook/assets/js/151.16ecf062.js"><link rel="prefetch" href="/TheBook/assets/js/152.38a66a87.js"><link rel="prefetch" href="/TheBook/assets/js/153.ff1d48d7.js"><link rel="prefetch" href="/TheBook/assets/js/154.b76f7acd.js"><link rel="prefetch" href="/TheBook/assets/js/155.588cfa1b.js"><link rel="prefetch" href="/TheBook/assets/js/156.fd6ce6e1.js"><link rel="prefetch" href="/TheBook/assets/js/157.ce455ec1.js"><link rel="prefetch" href="/TheBook/assets/js/158.731b0a11.js"><link rel="prefetch" href="/TheBook/assets/js/159.5021c6b4.js"><link rel="prefetch" href="/TheBook/assets/js/16.8f32a99c.js"><link rel="prefetch" href="/TheBook/assets/js/160.5ce099a1.js"><link rel="prefetch" href="/TheBook/assets/js/161.3d408dc8.js"><link rel="prefetch" href="/TheBook/assets/js/162.d6d7ebf0.js"><link rel="prefetch" href="/TheBook/assets/js/163.84c80b07.js"><link rel="prefetch" href="/TheBook/assets/js/164.e5d184ef.js"><link rel="prefetch" href="/TheBook/assets/js/165.ee7b3d2f.js"><link rel="prefetch" href="/TheBook/assets/js/166.4daffea7.js"><link rel="prefetch" href="/TheBook/assets/js/167.95188534.js"><link rel="prefetch" href="/TheBook/assets/js/168.65b64697.js"><link rel="prefetch" href="/TheBook/assets/js/169.b7043c43.js"><link rel="prefetch" href="/TheBook/assets/js/17.58590e00.js"><link rel="prefetch" href="/TheBook/assets/js/170.3a5a2dce.js"><link rel="prefetch" href="/TheBook/assets/js/171.66e3439c.js"><link rel="prefetch" href="/TheBook/assets/js/172.cab0f134.js"><link rel="prefetch" href="/TheBook/assets/js/173.33f22846.js"><link rel="prefetch" href="/TheBook/assets/js/174.c42b081a.js"><link rel="prefetch" href="/TheBook/assets/js/175.37c02aad.js"><link rel="prefetch" href="/TheBook/assets/js/176.2b7423e5.js"><link rel="prefetch" href="/TheBook/assets/js/177.62d3701d.js"><link rel="prefetch" href="/TheBook/assets/js/178.d4b8f8ac.js"><link rel="prefetch" href="/TheBook/assets/js/179.62d7ffb1.js"><link rel="prefetch" href="/TheBook/assets/js/18.5a1fbf58.js"><link rel="prefetch" href="/TheBook/assets/js/180.6d85abee.js"><link rel="prefetch" href="/TheBook/assets/js/181.cd3ffa13.js"><link rel="prefetch" href="/TheBook/assets/js/182.b16b5802.js"><link rel="prefetch" href="/TheBook/assets/js/183.fe4eeb0d.js"><link rel="prefetch" href="/TheBook/assets/js/184.80e1d351.js"><link rel="prefetch" href="/TheBook/assets/js/185.6086d4b1.js"><link rel="prefetch" href="/TheBook/assets/js/186.c42e103d.js"><link rel="prefetch" href="/TheBook/assets/js/187.49559638.js"><link rel="prefetch" href="/TheBook/assets/js/188.7759228a.js"><link rel="prefetch" href="/TheBook/assets/js/189.1428976e.js"><link rel="prefetch" href="/TheBook/assets/js/19.3eade046.js"><link rel="prefetch" href="/TheBook/assets/js/190.0c0887f4.js"><link rel="prefetch" href="/TheBook/assets/js/191.cb4f991b.js"><link rel="prefetch" href="/TheBook/assets/js/192.71a1bf21.js"><link rel="prefetch" href="/TheBook/assets/js/193.a1871c37.js"><link rel="prefetch" href="/TheBook/assets/js/194.f90ad243.js"><link rel="prefetch" href="/TheBook/assets/js/195.7fdac5e5.js"><link rel="prefetch" href="/TheBook/assets/js/196.aa5ca967.js"><link rel="prefetch" href="/TheBook/assets/js/197.1b7c1458.js"><link rel="prefetch" href="/TheBook/assets/js/198.89f85caf.js"><link rel="prefetch" href="/TheBook/assets/js/199.1d9c18dc.js"><link rel="prefetch" href="/TheBook/assets/js/2.b22e1da3.js"><link rel="prefetch" href="/TheBook/assets/js/20.414a12d7.js"><link rel="prefetch" href="/TheBook/assets/js/200.f952b023.js"><link rel="prefetch" href="/TheBook/assets/js/201.14643a82.js"><link rel="prefetch" href="/TheBook/assets/js/202.efb52bfa.js"><link rel="prefetch" href="/TheBook/assets/js/203.f0d75c52.js"><link rel="prefetch" href="/TheBook/assets/js/204.7e94dc20.js"><link rel="prefetch" href="/TheBook/assets/js/205.4c5ccc75.js"><link rel="prefetch" href="/TheBook/assets/js/206.0deaab16.js"><link rel="prefetch" href="/TheBook/assets/js/207.37136d08.js"><link rel="prefetch" href="/TheBook/assets/js/208.d109c618.js"><link rel="prefetch" href="/TheBook/assets/js/209.0517e317.js"><link rel="prefetch" href="/TheBook/assets/js/21.d6855a78.js"><link rel="prefetch" href="/TheBook/assets/js/210.d9aa6241.js"><link rel="prefetch" href="/TheBook/assets/js/211.beae5018.js"><link rel="prefetch" href="/TheBook/assets/js/212.c3dc15ac.js"><link rel="prefetch" href="/TheBook/assets/js/213.93b76c31.js"><link rel="prefetch" href="/TheBook/assets/js/214.4f7999c6.js"><link rel="prefetch" href="/TheBook/assets/js/215.881a216d.js"><link rel="prefetch" href="/TheBook/assets/js/216.d8ec985a.js"><link rel="prefetch" href="/TheBook/assets/js/217.0b4eaa93.js"><link rel="prefetch" href="/TheBook/assets/js/218.6aa7a4c1.js"><link rel="prefetch" href="/TheBook/assets/js/219.b6c57c5d.js"><link rel="prefetch" href="/TheBook/assets/js/22.fbb3a804.js"><link rel="prefetch" href="/TheBook/assets/js/220.dc2de915.js"><link rel="prefetch" href="/TheBook/assets/js/221.f39d9c88.js"><link rel="prefetch" href="/TheBook/assets/js/222.9a474795.js"><link rel="prefetch" href="/TheBook/assets/js/223.0189df39.js"><link rel="prefetch" href="/TheBook/assets/js/224.0901d128.js"><link rel="prefetch" href="/TheBook/assets/js/225.3150b077.js"><link rel="prefetch" href="/TheBook/assets/js/226.ee784d69.js"><link rel="prefetch" href="/TheBook/assets/js/227.da92a81f.js"><link rel="prefetch" href="/TheBook/assets/js/228.1684a60f.js"><link rel="prefetch" href="/TheBook/assets/js/229.db8f0c23.js"><link rel="prefetch" href="/TheBook/assets/js/23.22f63dde.js"><link rel="prefetch" href="/TheBook/assets/js/230.a23e1ce7.js"><link rel="prefetch" href="/TheBook/assets/js/231.f860c647.js"><link rel="prefetch" href="/TheBook/assets/js/232.3f3a3c79.js"><link rel="prefetch" href="/TheBook/assets/js/233.2200ff3e.js"><link rel="prefetch" href="/TheBook/assets/js/234.60325cb6.js"><link rel="prefetch" href="/TheBook/assets/js/235.0bf44453.js"><link rel="prefetch" href="/TheBook/assets/js/236.3597cb7d.js"><link rel="prefetch" href="/TheBook/assets/js/237.dfbd481a.js"><link rel="prefetch" href="/TheBook/assets/js/238.0fc160b2.js"><link rel="prefetch" href="/TheBook/assets/js/239.cfad06f1.js"><link rel="prefetch" href="/TheBook/assets/js/24.af7b9f72.js"><link rel="prefetch" href="/TheBook/assets/js/240.f941c647.js"><link rel="prefetch" href="/TheBook/assets/js/241.4d7067df.js"><link rel="prefetch" href="/TheBook/assets/js/242.655eaede.js"><link rel="prefetch" href="/TheBook/assets/js/243.8ae42ec9.js"><link rel="prefetch" href="/TheBook/assets/js/244.e76f48d4.js"><link rel="prefetch" href="/TheBook/assets/js/245.8d0e46a4.js"><link rel="prefetch" href="/TheBook/assets/js/246.a41a0e06.js"><link rel="prefetch" href="/TheBook/assets/js/247.2dbafa3e.js"><link rel="prefetch" href="/TheBook/assets/js/248.a6f70120.js"><link rel="prefetch" href="/TheBook/assets/js/249.e016677f.js"><link rel="prefetch" href="/TheBook/assets/js/25.0c0e495a.js"><link rel="prefetch" href="/TheBook/assets/js/250.c3a20ae1.js"><link rel="prefetch" href="/TheBook/assets/js/251.c575383d.js"><link rel="prefetch" href="/TheBook/assets/js/252.e91d9ff8.js"><link rel="prefetch" href="/TheBook/assets/js/253.246d62e9.js"><link rel="prefetch" href="/TheBook/assets/js/254.50ee1996.js"><link rel="prefetch" href="/TheBook/assets/js/255.a56820ce.js"><link rel="prefetch" href="/TheBook/assets/js/256.616f2dff.js"><link rel="prefetch" href="/TheBook/assets/js/257.37dc914d.js"><link rel="prefetch" href="/TheBook/assets/js/258.e226b704.js"><link rel="prefetch" href="/TheBook/assets/js/259.321beb3d.js"><link rel="prefetch" href="/TheBook/assets/js/26.db8bc17d.js"><link rel="prefetch" href="/TheBook/assets/js/260.3a63045e.js"><link rel="prefetch" href="/TheBook/assets/js/261.46b345af.js"><link rel="prefetch" href="/TheBook/assets/js/262.50c0d9e9.js"><link rel="prefetch" href="/TheBook/assets/js/263.e8bc8cf7.js"><link rel="prefetch" href="/TheBook/assets/js/264.9ea0e223.js"><link rel="prefetch" href="/TheBook/assets/js/265.175d3954.js"><link rel="prefetch" href="/TheBook/assets/js/266.f6817f85.js"><link rel="prefetch" href="/TheBook/assets/js/267.53de1b5d.js"><link rel="prefetch" href="/TheBook/assets/js/268.ea564bec.js"><link rel="prefetch" href="/TheBook/assets/js/269.6aebc305.js"><link rel="prefetch" href="/TheBook/assets/js/27.d6963e23.js"><link rel="prefetch" href="/TheBook/assets/js/270.174b9f29.js"><link rel="prefetch" href="/TheBook/assets/js/271.44fd8364.js"><link rel="prefetch" href="/TheBook/assets/js/272.4ef8cc53.js"><link rel="prefetch" href="/TheBook/assets/js/273.6b6907d0.js"><link rel="prefetch" href="/TheBook/assets/js/274.fddb4f61.js"><link rel="prefetch" href="/TheBook/assets/js/275.a5a3bc4a.js"><link rel="prefetch" href="/TheBook/assets/js/276.58d1d13d.js"><link rel="prefetch" href="/TheBook/assets/js/277.24b362cd.js"><link rel="prefetch" href="/TheBook/assets/js/278.cd15401d.js"><link rel="prefetch" href="/TheBook/assets/js/279.2afbfbb9.js"><link rel="prefetch" href="/TheBook/assets/js/28.3a335f85.js"><link rel="prefetch" href="/TheBook/assets/js/280.9abc6089.js"><link rel="prefetch" href="/TheBook/assets/js/281.0f09a042.js"><link rel="prefetch" href="/TheBook/assets/js/282.e6318c6f.js"><link rel="prefetch" href="/TheBook/assets/js/283.d40b74f5.js"><link rel="prefetch" href="/TheBook/assets/js/284.1601817c.js"><link rel="prefetch" href="/TheBook/assets/js/285.80c40dc2.js"><link rel="prefetch" href="/TheBook/assets/js/29.89702515.js"><link rel="prefetch" href="/TheBook/assets/js/3.43b7edb1.js"><link rel="prefetch" href="/TheBook/assets/js/30.59176d6b.js"><link rel="prefetch" href="/TheBook/assets/js/31.0f7a1865.js"><link rel="prefetch" href="/TheBook/assets/js/32.50bbdfb6.js"><link rel="prefetch" href="/TheBook/assets/js/33.3ba9eb2d.js"><link rel="prefetch" href="/TheBook/assets/js/34.d923b0ea.js"><link rel="prefetch" href="/TheBook/assets/js/35.dedda80f.js"><link rel="prefetch" href="/TheBook/assets/js/36.6e31655b.js"><link rel="prefetch" href="/TheBook/assets/js/37.9e165e71.js"><link rel="prefetch" href="/TheBook/assets/js/38.bba33d3a.js"><link rel="prefetch" href="/TheBook/assets/js/39.50ab9378.js"><link rel="prefetch" href="/TheBook/assets/js/4.c4ed7755.js"><link rel="prefetch" href="/TheBook/assets/js/40.69112fe4.js"><link rel="prefetch" href="/TheBook/assets/js/41.a1f06d02.js"><link rel="prefetch" href="/TheBook/assets/js/42.2af7cfc4.js"><link rel="prefetch" href="/TheBook/assets/js/43.614c05c0.js"><link rel="prefetch" href="/TheBook/assets/js/44.9e48baae.js"><link rel="prefetch" href="/TheBook/assets/js/45.bc740268.js"><link rel="prefetch" href="/TheBook/assets/js/46.b9d8ea8e.js"><link rel="prefetch" href="/TheBook/assets/js/47.ec8b8383.js"><link rel="prefetch" href="/TheBook/assets/js/48.85f9871d.js"><link rel="prefetch" href="/TheBook/assets/js/49.343a67a9.js"><link rel="prefetch" href="/TheBook/assets/js/5.17050534.js"><link rel="prefetch" href="/TheBook/assets/js/50.0b25ff35.js"><link rel="prefetch" href="/TheBook/assets/js/51.bbdd4bc2.js"><link rel="prefetch" href="/TheBook/assets/js/52.df31c9c7.js"><link rel="prefetch" href="/TheBook/assets/js/53.e0e47ccd.js"><link rel="prefetch" href="/TheBook/assets/js/54.be1d79e9.js"><link rel="prefetch" href="/TheBook/assets/js/55.06268609.js"><link rel="prefetch" href="/TheBook/assets/js/56.411cff0e.js"><link rel="prefetch" href="/TheBook/assets/js/57.ef3f6e88.js"><link rel="prefetch" href="/TheBook/assets/js/58.6f46c0f0.js"><link rel="prefetch" href="/TheBook/assets/js/59.4bfb1d4f.js"><link rel="prefetch" href="/TheBook/assets/js/6.5293193e.js"><link rel="prefetch" href="/TheBook/assets/js/60.e9473f2d.js"><link rel="prefetch" href="/TheBook/assets/js/61.27e0679b.js"><link rel="prefetch" href="/TheBook/assets/js/62.3dd90aee.js"><link rel="prefetch" href="/TheBook/assets/js/63.4c65d5ad.js"><link rel="prefetch" href="/TheBook/assets/js/64.d0458b36.js"><link rel="prefetch" href="/TheBook/assets/js/65.8f6837d1.js"><link rel="prefetch" href="/TheBook/assets/js/66.185af73d.js"><link rel="prefetch" href="/TheBook/assets/js/67.3d04e932.js"><link rel="prefetch" href="/TheBook/assets/js/68.d2b4734a.js"><link rel="prefetch" href="/TheBook/assets/js/69.c38b9aee.js"><link rel="prefetch" href="/TheBook/assets/js/7.c7b1fb33.js"><link rel="prefetch" href="/TheBook/assets/js/70.2be4822e.js"><link rel="prefetch" href="/TheBook/assets/js/71.98652e5b.js"><link rel="prefetch" href="/TheBook/assets/js/72.7f2a8e66.js"><link rel="prefetch" href="/TheBook/assets/js/73.7a9f261c.js"><link rel="prefetch" href="/TheBook/assets/js/74.4b12fbcc.js"><link rel="prefetch" href="/TheBook/assets/js/75.47f4437e.js"><link rel="prefetch" href="/TheBook/assets/js/76.fb021093.js"><link rel="prefetch" href="/TheBook/assets/js/77.96fcf553.js"><link rel="prefetch" href="/TheBook/assets/js/78.783dcdcd.js"><link rel="prefetch" href="/TheBook/assets/js/79.890b8038.js"><link rel="prefetch" href="/TheBook/assets/js/8.c50ef727.js"><link rel="prefetch" href="/TheBook/assets/js/80.1fb71bda.js"><link rel="prefetch" href="/TheBook/assets/js/81.09cee5c5.js"><link rel="prefetch" href="/TheBook/assets/js/82.1eba757a.js"><link rel="prefetch" href="/TheBook/assets/js/83.1c85de00.js"><link rel="prefetch" href="/TheBook/assets/js/84.e92c06ff.js"><link rel="prefetch" href="/TheBook/assets/js/85.e34cddbd.js"><link rel="prefetch" href="/TheBook/assets/js/86.8d601238.js"><link rel="prefetch" href="/TheBook/assets/js/87.45820ede.js"><link rel="prefetch" href="/TheBook/assets/js/88.76830b6b.js"><link rel="prefetch" href="/TheBook/assets/js/89.3b1228bf.js"><link rel="prefetch" href="/TheBook/assets/js/9.d160a1db.js"><link rel="prefetch" href="/TheBook/assets/js/90.4ab5e26e.js"><link rel="prefetch" href="/TheBook/assets/js/91.dfb5e3f9.js"><link rel="prefetch" href="/TheBook/assets/js/92.73635fa1.js"><link rel="prefetch" href="/TheBook/assets/js/93.21340232.js"><link rel="prefetch" href="/TheBook/assets/js/94.29673b13.js"><link rel="prefetch" href="/TheBook/assets/js/95.c8933299.js"><link rel="prefetch" href="/TheBook/assets/js/96.78f5d0d1.js"><link rel="prefetch" href="/TheBook/assets/js/97.42d88db2.js"><link rel="prefetch" href="/TheBook/assets/js/98.6a6c54d5.js"><link rel="prefetch" href="/TheBook/assets/js/99.d934c18f.js"><link rel="prefetch" href="/TheBook/assets/js/vendors~docsearch.a14faa2f.js">
+    <link rel="stylesheet" href="/TheBook/assets/css/1.styles.a14faa2f.css"><link rel="stylesheet" href="/TheBook/assets/css/109.styles.f0ca3838.css"><link rel="stylesheet" href="/TheBook/assets/css/4.styles.c4ed7755.css"><link rel="stylesheet" href="/TheBook/assets/css/styles.f05f7ec7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/TheBook/" class="home-link router-link-active"><!----> <span class="site-name">Programming Fundamentals</span></a> <div class="links" style="max-width:nullpx;"><form id="search-form" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/TheBook/Teach/" class="nav-link">The Book</a></div><div class="nav-item"><a href="/TheBook/Topic/" class="nav-link">The Code</a></div><div class="nav-item"><a href="/TheBook/About/" class="nav-link router-link-active">About</a></div> <a href="https://github.com/Programming-0101/TheBook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Contribute!
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/TheBook/Teach/" class="nav-link">The Book</a></div><div class="nav-item"><a href="/TheBook/Topic/" class="nav-link">The Code</a></div><div class="nav-item"><a href="/TheBook/About/" class="nav-link router-link-active">About</a></div> <a href="https://github.com/Programming-0101/TheBook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Contribute!
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/TheBook/About/" class="sidebar-link">About</a></li><li><a href="/TheBook/About/audience.html" class="sidebar-link">Audience</a></li><li><a href="/TheBook/About/colophon.html" class="sidebar-link">Colophon (About)</a></li><li><a href="/TheBook/About/log-summary.html" class="sidebar-link">Learning Outcome Guide</a></li><li><a href="/TheBook/About/appendix-grammar.html" class="sidebar-link">Appendix</a></li><li><a href="/TheBook/About/_todo.html" class="active sidebar-link">Author To-Do Items</a></li></ul> </div> <div class="page"> <div class="content"><p><em><strong>TODO:</strong></em></p> <ul><li>Complete These:
+<ul><li><a href="/TheBook/About/audience.html">Audience</a> <ul><li>Talk about the intended audience (first-term programming students)</li> <li>What are LOGs</li> <li>Instructor's Guide (a future book)</li></ul></li> <li>Categories of data types:
+<ul><li>Value types</li> <li>Reference types</li></ul></li></ul></li></ul> <p>{
+  &quot;title&quot;: &quot;Programming Fundamentals&quot;,
+  &quot;description&quot;: &quot;An Object-Oriented Introduction to Programming in C#&quot;,
+  &quot;base&quot;: &quot;/TheBook/&quot;,
+  &quot;pages&quot;: [
+    {
+      &quot;key&quot;: &quot;v-ce08fe716d34f&quot;,
+      &quot;path&quot;: &quot;/About/&quot;,
+      &quot;lastUpdated&quot;: 1540617971000,
+      &quot;title&quot;: &quot;About&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;About&quot;,
+        &quot;description&quot;: &quot;The ABCs of Programming with Objects&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-48e7a326a5499&quot;,
+      &quot;path&quot;: &quot;/About/_todo.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Author To-Do Items&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Author To-Do Items&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b6e16f7ea45a4&quot;,
+      &quot;path&quot;: &quot;/About/appendix-grammar.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Appendix&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Appendix&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-6dee3e07a0d58&quot;,
+      &quot;path&quot;: &quot;/About/audience.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Audience&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Audience&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-edb0f09ccaf44&quot;,
+      &quot;path&quot;: &quot;/About/colophon.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Colophon (About)&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Colophon&quot;,
+          &quot;slug&quot;: &quot;colophon&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Colophon (About)&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-bda7d08bc942e&quot;,
+      &quot;path&quot;: &quot;/About/log-summary.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Learning Outcome Guide&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic A - Starting Classes&quot;,
+          &quot;slug&quot;: &quot;topic-a-starting-classes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP Basics&quot;,
+          &quot;slug&quot;: &quot;oop-basics&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Intro to IDEs&quot;,
+          &quot;slug&quot;: &quot;intro-to-ides&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic B - Starting Classes&quot;,
+          &quot;slug&quot;: &quot;topic-b-starting-classes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP Basics&quot;,
+          &quot;slug&quot;: &quot;oop-basics-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-2&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic C - Starting Classes&quot;,
+          &quot;slug&quot;: &quot;topic-c-starting-classes&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP Basics&quot;,
+          &quot;slug&quot;: &quot;oop-basics-3&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-3&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic D - Debugging and Testing&quot;,
+          &quot;slug&quot;: &quot;topic-d-debugging-and-testing&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-4&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic E - Expressions and Math&quot;,
+          &quot;slug&quot;: &quot;topic-e-expressions-and-math&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP Basics&quot;,
+          &quot;slug&quot;: &quot;oop-basics-4&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-5&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic F - If-Else Structures&quot;,
+          &quot;slug&quot;: &quot;topic-f-if-else-structures&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-6&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic G - Raising Exceptions&quot;,
+          &quot;slug&quot;: &quot;topic-g-raising-exceptions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-7&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP Basics&quot;,
+          &quot;slug&quot;: &quot;oop-basics-5&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic H - Case Structures&quot;,
+          &quot;slug&quot;: &quot;topic-h-case-structures&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic I Enumerations and Composition&quot;,
+          &quot;slug&quot;: &quot;topic-i-enumerations-and-composition&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-9&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic J - Looping Structures&quot;,
+          &quot;slug&quot;: &quot;topic-j-looping-structures&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-10&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic K - Looping and Collections&quot;,
+          &quot;slug&quot;: &quot;topic-k-looping-and-collections&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP Basics&quot;,
+          &quot;slug&quot;: &quot;oop-basics-6&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-11&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic L - Arrays - Not Sorted&quot;,
+          &quot;slug&quot;: &quot;topic-l-arrays-not-sorted&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;General Programming Concepts and Terms&quot;,
+          &quot;slug&quot;: &quot;general-programming-concepts-and-terms-12&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Learning Outcome Guide&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-24af3c5a2a3eb&quot;,
+      &quot;path&quot;: &quot;/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Home&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Programming Fundamentals&quot;,
+        &quot;description&quot;: &quot;An Object-Oriented Introduction to Programming in C#&quot;,
+        &quot;home&quot;: true,
+        &quot;heroImage&quot;: &quot;/images/ball-457334_640.jpg&quot;,
+        &quot;actionText&quot;: &quot;Get Started →&quot;,
+        &quot;actionLink&quot;: &quot;/Teach/&quot;,
+        &quot;features&quot;: [
+          {
+            &quot;title&quot;: &quot;Objects First&quot;,
+            &quot;details&quot;: &quot;Objects in programming are treated as fundamentals, right up there with Variables&quot;
+          },
+          {
+            &quot;title&quot;: &quot;Lots of Code Samples&quot;,
+            &quot;details&quot;: &quot;Contains scores of code examples&quot;
+          },
+          {
+            &quot;title&quot;: &quot;Unit Testing&quot;,
+            &quot;details&quot;: &quot;Unit tests are the predominant way to check if the code works (rather than building console user-interfaces)&quot;
+          },
+          {
+            &quot;title&quot;: &quot;SOLID Footing&quot;,
+            &quot;details&quot;: &quot;Ends with the SOLID principles and OOP Design Patterns&quot;
+          }
+        ],
+        &quot;footer&quot;: &quot;Copyright © 2004-Today Dan Gilleland&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-02452f42086f1&quot;,
+      &quot;path&quot;: &quot;/Teach/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Learn the ABCs&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic A&quot;,
+          &quot;slug&quot;: &quot;topic-a&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Introduction&quot;,
+          &quot;slug&quot;: &quot;introduction&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic B&quot;,
+          &quot;slug&quot;: &quot;topic-b&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Introduction&quot;,
+          &quot;slug&quot;: &quot;introduction-2&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Topic C&quot;,
+          &quot;slug&quot;: &quot;topic-c&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Introduction&quot;,
+          &quot;slug&quot;: &quot;introduction-3&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Learn the ABCs&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1a7b157a83433&quot;,
+      &quot;path&quot;: &quot;/Teach/chapter-x.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;SOLID Principles of Programming&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-4a59890986298&quot;,
+      &quot;path&quot;: &quot;/Teach/chapter1-5.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;The C# Language&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;The Main Method&quot;,
+          &quot;slug&quot;: &quot;the-main-method&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Order is important&quot;,
+          &quot;slug&quot;: &quot;order-is-important&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Summary&quot;,
+          &quot;slug&quot;: &quot;summary&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-a56d5ecdbd8de&quot;,
+      &quot;path&quot;: &quot;/Teach/chapter1-7.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;A Simplified C# Grammar&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Common Grammar Elements&quot;,
+          &quot;slug&quot;: &quot;common-grammar-elements&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Program Statements and Statement blocks&quot;,
+          &quot;slug&quot;: &quot;program-statements-and-statement-blocks&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Variable Declarations&quot;,
+          &quot;slug&quot;: &quot;variable-declarations&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Assignment Operation&quot;,
+          &quot;slug&quot;: &quot;assignment-operation&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Expressions&quot;,
+          &quot;slug&quot;: &quot;expressions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Namespace Declaration and Using Statements&quot;,
+          &quot;slug&quot;: &quot;namespace-declaration-and-using-statements&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Classes and Class Members&quot;,
+          &quot;slug&quot;: &quot;classes-and-class-members&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Class Definition&quot;,
+          &quot;slug&quot;: &quot;class-definition&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Field Declarations&quot;,
+          &quot;slug&quot;: &quot;field-declarations&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Property Declarations&quot;,
+          &quot;slug&quot;: &quot;property-declarations&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Autoimplemented Property&quot;,
+          &quot;slug&quot;: &quot;autoimplemented-property&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Method Declarations&quot;,
+          &quot;slug&quot;: &quot;method-declarations&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Constructors&quot;,
+          &quot;slug&quot;: &quot;constructors&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Flow-Control Statements&quot;,
+          &quot;slug&quot;: &quot;flow-control-statements&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-7fe7f20b840c5&quot;,
+      &quot;path&quot;: &quot;/Teach/chapter1.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;What is a Computer Program?&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Introduction&quot;,
+          &quot;slug&quot;: &quot;introduction&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Variables, Values and Data Types&quot;,
+          &quot;slug&quot;: &quot;variables-values-and-data-types&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;It's All About Information&quot;,
+          &quot;slug&quot;: &quot;it-s-all-about-information&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Rules About Variables, Values and Data Types&quot;,
+          &quot;slug&quot;: &quot;rules-about-variables-values-and-data-types&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Programming Languages and Coding Instructions&quot;,
+          &quot;slug&quot;: &quot;programming-languages-and-coding-instructions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;What Programmers Write&quot;,
+          &quot;slug&quot;: &quot;what-programmers-write&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;What Computers \&quot;See\&quot;&quot;,
+          &quot;slug&quot;: &quot;what-computers-see&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Doing the Math&quot;,
+          &quot;slug&quot;: &quot;doing-the-math&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Summary&quot;,
+          &quot;slug&quot;: &quot;summary&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;What is a Computer Program?&quot;,
+        &quot;description&quot;: &quot;Computer programming is not magic - it's methodical. Here we lay a foundation upon which to understand programming from an Object Oriented perspective.&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-8520e09b31a7e&quot;,
+      &quot;path&quot;: &quot;/Teach/chapter2.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;The ABCs of Classes and Objects&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;About Classes and Objects&quot;,
+          &quot;slug&quot;: &quot;about-classes-and-objects&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Coding the Class Definition&quot;,
+          &quot;slug&quot;: &quot;coding-the-class-definition&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-a30634bc5bfa1&quot;,
+      &quot;path&quot;: &quot;/Teach/chapter3.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;A Tutorial - OOP First in Three Parts&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Part 1&quot;,
+          &quot;slug&quot;: &quot;part-1&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Part 2&quot;,
+          &quot;slug&quot;: &quot;part-2&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Part 3&quot;,
+          &quot;slug&quot;: &quot;part-3&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-edc74b98c7158&quot;,
+      &quot;path&quot;: &quot;/Teach/console-1.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Interlude 1 - Console Input/Output&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-a5f384bf3621c&quot;,
+      &quot;path&quot;: &quot;/Teach/console-2.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Interlude 2 - A General-Purpose Driver&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-db95ae11b833a&quot;,
+      &quot;path&quot;: &quot;/Topic/A/Examples/Comments.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-51d81dca5290b&quot;,
+      &quot;path&quot;: &quot;/Topic/A/Examples/HelloWorld.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1730efb623cc2&quot;,
+      &quot;path&quot;: &quot;/Topic/A/Examples/Nothingness.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-a15ff640e1407&quot;,
+      &quot;path&quot;: &quot;/Topic/A/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ec388ec59e043&quot;,
+      &quot;path&quot;: &quot;/Topic/A/Practice/AnsweringMachine.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-6c1be7c1789bb&quot;,
+      &quot;path&quot;: &quot;/Topic/A/Practice/OuterSpace.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9a6e1fc3a823c&quot;,
+      &quot;path&quot;: &quot;/Topic/A/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d8e68da4f44c1&quot;,
+      &quot;path&quot;: &quot;/Topic/A/Practice/Salutation.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-07bebc71586a9&quot;,
+      &quot;path&quot;: &quot;/Topic/A/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Starting Classes (Part A)&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Starting Classes (Part A)&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c3f3f0aed5a44&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Examples/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-850a3c5d27345&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Examples/Comments.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-794e4774bc19c&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Examples/Employee.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ea57a20fe9975&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Examples/Person.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-441775ca860d3&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-8ac801edc054d&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Examples/Salutation.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4d39102a9c90e&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Examples/Student.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-cc63ee2b13b26&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Practice/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b7a15a7e0211c&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Practice/AnsweringMachine.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e949ca02c2852&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Practice/CanadianAddress.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-822eb1991c053&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Practice/Course.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e9c989211dec&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Practice/ExamResult.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-aac699675e05f&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Practice/LabResult.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-a23d29c16afd8&quot;,
+      &quot;path&quot;: &quot;/Topic/B/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7a83aeed10b5a&quot;,
+      &quot;path&quot;: &quot;/Topic/B/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Starting Classes (Part B)&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Starting Classes (Part B)&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-2f34ff631a0f9&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Examples/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-3912a2ff4ee4e&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Examples/Company.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d004d49a3bce7&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Examples/Person.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c19b1db5ad3d8&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-94c532bd71c0d&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Examples/Student.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d17929f595c4a&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Practice/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ac7f60dd9911d&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Practice/CanadianAddress.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-361b5a540e92d&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Practice/Course.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ca21fa7cd7824&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Practice/ExamResult.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-5531f1757b825&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Practice/LabResult.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-11bd5b310bbb1&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Practice/Person.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-419b8b0b0ce52&quot;,
+      &quot;path&quot;: &quot;/Topic/C/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4dd1c3d61dd7e&quot;,
+      &quot;path&quot;: &quot;/Topic/C/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Starting Classes (Part C)&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Daily LOGs&quot;,
+          &quot;slug&quot;: &quot;daily-logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Starting Classes (Part C)&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-f5502a17c248c&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Examples/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-bc5dee2192603&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Examples/Company.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-977e455b05618&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Examples/Employee.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-af0ef45b8dd07&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Examples/Person.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-05ae33e8ae6c8&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-69058c17059e4&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Examples/Student.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7d4a602afdcf8&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Practice/CanadianAddress.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9f798cdbe4b8f&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Practice/Course.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-06e949b698bd4&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Practice/ExamResult.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7d6627d3a5923&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Practice/LabResult.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d1ad0b3c413a8&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Practice/Person.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-f927293c8e182&quot;,
+      &quot;path&quot;: &quot;/Topic/D/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-f33b228179b34&quot;,
+      &quot;path&quot;: &quot;/Topic/D/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(D) Testing and Debugging&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(D) Testing and Debugging&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9d9a43702ad39&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b86ff5f271193&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/Angle.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1cc25c0069bf2&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/Calculator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e40bbf0c4be02&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/Circle.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-dcf95fe1f8d1c&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/Die.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-deb6be3bebaaf&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/ElapsedTime.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1eec642d718f7&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/Fraction.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b49e7b61b3dd3&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/ParkingCounter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-09a83aec5a6bc&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/Person.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b2de77b7f1ee6&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/QuadraticEquation.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b1272437562f7&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9258375b2d171&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/ResolveExpressions.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4b2ad8d7a9c9b&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/Square.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-f1bb398d6f107&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Examples/StockItem.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-a4f097fc52d47&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/BulkItem.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-90a975c06abfc&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/Calculator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ce9b14438a497&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/Cone.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-2e8d396783c92&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/Coordinate.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7c00333f8195e&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/CurrencyCalculator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c8c62913fe373&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/Cylinder.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-83e6107200854&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/Die.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-2bfd8b1702f65&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/Fraction.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-265c666ed82c3&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/GenericRoundingCalculator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e155ee2b690f2&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/GravityCalculator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-fce21e78957b4&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/PaintEstimator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4a00dfaac9caf&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/PeopleCounter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-744caa86f69cc&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-30ffdbf2d0fd5&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/RoundingCalculator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d002eba0c4fd9&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/ScoreCard.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-24a6152c3333f&quot;,
+      &quot;path&quot;: &quot;/Topic/E/Practice/Square.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1dec6399d50aa&quot;,
+      &quot;path&quot;: &quot;/Topic/E/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(E) Expressions and Math&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(E) Expressions and Math&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-be6851fb482f5&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b17a3ad8da8b4&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/Angle.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-51e93d42c3ad8&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/Base16.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Base16&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Base16&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c191598db5dc7&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/Color.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-2370cc75e26a4&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/Fraction.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-61aea60c774dd&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/MemoryAddress.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-dcd1374c9ac7c&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/ParkingCounter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-66455fd32b8ff&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/Person.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-857e1e88b482f&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-5333cf94bf351&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Examples/StockItem.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4dc9f6f1c5d2b&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Practice/CurrencyCalculator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-5c40da39fb73&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Practice/GravityCalculator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-6be370cc85e38&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Practice/HazardousMaterial.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-98d9c31cc7a4f&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-73a3f6ca58d58&quot;,
+      &quot;path&quot;: &quot;/Topic/F/Practice/Rectangle.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ec2c8fd7c200e&quot;,
+      &quot;path&quot;: &quot;/Topic/F/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(F) If-Else Structures&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(F) If-Else Structures&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9e89e5e916d29&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-0aa97ecfca56c&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/Circle.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-8b367bc6be334&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/Die.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4d08f891943b6&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/Fraction.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-83edfd84984af&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/ParkingCounter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9a558ef5a3332&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/Person.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9b5c20dce2f16&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-3b71197749c13&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/Square.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-6c6acd5781aa5&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/StockItem.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ecfb8a7737888&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Examples/Student.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-a2c21db95c1ae&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-0123ece1cb8ca&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/BulkItem.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d1218b1f82607&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/Cone.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-18b16868733f4&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/Course.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-29bef1cba972c&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/Cylinder.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-5938fa6c29a55&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/ExamResult.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7ba3c3e1045d7&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/HazardousMaterial.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-3026eddde5ab4&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/LabResult.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-dc140cb126933&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/PeopleCounter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1119aaccf7bf6&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7bf27e67a55e4&quot;,
+      &quot;path&quot;: &quot;/Topic/G/Practice/Rectangle.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ddc9c924d16a8&quot;,
+      &quot;path&quot;: &quot;/Topic/G/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(G) Raising Exceptions&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(G) Raising Exceptions&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d0ce8d26a94ef&quot;,
+      &quot;path&quot;: &quot;/Topic/H/Examples/LetterGrade.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c6ce2d901488e&quot;,
+      &quot;path&quot;: &quot;/Topic/H/Examples/Rating.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e9180c2004568&quot;,
+      &quot;path&quot;: &quot;/Topic/H/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c4fa9342d8233&quot;,
+      &quot;path&quot;: &quot;/Topic/H/Practice/BahamaLetterGrade.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-14a8fe8e0e244&quot;,
+      &quot;path&quot;: &quot;/Topic/H/Practice/Feedback.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e91782850bfa4&quot;,
+      &quot;path&quot;: &quot;/Topic/H/Practice/HazardousMaterial.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c95606986ca6&quot;,
+      &quot;path&quot;: &quot;/Topic/H/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1426a2a4d6a0d&quot;,
+      &quot;path&quot;: &quot;/Topic/H/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(H) Case Structures&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(H) Case Structures&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9b952f22b2dbd&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Examples/Account.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-f93a4296f19c&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Examples/Address.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-661f53c27efe6&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Examples/Coin.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e73d1ae73256a&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Examples/ImproperFraction.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4fab85a196b45&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Examples/LetterGrade.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-413ed34bd7e1c&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Enumerations:&quot;,
+          &quot;slug&quot;: &quot;enumerations&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Composition:&quot;,
+          &quot;slug&quot;: &quot;composition&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-2a7644832a94b&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Practice/CanadianAddress.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b62241a048453&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Practice/Company.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c4bd6a7a63daf&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Practice/Employee.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-92969506c9cbe&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Practice/HazardousMaterial.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e42751d012afb&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Practice/LetterGrade.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-45d59e05c1fcc&quot;,
+      &quot;path&quot;: &quot;/Topic/I/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-0d7a354907a16&quot;,
+      &quot;path&quot;: &quot;/Topic/I/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(I) Enumerations and Composition&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(I) Enumerations and Composition&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-bfd9420adf0d&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Examples/Aggregator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9b4dd21ac0784&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Examples/Fraction.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-cf461c228c0b7&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Examples/GuessingGame.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-2a564a0c42381&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Examples/Math.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-0ebf7b65238f7&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1f429b84b33fc&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Practice/Aggregator.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b83496b070deb&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Practice/GuessingGame.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d09e04b03616d&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Practice/Math.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4d673d84db559&quot;,
+      &quot;path&quot;: &quot;/Topic/J/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-91c19f4c8dc05&quot;,
+      &quot;path&quot;: &quot;/Topic/J/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(J) Looping Structures&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(J) Looping Structures&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d9956f6c4d3dc&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Examples/BankStatement.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;frontmatter&quot;: &quot;--# BankStatement\nThis class represents a bank statement for a BankAccount for a given month. The statement allows BankTransaction objects to be added, and performs deposits and withdrawals on the BankAccount. The statement reports the starting and ending balance and also summarizes the total amount deposited and withdrawn for the month. The following methods must be coded to complete the solution.\n* GetTotalDeposits() – Loop through the collection of transactions to total all those transactions with a positive amount. * GetTotalWithdrawals() – Loop through the collection of transactions to total all those transactions with a negative amount.\n**Account and BankTransaction**\n![](./K-Account.png)\n![](./K-BankTransaction.png)\n**Bank Statement**\n![](./K-BankStatement.png)\n```csharp public class BankStatement { public Account BankAccount { get; private set; } public double StartingBalance { get; private set; } public Month Month { get; private set; } public List&lt;BankTransaction&gt; Transactions { get; private set; } public double EndingBalance { get { return BankAccount.Balance; } }\n\npublic BankStatement(Account bankAccount, Month month) { if (bankAccount == null) throw new System.Exception(\&quot;Bank account cannot be null\&quot;); this.BankAccount = bankAccount; this.StartingBalance = bankAccount.Balance; this.Month = month; this.Transactions = new List&lt;BankTransaction&gt;(); }\npublic void Add(BankTransaction trans) { if (trans == null) throw new System.Exception(\&quot;Cannot add null transactions\&quot;); double amount = trans.Amount; if (amount &lt; 0) BankAccount.Withdraw(-amount); // Amount is \&quot;negated\&quot; to make positive else BankAccount.Deposit(amount); Transactions.Add(trans); }\npublic double TotalDeposits { get { double total = 0; for (int index = 0; index &lt; Transactions.Count; index++) { BankTransaction aTransaction = Transactions[index]; if (aTransaction.Amount &gt; 0) total += aTransaction.Amount; } return total; } }\npublic double TotalWithdrawals { get { double total = 0; foreach (BankTransaction aTransaction in Transactions) if (aTransaction.Amount &lt; 0) total += aTransaction.Amount; return total; } } } ```&quot;
+    },
+    {
+      &quot;key&quot;: &quot;v-64b7fd40f32a2&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Examples/ClassList.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c180db75bf25f&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Examples/DeckOfCards.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-6855ece1f54&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Examples/Math.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-8f548c55f5c09&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Examples/MultipleChoiceMarker.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-68514889fe646&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Examples/PhoneBook.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4ca526eee0d6a&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c9297624c161c&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Practice/BookBag.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d7669c8ed5cd&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Practice/DeckOfCards.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ef11bb4ff3f38&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Practice/PhoneBook.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-6d668c94eda8f&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-95dd160fff643&quot;,
+      &quot;path&quot;: &quot;/Topic/K/Practice/Registrar.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d053e4c97b512&quot;,
+      &quot;path&quot;: &quot;/Topic/K/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(K) Looping and Collections&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(K) Looping and Collections&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9316fc90acd72&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Examples/BankStatement.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-f260a89620819&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Examples/ClassList.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9ff4dfa5a4e12&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Examples/DeckOfCards.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-09615dda567dd&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Examples/Math.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-8f1fc65156f69&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Examples/MultipleChoiceMarker.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-089e292bf9b31&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Examples/PhoneBook.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4dc48499e2a88&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-568a380a93bfe&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Practice/BookBag.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-3ebdca757bc57&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Practice/CD.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d7f37221ffe6f&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Practice/DeckOfCards.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-45da9896e4cff&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Practice/PhoneBook.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-63bad3edf4c64&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b4bbe2ab5b362&quot;,
+      &quot;path&quot;: &quot;/Topic/L/Practice/Registrar.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-dca85bd41d58&quot;,
+      &quot;path&quot;: &quot;/Topic/L/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(L) Arrays - Not Sorted&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(L) Arrays - Not Sorted&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-3519d060d3fda&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Examples/BankStatement.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-41e8065380697&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Examples/BranchVault.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-d3c593736bba9&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Examples/ClassList.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-aa2b919a7ec42&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Examples/PhoneBook.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ab303e6ad22a1&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7ea0b3b312538&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Practice/CDLibrary.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1fe42e9cafd4&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Practice/PhoneBook.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-eab04172631d8&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b1094e43e7af1&quot;,
+      &quot;path&quot;: &quot;/Topic/M/Practice/Registrar.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c8b84bae6a568&quot;,
+      &quot;path&quot;: &quot;/Topic/M/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(M) Arrays - Sorted&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(M) Arrays - Sorted&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-4351a05d100f5&quot;,
+      &quot;path&quot;: &quot;/Topic/N/Examples/CD.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-18c691305ac1&quot;,
+      &quot;path&quot;: &quot;/Topic/N/Examples/MusicInfoFormatter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-630c656535f92&quot;,
+      &quot;path&quot;: &quot;/Topic/N/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9a10d0e1ae7dd&quot;,
+      &quot;path&quot;: &quot;/Topic/N/Examples/RunningTime.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-a59d2fd27b7b6&quot;,
+      &quot;path&quot;: &quot;/Topic/N/Examples/TextFormatter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7bff652c6fe45&quot;,
+      &quot;path&quot;: &quot;/Topic/N/Practice/Humanizer.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e48ffde942c93&quot;,
+      &quot;path&quot;: &quot;/Topic/N/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e4c53cf3f767f&quot;,
+      &quot;path&quot;: &quot;/Topic/N/Practice/TextFormatter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-2b13f156e0887&quot;,
+      &quot;path&quot;: &quot;/Topic/N/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(N) Modularization and Utility Classes&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(N) Modularization and Utility Classes&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-22b59344416aa&quot;,
+      &quot;path&quot;: &quot;/Topic/O/Examples/BookFileAdapter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ba027479464a&quot;,
+      &quot;path&quot;: &quot;/Topic/O/Examples/PhoneNumberFileAdapter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-516114703abbc&quot;,
+      &quot;path&quot;: &quot;/Topic/O/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-f6b4a24481fac&quot;,
+      &quot;path&quot;: &quot;/Topic/O/Examples/SafetyDepositBoxFileAdapter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-0a856538d5801&quot;,
+      &quot;path&quot;: &quot;/Topic/O/Examples/StudentFileAdapter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-15401201df66d&quot;,
+      &quot;path&quot;: &quot;/Topic/O/Practice/PersonFileAdapter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b802e869232bf&quot;,
+      &quot;path&quot;: &quot;/Topic/O/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-442084c3cb092&quot;,
+      &quot;path&quot;: &quot;/Topic/O/Practice/SongFileAdapter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-26f514f56912b&quot;,
+      &quot;path&quot;: &quot;/Topic/O/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(O) File I/O&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(O) File I/O&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-9741bab5b42f5&quot;,
+      &quot;path&quot;: &quot;/Topic/P/Examples/DemoBookFileAdapter.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c32ea9ae920c4&quot;,
+      &quot;path&quot;: &quot;/Topic/P/Examples/DemoTestingForExceptions.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-3e852bd7c5b81&quot;,
+      &quot;path&quot;: &quot;/Topic/P/Examples/MediaPlayer.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-702a7e0d1c379&quot;,
+      &quot;path&quot;: &quot;/Topic/P/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-cbf1fcbd0adcc&quot;,
+      &quot;path&quot;: &quot;/Topic/P/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-cb17fce1408d4&quot;,
+      &quot;path&quot;: &quot;/Topic/P/Practice/TestingSuite.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-3145c167fa8c&quot;,
+      &quot;path&quot;: &quot;/Topic/P/Practice/WorkingProgram.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-74f28ca1d6194&quot;,
+      &quot;path&quot;: &quot;/Topic/P/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(P) Exception Handling&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGS&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(P) Exception Handling&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ba4b62d61b4a7&quot;,
+      &quot;path&quot;: &quot;/Topic/Q/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-19b5071e7e197&quot;,
+      &quot;path&quot;: &quot;/Topic/Q/Examples/Searching.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-f03fa81944298&quot;,
+      &quot;path&quot;: &quot;/Topic/Q/Examples/Sorting.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-c4fa87e0bb7ce&quot;,
+      &quot;path&quot;: &quot;/Topic/Q/Examples/Swapping.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Swapping With Reference variables&quot;,
+          &quot;slug&quot;: &quot;swapping-with-reference-variables&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Array Element Swapping&quot;,
+          &quot;slug&quot;: &quot;array-element-swapping&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-ceb861ec7feee&quot;,
+      &quot;path&quot;: &quot;/Topic/Q/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-33b8757300ce4&quot;,
+      &quot;path&quot;: &quot;/Topic/Q/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(Q) Simple Algorithms&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Swapping&quot;,
+          &quot;slug&quot;: &quot;swapping&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(Q) Simple Algorithms&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-06f8ef7a6685d&quot;,
+      &quot;path&quot;: &quot;/Topic/R/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-dbf3ce12b4249&quot;,
+      &quot;path&quot;: &quot;/Topic/R/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-a24565f5c4fba&quot;,
+      &quot;path&quot;: &quot;/Topic/R/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(R) Inheritance&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(R) Inheritance&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-34d16720c6d46&quot;,
+      &quot;path&quot;: &quot;/Topic/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;TBA&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Class\\Topic Chart&quot;,
+          &quot;slug&quot;: &quot;class-topic-chart&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;TBA&quot;,
+        &quot;sidebar&quot;: false
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-1582e4fa7047&quot;,
+      &quot;path&quot;: &quot;/Topic/S/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-5b5bc5153e9ec&quot;,
+      &quot;path&quot;: &quot;/Topic/S/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-8bc2ef955eff7&quot;,
+      &quot;path&quot;: &quot;/Topic/S/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(S) SOLID Principles&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(S) SOLID Principles&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-88d062f1e28c8&quot;,
+      &quot;path&quot;: &quot;/Topic/T/Examples/Extensions/Deal.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Deal + Hand&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Deal + Hand&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-71ed6be6a07f2&quot;,
+      &quot;path&quot;: &quot;/Topic/T/Examples/Extensions/Total.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Total&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Total&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-b99ff05954ac5&quot;,
+      &quot;path&quot;: &quot;/Topic/T/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-7788eea212226&quot;,
+      &quot;path&quot;: &quot;/Topic/T/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-3a31dd053aba2&quot;,
+      &quot;path&quot;: &quot;/Topic/T/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(T) Other Types&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(T) Other Types&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e2a7ba40a391b&quot;,
+      &quot;path&quot;: &quot;/Topic/U/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-0a7bc4bae6291&quot;,
+      &quot;path&quot;: &quot;/Topic/U/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-47f4ec407dd5b&quot;,
+      &quot;path&quot;: &quot;/Topic/U/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(U) OOP and Design Patterns&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(U) OOP and Design Patterns&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-5174b51e37277&quot;,
+      &quot;path&quot;: &quot;/Topic/V/Examples/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Examples&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-de03c3cb539a&quot;,
+      &quot;path&quot;: &quot;/Topic/V/Practice/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Practice&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;Practice&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-e64a9ccc3c8e4&quot;,
+      &quot;path&quot;: &quot;/Topic/V/&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;(V) Operator Overloading&quot;,
+      &quot;frontmatter&quot;: {
+        &quot;title&quot;: &quot;(V) Operator Overloading&quot;
+      }
+    },
+    {
+      &quot;key&quot;: &quot;v-035b81f0596bc&quot;,
+      &quot;path&quot;: &quot;/_old/SUMMARY.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Summary&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Thinking In OOP&quot;,
+          &quot;slug&quot;: &quot;thinking-in-oop&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP As A Foundation&quot;,
+          &quot;slug&quot;: &quot;oop-as-a-foundation&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Expressions, Math, Exceptions, If-Else, and Case&quot;,
+          &quot;slug&quot;: &quot;expressions-math-exceptions-if-else-and-case&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Adding Complexity + Looping&quot;,
+          &quot;slug&quot;: &quot;adding-complexity-looping&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP - Getting Real&quot;,
+          &quot;slug&quot;: &quot;oop-getting-real&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OOP - Getting Good&quot;,
+          &quot;slug&quot;: &quot;oop-getting-good&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Appendix&quot;,
+          &quot;slug&quot;: &quot;appendix&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-c48fe8b528d84&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/part-0.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Thinking In OOP #&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-fef5d884eb2bf&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/part-1.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;OOP As A Foundation #&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-54e235d6417e9&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/part-2.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Expressions, Math, Exceptions, If-Else, and Case #&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-603ae20c52361&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/part-3.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Adding Complexity + Looping #&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-074a43f604174&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/part-4.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;OOP - Getting Real #&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-54ce0858c736b&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/part-5.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;OOP - Getting Good #&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-b5cc2b8b86ca5&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/part-9.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Appendix #&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-bdf6f338e0f28&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-A.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic A - Starting Classes&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Nothingness&quot;,
+          &quot;slug&quot;: &quot;nothingness&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;HelloWorld&quot;,
+          &quot;slug&quot;: &quot;helloworld&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Comments&quot;,
+          &quot;slug&quot;: &quot;comments&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;OuterSpace&quot;,
+          &quot;slug&quot;: &quot;outerspace&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;AnsweringMachine&quot;,
+          &quot;slug&quot;: &quot;answeringmachine&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Salutation and HelloWorld_Driver&quot;,
+          &quot;slug&quot;: &quot;salutation-and-helloworld-driver&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-f7f8b81fb5f76&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-B.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic B – Starting Classes&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Salutation &amp; Driver&quot;,
+          &quot;slug&quot;: &quot;salutation-driver&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Person&quot;,
+          &quot;slug&quot;: &quot;person&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Comments&quot;,
+          &quot;slug&quot;: &quot;comments&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Student&quot;,
+          &quot;slug&quot;: &quot;student&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Employee &amp; Company&quot;,
+          &quot;slug&quot;: &quot;employee-company&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;AnsweringMachine&quot;,
+          &quot;slug&quot;: &quot;answeringmachine&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CanadianAddress&quot;,
+          &quot;slug&quot;: &quot;canadianaddress&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Course&quot;,
+          &quot;slug&quot;: &quot;course&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ExamResult&quot;,
+          &quot;slug&quot;: &quot;examresult&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LabResult&quot;,
+          &quot;slug&quot;: &quot;labresult&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-7907b77d76042&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-C.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic C – Starting Classes&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Daily LOGs&quot;,
+          &quot;slug&quot;: &quot;daily-logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Person&quot;,
+          &quot;slug&quot;: &quot;person&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Student&quot;,
+          &quot;slug&quot;: &quot;student&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Company and Employee&quot;,
+          &quot;slug&quot;: &quot;company-and-employee&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Person&quot;,
+          &quot;slug&quot;: &quot;person-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CanadianAddress&quot;,
+          &quot;slug&quot;: &quot;canadianaddress&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Course&quot;,
+          &quot;slug&quot;: &quot;course&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LabResult&quot;,
+          &quot;slug&quot;: &quot;labresult&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ExamResult&quot;,
+          &quot;slug&quot;: &quot;examresult&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-057e7d0eeec93&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-D.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic D – Testing and Debugging&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Person&quot;,
+          &quot;slug&quot;: &quot;person&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Student&quot;,
+          &quot;slug&quot;: &quot;student&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Employee&quot;,
+          &quot;slug&quot;: &quot;employee&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Company&quot;,
+          &quot;slug&quot;: &quot;company&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Person&quot;,
+          &quot;slug&quot;: &quot;person-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CanadianAddress&quot;,
+          &quot;slug&quot;: &quot;canadianaddress&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Course&quot;,
+          &quot;slug&quot;: &quot;course&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ExamResult&quot;,
+          &quot;slug&quot;: &quot;examresult&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LabResult&quot;,
+          &quot;slug&quot;: &quot;labresult&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-a41b1ff349ecf&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-E.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic E – Expressions and Math&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Calculator&quot;,
+          &quot;slug&quot;: &quot;calculator&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Person&quot;,
+          &quot;slug&quot;: &quot;person&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ElapsedTime&quot;,
+          &quot;slug&quot;: &quot;elapsedtime&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ResolveExpressions&quot;,
+          &quot;slug&quot;: &quot;resolveexpressions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Circle&quot;,
+          &quot;slug&quot;: &quot;circle&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Square&quot;,
+          &quot;slug&quot;: &quot;square&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Fraction&quot;,
+          &quot;slug&quot;: &quot;fraction&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Angle&quot;,
+          &quot;slug&quot;: &quot;angle&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;StockItem&quot;,
+          &quot;slug&quot;: &quot;stockitem&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Die&quot;,
+          &quot;slug&quot;: &quot;die&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ParkingCounter&quot;,
+          &quot;slug&quot;: &quot;parkingcounter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;QuadradicEquation&quot;,
+          &quot;slug&quot;: &quot;quadradicequation&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Calculator&quot;,
+          &quot;slug&quot;: &quot;calculator-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Fraction&quot;,
+          &quot;slug&quot;: &quot;fraction-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Square&quot;,
+          &quot;slug&quot;: &quot;square-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Coordinate&quot;,
+          &quot;slug&quot;: &quot;coordinate&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PaintEstimator&quot;,
+          &quot;slug&quot;: &quot;paintestimator&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;BulkItem&quot;,
+          &quot;slug&quot;: &quot;bulkitem&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Die&quot;,
+          &quot;slug&quot;: &quot;die-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;RoundingCalculator&quot;,
+          &quot;slug&quot;: &quot;roundingcalculator&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;GenericRoundingCalculator&quot;,
+          &quot;slug&quot;: &quot;genericroundingcalculator&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PeopleCounter&quot;,
+          &quot;slug&quot;: &quot;peoplecounter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ScoreCard&quot;,
+          &quot;slug&quot;: &quot;scorecard&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Cylinder&quot;,
+          &quot;slug&quot;: &quot;cylinder&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Cone&quot;,
+          &quot;slug&quot;: &quot;cone&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;GravityCalculator&quot;,
+          &quot;slug&quot;: &quot;gravitycalculator&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CurrencyCalculator&quot;,
+          &quot;slug&quot;: &quot;currencycalculator&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-4d894c9eab448&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-F.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic F – If-Else Structures&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;StockItem&quot;,
+          &quot;slug&quot;: &quot;stockitem&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Person&quot;,
+          &quot;slug&quot;: &quot;person&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Fraction&quot;,
+          &quot;slug&quot;: &quot;fraction&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Angle&quot;,
+          &quot;slug&quot;: &quot;angle&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ParkingCounter&quot;,
+          &quot;slug&quot;: &quot;parkingcounter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;MemoryAddress&quot;,
+          &quot;slug&quot;: &quot;memoryaddress&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Color&quot;,
+          &quot;slug&quot;: &quot;color&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Excercises&quot;,
+          &quot;slug&quot;: &quot;practice-excercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Rectangle&quot;,
+          &quot;slug&quot;: &quot;rectangle&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;HazardousMaterial&quot;,
+          &quot;slug&quot;: &quot;hazardousmaterial&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CurrencyCalculator&quot;,
+          &quot;slug&quot;: &quot;currencycalculator&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;GravityCalculator&quot;,
+          &quot;slug&quot;: &quot;gravitycalculator&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-b541ae1d1aae5&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-G.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic G – Raising Exceptions&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Fraction&quot;,
+          &quot;slug&quot;: &quot;fraction&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Square&quot;,
+          &quot;slug&quot;: &quot;square&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Circle&quot;,
+          &quot;slug&quot;: &quot;circle&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Die&quot;,
+          &quot;slug&quot;: &quot;die&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Person&quot;,
+          &quot;slug&quot;: &quot;person&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Student&quot;,
+          &quot;slug&quot;: &quot;student&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ParkingCounter&quot;,
+          &quot;slug&quot;: &quot;parkingcounter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;StockItem&quot;,
+          &quot;slug&quot;: &quot;stockitem&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account&quot;,
+          &quot;slug&quot;: &quot;account-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Rectangle&quot;,
+          &quot;slug&quot;: &quot;rectangle&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Cone&quot;,
+          &quot;slug&quot;: &quot;cone&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Course&quot;,
+          &quot;slug&quot;: &quot;course&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Cylinder&quot;,
+          &quot;slug&quot;: &quot;cylinder&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;HazardousMaterial&quot;,
+          &quot;slug&quot;: &quot;hazardousmaterial&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ExamResult&quot;,
+          &quot;slug&quot;: &quot;examresult&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LabResult&quot;,
+          &quot;slug&quot;: &quot;labresult&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PeopleCounter&quot;,
+          &quot;slug&quot;: &quot;peoplecounter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;BulkItem&quot;,
+          &quot;slug&quot;: &quot;bulkitem&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-3c0e1f70c659b&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-H.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic H – Case Structures&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LetterGrade&quot;,
+          &quot;slug&quot;: &quot;lettergrade&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Rating&quot;,
+          &quot;slug&quot;: &quot;rating&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;BahamaLetterGrade&quot;,
+          &quot;slug&quot;: &quot;bahamalettergrade&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Feedback&quot;,
+          &quot;slug&quot;: &quot;feedback&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;HazardousMaterial&quot;,
+          &quot;slug&quot;: &quot;hazardousmaterial&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-30b585b5414a7&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-I.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic I –Enumerations and Composition&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Enumerations:&quot;,
+          &quot;slug&quot;: &quot;enumerations&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Composition:&quot;,
+          &quot;slug&quot;: &quot;composition&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Account + AccountType&quot;,
+          &quot;slug&quot;: &quot;account-accounttype&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LetterGrade + QuebecLetterGrade&quot;,
+          &quot;slug&quot;: &quot;lettergrade-quebeclettergrade&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Address + Student + GenderType&quot;,
+          &quot;slug&quot;: &quot;address-student-gendertype&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ImproperFraction + MixedNumber + ProperFraction&quot;,
+          &quot;slug&quot;: &quot;improperfraction-mixednumber-properfraction&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LetterGrade + BahamaLetterGrade&quot;,
+          &quot;slug&quot;: &quot;lettergrade-bahamalettergrade&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;HazardousMaterial + ClassCode&quot;,
+          &quot;slug&quot;: &quot;hazardousmaterial-classcode&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CanadianAddress + Province&quot;,
+          &quot;slug&quot;: &quot;canadianaddress-province&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Employee/Student + CanadianAddress + Province&quot;,
+          &quot;slug&quot;: &quot;employee-student-canadianaddress-province&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Company + Month + CanadianAddress + Province&quot;,
+          &quot;slug&quot;: &quot;company-month-canadianaddress-province&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-55822b46cc372&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-J.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic J - Looping Structures&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Aggregator&quot;,
+          &quot;slug&quot;: &quot;aggregator&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Math&quot;,
+          &quot;slug&quot;: &quot;math&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Fraction&quot;,
+          &quot;slug&quot;: &quot;fraction&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;GuessingGame&quot;,
+          &quot;slug&quot;: &quot;guessinggame&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Aggregator&quot;,
+          &quot;slug&quot;: &quot;aggregator-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Math&quot;,
+          &quot;slug&quot;: &quot;math-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;GuessingGame&quot;,
+          &quot;slug&quot;: &quot;guessinggame-2&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-e17ca48e98117&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-K.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic K - Looping and Collections&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Math&quot;,
+          &quot;slug&quot;: &quot;math&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PhoneBook&quot;,
+          &quot;slug&quot;: &quot;phonebook&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ClassList&quot;,
+          &quot;slug&quot;: &quot;classlist&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;MultipleChoiceMarker&quot;,
+          &quot;slug&quot;: &quot;multiplechoicemarker&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;BankStatement&quot;,
+          &quot;slug&quot;: &quot;bankstatement&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;DeckOfCards&quot;,
+          &quot;slug&quot;: &quot;deckofcards&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice examples&quot;,
+          &quot;slug&quot;: &quot;practice-examples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PhoneBook&quot;,
+          &quot;slug&quot;: &quot;phonebook-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Registrar&quot;,
+          &quot;slug&quot;: &quot;registrar&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;BookBag&quot;,
+          &quot;slug&quot;: &quot;bookbag&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;DeckOfCards&quot;,
+          &quot;slug&quot;: &quot;deckofcards-2&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-ac4d1b40a0a84&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-L.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic L - Arrays - Not Sorted&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Math&quot;,
+          &quot;slug&quot;: &quot;math&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PhoneBook&quot;,
+          &quot;slug&quot;: &quot;phonebook&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ClassList&quot;,
+          &quot;slug&quot;: &quot;classlist&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;MultipleChoiceMarker&quot;,
+          &quot;slug&quot;: &quot;multiplechoicemarker&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;BankStatement&quot;,
+          &quot;slug&quot;: &quot;bankstatement&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;DeckOfCards&quot;,
+          &quot;slug&quot;: &quot;deckofcards&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PhoneBook&quot;,
+          &quot;slug&quot;: &quot;phonebook-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Registrar&quot;,
+          &quot;slug&quot;: &quot;registrar&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;BookBag&quot;,
+          &quot;slug&quot;: &quot;bookbag&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;DeckOfCards&quot;,
+          &quot;slug&quot;: &quot;deckofcards-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CD&quot;,
+          &quot;slug&quot;: &quot;cd&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-e943580ea8a29&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-M.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic M - Arrays - Sorted&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;BranchVault&quot;,
+          &quot;slug&quot;: &quot;branchvault&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PhoneBook&quot;,
+          &quot;slug&quot;: &quot;phonebook&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;ClassList&quot;,
+          &quot;slug&quot;: &quot;classlist&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PhoneBook&quot;,
+          &quot;slug&quot;: &quot;phonebook-2&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Registrar&quot;,
+          &quot;slug&quot;: &quot;registrar&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CDLibrary&quot;,
+          &quot;slug&quot;: &quot;cdlibrary&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-8bbb775f0c05f&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-N.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic N - Modularization and Utility Classes&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Sample&quot;,
+          &quot;slug&quot;: &quot;code-sample&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;CD&quot;,
+          &quot;slug&quot;: &quot;cd&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;RunningTime&quot;,
+          &quot;slug&quot;: &quot;runningtime&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;TextFormatter&quot;,
+          &quot;slug&quot;: &quot;textformatter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;MusicInfoFormatter&quot;,
+          &quot;slug&quot;: &quot;musicinfoformatter&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;TextFormatter&quot;,
+          &quot;slug&quot;: &quot;textformatter-2&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-e7f14d884048e&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-O.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic O - File I/O&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGs&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PhoneNumberFileAdapter&quot;,
+          &quot;slug&quot;: &quot;phonenumberfileadapter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;StudentFileAdapter&quot;,
+          &quot;slug&quot;: &quot;studentfileadapter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;BookFileAdapter&quot;,
+          &quot;slug&quot;: &quot;bookfileadapter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;SafetyDepositBoxFileAdapter&quot;,
+          &quot;slug&quot;: &quot;safetydepositboxfileadapter&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;PersonFileAdapter&quot;,
+          &quot;slug&quot;: &quot;personfileadapter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;SongFileAdapter&quot;,
+          &quot;slug&quot;: &quot;songfileadapter&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-78c1fa6db1ff4&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-P.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic P - Exception Handling&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Overview&quot;,
+          &quot;slug&quot;: &quot;overview&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;LOGS&quot;,
+          &quot;slug&quot;: &quot;logs&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;DemoTestingForExceptions&quot;,
+          &quot;slug&quot;: &quot;demotestingforexceptions&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;DemoBookFileAdapter&quot;,
+          &quot;slug&quot;: &quot;demobookfileadapter&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;MediaPlayer&quot;,
+          &quot;slug&quot;: &quot;mediaplayer&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Practice Exercises&quot;,
+          &quot;slug&quot;: &quot;practice-exercises&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Testing Suite&quot;,
+          &quot;slug&quot;: &quot;testing-suite&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Working Program&quot;,
+          &quot;slug&quot;: &quot;working-program&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-b1c153ba3d5cf&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-Q.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic Q - Simple Algorithms&quot;,
+      &quot;headers&quot;: [
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Swapping&quot;,
+          &quot;slug&quot;: &quot;swapping&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Code Samples&quot;,
+          &quot;slug&quot;: &quot;code-samples&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Basic Swapping Principles&quot;,
+          &quot;slug&quot;: &quot;basic-swapping-principles&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Swapping With Reference variables&quot;,
+          &quot;slug&quot;: &quot;swapping-with-reference-variables&quot;
+        },
+        {
+          &quot;level&quot;: 3,
+          &quot;title&quot;: &quot;Array Element Swapping&quot;,
+          &quot;slug&quot;: &quot;array-element-swapping&quot;
+        },
+        {
+          &quot;level&quot;: 2,
+          &quot;title&quot;: &quot;Sorting&quot;,
+          &quot;slug&quot;: &quot;sorting&quot;
+        }
+      ],
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-af81b4d2dc2b1&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-R.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic R - Inheritance&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-ed708de0aaaa7&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-S.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic S - SOLID Principles&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-385fc209da641&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-T.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic T - Other Types&quot;,
+      &quot;frontmatter&quot;: {}
+    },
+    {
+      &quot;key&quot;: &quot;v-64b154f781d07&quot;,
+      &quot;path&quot;: &quot;/_old/_manuscript/topic-U.html&quot;,
+      &quot;lastUpdated&quot;: 1540616428000,
+      &quot;title&quot;: &quot;Topic U - OOP and Design Patterns&quot;,
+      &quot;frontmatter&quot;: {}
+    }
+  ],
+  &quot;themeConfig&quot;: {
+    &quot;repo&quot;: &quot;Programming-0101/TheBook&quot;,
+    &quot;repoLabel&quot;: &quot;Contribute!&quot;,
+    &quot;editLinks&quot;: true,
+    &quot;algolia&quot;: {
+      &quot;apiKey&quot;: &quot;58ae96f939fc98b3075a4909c6ae457c&quot;,
+      &quot;indexName&quot;: &quot;programming_0101&quot;
+    },
+    &quot;editLinkText&quot;: &quot;Help us improve this page!&quot;,
+    &quot;lastUpdated&quot;: &quot;Last updated on&quot;,
+    &quot;nav&quot;: [
+      {
+        &quot;text&quot;: &quot;The Book&quot;,
+        &quot;link&quot;: &quot;/Teach/&quot;,
+        &quot;type&quot;: &quot;link&quot;,
+        &quot;items&quot;: []
+      },
+      {
+        &quot;text&quot;: &quot;The Code&quot;,
+        &quot;link&quot;: &quot;/Topic/&quot;,
+        &quot;type&quot;: &quot;link&quot;,
+        &quot;items&quot;: []
+      },
+      {
+        &quot;text&quot;: &quot;About&quot;,
+        &quot;link&quot;: &quot;/About/&quot;,
+        &quot;type&quot;: &quot;link&quot;,
+        &quot;items&quot;: []
+      }
+    ],
+    &quot;sidebar&quot;: {
+      &quot;/Teach/&quot;: [
+        &quot;&quot;,
+        &quot;chapter1&quot;,
+        &quot;chapter1-5&quot;,
+        &quot;chapter1-7&quot;,
+        &quot;console-1&quot;,
+        &quot;chapter2&quot;,
+        &quot;chapter3&quot;
+      ],
+      &quot;/Topic/A/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/B/&quot;,
+          &quot;(Next →) Topic B&quot;
+        ]
+      ],
+      &quot;/Topic/B/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/A/&quot;,
+          &quot;(← Prev) Topic A&quot;
+        ],
+        [
+          &quot;/Topic/C/&quot;,
+          &quot;(Next →) Topic C&quot;
+        ]
+      ],
+      &quot;/Topic/C/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/B/&quot;,
+          &quot;(← Prev) Topic B&quot;
+        ],
+        [
+          &quot;/Topic/D/&quot;,
+          &quot;(Next →) Topic D&quot;
+        ]
+      ],
+      &quot;/Topic/D/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/C/&quot;,
+          &quot;(← Prev) Topic C&quot;
+        ],
+        [
+          &quot;/Topic/E/&quot;,
+          &quot;(Next →) Topic E&quot;
+        ]
+      ],
+      &quot;/Topic/E/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/D/&quot;,
+          &quot;(← Prev) Topic D&quot;
+        ],
+        [
+          &quot;/Topic/F/&quot;,
+          &quot;(Next →) Topic F&quot;
+        ]
+      ],
+      &quot;/Topic/F/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/E/&quot;,
+          &quot;(← Prev) Topic E&quot;
+        ],
+        [
+          &quot;/Topic/G/&quot;,
+          &quot;(Next →) Topic G&quot;
+        ]
+      ],
+      &quot;/Topic/G/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/F/&quot;,
+          &quot;(← Prev) Topic F&quot;
+        ],
+        [
+          &quot;/Topic/H/&quot;,
+          &quot;(Next →) Topic H&quot;
+        ]
+      ],
+      &quot;/Topic/H/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/G/&quot;,
+          &quot;(← Prev) Topic G&quot;
+        ],
+        [
+          &quot;/Topic/I/&quot;,
+          &quot;(Next →) Topic I&quot;
+        ]
+      ],
+      &quot;/Topic/I/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/H/&quot;,
+          &quot;(← Prev) Topic H&quot;
+        ],
+        [
+          &quot;/Topic/J/&quot;,
+          &quot;(Next →) Topic J&quot;
+        ]
+      ],
+      &quot;/Topic/J/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/I/&quot;,
+          &quot;(← Prev) Topic I&quot;
+        ],
+        [
+          &quot;/Topic/K/&quot;,
+          &quot;(Next →) Topic K&quot;
+        ]
+      ],
+      &quot;/Topic/K/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/J/&quot;,
+          &quot;(← Prev) Topic J&quot;
+        ],
+        [
+          &quot;/Topic/L/&quot;,
+          &quot;(Next →) Topic L&quot;
+        ]
+      ],
+      &quot;/Topic/L/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/K/&quot;,
+          &quot;(← Prev) Topic K&quot;
+        ],
+        [
+          &quot;/Topic/M/&quot;,
+          &quot;(Next →) Topic M&quot;
+        ]
+      ],
+      &quot;/Topic/M/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/L/&quot;,
+          &quot;(← Prev) Topic L&quot;
+        ],
+        [
+          &quot;/Topic/N/&quot;,
+          &quot;(Next →) Topic N&quot;
+        ]
+      ],
+      &quot;/Topic/N/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/M/&quot;,
+          &quot;(← Prev) Topic M&quot;
+        ],
+        [
+          &quot;/Topic/O/&quot;,
+          &quot;(Next →) Topic O&quot;
+        ]
+      ],
+      &quot;/Topic/O/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/N/&quot;,
+          &quot;(← Prev) Topic N&quot;
+        ],
+        [
+          &quot;/Topic/P/&quot;,
+          &quot;(Next →) Topic P&quot;
+        ]
+      ],
+      &quot;/Topic/P/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/O/&quot;,
+          &quot;(← Prev) Topic O&quot;
+        ],
+        [
+          &quot;/Topic/Q/&quot;,
+          &quot;(Next →) Topic Q&quot;
+        ]
+      ],
+      &quot;/Topic/Q/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/P/&quot;,
+          &quot;(← Prev) Topic P&quot;
+        ],
+        [
+          &quot;/Topic/R/&quot;,
+          &quot;(Next →) Topic R&quot;
+        ]
+      ],
+      &quot;/Topic/R/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/Q/&quot;,
+          &quot;(← Prev) Topic Q&quot;
+        ],
+        [
+          &quot;/Topic/S/&quot;,
+          &quot;(Next →) Topic S&quot;
+        ]
+      ],
+      &quot;/Topic/S/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/R/&quot;,
+          &quot;(← Prev) Topic R&quot;
+        ],
+        [
+          &quot;/Topic/T/&quot;,
+          &quot;(Next →) Topic T&quot;
+        ]
+      ],
+      &quot;/Topic/T/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/S/&quot;,
+          &quot;(← Prev) Topic S&quot;
+        ],
+        [
+          &quot;/Topic/U/&quot;,
+          &quot;(Next →) Topic U&quot;
+        ]
+      ],
+      &quot;/Topic/U/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/T/&quot;,
+          &quot;(← Prev) Topic T&quot;
+        ]
+      ],
+      &quot;/Topic/V/&quot;: [
+        &quot;&quot;,
+        &quot;Examples/&quot;,
+        &quot;Practice/&quot;,
+        [
+          &quot;/Topic/U/&quot;,
+          &quot;(← Prev) Topic U&quot;
+        ]
+      ],
+      &quot;/About/&quot;: [
+        &quot;&quot;,
+        &quot;audience&quot;,
+        &quot;colophon&quot;,
+        &quot;log-summary&quot;,
+        &quot;appendix-grammar&quot;,
+        &quot;_todo&quot;
+      ]
+    }
+  }
+}</p></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/Programming-0101/TheBook/edit/master/About/_todo.md" target="_blank" rel="noopener noreferrer">Help us improve this page!</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last updated on: </span> <span class="time">10/27/2018, 5:00:28 AM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/TheBook/About/appendix-grammar.html" class="prev">
+          Appendix
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/TheBook/assets/js/110.409ffcd7.js" defer></script><script src="/TheBook/assets/js/app.f05f7ec7.js" defer></script>
+  </body>
+</html>
