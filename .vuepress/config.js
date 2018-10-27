@@ -35,7 +35,7 @@ module.exports = {
                 'console-1',
                 'chapter2',
                 'chapter3',
-                ['/Topic/', 'On to The Code']
+                ['/Topic/', 'On to The Code Samples']
             ],
             // '/Topic/': [
             //     {title: 'Starting Classes - A', children: ['/Topic//', 'Examples/']}, 'B/', 'C/', 'D/', 'E/', 'F/', 'G/', 'H/', 'I/', 'J/', 'K/', 'L/', 'M/', 'N/', 'O/', 'P/', 'Q/', 'R/', 'S/', 'T/', 'U/'
