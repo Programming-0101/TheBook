@@ -18,6 +18,7 @@ footer: Copyright © 2004-Today Dan Gilleland
 ---
 ::: warning NOTE
 This is an ALPHA Early Release of this book.
+[![Build Status](https://travis-ci.org/Programming-0101/TheBook.svg?branch=publish)](https://travis-ci.org/Programming-0101/TheBook)
 :::
 
 # How to Use This Book
