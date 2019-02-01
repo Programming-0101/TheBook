@@ -49,8 +49,8 @@ module.exports = {
                 'chapter1-7',
                 'console-1',
                 'chapter2',
-                '/Topic/A/ConsoleIO',
                 'chapter3',
+                'console-2',
                 ['/Topic/', 'On to The Code Samples']
             ],
             // '/Topic/': [

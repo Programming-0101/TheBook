@@ -1,6 +1,9 @@
+---
+title: A General-Purpose Driver
+---
 # Interlude 2 - A General-Purpose Driver
 
-The following is a nice general-purpose console-based driver that can be used for the remaining topics. 
+The following is a nice general-purpose console-based driver that can be used for the remaining topics.
 
 ```csharp
 class Program
