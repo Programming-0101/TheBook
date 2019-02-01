@@ -45,3 +45,25 @@ Notice also what we have done in the last line. We can take the user's input and
 ```text
 Hello Dan
 ```
+
+An alternative to string concatenation is using the `string.Format()` method. The `.Format()` method works by including a "placeholder" in the string passed in as the first argument. Placeholders are written as a number inside of a set of curly braces. The number corresponds to the position of the arguments sent in after the first argument. Thus, we could have written that line as
+
+```csharp
+    System.Console.WriteLine(string.Format("Hello {0}", name));
+```
+
+Notice that the placeholder is `{0}`. The variable `name` is in the "zero-th" position after the literal text. You'll have an idea later on when we talk about arrays about why we start the number at 0 instead of 1.
+
+The .`WriteLine()` method has a version that allows you to get the same result without calling `string.Format()`. Basically, this version makes use of the format method internally.
+
+```csharp
+    System.Console.WriteLine("Hello {0}", name);
+```
+
+Since version 6 of the C# programming language, a cleaner alternative to these formatting approaches is available. It's called [**string interpolation**](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated). Using string interpolation, the code could have been written as
+
+```csharp
+    System.Console.WriteLine($"Hello {name}");
+```
+
+String interpolation is indicated by the dollar sign immediately preceeding the literal string. This way of concatenating string values has the benefit of being easier to read and understand where variable values are being inserted into the text.
