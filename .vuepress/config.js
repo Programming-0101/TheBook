@@ -49,6 +49,7 @@ module.exports = {
                 'chapter1-7',
                 'console-1',
                 'chapter2',
+                '/Topic/A/ConsoleIO',
                 'chapter3',
                 ['/Topic/', 'On to The Code Samples']
             ],
@@ -58,7 +59,7 @@ module.exports = {
             '/Topic/A/': [
                 '',
                 'Examples/',
-                'ConsoleOutput',
+                'ConsoleIO',
                 'Practice/',
                 ['/Topic/B/', '(Next →) Topic B']
             ],
