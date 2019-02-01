@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: Topic C - Person Example
 ---
 # Person
 

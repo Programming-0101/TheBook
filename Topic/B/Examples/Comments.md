@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: Topic B - Comments Example
 ---
 # Comments
 

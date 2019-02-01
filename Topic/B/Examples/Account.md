@@ -1,10 +1,11 @@
 ---
-title: TBA
+title: Topic B - Accounting Example
 ---
 # Account
 
 This simple class also illustrates fields. This example includes a driver.
-*	Data Attributes of the Account class:
+
+* Data Attributes of the Account class:
   * AccountNumber : Integer
   * Balance : Real
   * OverdraftLimit : Double

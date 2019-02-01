@@ -1,5 +1,5 @@
 ---
-title: TBA
+title: Topic C - Company Example
 ---
 # Company and Employee
 

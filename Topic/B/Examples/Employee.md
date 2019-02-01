@@ -1,11 +1,11 @@
 ---
-title: TBA
+title: Topic B - Employee Example
 ---
 # Employee & Company
 
 The Employee and Company classes are similar to the Person and Student classes.
 
-*	Data Attributes of the Employee class:
+* Data Attributes of the Employee class:
   * FirstName : String
   * LastName : String
   * SocialInsuranceNumber : Integer

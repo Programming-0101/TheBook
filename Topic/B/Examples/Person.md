@@ -1,11 +1,11 @@
 ---
-title: TBA
+title: Topic B - Person Example
 ---
 # Person
 
 This simple class illustrates and introduces the idea of fields (member variables) of a class. This example includes and introduces the idea of a driver. The driver also illustrates how a single class can be used to instantiate multiple, distinct objects.
 
-*	Data Attributes of the Person class:
+* Data Attributes of the Person class:
   * FirstName : String
   * LastName : String
   * Age : Integer

@@ -1,11 +1,11 @@
 ---
-title: TBA
+title: Topic B - Student Example
 ---
 # Student
 
 The Student class introduces a slightly more complex example by offering more fields.
 
-*	Data Attributes of the Student class:
+* Data Attributes of the Student class:
   * Name : String
   * Gender : Character
   * StudentId : Integer
