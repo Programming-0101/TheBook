@@ -58,6 +58,7 @@ module.exports = {
             '/Topic/A/': [
                 '',
                 'Examples/',
+                'ConsoleOutput',
                 'Practice/',
                 ['/Topic/B/', '(Next →) Topic B']
             ],
