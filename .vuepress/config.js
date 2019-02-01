@@ -28,7 +28,7 @@ module.exports = {
         // if your docs are not at the root of the repo:
         // docsDir: 'manuscript',
         // defaults to false, set to true to enable
-        editLinks: true,
+        // editLinks: true,
         algolia: {
             apiKey: '58ae96f939fc98b3075a4909c6ae457c',
             indexName: 'programming_0101'
