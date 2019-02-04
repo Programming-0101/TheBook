@@ -24,7 +24,7 @@ These first topics get the user into writing classes with fields, properties, co
 
 ## C# - In Context
 
-The remaining fundamentals are covered in topics E through M. In these examples, all the remaining fundamentals are presented within the context of working with objects, rather than 
+The remaining fundamentals are covered in topics E through M. The focus here is mostly about "doing math" and **flow-control** statements, but additional concepts such as enumerations, composition, and arrays are covered. In these examples, all the fundamentals are presented within the context of working with objects, rather than being isolated and shown in a purely "procedural" fashion.
 
 - [E](E/) - Expressions and Math
 - [F](F/) - If/Else Structures
@@ -38,6 +38,8 @@ The remaining fundamentals are covered in topics E through M. In these examples,
 
 ## Other Fundamental Considerations
 
+Once you have Classes/Objects and Flow-Control under your belt, it's time to take a look at building on those fundamentals. The role of modularization and utility classes, as well as performing file input/ouput and dealing with exceptions is explored with some simple examples.
+
 - [N](N/) - Modularization and Utility Classes
 - [O](O/) - File I/O
 - [P](P/) - Exception Handling
@@ -50,6 +52,8 @@ The remaining fundamentals are covered in topics E through M. In these examples,
 - [T](T/) - Other Types (`struct`, `interface`, `delegate`, Generics, Extension Methods)
 - [U](U/) - OOP and Design Patterns
 - [V](V/) - Operator Overloading
+
+----
 
 ## Class\Topic Chart
 
