@@ -150,12 +150,12 @@ The following chart summarizes key arithmetic operations and their corresponding
 | Multiplication           | *       | *            | *            | *            | *                        |
 | Division                 | /       | /            | /            | /            | /                        |
 | Remainder of Division    | %       | %            | %            | Mod          | MOD(Division Expression) |
-| Square Root              | sqrt() | Math.Sqrt() | Math.sqrt() | Sqr()       | SQR()                   |
-| Exponential Notation (Power) | pow()  | Math.Pow()  | Math.pow()  | ^            | POWER()             |
-| Sine                     | sin()  | Math.Sin()  | Math.sin()  | Sin()       | SIN()                   |
-| Cosine                   | cos()  | Math.Cos()  | Math.cos()  | Cos()       | COS()                   |
-| Tangent                  | tan()  | Math.Tan()  | Math.tan()  | Tan()       | TAN()                   |
-| Parenthesis (affects order of operation) | ( )     | ( )          | ( )          | ( )          | ( )      |
+| Square Root              | sqrt(&nbsp;) | Math.Sqrt(&nbsp;) | Math.sqrt(&nbsp;) | Sqr(&nbsp;)       | SQR(&nbsp;)                   |
+| Exponential Notation (Power) | pow(&nbsp;)  | Math.Pow(&nbsp;)  | Math.pow(&nbsp;)  | ^            | POWER(&nbsp;)             |
+| Sine                     | sin(&nbsp;)  | Math.Sin(&nbsp;)  | Math.sin(&nbsp;)  | Sin(&nbsp;)       | SIN(&nbsp;)                   |
+| Cosine                   | cos(&nbsp;)  | Math.Cos(&nbsp;)  | Math.cos(&nbsp;)  | Cos(&nbsp;)       | COS(&nbsp;)                   |
+| Tangent                  | tan(&nbsp;)  | Math.Tan(&nbsp;)  | Math.tan(&nbsp;)  | Tan(&nbsp;)       | TAN(&nbsp;)                   |
+| Parenthesis (affects order of operation) | (&nbsp;)     | (&nbsp;)          | (&nbsp;)          | (&nbsp;)          | (&nbsp;)      |
 
 The only "arithmetic" operation that is typically applied to string data types is addition. The addition of two strings is usually interpreted as the concatenation (joining together) of the two string values into a single string value.
 
