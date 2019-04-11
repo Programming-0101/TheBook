@@ -11,7 +11,7 @@ This is an ALPHA Early Release of this book.
 
 Learning how to program is a journey into thinking about *things* and how to *manipulate* them. This book aims at offering a way to teach programming ***starting with* OOP**, rather than tacking it on at the end. Through numerous simple examples, and a focus on the *things* first, this book will guide the student (and the teacher) through all the concepts needed to get started in programming with Objects.
 
-The essence of this OOP-First approach are seen in what I call the "ABCs of Classes and Objects". From these first three topics I move to the "traditional" concerns of programming, all the while placing them within their most natural context: Objects.
+The essence of this OOP-First approach are seen in what I call the "ABCs of Classes and Objects". From these first three topics I move to the "traditional" concerns of programming, all the while placing them within their most natural context: ***Objects***.
 
 ::: tip Code-Focused
 What follows is a set of articles describing the foundations of OOP programming. But all of this is just "theory" without [good samples](../Topic/ReadMe.md). Keep reading to get the fundamentals, and feel free to jump right into [**The Code**](../Topic/ReadMe.md) for some hands-on samples.
