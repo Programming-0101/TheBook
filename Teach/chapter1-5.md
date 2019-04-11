@@ -1,6 +1,6 @@
 # The C# Language
 
-C# (pronounced 'See-sharp') is a programming language developed by Microsoft and rooted in the earlier languages of C and C++. It is an Object-Oriented programming language that has evolved quite a bit over time, with each released version adding new features and capabilities to the language. At present, C# is in version 6.0 and version 7.0 is under development. Like every programming language, however, it must allow us to hold _information_ and provide _sets of instructions_ to manipulate that information.
+C# (pronounced 'See-sharp') is a programming language developed by Microsoft and rooted in the earlier languages of C and C++. It is an Object-Oriented programming language that has evolved quite a bit over time, with each released version adding new features and capabilities to the language. At present, C# is in version 7.0 and version 8.0 is under development. Like every programming language, however, it must allow us to hold _information_ and provide _sets of instructions_ to manipulate that information.
 
 _**Data**_ (information) is held inside of **variables**. The following keywords represent the commonly used built-in data types for the general categories of primitive information.
 
