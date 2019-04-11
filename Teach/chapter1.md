@@ -59,6 +59,12 @@ Cup      | Orange Juice      | Liquid
 Plate    | Black Forest Cake | Food
 Balloon  | Helium            | Gas
 
+::: tip Keep In Mind
+There is always a balance occurring in our code regarding the interplay between variables, values and data types. The data type is the basis for pairing variables and values. In other words, in order for a variable to *hold* a value, that value's data type must be *compatible with* the variable's data type.
+
+![In Balance: Variables - Values - DataTypes](../images/Variables-Values-DataTypes.png)
+:::
+
 Returning to the way these concepts are used in a computer program, the following table gives some examples of variables and values for the data types fundamental to most high-level programming languages.
 
 Variable | Value                 | Data Type
