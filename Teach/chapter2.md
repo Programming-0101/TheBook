@@ -6,11 +6,18 @@ The purpose of this tutorial is to give the student an opportunity to write code
 
 ## About Classes and Objects
 
-> Understanding Classes and Objects is easier if you’ve already taken a look at the distinction between [variables, values and data types](chapter1.md#variables-values-and-data-types).
+:::tip
+Understanding Classes and Objects is easier if you’ve already taken a look at the distinction between [variables, values and data types](chapter1.md#variables-values-and-data-types).
+:::
 
-A computer program is a set of instructions for manipulating information.
+> A computer program is a set of instructions for manipulating information.
 
 Information is central to the whole purpose of computer programs, and is the "thing" that has value in the eyes of the end-user. Information is often complex, being made up of many smaller pieces of related information. For example, the information could be the details of a bank account, the marks earned by a student, or information about a company or an employee. A key aspect of all of these is that the details of the information (First and Last name, for example) are bundled together and treated as a single unit - a composition of related information. In programming, those bundled sets of detailed information are known as objects.
+
+> A class defines
+>
+> * What an object "looks like" (information)
+> * How an object "behaves" (instructions to manipulate information)
 
 Objects embody more than just information, however. A person can do things with objects. For example, if you imagine a Bank Account as an object, it can be made up of a bunch of information, such as Account Number, Balance and Overdraft Limit. Now imagine the things you can do with a bank account: you can Deposit or Withdraw money. These actions are tightly related to bank accounts, largely because they directly affect the information in the bank account. These actions are carried out as a set of instructions - known as methods - which are carried out in a prescribed way through a set of one or more program statements.
 
