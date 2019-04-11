@@ -45,6 +45,7 @@ module.exports = {
             '/Teach/': [
                 '',
                 'chapter1',
+                'chapter1-2',
                 'chapter1-5',
                 'chapter1-7',
                 'console-1',
