@@ -13,6 +13,10 @@ Learning how to program is a journey into thinking about *things* and how to *ma
 
 The essence of this OOP-First approach are seen in what I call the "ABCs of Classes and Objects". From these first three topics I move to the "traditional" concerns of programming, all the while placing them within their most natural context: Objects.
 
+::: tip Code-Focused
+What follows is a set of articles describing the foundations of OOP programming. But all of this is just "theory" without [good samples](../Topic/ReadMe.md). Keep reading to get the fundamentals, and feel free to jump right into [**The Code**](../Topic/ReadMe.md) for some hands-on samples.
+:::
+
 ## Topic A
 
 This topic is the first of a three-part introduction to object-oriented programming. The focus of this first part is to introduce classes and methods. This topic does not go beyond the use of static methods in a class.
