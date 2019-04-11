@@ -6,12 +6,10 @@ _**Data**_ (information) is held inside of **variables**. The following keywords
 
 | Category | C# Data Type |
 | --- | --- |
-| Whole numbers | `int long short byte` |
-| Real numbers | `double single float` |
-| -------------- | -------------------------------------- |
-| Text | `char string` |
-| -------------- | -------------------------------------- |
-| Conceptual | `boolean` |
+| Whole numbers | `int` `long` `short` `byte` |
+| Real numbers | `double` `single` `float` |
+| Text | `char` `string` |
+| Conceptual | `bool` |
 
 _**Instructions**_ are always placed inside of **methods**. In fact, a method can be defined as _a named set of instructions_. Methods can never exist all on their own; they have to be placed inside of some kind of context (or **scope**), and they are typically placed inside of **classes**. Classes, themselves, are one of the main means by which we can declare _complex_ data types (which, in turn, can be used to declare _objects_ designed to hold and process sets of data).
 
