@@ -6,7 +6,7 @@ The purpose of this tutorial is to give the student an opportunity to write code
 
 ## About Classes and Objects
 
-:::tip
+::: tip
 Understanding Classes and Objects is easier if you’ve already taken a look at the distinction between [variables, values and data types](chapter1.md#variables-values-and-data-types).
 :::
 
