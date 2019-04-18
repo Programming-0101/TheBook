@@ -57,7 +57,7 @@ Once you have Classes/Objects and Flow-Control under your belt, it's time to tak
 
 ## Class\Topic Chart
 
-> In the following table, **E** stands for a code *Example* and **P** stands for a *Practice* exercise that you can attempt on your own.
+> In the following table, **E** stands for a code *Example* and **P** stands for a *Practice* problem that you can attempt on your own.
 
 | Class \ Topic | [A](A/) | [B](B/) | [C](C/) | [D](D/) |
 |:--------------|:-------:|:-------:|:-------:|:-------:|
