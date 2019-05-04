@@ -62,14 +62,13 @@ As you move through the topical samples in this site, you will encounter these f
 
 ----
 
-## Thing-King Is Essential[^a]
+## Thing-King Is Essential[^1]
 
-[^a]: "Thing-King" as a reference to the importance of Objects in understanding modern programming was coined by me, Dan Gilleland, on April 13, 2019. Maybe others also said it, but it came to me on its own and not through what I read. Who knows, maybe it will even catch on!
+[^1]: "Thing-King" as a reference to the importance of Objects in understanding modern programming was coined by me, Dan Gilleland, on April 13, 2019. Maybe others also said it, but it came to me on its own and not through what I read. Who knows, maybe it will even catch on!
 
-> Content is King - *(so says Bill Gates and others)*[^b]
+> Content is King - *(so says Bill Gates and others)*[^2]
 
-
-[^b]: The WayBack Machine has a copy of the 1996 ["Content is King"](http://web.archive.org/web/20010126005200/http://www.microsoft.com/billgates/columns/1996essay/essay960103.asp) article, and it is also preserved and attributed to Bill Gates in a [blog post](https://www.craigbailey.net/content-is-king-by-bill-gates/) by Craig Baily, although [others](https://cognitiveseo.com/blog/216/the-content-monarchy-who-says-content-is-king-and-why/) [point](https://lgkmarketingcc.com/content-king-said-better/) out the phrase was earlier used by Sumner Redstone.
+[^2]: The WayBack Machine has a copy of the 1996 ["Content is King"](http://web.archive.org/web/20010126005200/http://www.microsoft.com/billgates/columns/1996essay/essay960103.asp) article, and it is also preserved and attributed to Bill Gates in a [blog post](https://www.craigbailey.net/content-is-king-by-bill-gates/) by Craig Baily, although [others](https://cognitiveseo.com/blog/216/the-content-monarchy-who-says-content-is-king-and-why/) [point](https://lgkmarketingcc.com/content-king-said-better/) out the phrase was earlier used by Sumner Redstone:
 
     > *Content is king. It is the meaning that counts. Form and technical considerations, though important, cannot substitute for content.*
 

@@ -59,6 +59,8 @@ Once you have Classes/Objects and Flow-Control under your belt, it's time to tak
 
 > In the following table, **E** stands for a code *Example* and **P** stands for a *Practice* problem that you can attempt on your own.
 
+### Class Fundamentals
+
 | Class \ Topic | [A](A/) | [B](B/) | [C](C/) | [D](D/) |
 |:--------------|:-------:|:-------:|:-------:|:-------:|
 | Account | | [E](B/Examples/Account.md)/[P](B/Practice/Account.md) | [E](C/Examples/Account.md)/[P](C/Practice/Account.md) | [E](D/Examples/Account.md) |
@@ -76,6 +78,31 @@ Once you have Classes/Objects and Flow-Control under your belt, it's time to tak
 | Person | | [E](B/Examples/Person.md) | [E](C/Examples/Person.md)/[P](C/Practice/Person.md) | [E](D/Examples/Person.md)/[P](D/Practice/Person.md) |
 | Salutation | [P](A/Practice/Salutation.md) | [E](B/Examples/Salutation.md) | | |
 | Student | | [E](B/Examples/Student.md) | [E](C/Examples/Student.md) | [E](D/Examples/Student.md) |
+
+### Math and Decision Structures
+
+| Class \ Topic | [E](E/) | [F](F/) | [G](G/) | [H](H/) |
+|:--------------|:-------:|:-------:|:-------:|:-------:|
+| Account       |  |  |  |  |
+| Calculator    |  |  |  |  |
+| Person        |  |  |  |  |
+| ElapsedTime   |  |  |  |  |
+| ResolveExpressions |  |  |  |  |
+| Circle        |  |  |  |  |
+| Square        |  |  |  |  |
+| Fraction      |  |  |  |  |
+| Angle         |  |  |  |  |
+| StockItem     |  |  |  |  |
+
+### Enums & Looping Structures
+
+| Class \ Topic | [I](I/) | [J](J/) | [K](K/) |
+|:--------------|:-------:|:-------:|:-------:|
+
+### Arrays
+
+| Class \ Topic | [L](L/) | [M](M/) |
+|:--------------|:-------:|:-------:|
 
 <!--
 [E](/Examples/.md "Example")

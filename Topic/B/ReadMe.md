@@ -5,7 +5,7 @@ title: Starting Classes (Part B)
 
 ## Overview
 
-This topic introduces some of the basic syntax and grammar surrounding Object-Oriented Programming in Java. The following keywords are introduced. (Note that additional keywords from previous topics may also be present.)
+This topic introduces some of the basic syntax and grammar surrounding Object-Oriented Programming in C#. The following keywords are introduced. (Note that additional keywords from previous topics may also be present.)
 
 * new 
 * char 
