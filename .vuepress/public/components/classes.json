@@ -1,0 +1,870 @@
+[
+  { "Type": "Account", "Examples": [
+    { "Topic": "B" },
+    { "Topic": "C" },
+    { "Topic": "D" },
+    { "Topic": "E" },
+    { "Topic": "F" },
+    { "Topic": "G" },
+    { "Topic": "I" }
+  ], "Practice": [
+    { "Topic": "B" },
+    { "Topic": "C" },
+    { "Topic": "G" }
+  ]
+},
+
+{ "Type": "AccountType",
+  "Examples":
+  [
+    { "Topic": "I", "Doc": "Account" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "Address",
+  "Examples":
+  [
+    { "Topic": "I" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "Aggregator",
+  "Examples":
+  [
+    { "Topic": "J" }
+  ],
+  "Practice":
+  [
+    { "Topic": "J" }
+  ]
+},
+
+{ "Type": "Angle",
+  "Examples":
+  [
+    { "Topic": "E" },
+    { "Topic": "F" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "Answer",
+  "Examples":
+  [
+    { "Topic": "K", "Doc": "MultipleChoiceMarker" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "AnsweringMachine", "Examples": [
+    { "Topic": "", "Doc": "" }
+  ], "Practice": [
+    { "Topic": "A" },
+    { "Topic": "B" }
+  ]
+  },
+
+  { "Type": "BahamaLetterGrade",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "H" },
+      { "Topic": "I", "Doc": "LetterGrade" }
+    ]
+  },
+
+  { "Type": "BankStatement",
+    "Examples":
+    [
+      { "Topic": "K" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "Base16",
+    "Examples":
+    [
+      { "Topic": "F" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "Book",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "K", "Doc": "BookBag" }
+    ]
+  },
+
+  { "Type": "BookBag",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "K" }
+    ]
+  },
+
+  { "Type": "BulkItem",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" },
+      { "Topic": "G" }
+    ]
+  },
+
+  { "Type": "Calculator",
+    "Examples":
+    [
+      { "Topic": "E" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" }
+    ]
+  },
+
+  { "Type": "CanadianAddress",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "B" },
+      { "Topic": "C" },
+      { "Topic": "D" },
+      { "Topic": "I" },
+      { "Topic": "I", "Doc": "Company" }
+    ]
+  },
+
+  { "Type": "CardSuit",
+    "Examples":
+    [
+      { "Topic": "K", "Doc": "DeckOfCards" }
+    ],
+    "Practice":
+    [
+      { "Topic": "K", "Doc": "DeckOfCards" }
+    ]
+  },
+
+  { "Type": "CardValue",
+    "Examples":
+    [
+      { "Topic": "K", "Doc": "DeckOfCards" }
+    ],
+    "Practice":
+    [
+      { "Topic": "K", "Doc": "DeckOfCards" }
+    ]
+  },
+
+  { "Type": "Circle",
+    "Examples":
+    [
+      { "Topic": "E" },
+      { "Topic": "G" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "ClassCode",
+    "Practice":
+    [
+      { "Topic": "I", "Doc": "HazardousMaterial" }
+    ]
+  },
+  
+  { "Type": "ClassList",
+    "Examples":
+    [
+      { "Topic": "K" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+    { "Type": "Coin",
+    "Examples":
+    [
+      { "Topic": "I" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "CoinFace",
+    "Examples":
+    [
+      { "Topic": "I", "Doc": "Coin" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+  
+    { "Type": "Color",
+    "Examples":
+    [
+      { "Topic": "F" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+    { "Type": "Comments", "Examples": [
+      { "Topic": "A" },
+      { "Topic": "B" }
+    ], "Practice": [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "Company",
+    "Examples":
+    [
+      { "Topic": "C" },
+      { "Topic": "D" }
+    ],
+    "Practice":
+    [
+      { "Topic": "I" }
+    ]
+  },
+
+  { "Type": "Cone",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" },
+      { "Topic": "G" }
+    ]
+  },
+
+  { "Type": "Coordinate",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" }
+    ]
+  },
+
+  { "Type": "Course",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "B" },
+      { "Topic": "C" },
+      { "Topic": "D" },
+      { "Topic": "G" }
+    ]
+  },
+
+  { "Type": "CurrencyCalculator",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" },
+      { "Topic": "F" }
+    ]
+  },
+
+  { "Type": "Customer",
+    "Examples":
+    [
+      { "Topic": "K", "Doc": "BookBag" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "Cylinder",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" },
+      { "Topic": "G" }
+    ]
+  },
+
+  { "Type": "DeckOfCards",
+    "Examples":
+    [
+      { "Topic": "K" }
+    ],
+    "Practice":
+    [
+      { "Topic": "K" }
+    ]
+  },
+
+  { "Type": "Die",
+    "Examples":
+    [
+      { "Topic": "E" },
+      { "Topic": "G" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" }
+    ]
+  },
+
+  { "Type": "ElapsedTime",
+    "Examples":
+    [
+      { "Topic": "E" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "Employee", "Examples": [
+    { "Topic": "B" },
+    { "Topic": "D" }
+  ], "Practice": [
+    { "Topic": "I" }
+  ]
+},
+
+{ "Type": "ExamResult",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "B" },
+    { "Topic": "C" },
+    { "Topic": "D" },
+    { "Topic": "G" }
+  ]
+},
+
+{ "Type": "Feedback",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "H" }
+  ]
+},
+
+{ "Type": "Fraction",
+  "Examples":
+  [
+    { "Topic": "E" },
+    { "Topic": "F" },
+    { "Topic": "G" },
+    { "Topic": "J" }
+  ],
+  "Practice":
+  [
+    { "Topic": "E" }
+  ]
+},
+
+{ "Type": "GenderType",
+  "Examples":
+  [
+    { "Topic": "I", "Doc": "Address" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "GenericRoundingCalculator",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "E" }
+  ]
+},
+
+{ "Type": "GravityCalculator",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "E" },
+    { "Topic": "F" }
+  ]
+},
+
+{ "Type": "GuessingGame",
+  "Examples":
+  [
+    { "Topic": "J" }
+  ],
+  "Practice":
+  [
+    { "Topic": "J" }
+  ]
+},
+
+{ "Type": "HazardousMaterial",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "F" },
+    { "Topic": "G" },
+    { "Topic": "H" },
+    { "Topic": "I" }
+  ]
+},
+
+{ "Type": "HelloWorld", "Examples": [
+      { "Topic": "A" }
+    ], "Practice": [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+  
+  { "Type": "ImproperFraction",
+    "Examples":
+    [
+      { "Topic": "I" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "LabResult",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "B" },
+      { "Topic": "C" },
+      { "Topic": "D" },
+      { "Topic": "G" }
+    ]
+  },
+
+  { "Type": "LetterGrade",
+    "Examples":
+    [
+      { "Topic": "H" },
+      { "Topic": "I" }
+    ],
+    "Practice":
+    [
+      { "Topic": "I" }
+    ]
+  },
+
+  { "Type": "Mark",
+    "Examples":
+    [
+      { "Topic": "K", "Doc": "MultipleChoiceMarker" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "Math",
+    "Examples":
+    [
+      { "Topic": "J" },
+      { "Topic": "K" }
+    ],
+    "Practice":
+    [
+      { "Topic": "J" }
+    ]
+  },
+
+  { "Type": "MixedNumber",
+    "Examples":
+    [
+      { "Topic": "I", "Doc": "ImproperFraction" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+  
+    { "Type": "MemoryAddress",
+    "Examples":
+    [
+      { "Topic": "F" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "Month",
+    "Practice":
+    [
+      { "Topic": "I", "Doc": "Company" }
+    ]
+  },
+  
+  { "Type": "MultipleChoice",
+    "Examples":
+    [
+      { "Topic": "K", "Doc": "MultipleChoiceMarker" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "MultipleChoiceMarker",
+    "Examples":
+    [
+      { "Topic": "K", }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "PaintEstimator",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" }
+    ]
+  },
+
+  { "Type": "ParkingCounter",
+    "Examples":
+    [
+      { "Topic": "E" },
+      { "Topic": "F" },
+      { "Topic": "G" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  { "Type": "PeopleCounter",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "E" },
+      { "Topic": "G" }
+    ]
+  },
+
+  { "Type": "Person", "Examples": [
+    { "Topic": "B" },
+    { "Topic": "C" },
+    { "Topic": "D" },
+    { "Topic": "E" },
+    { "Topic": "F" },
+    { "Topic": "G" }
+  ], "Practice": [
+    { "Topic": "C" },
+    { "Topic": "D" }
+  ]
+},
+
+{ "Type": "PhoneBook",
+  "Examples":
+  [
+    { "Topic": "K" }
+  ],
+  "Practice":
+  [
+    { "Topic": "K" }
+  ]
+},
+
+{ "Type": "PhoneNumber",
+  "Examples":
+  [
+    { "Topic": "K", "Doc": "PhoneBook" }
+  ],
+  "Practice":
+  [
+    { "Topic": "K", "Doc": "PhoneBook" }
+  ]
+},
+
+{ "Type": "Program",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "K", "Doc": "Registrar" }
+  ]
+},
+
+{ "Type": "ProperFraction",
+  "Examples":
+  [
+    { "Topic": "I", "Doc": "ImproperFraction" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "Province",
+  "Practice":
+  [
+    { "Topic": "I", "Doc": "CanadianAddress" },
+    { "Topic": "I", "Doc": "Employee" },
+    { "Topic": "I", "Doc": "Company" }
+  ]
+},
+
+{ "Type": "QuadraticEquation",
+  "Examples":
+  [
+    { "Topic": "E" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "QuebecLetterGrade",
+  "Examples":
+  [
+    { "Topic": "I", "Doc": "LetterGrade" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "Rating",
+  "Examples":
+  [
+    { "Topic": "H" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "Rectangle",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "F" },
+    { "Topic": "G" }
+  ]
+},
+
+{ "Type": "Registrar",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "K" }
+  ]
+},
+
+{ "Type": "ResolveExpressions",
+  "Examples":
+  [
+    { "Topic": "E" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "RoundingCalculator",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "E" }
+  ]
+},
+
+{ "Type": "Salutation", "Examples": [
+    { "Topic": "B" }
+  ], "Practice": [
+    { "Topic": "A" }
+  ]
+},
+
+{ "Type": "ScoreCard",
+  "Examples":
+  [
+    { "Topic": "", "Doc": "" }
+  ],
+  "Practice":
+  [
+    { "Topic": "E" }
+  ]
+},
+
+{ "Type": "Square",
+  "Examples":
+  [
+    { "Topic": "E" },
+    { "Topic": "G" }
+  ],
+  "Practice":
+  [
+    { "Topic": "E" }
+  ]
+},
+
+{ "Type": "StockItem",
+  "Examples":
+  [
+    { "Topic": "E" },
+    { "Topic": "F" },
+    { "Topic": "G" }
+  ],
+  "Practice":
+  [
+    { "Topic": "", "Doc": "" }
+  ]
+},
+
+{ "Type": "Student",
+  "Examples":
+  [
+    { "Topic": "B" },
+    { "Topic": "C" },
+    { "Topic": "D" },
+    { "Topic": "G" },
+    { "Topic": "I", "Doc": "Address" },
+    { "Topic": "K", "Doc": "ClassList" }
+  ],
+  "Practice":
+  [
+    { "Topic": "I", "Doc": "Employee" },
+    { "Topic": "K", "Doc": "Registrar" }
+  ]
+},
+
+{ "Type": "Nothingness", "Examples": [
+      { "Topic": "A" } 
+    ], "Practice": []
+  },
+
+
+
+
+  { "Type": "",
+    "Examples":
+    [
+      { "Topic": "", "Doc": "" }
+    ],
+    "Practice":
+    [
+      { "Topic": "", "Doc": "" }
+    ]
+  },
+
+  {}
+]
