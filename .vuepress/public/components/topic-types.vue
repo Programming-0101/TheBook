@@ -4,7 +4,7 @@
       
     </header>
     <main>
-      <slot></slot>
+      There are {{types.length}} data types registered.
     </main>
     <footer>
       
@@ -13,7 +13,13 @@
 </template>
 
 <script>
+import json from './classes.json';
 export default {
+  data(){
+    return{
+      types: json
+    }
+  },
   mounted() {
   }
 };
