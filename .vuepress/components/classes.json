@@ -21,7 +21,7 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
@@ -32,7 +32,7 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
@@ -55,7 +55,7 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
@@ -66,12 +66,12 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
 { "Type": "AnsweringMachine", "Examples": [
-    { "Topic": "", "Doc": "" }
+    
   ], "Practice": [
     { "Topic": "A" },
     { "Topic": "B" }
@@ -81,7 +81,7 @@
   { "Type": "BahamaLetterGrade",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -97,7 +97,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -108,14 +108,14 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
   { "Type": "Book",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -126,7 +126,7 @@
   { "Type": "BookBag",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -137,7 +137,7 @@
   { "Type": "BulkItem",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -160,7 +160,7 @@
   { "Type": "CanadianAddress",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -202,7 +202,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -220,7 +220,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -231,7 +231,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -242,7 +242,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
   
@@ -253,7 +253,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -261,7 +261,7 @@
       { "Topic": "A" },
       { "Topic": "B" }
     ], "Practice": [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -280,7 +280,7 @@
   { "Type": "Cone",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -292,7 +292,7 @@
   { "Type": "Coordinate",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -303,7 +303,7 @@
   { "Type": "Course",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -317,7 +317,7 @@
   { "Type": "CurrencyCalculator",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -333,14 +333,14 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
   { "Type": "Cylinder",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -379,7 +379,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -394,7 +394,7 @@
 { "Type": "ExamResult",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -408,7 +408,7 @@
 { "Type": "Feedback",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -437,14 +437,14 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
 { "Type": "GenericRoundingCalculator",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -455,7 +455,7 @@
 { "Type": "GravityCalculator",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -478,7 +478,7 @@
 { "Type": "HazardousMaterial",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -492,7 +492,7 @@
 { "Type": "HelloWorld", "Examples": [
       { "Topic": "A" }
     ], "Practice": [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
   
@@ -503,14 +503,14 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
   { "Type": "LabResult",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -540,7 +540,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -563,7 +563,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
   
@@ -574,7 +574,7 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
@@ -592,25 +592,25 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
   { "Type": "MultipleChoiceMarker",
     "Examples":
     [
-      { "Topic": "K", }
+      { "Topic": "K" }
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
   { "Type": "PaintEstimator",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -627,14 +627,14 @@
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 
   { "Type": "PeopleCounter",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
@@ -681,7 +681,7 @@
 { "Type": "Program",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -696,7 +696,7 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
@@ -716,7 +716,7 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
@@ -727,7 +727,7 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
@@ -738,14 +738,14 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
 { "Type": "Rectangle",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -757,7 +757,7 @@
 { "Type": "Registrar",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -772,14 +772,14 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
 { "Type": "RoundingCalculator",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -797,7 +797,7 @@
 { "Type": "ScoreCard",
   "Examples":
   [
-    { "Topic": "", "Doc": "" }
+    
   ],
   "Practice":
   [
@@ -826,7 +826,7 @@
   ],
   "Practice":
   [
-    { "Topic": "", "Doc": "" }
+    
   ]
 },
 
@@ -858,11 +858,11 @@
   { "Type": "",
     "Examples":
     [
-      { "Topic": "", "Doc": "" }
+      
     ],
     "Practice":
     [
-      { "Topic": "", "Doc": "" }
+      
     ]
   },
 

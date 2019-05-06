@@ -24,7 +24,7 @@ public static void Main(string[] args)
 
 3. Run the program (press [[Ctrl]] + [[F5]]) and observe the output, which should look something like this:
 
-```text
+```
 Hello World
 The following text is output on the same line.
 Press any key to continue...
@@ -42,7 +42,7 @@ Asking the user to input enter information is referred to as "prompting" the use
 
 Notice also what we have done in the last line. We can take the user's input and concatenate it with the text `"Hello "` as we send it back out to the console. **String concatenation** is accomplished by "adding" strings together. The text `"Hello "` is a **string literal** while the `name` variable holds a string **value**. Thus, if the user entered "Dan" when prompted, the output would be
 
-```text
+```
 Hello Dan
 ```
 

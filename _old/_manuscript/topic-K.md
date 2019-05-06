@@ -2,11 +2,11 @@
 
 ## Overview
 
-This topic provides further examples of looping logic, but involves the use of collections. All of these samples make use of the List<T> class to maintain a collection or group of objects.
+This topic provides further examples of looping logic, but involves the use of collections. All of these samples make use of the `List<T>` class to maintain a collection or group of objects.
 
-The List<T> class is a Generic class, meaning that the item in the angled brackets - <T> - is a placeholder for the name of the actual class that is being managed in the List. For example, to have a list of Integers we would declare that as List<Integer>. Likewise, if we wanted a list of Student objects, it would be declared as List<Student>.
+The `List<T>` class is a Generic class, meaning that the item in the angled brackets - `<T>` - is a placeholder for the name of the actual class that is being managed in the List. For example, to have a list of Integers we would declare that as `List<Integer>`. Likewise, if we wanted a list of Student objects, it would be declared as `List<Student>`.
 
-The List<T> class supports a number of methods and properties for working with the collection.
+The `List<T>` class supports a number of methods and properties for working with the collection.
 
 * Add() – Used to add an item to the collection
 * [index] – Used to retrieve an item in the collection
@@ -21,8 +21,8 @@ The List<T> class supports a number of methods and properties for working with t
 
 #### General Programming Concepts and Terms
 
-* Describe what is meant by a “collection” class and give an example
-* List and describe the common methods of collection classes such as the List<T>
+* Describe what is meant by a "collection" class and give an example
+* List and describe the common methods of collection classes such as the `List<T>`
 * Identify the parts of the foreach statement
 * Describe the common situations in which the foreach statement is typically used
 * Identify the major benefit of using Generics
@@ -32,8 +32,8 @@ The List<T> class supports a number of methods and properties for working with t
 
 1. Math – The Math class is expanded to produce a collection of Integers for the sequence of Fibonacci numbers.
 2. PhoneBook – The PhoneBook class provides simple management of a collection of PhoneNumber objects. The PhoneBook allows for adding and retrieving phone numbers; it supports search for phone numbers by the telephone number or by a last name.
-3. ClassList – The ClassList example maintains a list of students for a particular course by offering methods to add and remove students from a course. In addition, the ClassList ensures that students are not added to the course twice (based on the student’s Id).
-4. MultipleChoiceMarker – This class is used for marking multiple choice exams. It takes a collection of MultipleChoice objects as the answer key when it is first created. It provides a method to mark the student’s answers.
+3. ClassList – The ClassList example maintains a list of students for a particular course by offering methods to add and remove students from a course. In addition, the ClassList ensures that students are not added to the course twice (based on the student's Id).
+4. MultipleChoiceMarker – This class is used for marking multiple choice exams. It takes a collection of MultipleChoice objects as the answer key when it is first created. It provides a method to mark the student's answers.
 5. BankStatement – This class represents a bank statement for a BankAccount for a given month. The statement allows BankTransaction objects to be added, and performs deposits and withdrawals on the BankAccount. The statement reports the starting and ending balance and also summarizes the total amount deposited and withdrawn for the month. 
 6. DeckOfCards –The DeckOfCards class represents a complete deck of cards. When the deck is first created, a card is created for each suit. The DeckOfCards supports a method to draw a card.
 
@@ -62,12 +62,12 @@ public static List<int> FibonacciSequence(int length)
 
 The PhoneBook class provides simple management of a collection of PhoneNumber objects. The PhoneBook allows for adding and retrieving phone numbers; it supports search for phone numbers by the telephone number or by a last name.
 
-* Constructor – Create a new List<PhoneNumber> for the numbers field.
+* Constructor – Create a new `List<PhoneNumber>` for the numbers field.
 * AddPhoneNumber(Entry : PhoneNumber) – Add a PhoneNumber to the collection. Ensure that the PhoneNumber exists (is not null) before adding; if the PhoneNumber is null, throw an exception.
 * GetPhoneNumber(Index : Integer) : PhoneNumber – Get an item from a particular position in the collection.
 * GetCount() : Integer – Get the size of the collection, which is a count of how many PhoneNumber objects are in the collection.
 * FindPhoneNumber(TelephoneNumber : String) : PhoneNumber – Look through the collection and return a PhoneNumber with a matching telephone number. If none is found, return null.
-* FindPhoneNumbersByLastName(LastName : String) : List<PhoneNumber> - Look through the collection for PhoneNumber objects with a matching last name. Add those objects to a new collection and return the collection of matching PhoneNumbers. If no items are found, return an empty collection.
+* FindPhoneNumbersByLastName(LastName : String) : `List<PhoneNumber>` - Look through the collection for PhoneNumber objects with a matching last name. Add those objects to a new collection and return the collection of matching PhoneNumbers. If no items are found, return an empty collection.
 
 **Supporting Classes**
 
@@ -140,7 +140,7 @@ public class PhoneBook
 
 ### ClassList
 
-The ClassList example maintains a list of students for a particular course by offering methods to add and remove students from a course. In addition, the ClassList ensures that students are not added to the course twice (based on the student’s Id). The following parts of the ClassList must be coded to complete the solution.
+The ClassList example maintains a list of students for a particular course by offering methods to add and remove students from a course. In addition, the ClassList ensures that students are not added to the course twice (based on the student's Id). The following parts of the ClassList must be coded to complete the solution.
 
 * Constructor – Set the course id and the collection of students. Ensure that the supplied arguments are valid
   * CourseId cannot be empty or null, and must be trimmed of leading or trailing spaces
@@ -149,7 +149,7 @@ The ClassList example maintains a list of students for a particular course by of
 * AddStudent() – Add the supplied student object to the collection. Ensure that
   * The Student object is not null
   * The class limit is not exceeded
-  * The Student object does not already exist in the collection (that is, there are no duplicates allowed, based on the student’s id)
+  * The Student object does not already exist in the collection (that is, there are no duplicates allowed, based on the student's id)
 * FindStudent() – Search the collection for a Student with a matching Id. If none is found, return null.
 * RemoveStudent() – Search for a Student with a matching Id; if one is found, remove it from the collection.
 
@@ -238,11 +238,11 @@ public class ClassList
 
 ### MultipleChoiceMarker
 
-This class is used for marking multiple choice exams. It takes a collection of MultipleChoice objects as the answer key when it is first created. It provides a method to mark the student’s answers. The following methods must be coded to complete the solution.
+This class is used for marking multiple choice exams. It takes a collection of MultipleChoice objects as the answer key when it is first created. It provides a method to mark the student's answers. The following methods must be coded to complete the solution.
 
 * MarkExam() – This method takes the supplied exam answers and compares them against the answers in the marking key. It then constructs a Mark object, based on the earned marks and the possible marks (each answer is worth one mark). Before marking the exam, the method must ensure that
   * The supplied collection of multiple choice answers is not null
-  * The supplied collection of multiple choice answers has the same number of answers as the MultipleChoiceMarker’s answer key
+  * The supplied collection of multiple choice answers has the same number of answers as the MultipleChoiceMarker's answer key
 
 **MultipleChoice and Mark Classes**
 
@@ -385,7 +385,7 @@ public class BankStatement
 The DeckOfCards class represents a complete deck of cards. When the deck is first created, a card is created for each suit. The DeckOfCards supports a method to draw a card. The following methods must be coded to complete the solution.
 
 * Constructor – Create all the cards for all the CardSuit values and all the CardValue values.
-* DrawCard() – Return the card at the “top” of the deck (that is, at position zero). If the deck is empty, return a null.
+* DrawCard() – Return the card at the "top" of the deck (that is, at position zero). If the deck is empty, return a null.
 * Shuffle() – Mix up the order of the PlayingCards in the Cards list. Shuffle should work regardless of the number of cards still in the deck.
 
 **PlayingCard and DeckOfCards**
@@ -439,9 +439,9 @@ public class DeckOfCards
 
 ## Practice examples
 
-1. PhoneBook – This extends the PhoneBook class by ensuring that duplicate phone numbers are not added to the collection. 
+1. PhoneBook – This extends the PhoneBook class by ensuring that duplicate phone numbers are not added to the collection.
 2. Registrar – The Registrar class is responsible to support the enrollment of students. This class maintains the student body as a collection of Student objects. It supports the ability to find and remove students, switch students to another program, and get the number of students enrolled in a specific program.
-3. BookBag – The BookBag class represents a simple “shopping cart” for a book consignment store. Books are sold on consignment, and customers can add or remove books from their BookBag as well as search their BookBag for books by ISBN. Customers can also see the total price of the items in their BookBag.
+3. BookBag – The BookBag class represents a simple "shopping cart" for a book consignment store. Books are sold on consignment, and customers can add or remove books from their BookBag as well as search their BookBag for books by ISBN. Customers can also see the total price of the items in their BookBag.
 4. DeckOfCards –The DeckOfCards class represents a complete deck of cards. When the deck is first created, a card is created for each suit. The DeckOfCards supports two public methods: Draw() and Shuffle().
 
 ### PhoneBook
@@ -461,7 +461,7 @@ The Registrar class is responsible to support the enrolment of students. This cl
 
 ### BookBag
 
-The BookBag class represents a simple “shopping cart” for a book consignment store. Books are sold on consignment, and customers can add or remove books from their BookBag as well as search their BookBag for books by ISBN. Customers can also see the total price of the items in their BookBag. Code the following methods to complete the BookBag class.
+The BookBag class represents a simple "shopping cart" for a book consignment store. Books are sold on consignment, and customers can add or remove books from their BookBag as well as search their BookBag for books by ISBN. Customers can also see the total price of the items in their BookBag. Code the following methods to complete the BookBag class.
 
 * GetTotal() – Loop through the collection of books and total the price of all the books. Ensure that the amount is rounded to two decimal places (for dollars and cents).
 * FindBook() – Look through the collection of books to find a book with the specified ISBN number. Throw an exception if the supplied ISBN is null.
@@ -471,4 +471,4 @@ The BookBag class represents a simple “shopping cart” for a book consignment
 
 Modify the DeckOfCards class to support shuffling of the deck.
 
-* Shuffle() – This method resets the deck to a full deck of cards and then “shuffles” the deck until the cards are randomly distributed through the collection.
+* Shuffle() – This method resets the deck to a full deck of cards and then "shuffles" the deck until the cards are randomly distributed through the collection.

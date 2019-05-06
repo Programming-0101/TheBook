@@ -4,7 +4,7 @@
       
     </header>
     <main>
-      There are {{types.length}} data types registered.
+      <i>Coming Soon:</i> Alpha-testing vue component to process json list of data types used in the code examples and practices. There are {{types.length}} data types registered.
     </main>
     <footer>
       
