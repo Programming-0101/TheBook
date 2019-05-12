@@ -34,7 +34,7 @@ The remaining fundamentals are covered in topics E through M. The focus here is 
 - [J](J/) - Looping Structures
 - [K](K/) - Looping and Collections
 - [L](L/) - Arrays - Not Sorted
-- [M](M/) - Arrays - Sorted
+- [M](M/) - Sorting and Collections
 
 ## Other Fundamental Considerations
 
