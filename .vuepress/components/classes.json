@@ -6,7 +6,8 @@
     { "Topic": "E" },
     { "Topic": "F" },
     { "Topic": "G" },
-    { "Topic": "I" }
+    { "Topic": "I" },
+    { "Topic": "L", "Doc": "BankStatement" }
   ], "Practice": [
     { "Topic": "B" },
     { "Topic": "C" },
@@ -17,7 +18,8 @@
 { "Type": "AccountType",
   "Examples":
   [
-    { "Topic": "I", "Doc": "Account" }
+    { "Topic": "I", "Doc": "Account" },
+    { "Topic": "L", "Doc": "BankStatement" }
   ],
   "Practice":
   [
@@ -62,7 +64,8 @@
 { "Type": "Answer",
   "Examples":
   [
-    { "Topic": "K", "Doc": "MultipleChoiceMarker" }
+    { "Topic": "K", "Doc": "MultipleChoiceMarker" },
+    { "Topic": "L", "Doc": "MultipleChoiceMarker" }
   ],
   "Practice":
   [
@@ -78,7 +81,15 @@
   ]
   },
 
-  { "Type": "BahamaLetterGrade",
+  { "Type": "ArrayFullException",
+    "Examples": [
+      { "Topic": "L", "Doc": "PhoneBook" }
+    ],
+    "Practice": [
+    ]
+  },
+  
+    { "Type": "BahamaLetterGrade",
     "Examples":
     [
       
@@ -93,7 +104,30 @@
   { "Type": "BankStatement",
     "Examples":
     [
-      { "Topic": "K" }
+      { "Topic": "K" },
+      { "Topic": "L" }
+    ],
+    "Practice":
+    [
+      
+    ]
+  },
+
+  { "Type": "BankTransaction",
+    "Examples":
+    [
+      { "Topic": "L", "Doc": "BankStatement" }
+    ],
+    "Practice":
+    [
+      
+    ]
+  },
+
+  { "Type": "BankTransactionDateComparer",
+    "Examples":
+    [
+      { "Topic": "L", "Doc": "BankStatement" }
     ],
     "Practice":
     [
@@ -175,7 +209,8 @@
   { "Type": "CardSuit",
     "Examples":
     [
-      { "Topic": "K", "Doc": "DeckOfCards" }
+      { "Topic": "K", "Doc": "DeckOfCards" },
+      { "Topic": "L", "Doc": "DeckOfCards" }
     ],
     "Practice":
     [
@@ -186,7 +221,8 @@
   { "Type": "CardValue",
     "Examples":
     [
-      { "Topic": "K", "Doc": "DeckOfCards" }
+      { "Topic": "K", "Doc": "DeckOfCards" },
+      { "Topic": "L", "Doc": "DeckOfCards" }
     ],
     "Practice":
     [
@@ -216,7 +252,8 @@
   { "Type": "ClassList",
     "Examples":
     [
-      { "Topic": "K" }
+      { "Topic": "K" },
+      { "Topic": "L" }
     ],
     "Practice":
     [
@@ -352,7 +389,8 @@
   { "Type": "DeckOfCards",
     "Examples":
     [
-      { "Topic": "K" }
+      { "Topic": "K" },
+      { "Topic": "L" }
     ],
     "Practice":
     [
@@ -548,7 +586,8 @@
     "Examples":
     [
       { "Topic": "J" },
-      { "Topic": "K" }
+      { "Topic": "K" },
+      { "Topic": "L" }
     ],
     "Practice":
     [
@@ -588,7 +627,8 @@
   { "Type": "MultipleChoice",
     "Examples":
     [
-      { "Topic": "K", "Doc": "MultipleChoiceMarker" }
+      { "Topic": "K", "Doc": "MultipleChoiceMarker" },
+      { "Topic": "L", "Doc": "MultipleChoiceMarker" }
     ],
     "Practice":
     [
@@ -599,7 +639,8 @@
   { "Type": "MultipleChoiceMarker",
     "Examples":
     [
-      { "Topic": "K" }
+      { "Topic": "K" },
+      { "Topic": "L" }
     ],
     "Practice":
     [
@@ -659,7 +700,8 @@
 { "Type": "PhoneBook",
   "Examples":
   [
-    { "Topic": "K" }
+    { "Topic": "K" },
+    { "Topic": "L" }
   ],
   "Practice":
   [
@@ -670,11 +712,24 @@
 { "Type": "PhoneNumber",
   "Examples":
   [
-    { "Topic": "K", "Doc": "PhoneBook" }
+    { "Topic": "K", "Doc": "PhoneBook" },
+    { "Topic": "L", "Doc": "PhoneBook" }
   ],
   "Practice":
   [
     { "Topic": "K", "Doc": "PhoneBook" }
+  ]
+},
+
+{ "Type": "PlayingCard",
+  "Examples":
+  [
+    { "Topic": "K", "Doc": "DeckOfCards" },
+    { "Topic": "L", "Doc": "DeckOfCards" }
+  ],
+  "Practice":
+  [
+    
   ]
 },
 
@@ -838,7 +893,8 @@
     { "Topic": "D" },
     { "Topic": "G" },
     { "Topic": "I", "Doc": "Address" },
-    { "Topic": "K", "Doc": "ClassList" }
+    { "Topic": "K", "Doc": "ClassList" },
+    { "Topic": "L", "Doc": "ClassList" }
   ],
   "Practice":
   [
