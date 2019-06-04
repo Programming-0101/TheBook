@@ -2,7 +2,7 @@ module.exports = {
     title: 'Programming Fundamentals',
     description: 'An Object-Oriented Introduction to Programming in C#', // rendered in <meta>
     markdown: {
-        config: md => {
+        extendMarkdown: md => {
           md.set({ breaks: true })
           md.use(require('markdown-it-imsize'))
           md.use(require('markdown-it-mermaid').default) // leave default options
@@ -214,6 +214,13 @@ module.exports = {
             '/About/':
             ['', 'audience', 'colophon', 'log-summary', 'appendix-grammar', '_todo']
             // ['ReadMe', 'audience', 'colophon', 'log-summary', 'appendix-grammar', '_todo']
+        }
+    },
+    plugins: {
+        serviceWorker: true,
+        updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
         }
     }
   }
