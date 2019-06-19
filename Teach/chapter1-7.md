@@ -6,15 +6,17 @@ The many small rules in the C# programming language is its ***grammar***. These 
 
 Take, for example, some of the grammar around **variable declarations** and **program statements**. A simplified grammar for declaring a variable in C# would look like this:
 
-> ***  dataType variableName***
+```csharp
+  dataType variableName
+```
 
 We would have to supply both a data type and a variable name to declare a variable. Thus, if we wanted to store a whole number to represent a count, we could use the `int` keyword and write the following:
 
-`  int count`
+`int count`
 
 By itself, this variable declaration is not enough to produce a complete instruction in C#. We have to combine the *variable declaration* grammar with the grammar for a *program statement* in order to make a single instruction telling the computer to create the variable. In general, a program statement must be a statement that ends with a semicolon (`;`). In other words, the *program statement* grammar requires the semicolon as "punctuation", much in the same way that English sentences must end in a period. Thus, our completed syntax for creating a variable would be
 
-`  int count;`
+`int count;`
 
 The formal grammar for C# is actually quite large and complex. In fact, the grammars for most programming languages are so complex that they require another "language" to describe the grammar. An early and fairly standard language or means to express grammars is the **Bakus-Naur Form**, or *BNF*.
 
@@ -28,7 +30,7 @@ Most of the grammar rules in C# are quite short, defining the order of **keyword
 
 ### Program Statements and Statement blocks
 
-Individual instructions are known as **Program Statements**. The instructions can be short and simple, or they can be long an complex. In either case, the program statement must end in a semicolon (;). These individual instructions run sequentially, one after the other, so the order of individual instructions is important.
+Individual instructions are known as **Program Statements**. The instructions can be short and simple, or they can be long an complex. In either case, the program statement must end in a semicolon (`;`). These individual instructions run sequentially, one after the other, so the order of individual instructions is important.
 
 Besides individual instructions, we can group individual statements into **Statement Blocks**. A statement block is a set of zero or more program statements that are enclosed in a set of curly braces (`{ }`). Statement blocks are frequently used with **Flow Control Statements** (such as the `if` and `for` statements).
 
