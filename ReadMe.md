@@ -7,13 +7,11 @@ actionText: Get Started →
 actionLink: /Teach/
 features:
 - title: Objects First
-  details: Objects in programming are treated as fundamentals, right up there with Variables
-- title: Lots of Code Samples
-  details: Contains scores of code examples
+  details: Objects in programming are treated as fundamental, right up there with Variables
+- title: Code Samples and Explanations
+  details: 80+ data types in the code samples and practice questions, arranged topically
 - title: Unit Testing
   details: Unit tests are the predominant way to check if the code works (rather than building console user-interfaces)
-- title: SOLID Footing
-  details: Ends with the SOLID principles and OOP Design Patterns
 footer: Copyright © 2004-Today Dan Gilleland
 ---
 ::: warning NOTE
