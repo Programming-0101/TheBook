@@ -217,12 +217,16 @@ module.exports = {
         }
     },
     plugins: [
-        '@vuepress/pwa': {
+        {
+            '@vuepress/pwa': {
             serviceWorker: true,
             updatePopup: true
+            }
         },
-        '@vuepress/search': {
+        {
+            '@vuepress/search': {
             searchMaxSuggestions: 10
+            }
         },
         '@vuepress/back-to-top',
         '@vuepress/active-header-links',
