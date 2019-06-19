@@ -872,12 +872,19 @@
     markdown-it-table-of-contents "^0.4.0"
     prismjs "^1.13.0"
 
-"@vuepress/plugin-active-header-links@^1.0.1":
+"@vuepress/plugin-active-header-links@1.0.1", "@vuepress/plugin-active-header-links@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.0.1.tgz#b4f75932620e3c043684c1af9dbb3d17eb76a2f4"
   integrity sha512-GqgliWEr+w/8H/+74klF7OhJWrcsEb7wJXwWf7ySW9OOEfkZx0+R5v7MJ+b6SfPGdqGhCRizMdM8hM5JMm7odw==
   dependencies:
     lodash.throttle "^4.1.1"
+
+"@vuepress/plugin-back-to-top@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.1.tgz#ae8e3ed1da1bc8bcdb178474487a4656808108aa"
+  integrity sha512-q2NbM+gCdfnrbrAK4sBKoFPIyrHfPxKgjvvnQc5jbkmXYap8mErivrveuH6WTBAm56jTc4BDUySZgzd1dawXpw==
+  dependencies:
+    lodash.debounce "^4.0.8"
 
 "@vuepress/plugin-last-updated@^1.0.1":
   version "1.0.1"
@@ -885,6 +892,13 @@
   integrity sha512-WTKK99g9oUfUq+WiYVYe/s7mqG2BOUD560TgvRj8ZE/9GX248OlSopv9sbNa6MSdG+SSVy94i8y8gAnWEGvEZA==
   dependencies:
     cross-spawn "^6.0.5"
+
+"@vuepress/plugin-medium-zoom@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.0.1.tgz#54d44f9b72853b5dbb5b417ba4c7211921bce85e"
+  integrity sha512-ugCoFjiB6/QkNuOTS+P3RTFRYLPtlocVhqNwAU2ma2NJXZSJQQI6Ji6hkYV6NfBR26HXRv8CXWf3YaCJFBj1sA==
+  dependencies:
+    medium-zoom "^0.4.0"
 
 "@vuepress/plugin-nprogress@^1.0.1":
   version "1.0.1"
@@ -909,7 +923,7 @@
   dependencies:
     "@vuepress/shared-utils" "^1.0.1"
 
-"@vuepress/plugin-search@^1.0.1":
+"@vuepress/plugin-search@1.0.1", "@vuepress/plugin-search@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.0.1.tgz#3cc1bb10635c370c8e467a8efa4852ddc645b067"
   integrity sha512-Mj9VRQgRbMwxpxZKaZ+CHSeyS/Mg6TELTaPb7uxSq7LQ5+zmQuPeFo59oCYBnxJXIeduFOOgVH9Ot5hLkZfARw==
@@ -4247,6 +4261,11 @@ lodash.clonedeep@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
@@ -4455,6 +4474,11 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
+
+medium-zoom@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-0.4.0.tgz#8e13c9b754903c0c903220611af0d3cd373a4222"
+  integrity sha512-0z7yMfd6I1BTCAa8QaR4cp5AqDkQD571GzhHIbbfefKEssGLSvs+4Xai/itOAncm4FBlF5gUoMQ22yW9/f8Sig==
 
 mem@^4.0.0:
   version "4.3.0"

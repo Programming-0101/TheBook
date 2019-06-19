@@ -216,11 +216,17 @@ module.exports = {
             // ['ReadMe', 'audience', 'colophon', 'log-summary', 'appendix-grammar', '_todo']
         }
     },
-    plugins: {
-        serviceWorker: true,
-        updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-        }
-    }
+    plugins: [
+        '@vuepress/pwa': {
+            serviceWorker: true,
+            updatePopup: true
+        },
+        '@vuepress/search': {
+            searchMaxSuggestions: 10
+        },
+        '@vuepress/back-to-top',
+        '@vuepress/active-header-links',
+        '@vuepress/medium-zoom',
+        '@vuepress/nprogress'
+    ]
   }
