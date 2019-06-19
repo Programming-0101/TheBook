@@ -19,9 +19,7 @@ What follows is a set of articles describing the foundations of OOP programming.
 
 ## Topic A
 
-This topic is the first of a three-part introduction to object-oriented programming. The focus of this first part is to introduce classes and methods. This topic does not go beyond the use of static methods in a class.
-
-### Introduction
+> This topic is the first of a three-part introduction to object-oriented programming. The focus of this first part is to introduce classes and methods. This topic does not go beyond the use of static methods in a class.
 
 The purpose of this topic is to introduce the class as the central piece of modern computer programs. A computer program is "a set of instructions for manipulating information." Notice the two key elements of a computer program: Instructions and Information. A class is a kind of template that groups together data (information) and instructions for manipulating that data.
 
@@ -31,9 +29,7 @@ Every computer program has one important method that is the entry point or start
 
 ## Topic B
 
-The focus of this second part is to show how classes act as templates for creating objects. This topic limits itself to showing a) how to create (instantiate) objects using classes and b) how classes can be used to describe what an object "looks like".
-
-### Introduction
+> The focus of this second part is to show how classes act as templates for creating objects. This topic limits itself to showing a) how to create (instantiate) objects using classes and b) how classes can be used to describe what an object "looks like".
 
 The purpose of this topic is to show how classes don’t just "contain" methods: Classes act as templates for defining complex types of information (objects). In fact, a class can almost be thought of as a "mini-program", because a class brings together the two key elements of every program: Instructions and Information. With classes, we can create objects that do what we want them to.
 
@@ -45,9 +41,7 @@ This topic focuses on the first part – describing what an object "looks like" 
 
 ## Topic C
 
-The focus of this third part is to show the concepts of encapsulation and information hiding as well as good object design by creating private fields and introducing public getters/setters and constructors.
-
-### Introduction
+> The focus of this third part is to show the concepts of encapsulation and information hiding as well as good object design by creating private fields and introducing public getters/setters and constructors.
 
 The purpose of this topic is to highlight how a major responsibility of every class is to "protect" the data within the class. This is done by designing classes that only use private fields and that "expose" access to the values of those fields through getter and setter methods. Getters and setters provide a way for the programmer to control access to fields in an object and to ensure that the fields are "used correctly".
 
