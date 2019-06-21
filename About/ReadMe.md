@@ -16,6 +16,8 @@ For a long time, most instructors and teachers who've taken up the challenge of 
 
 The essence of this OOP-First approach are seen in what I call the ["ABCs of Classes and Objects"](../Teach/). From these first three topics I move to the "traditional" concerns of programming, all the while placing them within their most natural context: **Objects**.
 
+> *Procedural code gets information then makes decisions. Object-oriented code tells objects to do things.* - Alec Sharp, "Smalltalk by Example"
+
 # The Author
 
 My name is ***Dan Gilleland***, and I've been teaching computer programming for almost 20 years. My own foundations in programming go back to the late 1970's. I also run a part-time side business called ***Dynamic Generation*** offering software consulting services.
