@@ -7,15 +7,15 @@ title: Starting Classes (Part A)
 We're coving a lot of material here as the foundation of OOP programming. If you want a quick bullet-list of the the keywords and topics covered, see the [**Overview**](Overview.md). If you want to check yourself on what you're learning, run through the [**Learning Outcome Guide**](LOGs.md) for this topic.
 :::
 
-"A *computer program* is a **set of instructions** for manipulating **information**." In the world of *Object Oriented Programming* (OOP), the first focus is on the *information* part of that definition.
+"A *computer program* is a **set of instructions** for manipulating **information**." In the world of *Object Oriented Programming* (OOP), the main focus is on the *information* part of this definition.
 
-The first thing we do with information is to *classify* it. And it's from this starting point that we encounter our first keyword of C#.
+The first thing we do with information is to *classify* it. And it's from this starting point that we encounter a central keyword in C#.
 
 ```csharp
 class
 ```
 
-The code we write *declares* what things are (information) and how things behave (instructions). These are called "statements", and the first statement we'll examine is the **class delcaration statement**. The description of this statement is summarized in the [simplified C# grammar](../Teach/chapter1-7.md#class-definition), but here we will look at the simplest possible example.
+The code we write *declares* what things are (information) and how things behave (instructions). These are called "statements", and the first statement we'll examine is the **class delcaration statement**. The description of this statement is summarized in the [simplified C# grammar](../../Teach/chapter1-7.md#class-definition), but here we will look at the simplest possible example.
 
 ```csharp
 public class Nothingness
