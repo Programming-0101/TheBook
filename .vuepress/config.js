@@ -44,6 +44,7 @@ module.exports = {
         sidebar: {
             '/Teach/': [
                 '',
+                'intro',
                 'chapter1',
                 'chapter1-2',
                 'chapter1-5',
