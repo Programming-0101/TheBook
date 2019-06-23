@@ -17,7 +17,12 @@ class
 
 The code we write *declares* what things are (information) and how things behave (instructions). These are called "statements", and the first statement we'll examine is the **class delcaration statement**. The description of this statement is summarized in the [simplified C# grammar](../Teach/chapter1-7.md#class-definition), but here we will look at the simplest possible example.
 
-<<< @/Examples/Nothingness.md
+```csharp
+public class Nothingness
+{
+
+}
+```
 
 While this is the simplest possible example, it turns out to also be the most useless (*hint: think of what we called it*). Don't worry, we'll get to better things soon.
 
