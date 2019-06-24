@@ -1,7 +1,7 @@
 ---
 title: Starting Classes (Part B)
 ---
-# B – Starting Classes
+# B – Starting With (Instances of) Classes
 
 ## Overview
 

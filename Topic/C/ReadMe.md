@@ -1,7 +1,7 @@
 ---
 title: Starting Classes (Part C)
 ---
-# C – Starting Classes
+# C – Starting With (Encapsulation in) Classes
 
 ## Overview
 
