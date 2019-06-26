@@ -9,6 +9,8 @@ title: Examples
 2. [Account + AccountType](Account.md) – The Account’s account type is n  * longer being represented as a string, but is its own enumeration: AccountType.
 3. [LetterGrade + QuebecLetterGrade](LetterGrade.md) – The QuebecLetterGrade uses the simple LetterGrade enumeration and assigns specific ranges of percentage marks for the possible LetterGrade values.
 
+4. [CampsiteFacility](Campsite.md) - Introduces the idea of the `[Flags]` attribute on the enumeration.
+
 ### Composition:
 
 1. [Address + Student + GenderType](Address.md) – This revised version of the Student class now has an Address field. The address field is new; although similar to the CanadianAddress class, the Address class is simpler and more "generic" (having "State" instead of "Province" and "ZipCode" instead of "PostalCode").
