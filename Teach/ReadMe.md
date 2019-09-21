@@ -3,7 +3,7 @@ title: Introduction
 ---
 # An Intro to "The Book"
 
-This site is broken into two major parts: [**The Book**](intro.md) and [**The Code**](../Topic/). Here you will find my approach to teaching programming for people who have never programmed before. If you already have some experience with programming, I hope that you find the resources helpful in giving you an Object-Oriented perspective on programming &mdash; feel free to jump around to whatever piques your interest.
+This site is divided into two major parts: [**The Book**](intro.md) and [**The Code**](../Topic/). Here you will find my approach to teaching programming for people who have never programmed before. If you already have some experience with programming, I hope that you find the resources helpful in giving you an Object-Oriented perspective on programming &mdash; feel free to jump around to whatever piques your interest.
 
 ![Reading](./book.png) vs ![Playing](./practice.png)
 
