@@ -37,9 +37,7 @@ The name of the class is `MyFirstProgram` and it contains only one method - `Mai
 
 Notice that besides the name of the class and the Main method, there are various keywords (in blue) and punctuation (such as curly braces `{ }`, parentheses `( )`, square brackets `[ ]`, semicolons `;` and "dot operators" `.`). All of these pieces have to be arranged according to the specific rules of the programming language. We call these rules the **grammar** and the arrangement of our code using the rules the **syntax**. You can learn more about some of the subtle distinctions between these two terms by searching online, but for now you can think of these words as being almost the same thing.
 
-{cite: "Googlebot Answer", url: "[https://www.google.ca/search?q=grammar+vs+syntax&oq=grammar+vs+syntax&aqs=chrome..69i57j0l5.3591j0j7&sourceid=chrome&ie=UTF-8"}](https://www.google.ca/search?q=grammar+vs+syntax&oq=grammar+vs+syntax&aqs=chrome..69i57j0l5.3591j0j7&sourceid=chrome&ie=UTF-8"})
-
-> **Syntax** is the study of sentences **and** their structure, **and** the constructions within sentences. **Syntax** tells us what goes where in a sentence. **Grammar** is the general term referring to the set of rules in a given language including **syntax** , morphology, while **syntax** studies sentence structures. Apr 3, 2013 - _by Googlebot_
+> **Syntax** is the study of sentences **and** their structure, **and** the constructions within sentences. **Syntax** tells us what goes where in a sentence. **Grammar** is the general term referring to the set of rules in a given language including **syntax** , morphology, while **syntax** studies sentence structures. Apr 3, 2013 - [_by Googlebot_](https://www.google.ca/search?q=grammar+vs+syntax&oq=grammar+vs+syntax&aqs=chrome..69i57j0l5.3591j0j7&sourceid=chrome&ie=UTF-8)
 
 ## Order is important
 
@@ -69,6 +67,3 @@ We've covered a lot of ground so far, and all of it is fundamental to writing co
 * Methods always appear inside of **classes** or similar structures.
 * C# provides **keywords** for primitive **data types**. We use these keywords to declare **variables** which hold **values**.
 * C# is an _extensible_ language - allowing one to define new complex data types with their own information (variables) and instructions (methods) for processing that information.
-
-
-
