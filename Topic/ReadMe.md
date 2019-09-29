@@ -50,8 +50,7 @@ Once you have Classes/Objects and Flow-Control under your belt, it's time to tak
 - [R](R/) - Inheritance
 - [S](S/) - Solid Principles
 - [T](T/) - Other Types (`struct`, `interface`, `delegate`, Generics, Extension Methods)
-- [U](U/) - OOP and Design Patterns
-- [V](V/) - Operator Overloading
+- [U](u/) - Operator Overloading
 
 ----
 

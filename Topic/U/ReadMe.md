@@ -1,5 +1,4 @@
 ---
-title: (U) OOP and Design Patterns
+title: (U) Operator Overloading
 ---
-# Topic U - OOP and Design Patterns
-
+# Topic U - Operator Overloading

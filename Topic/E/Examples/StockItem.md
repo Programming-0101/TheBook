@@ -10,14 +10,13 @@ This class represents an item that is part of an inventory. The item has an item
 Write the code for the StockItem class. The solution must meet the following requirements:
 
 * Should get and set the name, cost and profit margin of the stock item
-* Should represent the profit margin as a percent; a value of 45 means 45%
-* Should calculate the price of the item, to the nearest cent
+* Should calculate the price of the item, to the nearest cent, using the profit margin as a percent (a profit margin of 45 means 45%)
 * Use the rounding where values under a half-cent are rounded down and values greater than or equal to a half-cent are rounded up
 
 Use the following class diagram when creating your solution.
 
 ![StockItem Class Diagram](./E-StockItem.png)
- 
+
 ```csharp
 using System;
 namespace Topic.E.Examples
