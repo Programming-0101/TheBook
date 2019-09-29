@@ -6,6 +6,8 @@ sidebar: false
 
 In order to provide a smooth, gradual appoach to learning how to program in a OOP-First approach, I've laid out a comprehensive set of code sample and practice questions organized in a topical fashion.
 
+For programming tools, I recommend starting with [Visual Studio Code](https://code.visualstudio.com). It's a simple-to-use yet sophisticated and powerful text editor.
+
 ## OOP Essentials
 
 I've long asserted that **classes and objects are *fundamental* to programming** in C#. In fact, if you treat objects as the *most* fundamental part (right up there with the notion of [variables, values and data types](/Teach/chapter1.md), all the remaining fundamentals fall into their natural usage.

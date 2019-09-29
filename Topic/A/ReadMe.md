@@ -4,8 +4,10 @@ title: Starting Classes (Part A)
 # A - Starting With Classes
 
 ::: tip Overview & Logs
-We're coving a lot of material here as the foundation of OOP programming. If you want a quick bullet-list of the the keywords and topics covered, see the [**Overview**](Overview.md). If you want to check yourself on what you're learning, run through the [**Learning Outcome Guide**](LOGs.md) for this topic.
+We are coving a *lot* of material here as we introduce OOP programming. That's because we're assuming you've never written any code before. If you want a quick bullet-list of the the keywords and topics covered, see the [**Overview**](Overview.md). If you want to check yourself on what you're learning, run through the [**Learning Outcome Guide**](LOGs.md) for this topic.
 :::
+
+## What is a Class?
 
 "A *computer program* is a **set of instructions** for manipulating **information**." In the world of *Object Oriented Programming* (OOP), the main focus is on the *information* part of this definition.
 
@@ -35,3 +37,9 @@ public
 The `public` keyword is an "Access Modifier", but for now just think of it as saying that other parts of our code will be able to access it and use it freely.
 
 A class describes something of interest to our program. Describing things of interest to our program is referred to as "Modeling", and is a big part of *Object Oriented Design* (OOD).
+
+
+
+## Avoiding Collisions
+
+Given the notion that C# lets us define 
