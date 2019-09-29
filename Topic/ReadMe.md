@@ -6,7 +6,7 @@ sidebar: false
 
 In order to provide a smooth, gradual appoach to learning how to program in a OOP-First approach, I've laid out a comprehensive set of code sample and practice questions organized in a topical fashion.
 
-For programming tools, I recommend starting with [Visual Studio Code](https://code.visualstudio.com). It's a simple-to-use yet sophisticated and powerful text editor.
+For programming tools, I recommend starting with [Visual Studio Code](https://code.visualstudio.com). It's a simple-to-use yet sophisticated and powerful text editor. Read my [quick overview](VSCode.md) for more information.
 
 ## OOP Essentials
 

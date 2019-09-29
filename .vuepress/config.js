@@ -58,11 +58,6 @@ module.exports = {
             // '/Topic/': [
             //     {title: 'Starting Classes - A', children: ['/Topic//', 'Examples/']}, 'B/', 'C/', 'D/', 'E/', 'F/', 'G/', 'H/', 'I/', 'J/', 'K/', 'L/', 'M/', 'N/', 'O/', 'P/', 'Q/', 'R/', 'S/', 'T/', 'U/'
             // ],
-            '/Topic/': [
-                '',
-                'VSCode',
-                'A/'
-            ],
             '/Topic/A/': [
                 '',
                 'Examples/',
