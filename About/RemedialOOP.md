@@ -9,4 +9,4 @@ To re-orient yourself to the OOP way of thinking, I would recommend the followin
 
 1. Get a Big Picture View
 2. Skim a Few Simple Examples
-3. 
+3. Understand Composition
