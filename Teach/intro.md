@@ -27,7 +27,7 @@ Every computer program has one important method that is the entry point or start
 
 > The focus of this second part is to show how classes act as templates for creating objects. This topic limits itself to showing a) how to create (instantiate) objects using classes and b) how classes can be used to describe what an object "looks like".
 
-The purpose of this topic is to show how classes don’t just "contain" methods: Classes act as templates for defining complex types of information (objects). In fact, a class can almost be thought of as a "mini-program", because a class brings together the two key elements of every program: Instructions and Information. With classes, we can create objects that do what we want them to.
+The purpose of this topic is to show how classes don't just "contain" methods: Classes act as templates for defining complex types of information (objects). In fact, a class can almost be thought of as a "mini-program", because a class brings together the two key elements of every program: Instructions and Information. With classes, we can create objects that do what we want them to.
 
 The class is the basic building block for creating objects. As a template, a class describes
 a) What an object "looks like" (that is, what information is inside the object), and
@@ -41,6 +41,6 @@ This topic focuses on the first part – describing what an object "looks like" 
 
 The purpose of this topic is to highlight how a major responsibility of every class is to "protect" the data within the class. This is done by designing classes that only use private fields and that "expose" access to the values of those fields through getter and setter methods. Getters and setters provide a way for the programmer to control access to fields in an object and to ensure that the fields are "used correctly".
 
-(Note: Later topics will address how to write code that tests the values coming through the setters’ parameters to ensure that only "acceptable" values are allowed into an object’s fields.)
+(Note: Later topics will address how to write code that tests the values coming through the setters' parameters to ensure that only "acceptable" values are allowed into an object's fields.)
 
 This topic also covers the important role of constructors in ensuring that objects have a "stable state" at the moment that they are created. In other words, constructors are responsible to ensure that all of the fields in an object are filled with "meaningful" values. A constructor also forces other code to supply required information when creating (instantiating) an object based on that class. Constructors are the "first line of defense" for ensuring that objects are created properly.

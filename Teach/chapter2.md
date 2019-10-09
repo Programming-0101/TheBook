@@ -7,7 +7,7 @@ The purpose of this tutorial is to give the student an opportunity to write code
 ## About Classes and Objects
 
 ::: tip
-Understanding Classes and Objects is easier if you’ve already taken a look at the distinction between [variables, values and data types](chapter1.md#variables-values-and-data-types).
+Understanding Classes and Objects is easier if you've already taken a look at the distinction between [variables, values and data types](chapter1.md#variables-values-and-data-types).
 :::
 
 > A computer program is a set of instructions for manipulating information.
@@ -26,13 +26,13 @@ Two objects can have the same set of characteristics, but different information.
 * What an object "looks like" (information)
 * How an object "behaves" (instructions to manipulate information)
 
-For a computer program to be able to work with objects, it must first know the class definition of that object. Coding a class definition is like telling the computer about a new data type that you are defining. The name of the class is the name of the new data type. Once the data type is defined, then it can be used to create objects. A class definition (or "class" for short) acts as a blueprint for creating objects; from the blueprint, the computer is told what the object "looks like" and how it "behaves". Every object is said to be an "instance" of a class, in the same way that a physical car would be an instance of the car’s blueprint. The term instantiation basically means "to instantiate", and it refers to the act of creating objects in code. An object is said to be "based on" a class when that class is the data type from which an object has been instantiated (just as a physical car would be "based on" the car’s blueprint).
+For a computer program to be able to work with objects, it must first know the class definition of that object. Coding a class definition is like telling the computer about a new data type that you are defining. The name of the class is the name of the new data type. Once the data type is defined, then it can be used to create objects. A class definition (or "class" for short) acts as a blueprint for creating objects; from the blueprint, the computer is told what the object "looks like" and how it "behaves". Every object is said to be an "instance" of a class, in the same way that a physical car would be an instance of the car's blueprint. The term instantiation basically means "to instantiate", and it refers to the act of creating objects in code. An object is said to be "based on" a class when that class is the data type from which an object has been instantiated (just as a physical car would be "based on" the car's blueprint).
 
 So, objects and classes are closely related, but not exactly the same. The relationship between objects and classes is pretty much the same as the relationship between ordinary values and data types.
 
 ## Coding the Class Definition
 
-A class definition can contain four parts: Fields, Properties, Constructors, and Methods. Fields and properties work together to describe what an object based on the class "looks like" (the object’s information). Constructors and Methods describe how the object "behaves" (what instructions an object performs to manipulate information).
+A class definition can contain four parts: Fields, Properties, Constructors, and Methods. Fields and properties work together to describe what an object based on the class "looks like" (the object's information). Constructors and Methods describe how the object "behaves" (what instructions an object performs to manipulate information).
 
 * Fields
   * Fields are variables that are shared by/accessible to all the other members of a class (properties, constructors, and methods).

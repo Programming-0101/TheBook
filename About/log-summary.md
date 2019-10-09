@@ -766,7 +766,7 @@ List the major benefits of using collections instead of arrays
 ### General Programming Concepts and Terms
 
 Describe what makes an array different from other collections in C#
-: The programmer is responsible to manage the boundaries of the array when manipulating the array’s contents.
+: The programmer is responsible to manage the boundaries of the array when manipulating the array's contents.
 : Arrays do not automatically “re-size” when “adding” or “removing” elements; the size of the array is fixed at the time the array is created.
 
 Describe the situations in which arrays are preferable over the use of collections

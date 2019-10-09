@@ -132,8 +132,8 @@ Write the code that will represent a person with a first and last name and a dat
 
 * Should get and set the first and last name
 * Should get the birth date
-* Should get the person’s approximate age (which is the age that the person will turn to in the current year)
-* Should override ToString() to get the person’s full name (as first name then last name)
+* Should get the person's approximate age (which is the age that the person will turn to in the current year)
+* Should override ToString() to get the person's full name (as first name then last name)
 * **Should get the life stage, based on the following table**
 
 Age Range (Years) | Life Stage
@@ -242,7 +242,7 @@ This version of the Angle class includes an attribute to identify the type of th
 
 Write the code for the Angle class. The solution must meet the following requirements (new requirements are in bold):
 
-* Should get and set the angle’s value (in degrees)
+* Should get and set the angle's value (in degrees)
 * Should calculate the equivalent angle in Radians and Grads, using the following formulas:
   * Radians = Degrees * (π / 180)
   * Grads = Radians * (200 / π)
@@ -509,7 +509,7 @@ Create a data type to represent a color as both base-10 RBG values and as a hexa
 ## Practice Excercises
 
 * Rectangle – "All squares are rectangles, but not all rectangles are squares." This class represents a simple rectangle with a height and width. From this information, the area, perimeter and diagonal can be obtained; it can also be determined if the rectangle is or is not square.
-* HazardousMaterial – The HazardousMaterial class is a simple representation of the six main classes of hazardous materials (A through F). This class maps a classification code with a general description of the material’s classification:
+* HazardousMaterial – The HazardousMaterial class is a simple representation of the six main classes of hazardous materials (A through F). This class maps a classification code with a general description of the material's classification:
   * Class A – Compressed Gas
   * Class B – Flammable and Combustible Material
   * Class C – Oxidizing Material
@@ -538,7 +538,7 @@ Use the following class diagram when creating your solution.
  
 ### HazardousMaterial
 
-The HazardousMaterial class is a simple representation of the six main classes of hazardous materials (A through F). This class maps a classification code with a general description of the material’s classification:
+The HazardousMaterial class is a simple representation of the six main classes of hazardous materials (A through F). This class maps a classification code with a general description of the material's classification:
 
 * **Class A** – Compressed Gas
 * **Class B** – Flammable and Combustible Material

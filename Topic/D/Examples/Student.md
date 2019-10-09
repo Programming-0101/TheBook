@@ -14,4 +14,4 @@ Should…
 * Get/Set GPA
 * Get/Set Program
 * Get/Set Full-Time
-* Override ToString() to get the student’s ID and name
+* Override ToString() to get the student's ID and name

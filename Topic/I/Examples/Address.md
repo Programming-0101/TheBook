@@ -9,7 +9,7 @@ This revised version of the Student class now has an Address field. The address 
 
 **Problem Statement**
 
-Extend the Student class to now include information about the student’s home address. Create an Address class to represent a simple, generic address. In addition, the Student class must represent the Gender using an enumeration.
+Extend the Student class to now include information about the student's home address. Create an Address class to represent a simple, generic address. In addition, the Student class must represent the Gender using an enumeration.
 
 The solution must meet the following requirements (new requirements are in **bold**):
 
@@ -18,13 +18,13 @@ The solution must meet the following requirements (new requirements are in **bol
 * The Student class must
   * **Verify that an address object is supplied (is not null)**
   * **Represent the Gender as a GenderType of Male and Female**
-  * Should get and set the student’s name, gender, GPA, program of studies, and whether or not the student is full-time.
-  * Should override the toString() method to get the student’s ID and name in this format:
+  * Should get and set the student's name, gender, GPA, program of studies, and whether or not the student is full-time.
+  * Should override the toString() method to get the student's ID and name in this format:
     (ID) Name
-  * Should n  * longer allow the student ID to be set (it’s only set through the constructor)
-  * Should reject empty text (and null values) for the student’s name and program of studies.
-  * Should trim the student’s name and the program name
-  * Should only accept ‘M’ and ‘F’ as valid genders
+  * Should no longer allow the student ID to be set (it's only set through the constructor)
+  * Should reject empty text (and null values) for the student's name and program of studies.
+  * Should trim the student's name and the program name
+  * Should only accept ‘M' and ‘F' as valid genders
   * Should set the gender to upper-case
   * Should reject negative GPAs and GPAs over 9
 

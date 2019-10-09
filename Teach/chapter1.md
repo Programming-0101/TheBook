@@ -12,7 +12,7 @@ A computer program is a ***set of instructions*** for manipulating ***informatio
 
 What is a computer program? A computer program is basically a **set of instructions** for manipulating **information**.
 
-To be of any value, the information used by a computer program must have a way to get into the program (input) and get out of the program (output). That may sound too simplistic, but ultimately it is entirely accurate; even the most sophisticated computer program can do nothing more than process information (albeit, in a very fast and efficient way), and no matter how cool the program looks, if there is no way to put information into it and get information out of it then it’s not of much use to anyone.
+To be of any value, the information used by a computer program must have a way to get into the program (input) and get out of the program (output). That may sound too simplistic, but ultimately it is entirely accurate; even the most sophisticated computer program can do nothing more than process information (albeit, in a very fast and efficient way), and no matter how cool the program looks, if there is no way to put information into it and get information out of it then it's not of much use to anyone.
 
 The most familiar kind of input and output (or I/O) in a computer program comes from the user. Textual information is entered (input) from the user via the keyboard and displayed (output) to the user via the monitor. Other means of user I/O can include computer mice, microphones, speakers, printers, fax machines, Braille readers, touch screens, stylus, etc.
 

@@ -3,7 +3,7 @@ title: TBA
 ---
 # ClassList
 
-The ClassList example maintains a list of students for a particular course by offering methods to add and remove students from a course. In addition, the ClassList ensures that students are not added to the course twice (based on the student’s Id). The following parts of the ClassList must be coded to complete the solution.
+The ClassList example maintains a list of students for a particular course by offering methods to add and remove students from a course. In addition, the ClassList ensures that students are not added to the course twice (based on the student's Id). The following parts of the ClassList must be coded to complete the solution.
 
 * Constructor – Set the course id and the collection of students. Ensure that the supplied arguments are valid
   * CourseId cannot be empty or null, and must be trimmed of leading or trailing spaces
@@ -12,7 +12,7 @@ The ClassList example maintains a list of students for a particular course by of
 * AddStudent() – Add the supplied student object to the collection. Ensure that
   * The Student object is not null
   * The class limit is not exceeded
-  * The Student object does not already exist in the collection (that is, there are no duplicates allowed, based on the student’s id)
+  * The Student object does not already exist in the collection (that is, there are no duplicates allowed, based on the student's id)
 * FindStudent() – Search the collection for a Student with a matching Id. If none is found, return null.
 * RemoveStudent() – Search for a Student with a matching Id; if one is found, remove it from the collection.
 

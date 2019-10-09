@@ -3,7 +3,7 @@ title: TBA
 ---
 # Account + AccountType
 
-The Account’s account type is n  * longer being represented as a string, but is its own enumeration: AccountType.
+The Account's account type is no longer being represented as a string, but is its own enumeration: AccountType.
 
 ![](./I-AccountType.png)
 

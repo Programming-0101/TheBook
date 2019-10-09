@@ -17,8 +17,8 @@
 
 1. Aggregator – The Aggregator class supports static methods for doing various types of aggregation on Numbers. (Numbers is a supplied class that stores a series of real values that can be obtained by calling getNext().) The common aggregations of totalItems(), averageItems(), maxValue() are given as examples of simple looping.
 2. Math – fibonnacciNumber() and isPerfect()
-3. Fraction – The fraction example is now enhanced to simplify the fractional value by finding the greatest common denominator of the fraction’s numerator and denominator.
-4. GuessingGame – This example uses a supplied class called SecretNumber, which picks a random whole number between a specific range. An instance of the SecretNumber is passed to the constructor of the GuessingGame, and the GuessingGame’s guess() method attempts to get the correct guess within a specified number of tries.
+3. Fraction – The fraction example is now enhanced to simplify the fractional value by finding the greatest common denominator of the fraction's numerator and denominator.
+4. GuessingGame – This example uses a supplied class called SecretNumber, which picks a random whole number between a specific range. An instance of the SecretNumber is passed to the constructor of the GuessingGame, and the GuessingGame's guess() method attempts to get the correct guess within a specified number of tries.
 
 ### Aggregator
 
@@ -31,7 +31,7 @@ The methods of the Aggregator class all take a single argument: a Numbers object
 * HasNext() – This returns a Boolean indicating that the object has another number available.
 * GetNext() – This returns a real number from the set of values in the Numbers object.
 
-For example, if a Numbers object has a set of four values such as 1.0, 5.5, 3.2, and 5.3, then the GetNext() method can be called four times to retrieve each value. Any attempt to call GetNext() when the object’s HasNext() is false will cause an exception.
+For example, if a Numbers object has a set of four values such as 1.0, 5.5, 3.2, and 5.3, then the GetNext() method can be called four times to retrieve each value. Any attempt to call GetNext() when the object's HasNext() is false will cause an exception.
 
 *Note:* This class is already coded for you in the samples.
 
@@ -43,7 +43,7 @@ The following Aggregator methods will demonstrate looping logic and syntax. All 
 
 * TotalItems() – This method loops through all the values inside of the Numbers object to calculate and return the total of the values. 
 * AverageItems() – This method gets all the values inside of the Numbers object so as to calculate the average value. If no values exist in the Numbers object, then the method returns an average of zero.
-* MaxValue() – This method examines the Numbers object’s values to see which value is the largest. If there are no values inside of the Numbers object, then the method returns the smallest possible value that is supported by the programming language.
+* MaxValue() – This method examines the Numbers object's values to see which value is the largest. If there are no values inside of the Numbers object, then the method returns the smallest possible value that is supported by the programming language.
 
 ![](J-Aggregator.png)
  
@@ -144,7 +144,7 @@ public class Math
 
 ### Fraction
 
-The fraction example is now enhanced to simplify the fractional value by finding the greatest common denominator of the fraction’s numerator and denominator.
+The fraction example is now enhanced to simplify the fractional value by finding the greatest common denominator of the fraction's numerator and denominator.
 
 The Fraction class represents a fraction as two integers: one for the numerator and one for the denominator. When a Fraction object is created, the class must now simplify the fractional values by calculating the greatest common denominator.
 
@@ -177,7 +177,7 @@ The Fraction class represents a fraction as two integers: one for the numerator 
 
 ### GuessingGame
 
-This example uses a supplied class called SecretNumber, which picks a random whole number between a specific range. An instance of the SecretNumber is passed to the constructor of the GuessingGame, and the GuessingGame’s Guess() method attempts to get the correct guess within a specified number of tries.
+This example uses a supplied class called SecretNumber, which picks a random whole number between a specific range. An instance of the SecretNumber is passed to the constructor of the GuessingGame, and the GuessingGame's Guess() method attempts to get the correct guess within a specified number of tries.
 
 In a regular number guessing game between two people, one person asks another person to guess a whole number between a pair of values. In this example, two different classes take on the roles of the two people in the game: The SecretNumber class takes on the role of the person who has picked a value between some lower and upper limit, while the GuessingGame class takes on the role of the person who has to guess what that hidden number is.
 
@@ -198,7 +198,7 @@ Objects of this class will store a hidden value between some upper and lower lim
 This class simulates the action of guessing what hidden value is stored inside of a SecretNumber object. The SecretNumber is supplied to the constructor of the GuessingGame, and the following methods attempt to find out what that number is.
 
 * GuessNumber() – This first method simply tries to guess the hidden value of the SecretNumber. It has “unlimited” guesses, and it will return the number of attempts it took to find out what that hidden number is.
-* GuessNumber(MaxAttempts : Integer) – This method will also try to guess the SecretNumber’s hidden value, but it is limited to a maximum number of guesses. This method will return the actual number of attempts it took to find the hidden value, or it will return the GUESS_FAILED constant if it was unable to guess the secret number.
+* GuessNumber(MaxAttempts : Integer) – This method will also try to guess the SecretNumber's hidden value, but it is limited to a maximum number of guesses. This method will return the actual number of attempts it took to find the hidden value, or it will return the GUESS_FAILED constant if it was unable to guess the secret number.
 
 Try creating alternate versions of this GuessingGame that will use a while statement and a for statement in the GuessNumber methods.
 
@@ -258,7 +258,7 @@ public class GuessingGame
 
 1. Aggregator – countItems(), minValue()
 2. Math – factorial(), isPrime(), power(), and greatestCommonDenominator()
-3. GuessingGame – This example expands on the sample GuessingGame by 1) re-working the guess() method to make guessing more efficient by using the SecretNumber’s guessWithHint() method, and 2) overloading the guess() method to continue guessing until the correct answer is found (and returning the number of attempts it took to find the correct answer).
+3. GuessingGame – This example expands on the sample GuessingGame by 1) re-working the guess() method to make guessing more efficient by using the SecretNumber's guessWithHint() method, and 2) overloading the guess() method to continue guessing until the correct answer is found (and returning the number of attempts it took to find the correct answer).
 
 ### Aggregator
 
@@ -282,7 +282,7 @@ Expand on the sample Math class by providing methods to perform the following.
 
 ### GuessingGame
 
-This example expands on the sample GuessingGame by adding more guess methods to make guessing more efficient by using the SecretNumber’s guessWithHint() method.
+This example expands on the sample GuessingGame by adding more guess methods to make guessing more efficient by using the SecretNumber's guessWithHint() method.
 
 In a regular number guessing game between two people, one person asks another person to guess a whole number between a pair of values. In this example, two different classes take on the roles of the two people in the game: The SecretNumber class takes on the role of the person who has picked a value between some lower and upper limit, while the GuessingGame class takes on the role of the person who has to guess what that hidden number is.
 
@@ -303,7 +303,7 @@ Objects of this class will store a hidden value between some upper and lower lim
 This class simulates the action of guessing what hidden value is stored inside of a SecretNumber object. The SecretNumber is supplied to the constructor of the GuessingGame, and the following methods attempt to find out what that number is.
 
 * GuessUsingHints() – This first method simply tries to guess the hidden value of the SecretNumber. It has “unlimited” guesses, and it will return the number of attempts it took to find out what that hidden number is. Use the GuessWithHint method of the SecretNumber object.
-* GuessUsingHints(MaxAttempts : Integer) – This method will also try to guess the SecretNumber’s hidden value, but it is limited to a maximum number of guesses. This method will return the actual number of attempts it took to find the hidden value, or it will return the GUESS_FAILED constant if it was unable to guess the secret number. Use the GuessWithHint method of the SecretNumber object.
+* GuessUsingHints(MaxAttempts : Integer) – This method will also try to guess the SecretNumber's hidden value, but it is limited to a maximum number of guesses. This method will return the actual number of attempts it took to find the hidden value, or it will return the GUESS_FAILED constant if it was unable to guess the secret number. Use the GuessWithHint method of the SecretNumber object.
 As an additional exercise, create a simple driver that instantiates a SecretNumber object and supplies it to a GuessingGame object. Show how many attempts it took to guess the hidden number when using hints.
 
 ![](J-GuessingGame-2.png)

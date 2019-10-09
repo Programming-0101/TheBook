@@ -5,8 +5,8 @@ title: Examples
 
 ### Enumerations:
 
-1. [Coin + CoinFace](Coin.md) – The CoinFace enumeration helps to describe the tw  * sides of a Coin, which can then be used in a tossing game.
-2. [Account + AccountType](Account.md) – The Account’s account type is n  * longer being represented as a string, but is its own enumeration: AccountType.
+1. [Coin + CoinFace](Coin.md) – The CoinFace enumeration helps to describe the two sides of a Coin, which can then be used in a tossing game.
+2. [Account + AccountType](Account.md) – The Account's account type is no longer being represented as a string, but is its own enumeration: AccountType.
 3. [LetterGrade + QuebecLetterGrade](LetterGrade.md) – The QuebecLetterGrade uses the simple LetterGrade enumeration and assigns specific ranges of percentage marks for the possible LetterGrade values.
 
 4. [CampsiteFacility](Campsite.md) - Introduces the idea of the `[Flags]` attribute on the enumeration.

@@ -12,4 +12,4 @@ Should…
 * Get/Set First Name
 * Get/Set Last Name
 * Get/Set Age
-* Override ToString() to get the person’s full name (as first name then last name)
+* Override ToString() to get the person's full name (as first name then last name)

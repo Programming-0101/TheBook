@@ -3,7 +3,7 @@ title: TBA
 ---
 # Fraction
 
-The fraction example is now enhanced to simplify the fractional value by finding the greatest common denominator of the fraction’s numerator and denominator.
+The fraction example is now enhanced to simplify the fractional value by finding the greatest common denominator of the fraction's numerator and denominator.
 
 The Fraction class represents a fraction as two integers: one for the numerator and one for the denominator. When a Fraction object is created, the class must now simplify the fractional values by calculating the greatest common denominator.
 

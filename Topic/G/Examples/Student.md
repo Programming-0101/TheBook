@@ -12,7 +12,7 @@ Write the code for the Student class. The class must now ensure that the supplie
 * Should get and set the student's name, gender, GPA, program of studies, and whether or not the student is full-time.
 * Should override the toString() method to get the student's ID and name in this format:
 (ID) Name
-* **Should n  * longer allow the student ID to be set (it's only set through the constructor)**
+* **Should no longer allow the student ID to be set (it's only set through the constructor)**
 * **Should reject empty text (and null values) for the student's name and program of studies.**
 * **Should trim the student's name and the program name**
 * **Should only accept 'M' and 'F' as valid genders**

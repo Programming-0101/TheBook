@@ -33,5 +33,5 @@ The following daily LOGs are covered in this package.
 * List three downfalls of using Test Drivers 
 * Identify four benefits of using Unit Tests 
 * Add unit testing libraries and unit testing packages to existing programs 
-* Use unit tests to validate the requirements of a class’ design and behaviour
+* Use unit tests to validate the requirements of a class' design and behaviour
 * Diagnose and correct software problems by using unit tests 

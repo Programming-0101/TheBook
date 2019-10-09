@@ -9,7 +9,7 @@ This version of the Angle class includes an attribute to identify the type of th
 
 Write the code for the Angle class. The solution must meet the following requirements (new requirements are in bold):
 
-* Should get and set the angle’s value (in degrees)
+* Should get and set the angle's value (in degrees)
 * Should calculate the equivalent angle in Radians and Grads, using the following formulas:
   * Radians = Degrees * (π / 180)
   * Grads = Radians * (200 / π)

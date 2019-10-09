@@ -28,8 +28,8 @@ This topic will reveal how enumerations allow programmers to define new data typ
 
 ### Enumerations:
 
-1. Coin + CoinFace – The CoinFace enumeration helps to describe the tw  * sides of a Coin, which can then be used in a tossing game.
-2. Account + AccountType – The Account’s account type is n  * longer being represented as a string, but is its own enumeration: AccountType.
+1. Coin + CoinFace – The CoinFace enumeration helps to describe the two sides of a Coin, which can then be used in a tossing game.
+2. Account + AccountType – The Account's account type is no longer being represented as a string, but is its own enumeration: AccountType.
 3. LetterGrade + QuebecLetterGrade – The QuebecLetterGrade uses the simple LetterGrade enumeration and assigns specific ranges of percentage marks for the possible LetterGrade values.
 
 ### Composition:
@@ -37,9 +37,9 @@ This topic will reveal how enumerations allow programmers to define new data typ
 1. Address + Student + GenderType – This revised version of the Student class now has an Address field. The address field is new; although similar to the CanadianAddress class, the Address class is simpler and more "generic" (having "State" instead of "Province" and "ZipCode" instead of "PostalCode").
 2. ImproperFraction + MixedNumber + ProperFraction – In this sample, the idea of a Fraction class is made more specific by replacing it with three more specific types of numbers: MixedNumber, ProperFraction, and ImproperFraction. A MixedNumber is made up of a whole number and a ProperFraction. A MixedNumber can also be expressed as or derived from an ImproperFraction. The reciprocal of a ProperFraction is an ImproperFraction and the reciprocal of an ImproperFraction is a ProperFraction.
 
-##Coin + CoinFace
+## Coin + CoinFace
 
-The CoinFace enumeration helps to describe the tw  * sides of a Coin, which can then be used in a tossing game.
+The CoinFace enumeration helps to describe the two sides of a Coin, which can then be used in a tossing game.
 
 **Problem Statement**
 
@@ -48,7 +48,7 @@ Write the code needed to represent a coin that could be used in a coin-toss game
 * Should randomly generate the coin face that is showing when creating the coin
 * Should get the side of the coin that is face showing
 * Should allow the coin to be tossed to randomly generate a new coin face
-* Should only support tw  * sides for a coin’s face: Heads and Tails
+* Should only support two sides for a coin's face: Heads and Tails
 
 Use the following diagram when creating your solution.
 
@@ -78,7 +78,7 @@ public class Coin
 
 ### Account + AccountType
 
-The Account’s account type is n  * longer being represented as a string, but is its own enumeration: AccountType.
+The Account's account type is no longer being represented as a string, but is its own enumeration: AccountType.
 
 ![](I-AccountType.png)
 
@@ -92,7 +92,7 @@ Write the code that will make the account type a type-safe value for the Account
 * Should identify if the account is overdrawn
 * Should require bank name and account type (that is, they cannot be empty or null)
 * Should trim the bank name
-* **Should ensure that the Account Type is type-safe and that it is supplied when creating the account (that is, it cannot be null)** 
+* **Should ensure that the Account Type is type-safe and that it is supplied when creating the account (that is, it cannot be null)**
 * **Should support the following types of accounts: Chequing, Saving, Credit Card, and Line of Credit**
 * Should verify that the branch number is six digits and the institution number is three digits
 * Should require an opening balance
@@ -244,7 +244,7 @@ This revised version of the Student class now has an Address field. The address 
 
 **Problem Statement**
 
-Extend the Student class to now include information about the student’s home address. Create an Address class to represent a simple, generic address. In addition, the Student class must represent the Gender using an enumeration.
+Extend the Student class to now include information about the student's home address. Create an Address class to represent a simple, generic address. In addition, the Student class must represent the Gender using an enumeration.
 
 The solution must meet the following requirements (new requirements are in **bold**):
 
@@ -253,13 +253,13 @@ The solution must meet the following requirements (new requirements are in **bol
 * The Student class must
   * **Verify that an address object is supplied (is not null)**
   * **Represent the Gender as a GenderType of Male and Female**
-  * Should get and set the student’s name, gender, GPA, program of studies, and whether or not the student is full-time.
-  * Should override the toString() method to get the student’s ID and name in this format:
+  * Should get and set the student's name, gender, GPA, program of studies, and whether or not the student is full-time.
+  * Should override the toString() method to get the student's ID and name in this format:
     (ID) Name
-  * Should n  * longer allow the student ID to be set (it’s only set through the constructor)
-  * Should reject empty text (and null values) for the student’s name and program of studies.
-  * Should trim the student’s name and the program name
-  * Should only accept ‘M’ and ‘F’ as valid genders
+  * Should no longer allow the student ID to be set (it's only set through the constructor)
+  * Should reject empty text (and null values) for the student's name and program of studies.
+  * Should trim the student's name and the program name
+  * Should only accept ‘M' and ‘F' as valid genders
   * Should set the gender to upper-case
   * Should reject negative GPAs and GPAs over 9
 
@@ -612,7 +612,7 @@ The Company now has a CanadianAddress.
 
 **Problem Statement**
 
-Modify the Company class to now make use of the CanadianAddress type for the address. Also, create an enumeration for the months of the year for representing the company’s fiscal year end.
+Modify the Company class to now make use of the CanadianAddress type for the address. Also, create an enumeration for the months of the year for representing the company's fiscal year end.
  
 ![](I-Month.png)
 

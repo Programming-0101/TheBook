@@ -11,8 +11,8 @@ Write the code that will represent a person with a first and last name and a dat
 
 * Should get and set the first and last name
 * Should get the birth date
-* Should get the person’s approximate age (which is the age that the person will turn to in the current year)
-* Should override ToString() to get the person’s full name (as first name then last name)
+* Should get the person's approximate age (which is the age that the person will turn to in the current year)
+* Should override ToString() to get the person's full name (as first name then last name)
 * **Should get the life stage, based on the following table**
 
 Age Range (Years) | Life Stage

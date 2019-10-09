@@ -38,8 +38,26 @@ The `public` keyword is an "Access Modifier", but for now just think of it as sa
 
 A class describes something of interest to our program. Describing things of interest to our program is referred to as "Modeling", and is a big part of *Object Oriented Design* (OOD).
 
+## Let's Start Coding
 
+- [ ] Create a program in VS Code
+- [ ] Discuss the code (keywords)
+
+```csharp
+using System;
+
+namespace StartHere
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
 
 ## Avoiding Collisions
 
-Given the notion that C# lets us define 
+Given the notion that C# lets us define our own data types, imagine what would 

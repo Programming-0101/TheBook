@@ -3,7 +3,7 @@ title: TBA
 ---
 # HazardousMaterial
 
-The HazardousMaterial class is a simple representation of the six main classes of hazardous materials (A through F). This class maps a classification code with a general description of the material’s classification:
+The HazardousMaterial class is a simple representation of the six main classes of hazardous materials (A through F). This class maps a classification code with a general description of the material's classification:
 
 * **Class A** – Compressed Gas
 * **Class B** – Flammable and Combustible Material

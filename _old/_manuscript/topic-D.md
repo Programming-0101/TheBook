@@ -30,7 +30,7 @@ The following daily LOGs are covered in this package.
 * List three downfalls of using Test Drivers 
 * Identify four benefits of using Unit Tests 
 * Add unit testing libraries and unit testing packages to existing programs 
-* Use unit tests to validate the requirements of a class’ design and behaviour
+* Use unit tests to validate the requirements of a class' design and behaviour
 * Diagnose and correct software problems by using unit tests 
 
 ## Code Samples
@@ -63,7 +63,7 @@ Should…
 * Get/Set First Name
 * Get/Set Last Name
 * Get/Set Age
-* [NOT-YET-IMPLEMENTED] Override ToString() to get the person’s full name (as first name then last name)
+* [NOT-YET-IMPLEMENTED] Override ToString() to get the person's full name (as first name then last name)
   **The test for this method will report as "failed" because it has not yet been implemented.**
 
 ### Account
@@ -94,7 +94,7 @@ Should…
 * Get/Set GPA
 * Get/Set Program
 * Get/Set Full-Time
-* Override ToString() to get the student’s ID and name
+* Override ToString() to get the student's ID and name
 
 ### Employee
 
@@ -142,7 +142,7 @@ Should…
 * Get/Set First Name
 * Get/Set Last Name
 * Get/Set Age
-* Override ToString() to get the person’s full name (as first name then last name)
+* Override ToString() to get the person's full name (as first name then last name)
 
 ### CanadianAddress
 
