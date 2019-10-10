@@ -29,10 +29,10 @@ module.exports = {
         // docsDir: 'manuscript',
         // defaults to false, set to true to enable
         // editLinks: true,
-        algolia: {
-            apiKey: 'b1b8a5fbe058da34cc8c23ac38cdce0f',
-            indexName: 'programming_0101'
-        },
+        // algolia: {
+        //     apiKey: 'b1b8a5fbe058da34cc8c23ac38cdce0f',
+        //     indexName: 'programming_0101'
+        // },
         // custom text for edit link. Defaults to "Edit this page"
         editLinkText: 'Help us improve this page!',
         lastUpdated: 'Last updated on', // string | boolean
