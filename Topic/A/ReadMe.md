@@ -38,7 +38,42 @@ The `public` keyword is an "Access Modifier", but for now just think of it as sa
 
 A class describes something of interest to our program. Describing things of interest to our program is referred to as "Modeling", and is a big part of *Object Oriented Design* (OOD).
 
-## Let's Start Coding
+Let's take another look at that first class we created.
+
+```csharp
+public class Nothingness
+{
+
+}
+```
+
+The words `public` and `class` are *keywords* - they are built into the C# programming languge. But the *name* of the class - `Nothingness` - something we made up ourselves. When we declare a class, we have to give it a name; we call that a **class name** because it *identifies* the class.
+
+The curly braces `{ }` act to "group" what "belongs to" or is "inside of" the class. It's like the set operators in math - everything inside the curly braces of the class definition are *members* of that class.
+
+Remember how I said that a class is a "blueprint"? The name of the class can be thought of as the name of the blueprint. I also said we were "classifying" information. Our class (blueprint) is a kind (or *type*) of information. When we declare a class, we are **defining a data type** for our program.
+
+The C# programming language comes with a set of built-in data types as well. Two examples are `string` and `int`. The names `string` and `int` are keywords of the language, and as such are already defined for us. The built-in data types are "primitive" in nature - they represent the common and *simple* types of information that programs typically use. The class data types we declare for ourselves, on the other hand, are *complex* in nature.
+
+## Better Than Nothing
+
+Now it's time to see the traditional introductory program **Hello World**.
+
+```csharp{3-6}
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+```
+
+Our class name is called `Program`, and it has something inside of it: A **method declaration**. A method is a "*set of instructions*".
+
+----
+
+## TODO Notes
 
 - [ ] Create a program in VS Code
 - [ ] Discuss the code (keywords)
@@ -57,6 +92,8 @@ namespace StartHere
     }
 }
 ```
+
+## Let's Start Coding
 
 ## Avoiding Collisions
 

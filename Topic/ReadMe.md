@@ -20,13 +20,13 @@ These first topics get the user into writing classes with fields, properties, co
 
 ## Testing Your Code
 
-[**Topic D**](D/) introduces an approach to testing that doesn't rely on constantly creating drivers to perform manual testing. It's not that manual drivers to testing are "bad", but too much focus on these drivers often takes away from the *real* interesting parts of programming.
+[**Topic D**](D/) introduces an approach to testing that doesn't rely on constantly creating drivers to perform manual testing. It's not that manual testing is "bad", but too much focus on these drivers often takes away from the *real* interesting parts of programming. In place of manual testing, I'll present to you *automated unit tests* as a better way to see if our code is working the way it's supposed to.
 
 - [D](D/) - Testing and Debugging
 
 ## C# - In Context
 
-The remaining fundamentals are covered in topics E through M. The focus here is mostly about "doing math" and **flow-control** statements, but additional concepts such as enumerations, composition, and arrays are covered. In these examples, all the fundamentals are presented within the context of working with objects, rather than being isolated and shown in a purely "procedural" fashion.
+The remaining fundamentals are covered in topics E through M. The focus here is mostly about "doing math" and **flow-control** statements, but additional concepts such as enumerations, composition, and arrays are also introduced. These examples present all the fundamentals within the context of working with objects, rather than being isolated and shown in a purely "procedural" fashion.
 
 - [E](E/) - Expressions and Math
 - [F](F/) - If/Else Structures
