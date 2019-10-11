@@ -22,6 +22,10 @@ The formal grammar for C# is actually quite large and complex. In fact, the gram
 
 For our purposes, we will present a much more *simplified* grammar. The following sections express the bulk of the C# grammar used in this introduction to programming fundamentals in C#.
 
+## Table of Contents
+
+[[toc]]
+
 ## Common Grammar Elements
 
 Most of the grammar rules in C# are quite short, defining the order of **keywords**, **identifiers** and **symbols**. In the following grammars, the use of square brackets (**`[]`**) indicate an optional part of the syntax for the grammar rule; those square brackets are *not* actual symbols in the final syntax of the grammar. With each of the rules is a very brief explanation. Later chapters will go into more depth and provide examples of how to use these grammars.
