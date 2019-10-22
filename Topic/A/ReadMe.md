@@ -69,7 +69,9 @@ public class Program
 }
 ```
 
-Our class name is called `Program`, and it has something inside of it: A **method declaration**. A method is a "*set of instructions*".
+Our class name is called `Program`, and it has something inside of it: A **method declaration**. A method is a "*set of instructions*". The highlighted lines in the sample above is a method called `Main`. That's the traditional name given to the place where the program begins (it's the "main entry point" of the program). It's the method that's called by the operating system when it runs your program.
+
+All methods follow the same grammar; it's the grammar rules of the programming language that determine "what things are". Take a moment to peek at the structure of [Method Declarations](../../Teach/chapter1-7.md#method-declarations) before you continue on.
 
 ----
 
