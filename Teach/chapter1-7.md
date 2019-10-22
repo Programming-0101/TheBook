@@ -249,7 +249,7 @@ Flow-Control Statements provide the procedural characteristics of the C# languag
 
 ### Method Calls
 
-While the [Method Declaration] *defines a set of instructions*, those instructions only run when the method is *called* from somewhere. The operating system is responsible to call the `Main()` method, but after that, all method calls are the responsiblity of our program. The grammar of a method call is as follows.
+While the [Method Declaration](#method-declarations) *defines a set of instructions*, those instructions only run when the method is *called* from somewhere. The operating system is responsible to call the `Main()` method, but after that, all method calls are the responsiblity of our program. The grammar of a method call is as follows.
 
 ```csharp
 [[ClassName | ObjectName].]MethodName(argumentList)
