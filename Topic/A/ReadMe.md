@@ -4,7 +4,7 @@ title: Starting Classes (Part A)
 # A - Starting With Classes
 
 ::: tip Overview & Logs
-We are coving a *lot* of material here as we introduce OOP programming. That's because we're assuming you've never written any code before. If you want a quick bullet-list of the the keywords and topics covered, see the [**Overview**](Overview.md). If you want to check yourself on what you're learning, run through the [**Learning Outcome Guide**](LOGs.md) for this topic.
+We are coving a *lot* of material here as we introduce OOP programming. That's because we're assuming you've never written any code before. If you want a quick bullet-list of the the keywords and topics covered, see the [**Overview**](Overview.md). If you want to check yourself on what you're learning, run through the [**Learning Outcome Guide**](LOGs.md) for this topic. You can also jump to the code in [**Examples**](Examples/ReadMe.md) or [**Practice**](Practice/ReadMe.md).
 :::
 
 ## What is a Class?
@@ -73,12 +73,46 @@ Our class name is called `Program`, and it has something inside of it: A **metho
 
 All methods follow the same grammar; it's the grammar rules of the programming language that determine "what things are". Take a moment to peek at the structure of [Method Declarations](../../Teach/chapter1-7.md#method-declarations) before you continue on.
 
+Inside of my Main method is a [**method call**](../../Teach/chapter1-7.md#method-calls) to the `WriteLine()` method of the `Console` class.
+
+```csharp{5}
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+```
+
+The difference between a method *declaration* and a method *call* is that the declaration *defines* a set of instructions while a method call *invokes* the method. "Invoking" simply means that we're telling the computer to *run* (or *execute*) the instructions contained in that method.
+
+Let's break down that line of code.
+
+```csharp
+        Console.WriteLine("Hello World!");
+```
+
+First of all, the whole line is a single *instruction* or [*program statement*](../../Teach/chapter1-7.md#program-statements-and-statement-blocks). Program statements end with a semicolon (`;`) in much the same way that the end of a sentence in English is indicated by a period. In English, a sentence conveys a "complete thought"; in the same way, a program statement is a "complete *instruction*".
+
+The instruction begins with `Console`, which is the name of a class. The "dot operator" (`.`) indicates that we want to go "into" that `Console` class. The formal name of the "dot operator" is the ***Member Access* Operator**. Right after that dot operator is the name of a method in that class: `WriteLine`. We know it's a *member* of the class because it appears after the dot operator, and we know that it's a *method name* because right after the name we have a pair of parenthesis.
+
+In fact, the grammar of the method call is so precise, we can easily deduce that the *declaration* of that method would look something like this.
+
+```csharp
+public class Console
+{
+    public static void WriteLine(string text)
+    {
+        // Something exists here to actually display the text
+    }
+}
+```
+
 ----
 
 ## TODO Notes
 
-- [ ] Create a program in VS Code
-- [ ] Discuss the code (keywords)
 
 ```csharp
 using System;
@@ -89,7 +123,10 @@ namespace StartHere
     {
         static void Main(string[] args)
         {
+            // Display the text "Hello World!"
             Console.WriteLine("Hello World!");
+            // Display a blank line
+            Console.WriteLine();
         }
     }
 }
@@ -99,4 +136,4 @@ namespace StartHere
 
 ## Avoiding Collisions
 
-Given the notion that C# lets us define our own data types, imagine what would 
+Given the notion that C# lets us define our own data types, imagine what would happen if we wanted two classes 

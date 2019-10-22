@@ -245,7 +245,34 @@ A **Constructor** is a set of instructions used when **instantiating** (creating
 
 ## Flow-Control Statements
 
-Flow-Control Statements provide the procedural characteristics of the C# language. They are what provide the capabilities of ***alternative paths of logic*** (*If-Else* and *Case*) and ***repetition*** (*For*, *While* and their variants).
+Flow-Control Statements provide the procedural characteristics of the C# language. They are what provide the capabilities of ***alternative paths of logic*** (*If-Else* and *Case*) and ***repetition*** (*For*, *While* and their variants). They also provide the ability to "jump into" methods through *method calls*.
+
+### Method Calls
+
+While the [Method Declaration] *defines a set of instructions*, those instructions only run when the method is *called* from somewhere. The operating system is responsible to call the `Main()` method, but after that, all method calls are the responsiblity of our program. The grammar of a method call is as follows.
+
+```csharp
+[[ClassName | ObjectName].]MethodName(argumentList)
+```
+
+A **Method Call** is an [expression](#expressions) where
+: `MethodName` is the programmer-defined name of the method,
+: `argumentList` is a comma-separated list of values that correspond to the parameters of the [method declaration](#method-declarations),
+: The method is preceeded by either a `ClassName` (for `static` methods) or an `ObjectName` (aka: a *variable name*) that identifies *where* the method can be "found"; the **Member Access Operator** (aka: "dot" operator `.`) comes right after the `ClassName` or `ObjectName`. If the method declaration is in the same class as the method call, then the `ClassName`/`ObjectName` can be omitted.
+
+When a method is an *instance* method (non-static) and is called without an `ObjectName`, the `this` keyword is implied. In other words, if the method call looks like
+
+```csharp
+Display("Some Text")
+```
+
+it is interpreted as
+
+```csharp
+this.Display("Some Text")
+```
+
+The **`this`** keyword simply means that the method declaration is in the same class as the method call and that it should be applied to the same instance (**`this` instance**) of the class.
 
 ### If-Else
 

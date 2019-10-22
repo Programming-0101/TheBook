@@ -60,6 +60,7 @@ module.exports = {
             // ],
             '/Topic/A/': [
                 '',
+                'VSCode',
                 'Examples/',
                 'ConsoleIO',
                 'Practice/',

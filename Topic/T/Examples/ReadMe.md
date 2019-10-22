@@ -5,8 +5,9 @@ title: Examples
 
 1. Structs
 1. Interfaces
+    - [Measurement Interfaces](Interfaces/Measurements.md)
 1. Delegates
 1. Generics
 1. Extension Methods
     - [Total](Extensions/Total.md) -
-    - [Deal + Hand](Extensions/Deal.md) - 
+    - [Deal + Hand](Extensions/Deal.md) -
