@@ -3,7 +3,7 @@ title: Examples
 ---
 # Code Samples
 
-1. Structs
+1. Structs - the meter (m), the kilogram (kg), the second (s), the kelvin (K), the ampere (A), the mole (mol), and the candela (cd)
 1. Interfaces
     - [Measurement Interfaces](Interfaces/Measurements.md)
 1. Delegates

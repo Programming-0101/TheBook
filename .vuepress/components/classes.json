@@ -77,6 +77,16 @@
     ]
   },
   {
+    "Type": "Ampere",
+    "Examples": [
+      {
+        "Topic": "T",
+        "Doc": "SiSystem"
+      }
+    ],
+    "Practice": []
+  },
+  {
     "Type": "Angle",
     "Examples": [
       {
@@ -258,6 +268,16 @@
         "Doc": "Company"
       }
     ]
+  },
+  {
+    "Type": "Candela",
+    "Examples": [
+      {
+        "Topic": "T",
+        "Doc": "SiSystem"
+      }
+    ],
+    "Practice": []
   },
   {
     "Type": "CardSuit",
@@ -683,6 +703,26 @@
     "Practice": []
   },
   {
+    "Type": "Kelvin",
+    "Examples": [
+      {
+        "Topic": "T",
+        "Doc": "SiSystem"
+      }
+    ],
+    "Practice": []
+  },
+  {
+    "Type": "Kilogram",
+    "Examples": [
+      {
+        "Topic": "T",
+        "Doc": "SiSystem"
+      }
+    ],
+    "Practice": []
+  },
+  {
     "Type": "LabResult",
     "Examples": [],
     "Practice": [
@@ -746,6 +786,35 @@
     ]
   },
   {
+    "Type": "Measure",
+    "Examples": [
+      {
+        "Topic": "T",
+        "Doc": "SiSystem"
+      }
+    ],
+    "Practice": []
+  },
+  {
+    "Type": "MemoryAddress",
+    "Examples": [
+      {
+        "Topic": "F"
+      }
+    ],
+    "Practice": []
+  },
+  {
+    "Type": "Meter",
+    "Examples": [
+      {
+        "Topic": "T",
+        "Doc": "SiSystem"
+      }
+    ],
+    "Practice": []
+  },
+  {
     "Type": "MixedNumber",
     "Examples": [
       {
@@ -756,10 +825,11 @@
     "Practice": []
   },
   {
-    "Type": "MemoryAddress",
+    "Type": "Mole",
     "Examples": [
       {
-        "Topic": "F"
+        "Topic": "T",
+        "Doc": "SiSystem"
       }
     ],
     "Practice": []
@@ -1086,6 +1156,16 @@
         "Topic": "E"
       }
     ]
+  },
+  {
+    "Type": "Second",
+    "Examples": [
+      {
+        "Topic": "T",
+        "Doc": "SiSystem"
+      }
+    ],
+    "Practice": []
   },
   {
     "Type": "Song",
