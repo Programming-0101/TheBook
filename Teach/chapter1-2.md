@@ -20,7 +20,7 @@ Know The Language
 : If you're creating a software solution, you are probably using some kind of programming language. The more articulate you are in that language, the better you will be in expressing your intent and getting the computer to "do what you want."
 
 Know The Tools
-: Nobody really uses just a plain text editor anymore. Typically, developers work with some kind of IDE (*Integrated Development Environment*). These tools are typically quite powerful, and the better you understand how they work and what you can do with them, the better off you will be when it comes time to cut some code[^a].
+: Nobody really uses just a plain text editor like *Notepad* anymore. Typically, developers work with some kind of IDE (*Integrated Development Environment*) - whether it be a full-GUI IDE like *Visual Studio* or a text-centric IDE like *Visual Studio Code*. These tools are typically quite powerful, and the better you understand how they work and what you can do with them, the better off you will be when it comes time to cut some code[^a].
 
 [^a]: "Cutting code" is slang for "writing code".
 

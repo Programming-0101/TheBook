@@ -276,7 +276,7 @@ The **`this`** keyword simply means that the method declaration is in the same c
 
 ### If-Else
 
-### Case
+### Switch-Case
 
 ### For and Foreach
 

@@ -34,11 +34,11 @@ So, objects and classes are closely related, but not exactly the same. The relat
 
 A class definition can contain four parts: Fields, Properties, Constructors, and Methods. Fields and properties work together to describe what an object based on the class "looks like" (the object's information). Constructors and Methods describe how the object "behaves" (what instructions an object performs to manipulate information).
 
-* Fields
+* **Fields**
   * Fields are variables that are shared by/accessible to all the other members of a class (properties, constructors, and methods).
   * Fields are almost always declared as private (meaning that they are not directly accessible from outside the class).
   * Although not commonly done, a field can be assigned an initial default value when it is declared.
-* Properties
+* **Properties**
   * Properties are used like ordinary fields or variables, but work internally as methods.
   * Properties can have a Get method and/or a Set method.
     * The Get method is used when attempting to retrieve a value from the property.
@@ -46,14 +46,14 @@ A class definition can contain four parts: Fields, Properties, Constructors, and
   * Properties often (but not always) have a corresponding field that is used to hold or store the property's value in the "background"; the field associated with a property is often referred to as the "backing store".
   * Properties that do not have a corresponding backing store will only have a Get method that calculates a value based on other values; there is no Set method because there is no single field in which to store a value for the property.
   * Properties are usually declared as public (meaning that they can be accessed directly from outside the class).
-* Constructors
+* **Constructors**
   * Constructors are called automatically whenever an object is created. Objects are created by the new keyword, whose general syntax is as follows:
     `new ClassName(ArgList)`
   * ArgList (or Argument List) is a comma-separated list of values that are sent to the constructor. The decision of which constructor can be called depends on the arguments (values) sent in when the new keyword is used; the compiler looks for a constructor with a parameter list that matches the argument list.
   * Constructors have one purpose: to make sure that the fields in the object have meaningful values. This usually means that a constructor will need some parameters to get those values from the code that creates the object.
   * Usually, constructors are made public.
   * A class can define more than one constructor. If no constructor is defined for a class, then a "default constructor" is used, which simply sets all the fields to their default values.
-* Methods
+* **Methods**
   * A method is a set of instructions that are typically focused on manipulating or working with the fields and properties of an object.
   * Methods are identified by a name (called the Method Name) and a parameter list; together the method name and parameter list make up what is called the Method Signature.
   * If a method has a return type of void, then it is known as a Subroutine; subroutines do not return any information to the code that called it.
