@@ -26,7 +26,7 @@ public class Math
             }
         }
         else
-            throw new Exception("Can only create a fibonnaci number based on a positive non-zero position");
+            throw new Exception("Can only create a fibonacci number based on a positive non-zero position");
         return current;
     }
 
