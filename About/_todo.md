@@ -11,5 +11,3 @@ title: Author To-Do Items
   * Categories of data types:
     * Value types
     * Reference types
-
-{{ $site }}

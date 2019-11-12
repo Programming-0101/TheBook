@@ -10,29 +10,30 @@ This appendix provides a shortened review of what each learning outcome is all a
 ## Topic A - Starting Classes
 
 ### OOP Basics
+
 Define the term "class" as used in OOP
-: A class is a template that acts as the basis for creating objects and describes a) What it "looks like", and b) How it "works". 
+: A class is a template that acts as the basis for creating objects and describes a) What it "looks like", and b) How it "works".
 
 Explain the purpose of classes in computer programs
 : Classes allow programmers to define their own complex data types, complete with their own internal data (fields) and behaviours (methods).
 
 Describe the primary keywords used in declaring a class
-: public/private - identifies whether the class is visible to other code; public means all other code can see this class, while private means 
-: class - declares that this is a class definition (tells the compiler to interpret this as a new "classification" or "kind" of data type; that is, a complex ) 
+: public/private - identifies whether the class is visible to other code; public means all other code can see this class, while private means that only the code *inside* the class can access that member of the class.
+: class - declares that this is a class definition (tells the compiler to interpret this as a new "classification" or "kind" of data type).
 
 Define the term "method" and give an example
-: A method is a set of instructions that manipulate information. 
+: A method is a set of instructions that manipulate information.
 
-Create simple classes with methods only 
+Create simple classes having only methods
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
 Explain what is meant by "overloading"
 : Overloading describes creating more than one method with the same method name (but different parameters) in the same class. Overloaded methods allow for alternate ways to perform the same general behaviour of an object or a class.
 
 Describe the syntax of a method declaration (aka, method implementation)
-: …
+: See [Method Declaration](../Teach/chapter1-7.md#Method_Declarations)
 
-Explain how classes with identical names can be distinguished from each other 
+Explain how classes with identical names can be distinguished from each other
 : Different classes can have identical names provided that they exist in different namespaces. (Namespaces help to prevent a "collision" or confusion on the part of a compiler when confronted with two or more classes with the same name.)
 
 ### General Programming Concepts and Terms
@@ -115,7 +116,7 @@ Compare and contrast the syntax for method declarations (implementations) vs. me
 : …
 
 Define the term "field" as used in OOP and give an example
-: A field is a variable that belongs to a class and is shared by all the methods of a class. 
+: A field is a variable that belongs to a class and is shared by all the methods of a class.
   `private static int sharedCount; // a static field`
   `private String name; // an instance field`
 
@@ -221,52 +222,52 @@ List three levels of scope
 : Class scope - All the fields and methods of a class share a common class scope, and are accessible to any and all methods of a class.
 : Local scope - All the variables and parameters of a method are accessible only to the body of the method; local variables and parameters are not accessible to other methods.
 : Block scope - All the variables declared inside a block are only accessible to the code inside that block. A block of code is denoted by being enclosed by a set of curly braces - { }.
- 
+
 ## Topic D - Debugging and Testing
 
 ### General Programming Concepts and Terms
 
-Explain the role of testing as it applies to software development 
+Explain the role of testing as it applies to software development
 : Testing is a form of "quality assurance" in which steps are taken to verify that a program is behaving or working as intended.
 : Testing has traditionally been treated as a "follow-up" activity that takes place after a program is written. Currently, other approaches, such as TDD (Test-Driven Development) place the "testing" activity at the start of the programming efforts, thereby integrating tests as a driving element in software development.
 
-Define and compare the terms "compile-time error" and "run-time error" 
+Define and compare the terms "compile-time error" and "run-time error"
 : A "compile-time error" is an error where a program does not "compile". In other words, compile-time errors are due to code that does not follow the rules of the programming language.
 : A "run-time error" is an error where a running program does not produce the desired result. In other words, run-time errors are due to logical errors in a computer program. Sometimes these errors are "fatal" (meaning that they result in "abnormal program termination" - the program "crashes"). Other times the errors are subtle; the subtle errors can be the most difficult to detect, particularly when relying on "manual" verification, such as found with ad-hoc test drivers.
 
-Define the term "test driver" 
+Define the term "test driver"
 : A "test driver" is a driver (which is a program with a main method) whose sole purpose is to "test" the components of a program. Test drivers provide a simple "ad-hoc" form of testing. Test drivers are basically considered "throw-away" programs, as their usefulness does not extend beyond the tests.
 
 Create simple ad-hoc test drivers to test for run-time errors 
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
-Define the term "TDD" 
+Define the term "TDD"
 : TDD refers to "Test Driven Development". Test Driven Development is an approach to programming that starts with creating "unit tests" that reflect the business and design requirements of a program, and then writing the classes and methods that will pass the unit tests. The idea here is to help drive the programmer toward code that "stays on focus" of the needs of and solutions for a given problem.
 
 Compare and contrast Test Drivers and Unit Tests
 : Test Drivers are small programs with a main() that tests classes by creating objects, calling methods, and output results to the console.
 : Unit Tests are small "units" (which are simply methods)  that calls methods on objects and classes and "tests" if they work as intended by running "asserts". Unit Tests display the results of the test in Red/Green/Yellow results, where Red ( ) represents run-time errors, Yellow ( ) represents ignored tests, and Green ( ) represents success.
 
-Define the terms "false positive" and "false negative" 
+Define the terms "false positive" and "false negative"
 : A "false positive" is a test result that shows success for a test which in reality should be a failure.
 : A "false negative" is a test result that shows failure for a test which in reality should be a success.
 : Both false positives and false negatives are a result of an error in the unit test (or test driver).
 
-List three downfalls of using Test Drivers 
-: Can grow in size and become bulky & difficult to use (poor scalability) 
-: Requires considerable effort to generate and distinguish tests 
-: Difficult to verify tests due to heavy manual intervention & verification 
+List three downfalls of using Test Drivers
+: Can grow in size and become bulky & difficult to use (poor scalability)
+: Requires considerable effort to generate and distinguish tests
+: Difficult to verify tests due to heavy manual intervention & verification
 
-Identify four benefits of using Unit Tests 
-: Provides simple tests to verify specific parts of a system 
-: Easy to verify tests (minimal manual effort); errors are clearly identified and described 
+Identify four benefits of using Unit Tests
+: Provides simple tests to verify specific parts of a system
+: Easy to verify tests (minimal manual effort); errors are clearly identified and described
   A clear graphical response it provided, leading to the popular development mantra "Keep it Green"
-: Increases productivity (by focusing development efforts) 
-: Captures design requirements in code 
+: Increases productivity (by focusing development efforts)
+: Captures design requirements in code
 : Increases programmer confidence when modifying and expanding code
 : Easily isolate smaller parts ("units") of the program for verification; these tests can run independently of each other (even if the other tests have compiler issues with the classes being tested).
 
-Add unit testing libraries and unit testing packages to existing programs 
+Add unit testing libraries and unit testing packages to existing programs
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
 
 Use unit tests to validate the requirements of a class' design and behaviour
@@ -274,7 +275,6 @@ Use unit tests to validate the requirements of a class' design and behaviour
 
 Diagnose and correct software problems by using unit tests 
 : Demonstrate your ability to meet this learning outcome guide by completing the related assignments.
-
 
 ## Topic E - Expressions and Math
 
@@ -322,7 +322,7 @@ Define the terms Reference Type and Value Type as they apply to data types in C#
     `Car hotrod;`
     `hotrod = new Car();`
   the first line creates a single memory location, labelled hotrod, which will store the address to a Car object. The second line creates the actual Car object somewhere in memory and then the address to that object is stored in the hotrod variable.
-  All classes, whether those supplied in the C# library (such as the String and Date classes) or those created by you, are "reference types". 
+  All classes, whether those supplied in the C# library (such as the String and Date classes) or those created by you, are "reference types".
 
 Define the term Identifier
 : An identifier is the term used to refer to some "named" item in your code. Typically, we apply the term identifier to variable names, field names, property names and method names.
@@ -469,7 +469,6 @@ List the equivalent "wrapper" classes for each of the primitive types.
 : `Short` for `short`
 : `Float` for `float`
 
-
 ## Topic F - If-Else Structures
 
 ### General Programming Concepts and Terms
@@ -567,14 +566,14 @@ Describe what is meant by the phrase "raising (or throwing) an exception"
 : To "raise an exception" (or "throw an exception") is to force a method to exit prematurely by sending back an "Exception object".
 
 Describe the role that exceptions play in a computer program
-: An exception is an interruption in the normal flow of execution in a method; exceptions force the method to immediately exit. 
+: An exception is an interruption in the normal flow of execution in a method; exceptions force the method to immediately exit.
 : Exceptions provide a way for methods (including constructors) to report errors to whatever code that is calling the method. These errors are usually (but not always) due to invalid information passed into the methods via the parameters. Through the use of exceptions, methods can perform validation on their parameters and report any errors that might prevent the method from being able to perform its task.
 
 Identify the three most commonly used Exception types used in this course.
 : .NET Framework
   **ArgumentException** - Typically thrown whenever an argument passed to a parameter does not have an "acceptable" value.
 For example, if a method has a parameter called "percent", it might perform validation to ensure that the value is not less than zero or greater than 100. If the value is not valid, it may be appropriate to throw an ArgumentException.
-  **ArgumentNullException** - Typically thrown whenever an object is checked for and found to be "null". 
+  **ArgumentNullException** - Typically thrown whenever an object is checked for and found to be "null".
 (ArgumentNullException will be discussed in the topic on Enumerations and Composition.)
   *Exception** - This represents a general exception, and can be used whenever there is no other suitable exception type.
 
@@ -658,7 +657,7 @@ Describe where and when enumerations are used
   // The only other possible value that could be assigned is
   // CoinFace.TAILS
   CoinFace theFaceShowingOnTheCoin = CoinFace.HEADS;
-  ``
+  ```
 
 Compare and contrast enumerations and classes
 : Enumerations and classes both define new data types that can be used by our program to represent custom data. However, while classes are useful in describing complex data types (that is, data types with assorted fields and that can perform various tasks), enumerations are only used to create new data types that are simple in nature. Enumerations only define a set of possible values, and each variable defined by an enumeration can only hold one of those possible values at any given time; there is no inner complexity to enumerations, as there is with classes.
@@ -772,4 +771,3 @@ Describe what makes an array different from other collections in C#
 Describe the situations in which arrays are preferable over the use of collections
 : Arrays are preferred whenever multi-dimensional data is required (such as 2D, 3D, or n-dimensional data is needed)
 : Arrays are sometimes preferred whenever the size (number of elements) is unlikely to change and/or whenever the array is based on a primitive data type or an enumeration.
-

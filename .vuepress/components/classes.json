@@ -214,6 +214,15 @@
     ]
   },
   {
+    "Type": "BookFileAdapter",
+    "Examples": [
+      {
+        "Topic": "O"
+      }
+    ],
+    "Practice": []
+  },
+  {
     "Type": "BranchVault",
     "Examples": [
       {
@@ -959,6 +968,15 @@
     ]
   },
   {
+    "Type": "PersonFileAdapter",
+    "Examples": [],
+    "Practice": [
+      {
+        "Topic": "O"
+      }
+    ]
+  },
+  {
     "Type": "PhoneBook",
     "Examples": [
       {
@@ -1001,6 +1019,15 @@
         "Doc": "PhoneBook"
       }
     ]
+  },
+  {
+    "Type": "PhoneNumberFileAdapter",
+    "Examples": [
+      {
+        "Topic": "O"
+      }
+    ],
+    "Practice": []
   },
   {
     "Type": "PlayingCard",
@@ -1136,6 +1163,25 @@
     "Practice": []
   },
   {
+    "Type": "SafetyDepositBox",
+    "Examples": [
+      {
+        "Topic": "O",
+        "Doc": "SafetyDepositBoxFileAdapter"
+      }
+    ],
+    "Practice": []
+  },
+  {
+    "Type": "SafetyDepositBoxFileAdapter",
+    "Examples": [
+      {
+        "Topic": "O"
+      }
+    ],
+    "Practice": []
+  },
+  {
     "Type": "Salutation",
     "Examples": [
       {
@@ -1174,6 +1220,15 @@
       {
         "Topic": "L",
         "Doc": "CD"
+      }
+    ]
+  },
+  {
+    "Type": "SongFileAdapter",
+    "Examples": [],
+    "Practice": [
+      {
+        "Topic": "O"
       }
     ]
   },
@@ -1246,6 +1301,15 @@
         "Doc": "Registrar"
       }
     ]
+  },
+  {
+    "Type": "StudentFileAdapter",
+    "Examples": [
+      {
+        "Topic": "O"
+      }
+    ],
+    "Practice": []
   },
   {
     "Type": "TextFormatter",

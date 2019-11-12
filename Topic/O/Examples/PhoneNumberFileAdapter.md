@@ -9,7 +9,7 @@ This reads a text file to fill a list of PhoneNumber data.
   a. Telephone Number : String
   b. Last Name : String
   c. First Name : String
- 
+
 ```csharp
 public class PhoneNumberFileAdapter
 {
