@@ -14,7 +14,6 @@ module.exports = {
           md.use(require('markdown-it-footnote'))
           md.use(require('markdown-it-sub'))
           md.use(require('markdown-it-sup'))
-          md.use(require('markdown-it-latex'))
         }
       },
     // Defaults:
