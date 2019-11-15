@@ -13,14 +13,12 @@ For example, let's look at the humble equal sign: `=`. In math, the equal sign m
 
 That's not the only difference in regards to the equal sign. Note that there is a left-hand side (*lh*) of the equal sign, and a right-hand side (*rh*) of the equal sign. In math, you can have any kind of expression on the left-hand side and the right-hand side. In C#, the item on the left-hand of an equal sign *must* be a variable (because that is the *target* of the *assignment operation*).
 
-![Math != Coding](Math-vs-Coding.png)
+![Math != Coding](./Math-vs-Coding.png)
 
 Then there's the notion of multiple equations in math. Take the following equations, for example:
 
-```math
-a^2 + b^2 = c^2
-a = 3
-b = 4
-```
+- a^2^ + b^2^ = c^2^
+- a = 3
+- b = 4
 
 In regular math, these equations "co-exist". That is, they can be listed in any order and together they provide the basis for calculating the value of `c`.
