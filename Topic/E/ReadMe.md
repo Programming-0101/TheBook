@@ -3,60 +3,24 @@ title: (E) Expressions and Math
 ---
 # Topic E – Expressions and Math
 
-## Overview
+::: tip Overview & Logs
+If you want a quick bullet-list of the the keywords and topics covered, see the [**Overview**](Overview.md). If you want to check yourself on what you're learning, run through the [**Learning Outcome Guide**](LOGs.md) for this topic. You can also jump to the code in [**Examples**](Examples/ReadMe.md) or [**Practice**](Practice/ReadMe.md).
+:::
 
-This topic introduces concepts surrounding the use of arithmetic expressions and common Math library routines.
+Doing math and writing code are not the same thing. Sure, there's overlap between math and coding, but there are a lot of significant (if under-recognized) differences.
 
-This topic will introduce the following grammars, syntax and language constructs. (Note that additional concepts from previous topics may also be present.)
+For example, let's look at the humble equal sign: `=`. In math, the equal sign means "both sides *are* the same". In coding, it *never* means that! In coding, the equal sign is called the **assignment operator** and it's purpose is to *store* information.
 
-* Arithmetic expressions
-* Assignment statements
-* Automatic type conversion and casting
-* Integer division
-* String concatenation
-* Math library routines and constants (such as Random, Square Root, and π)
+That's not the only difference in regards to the equal sign. Note that there is a left-hand side (*lh*) of the equal sign, and a right-hand side (*rh*) of the equal sign. In math, you can have any kind of expression on the left-hand side and the right-hand side. In C#, the item on the left-hand of an equal sign *must* be a variable (because that is the *target* of the *assignment operation*).
 
-This topic will also take a deeper look at the distinctive aspects of variables, values and data types as well as demonstrate the use of overloaded constructors. This is also the first foray into creating classes that actually "do something" – these classes not only maintain state but also provide methods to generate other information besides that which is stored in a class' fields.
+![Math != Coding](Math-vs-Coding.png)
 
-### LOGs
+Then there's the notion of multiple equations in math. Take the following equations, for example:
 
-#### OOP Basics
+```math
+a^2 + b^2 = c^2
+a = 3
+b = 4
+```
 
-* Explain how method overloading is applied to constructors
-
-#### General Programming Concepts and Terms
-
-* Name at least three kinds of program statements commonly seen in all high-level programming languages
-* Distinguish between Variables, Values and Data Types
-* List the five basic rules governing variables, values and data types
-* List the intrinsic (built-in) data types in C#
-* Explain what is meant by the phrase "type extensibility"
-* Define the terms Reference Type and Value Type as they apply to data types in C#
-* Define the term Identifier
-* Create and initialize variables in C#
-* Explain what is meant by the terms "scope" and "lifetime" as they apply to variables
-* Describe what is meant by the term "expression"
-* Explain the difference between program statements and expressions as well as how the two relate to each other
-* List the three general sets of operators in C#
-* Describe the two basic rules of using arithmetic operators that every compiler must follow.
-* Use the arithmetic operators to create arithmetic expressions
-* Explain what is meant by "integer division" and how that can be useful in solving particular problems regarding numbers.
-* Explain the purpose of the modulus (%) operator.
-* List and describe how to use the various assignment operators in C#
-* Explain the difference between binary and unary operators
-* Demonstrate understanding of operator precedence and how to override the default precedence of the arithmetic operators
-* Summarize and distinguish the rules for automatic type conversion involving arithmetic operators and the assignment operator
-* Determine the final data type for expressions involving mixed data types and type conversion
-* Describe "type casting" and explain how to use it appropriately.
-* Compare and contrast the prefix and postfix behaviour of the unary arithmetic operators
-* Identify and explain how to use the common Math library routines (for Power, Square Root, Absolute, random numbers, pi, trigonometry, and the various types of rounding)
-* Use Math rounding methods with arithmetic expressions to round real numbers to a specific precision
-* Create random whole number values within a specific range
-* Use type casting appropriately in C#
-* Create constants in C#
-* Explain how arithmetic operations affect character values in C#
-* List the most common math functions of the Math class
-* Demonstrate how to use the various Math functions in simple programs
-* List and describe the commonly used fields and methods of the String class
-* Demonstrate how to use "String Arithmetic" (concatenation)
-* List the equivalent "wrapper" classes for each of the primitive types. 
+In regular math, these equations "co-exist". That is, they can be listed in any order and together they provide the basis for calculating the value of `c`.
