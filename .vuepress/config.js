@@ -24,7 +24,7 @@ module.exports = {
         repo: 'Programming-0101/TheBook',
         // Customising the header label
         // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
-        repoLabel: 'Contribute!',
+        repoLabel: 'GitHub',
         // if your docs are not at the root of the repo:
         // docsDir: 'manuscript',
         // defaults to false, set to true to enable
