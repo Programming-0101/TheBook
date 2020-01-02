@@ -34,6 +34,7 @@ Describe the syntax that is used to perform class-based inheritance
 : {
 :   // SubClass members
 : }
+: ```
 
 Identify the base class and the subclass when using class-based inheritance
 
