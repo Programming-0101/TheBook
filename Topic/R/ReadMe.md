@@ -29,12 +29,12 @@ Define and describe the relationship between the terms "base class", "superclass
 
 Describe the syntax that is used to perform class-based inheritance
 : In the class declaration, a colon `:` is used after the name of the class and before the name of the base class. For example:
-: ```csharp
-: public class SubClass : BaseClass
-: {
-:   // SubClass members
-: }
-: ```
+    ```csharp
+    public class SubClass : BaseClass
+    {
+      // SubClass members
+    }
+    ```
 
 Identify the base class and the subclass when using class-based inheritance
 
