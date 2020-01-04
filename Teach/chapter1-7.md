@@ -138,7 +138,7 @@ As an object-oriented language, classes play a very prominent part of the code w
 ```
 
 A **Class Definition** describes a new data type where
-: `[accessModifier]` is either `public` or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `internal`{format:csharp}.
+: `[accessModifier]` is either `public` or `internal`. If no access modifier is provided, then the default modifier is `internal`.
 : `ClassName` is the programmer-supplied name for the class (in TitleCase format)
 : `FieldDeclarations`, `PropertyDeclarations`, `Constructors` and `MethodDeclarations` are all optional and can appear in any order.
   See the related grammars below to see how they are defined.
@@ -152,8 +152,8 @@ A **Class Definition** describes a new data type where
 ```
 
 A **Field Declaration** identifies a *static* or *instance* member variable of the class where
-: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
-: `[static]`{format:csharp} is an optional keyword. If present, the field is *shared* among all instances of the class. If absent (which is the common case) then the field is an *instance* member and one is created every time an object based on the class is created.
+: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`. If no access modifier is provided, then the default modifier is `private`.
+: `[static]` is an optional keyword. If present, the field is *shared* among all instances of the class. If absent (which is the common case) then the field is an *instance* member and one is created every time an object based on the class is created.
 : `dataType` is any built-in data type or the name of a programmer-defined data type.
 : `_FieldName` is a the name you give to the member variable. By convention, private fields are given an underscore as a prefix to the name.
 : `constantExpression` is an optional expression that generates data whose value can be determined at compile time. Being a constant expression does *not* mean that the field is a constant, only that the initial value stored in the field is a constant and can be known at compile time *before* the program runs.
@@ -187,12 +187,12 @@ In other situations, a property may merely have a getter where the body of the g
 ```
 
 A **Property Declaration** identifies a *static* or *instance* member of the class where
-: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
-: `[static]`{format:csharp} is an optional keyword. If present, the Property is *shared* among all instances of the class. If absent (which is the common case) then the Property is an *instance* member.
+: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`. If no access modifier is provided, then the default modifier is `private`.
+: `[static]` is an optional keyword. If present, the Property is *shared* among all instances of the class. If absent (which is the common case) then the Property is an *instance* member.
 : `dataType` is any built-in data type or the name of a programmer-defined data type.
 : `PropertyName` is a the name you give to the member property.
 : `Body of getter` is a set of instructions that must ultimately return a value of the same data type as the property.
-: `Body of the setter` is a set of instructions that can process incoming data that is in the `value`{format:csharp} keyword. A typical implementation will store that data into the property's backing store.
+: `Body of the setter` is a set of instructions that can process incoming data that is in the `value` keyword. A typical implementation will store that data into the property's backing store.
 
 ### Autoimplemented Property
 
@@ -203,8 +203,8 @@ Autoimplemented properties are properties where the compiler takes care of the g
 ```
 
 A **Property Declaration** identifies a *static* or *instance* member of the class where
-: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
-: `[static]`{format:csharp} is an optional keyword. If present, the Property is *shared* among all instances of the class. If absent (which is the common case) then the Property is an *instance* member.
+: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`. If no access modifier is provided, then the default modifier is `private`.
+: `[static]` is an optional keyword. If present, the Property is *shared* among all instances of the class. If absent (which is the common case) then the Property is an *instance* member.
 : `dataType` is any built-in data type or the name of a programmer-defined data type.
 : `PropertyName` is a the name you give to the member property.
 
@@ -220,8 +220,8 @@ A **Property Declaration** identifies a *static* or *instance* member of the cla
 ```
 
 A **Method Declaration** defines a *named* set of instructions.
-: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
-: `[static]`{format:csharp} is an optional keyword. If present, the method is *shared* among all instances of the class. If absent (which is the common case) then the method is an *instance* member.
+: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`. If no access modifier is provided, then the default modifier is `private`.
+: `[static]` is an optional keyword. If present, the method is *shared* among all instances of the class. If absent (which is the common case) then the method is an *instance* member.
 : `returnType` is any built-in data type or the name of a programmer-defined data type. The return type signifies the kind of information that the method will return. If the method does not return any information, then the keyword `void` is used as the return type.
 : `MethodName` is a the name you give to the method.
 : `ParameterList` is a comma-separated list of individual variable declarations.
@@ -238,7 +238,7 @@ A **Method Declaration** defines a *named* set of instructions.
 ```
 
 A **Constructor** is a set of instructions used when **instantiating** (creating) an object.
-: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`{format:csharp}. If no access modifier is provided, then the default modifier is `private`{format:csharp}.
+: `[accessModifier]` is either `public`, `private`, `protected`, or `internal`. If no access modifier is provided, then the default modifier is `private`.
 : `ClassName` - All constructors use the name of the class to which they belong as the name of the constructor.
 : `ParameterList` is a comma-separated list of individual variable declarations.
 : Classes never return any information - they are simply blocks of instructions used to set up the **initial state** of the object.
