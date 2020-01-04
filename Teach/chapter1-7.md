@@ -276,8 +276,52 @@ The **`this`** keyword simply means that the method declaration is in the same c
 
 ### If-Else
 
+```csharp
+if(conditionalExpression)
+   statementOrStatementBlock
+else
+   statementOrStatementBlock
+```
+
 ### Switch-Case
+
+```csharp
+switch(cardinalExpression)
+{
+   case matchingExpression1:
+   statementOrStatementBlock
+   break;
+   case matchingExpression2:
+   statementOrStatementBlock
+   break;
+   // ...additional case statements...
+   default:
+   statementOrStatementBlock
+   break;
+}
+```
 
 ### For and Foreach
 
+```csharp
+for(initializations; conditionalExpression; incrementations)
+   statementOrStatementBlock
+```
+
+```csharp
+foreach(datatype variable in enumerableCollection)
+   statementOrStatementBlock
+```
+
 ### While and Do-While
+
+```csharp
+while(conditionalExpression)
+   statementOrStatementBlock
+```
+
+```csharp
+do
+   statementOrStatementBlock
+while (conditionalExpression);
+```
