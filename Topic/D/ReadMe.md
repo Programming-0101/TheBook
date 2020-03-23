@@ -35,3 +35,28 @@ The following daily LOGs are covered in this package.
 * Add unit testing libraries and unit testing packages to existing programs 
 * Use unit tests to validate the requirements of a class' design and behaviour
 * Diagnose and correct software problems by using unit tests 
+
+----
+
+Debugging is all about finding and fixing problems (bugs/errors) in your code. There are two kinds of errors you can have in your code: **Compile-time** errors and **run-time** errors.
+
+## Compile-Time Errors
+
+Compile-time errors are when the compiler doesn't understand your code. These happen when the code you write doesn't follow the syntax/grammar rules of your programming language. These are also called **syntax errors**. Until these are fixed, your program won't run at all. Knowing how to fix these is only possible by learning and apllying the grammar rules of your programming language.
+
+The thing about syntax errors is that the compiler will tell you when and where it started getting confused by the code you wrote.
+
+> TODO: How to Fix
+
+## Run-Time Errors
+
+Run-time errors are trickier to find and fix. That's because run-time errors are basically problems with the *logic* of your code. Your code will compile, and the program will "run", but it won't do what you expect or intended! It's like a logical fallacy in an English sentence: "Draw a square circle." The grammar is correct, but the idea is flawed (there is no such thing as a square circle).
+
+Run-time errors are also often unseen (apart from extensive testing), and it's not unusual (but certainly un-wanted) to have them reported by the end-users of your code before they are found by the programmers.
+
+> TODO:
+> 
+> - How to identify
+> - How to fix
+>   - debugging tools
+>   - unit tests
