@@ -11,3 +11,6 @@ title: Author To-Do Items
   * Categories of data types:
     * Value types
     * Reference types
+* Videos
+  * [Channel 9](../Video/ReadMe.md)
+  * My own scripts
