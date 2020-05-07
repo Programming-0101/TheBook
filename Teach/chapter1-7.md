@@ -164,7 +164,9 @@ A **Field Declaration** identifies a *static* or *instance* member variable of t
 
 Properties are a kind of cross between methods and fields. On one hand, they are used in the same way that fields are. When you want to assign (or **set**) a value to a property, you place the property on the left side of the assignment operator. When you want to use (or **get**) the properties value, you simply reference the property name just as you would a field name.
 
-Internally, however, the **get** and **set** operations are like the bodies of a method, where you can place instructions to retrieve or change the data in the class or object.
+Internally, however, the **get** and **set** operations are like the bodies of a method, where you can place instructions to retrieve or change the data in the class or object. The technical term for the get and set portions of a property is *accessor*.[^1]
+
+[^1]: See the Microsoft docs for [Restricting Accessor Accessibility](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility)
 
 #### Explicitly Implemented Property
 
