@@ -348,7 +348,7 @@ The **for** provides **repetitive execution of code**, where
 : `conditionalExpression` is an expression whose ultimate data type is a `bool`. The `conditionalExpression` is evaluated at the beginning of the loop.
 : `incrementations` is a comma-separated set of modifications to the variable(s) controlling the loop; the variables identified here should be ones used in the `conditionalExpression`. This portion is optional.
 : `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
-  - The `statementOrStatementBlock` will only execute as long as the `contitionalExpression` is results in a **`true`** value.
+  - The `statementOrStatementBlock` will only execute as long as the `contitionalExpression` results in a **`true`** value.
   - The loop exits when the `conditionalStatement` results in a **`false`** value.
 
 ```csharp
@@ -371,7 +371,7 @@ while(conditionalExpression)
 The **while** provides **repetitive execution of code**, where
 : `conditionalExpression` is an expression whose ultimate data type is a `bool`. The `conditionalExpression` is evaluated at the beginning of the loop.
 : `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
-  - The `statementOrStatementBlock` will only execute as long as the `contitionalExpression` is results in a **`true`** value.
+  - The `statementOrStatementBlock` will only execute as long as the `contitionalExpression` results in a **`true`** value.
   - The loop exits when the `conditionalStatement` results in a **`false`** value.
 
 ```csharp
@@ -383,7 +383,7 @@ while (conditionalExpression);
 The **do-while** provides **repetitive execution of code**, where
 : `conditionalExpression` is an expression whose ultimate data type is a `bool`. The `conditionalExpression` is evaluated at the end of the loop.
 : `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
-  - The `statementOrStatementBlock` will execute at least once and will keep on executing as long as the `contitionalExpression` is results in a **`true`** value.
+  - The `statementOrStatementBlock` will execute at least once and will keep on executing as long as the `contitionalExpression` results in a **`true`** value.
   - The loop exits when the `conditionalStatement` results in a **`false`** value.
 
 ----
