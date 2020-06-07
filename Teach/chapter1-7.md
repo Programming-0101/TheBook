@@ -56,7 +56,7 @@ dataType variableName [= expression] [, ...]
 
 A **Variable Declaration** defines a new variable where
 : `dataType` is any built-in or programmer-defined data type.
-: `variableName` is
+: `variableName` is an **identifier** (name) to represent a value
 : an optional initial value may be assigned, as denoted by `[= expression]`, where `expression` is any valid C# expression whose final data type matches the variable's data type. When a variable is declared and initialized at the same time, it is called a **Variable Initialization**.
 : additional variable names (with or without initial values) can be declared using a comma-separated list. All variables are of the same data type as the first variable in the list.
 
@@ -116,6 +116,27 @@ using NamespaceName;
 ```
 
 The using statement allows access to all the data types in referenced namespace. Using statements are typically placed at the beginning of a file. The `NamespaceName` is simply the complete name of the namespace that contains the classes or data types that we want to access.
+
+There are additional forms of the using statement, giving us different means of including/using the members of a namespace.
+
+```csharp
+using Alias = NamespaceName.DataTypeName;
+```
+
+- Create an alternate name for a data type (A class name, enumeration, interface, etc.)
+
+```csharp
+using static NamespaceName.ClassName;
+```
+
+- Allows us to use the name of static members without the class name, as in
+
+```csharp
+using static System.Console;
+
+   // Inside a method...
+   WriteLine("Hello World");
+```
 
 ---
 
@@ -196,9 +217,9 @@ A **Property Declaration** identifies a *static* or *instance* member of the cla
 : `Body of getter` is a set of instructions that must ultimately return a value of the same data type as the property.
 : `Body of the setter` is a set of instructions that can process incoming data that is in the `value` keyword. A typical implementation will store that data into the property's backing store.
 
-### Autoimplemented Property
+### Auto-Implemented Property
 
-Autoimplemented properties are properties where the compiler takes care of the getter and setter implementations and also supplies a hidden field as the **backing store** for the property. The default get implementation is to retrieve the value from the backing store while the default set implementation is to place a value into the backing store.
+Auto-Implemented properties are properties where the compiler takes care of the getter and setter implementations and also supplies a hidden field as the **backing store** for the property. The default get implementation is to retrieve the value from the backing store while the default set implementation is to place a value into the backing store.
 
 ```csharp
 [accessModifier] [static] dataType PropertyName { get; set; }
@@ -251,7 +272,7 @@ Flow-Control Statements provide the procedural characteristics of the C# languag
 
 ### Method Calls
 
-While the [Method Declaration](#method-declarations) *defines a set of instructions*, those instructions only run when the method is *called* from somewhere. The operating system is responsible to call the `Main()` method, but after that, all method calls are the responsiblity of our program. The grammar of a method call is as follows.
+While the [Method Declaration](#method-declarations) *defines a set of instructions*, those instructions only run when the method is *called* from somewhere. The operating system is responsible to call the `Main()` method, but after that, all method calls are the responsibility of our program. The grammar of a method call is as follows.
 
 ```csharp
 [[ClassName | ObjectName].]MethodName(argumentList)
@@ -260,7 +281,7 @@ While the [Method Declaration](#method-declarations) *defines a set of instructi
 A **Method Call** is an [expression](#expressions) where
 : `MethodName` is the programmer-defined name of the method,
 : `argumentList` is a comma-separated list of values that correspond to the parameters of the [method declaration](#method-declarations),
-: The method is preceeded by either a `ClassName` (for `static` methods) or an `ObjectName` (aka: a *variable name*) that identifies *where* the method can be "found"; the **Member Access Operator** (aka: "dot" operator `.`) comes right after the `ClassName` or `ObjectName`. If the method declaration is in the same class as the method call, then the `ClassName`/`ObjectName` can be omitted.
+: The method is preceded by either a `ClassName` (for `static` methods) or an `ObjectName` (aka: a *variable name*) that identifies *where* the method can be "found"; the **Member Access Operator** (aka: "dot" operator `.`) comes right after the `ClassName` or `ObjectName`. If the method declaration is in the same class as the method call, then the `ClassName`/`ObjectName` can be omitted.
 
 When a method is an *instance* method (non-static) and is called without an `ObjectName`, the `this` keyword is implied. In other words, if the method call looks like
 
@@ -280,10 +301,16 @@ The **`this`** keyword simply means that the method declaration is in the same c
 
 ```csharp
 if(conditionalExpression)
-   statementOrStatementBlock
+   statementOrStatementBlock // true side
 else
-   statementOrStatementBlock
+   statementOrStatementBlock // false side
 ```
+
+The **if-else** provides **alternate paths of logic**, where
+: `conditionalExpression` is an expression whose ultimate data type is a `bool`.
+: `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
+  - The statement/block after the `if` portion will run if the `conditionalStatement` results in a **`true`** value.
+  - The statement/block after the `else` portion will run if the `conditionalStatement` results in a **`false`** value. The `else statementOrStatementBlock` portion is optional.
 
 ### Switch-Case
 
@@ -303,17 +330,36 @@ switch(cardinalExpression)
 }
 ```
 
-### For and Foreach
+The **switch** provides **alternate paths of logic**, where
+: `cardinalExpression` is an expression that produces a single value of any primitive data type (`int`, `double`, `char`, `string` or an `enum`).
+: Each `matchingExpression` is a constant value whose data type matches the data type of the `cardinalExpression`. A match is determined by the value of the `cardinalExpression` being **equal to** the `matchingExpression`. The `break` indicates the end of the path of logic for the matching expression.
+: `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
+: The `default` block will execute if `cardinalExpression` did not match any of the listed matching expressions.
+
+### For and For-Each
 
 ```csharp
-for(initializations; conditionalExpression; incrementations)
+for([initializations]; conditionalExpression; [incrementations])
    statementOrStatementBlock
 ```
 
+The **for** provides **repetitive execution of code**, where
+: `initializations` is a comma-separated set of variable initializations or assignments; the variables identified here should be ones used in the `conditionalExpression`. This portion is optional
+: `conditionalExpression` is an expression whose ultimate data type is a `bool`. The `conditionalExpression` is evaluated at the beginning of the loop.
+: `incrementations` is a comma-separated set of modifications to the variable(s) controlling the loop; the variables identified here should be ones used in the `conditionalExpression`. This portion is optional.
+: `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
+  - The `statementOrStatementBlock` will only execute as long as the `contitionalExpression` is results in a **`true`** value.
+  - The loop exits when the `conditionalStatement` results in a **`false`** value.
+
 ```csharp
-foreach(datatype variable in enumerableCollection)
+foreach([dataType] variable in enumerableCollection)
    statementOrStatementBlock
 ```
+
+The **for** provides **repetitive execution of code**, where the repetition occurs for each item in the `enumerableCollection`.
+: `enumerableCollection` is any object that represents a collection of values (i.e.: supports `IEnumerable`).
+: `variable` is an identifier to represent each item in the collection as it loops through the collection's items/elements.
+: `dataType` declares the data type of the variable. This is optional, and when omitted the data type of `variable` is inferred from the `enumerableCollection`.
 
 ### While and Do-While
 
@@ -322,8 +368,33 @@ while(conditionalExpression)
    statementOrStatementBlock
 ```
 
+The **while** provides **repetitive execution of code**, where
+: `conditionalExpression` is an expression whose ultimate data type is a `bool`. The `conditionalExpression` is evaluated at the beginning of the loop.
+: `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
+  - The `statementOrStatementBlock` will only execute as long as the `contitionalExpression` is results in a **`true`** value.
+  - The loop exits when the `conditionalStatement` results in a **`false`** value.
+
 ```csharp
 do
    statementOrStatementBlock
 while (conditionalExpression);
 ```
+
+The **do-while** provides **repetitive execution of code**, where
+: `conditionalExpression` is an expression whose ultimate data type is a `bool`. The `conditionalExpression` is evaluated at the end of the loop.
+: `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
+  - The `statementOrStatementBlock` will execute at least once and will keep on executing as long as the `contitionalExpression` is results in a **`true`** value.
+  - The loop exits when the `conditionalStatement` results in a **`false`** value.
+
+----
+
+## Objects, Classes and More
+
+- [ ] Object Instantiation
+- [ ] Initializer Lists
+- [ ] Classes and Inheritance
+- [ ] Enum
+- [ ] Interface
+- [ ] Delegate
+- [ ] Event
+
