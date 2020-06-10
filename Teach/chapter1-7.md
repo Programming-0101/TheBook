@@ -297,6 +297,8 @@ this.Display("Some Text")
 
 The **`this`** keyword simply means that the method declaration is in the same class as the method call and that it should be applied to the same instance (**`this` instance**) of the class.
 
+----
+
 ### If-Else
 
 ```csharp
@@ -311,6 +313,8 @@ The **if-else** provides **alternate paths of logic**, where
 : `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
   - The statement/block after the `if` portion will run if the `conditionalStatement` results in a **`true`** value.
   - The statement/block after the `else` portion will run if the `conditionalStatement` results in a **`false`** value. The `else statementOrStatementBlock` portion is optional.
+
+----
 
 ### Switch-Case
 
@@ -336,6 +340,8 @@ The **switch** provides **alternate paths of logic**, where
 : `statementOrStatementBlock` is either a **single** statement or a **single** statement *block* (zero or more statements inside curly braces - `{ }`).
 : The `default` block will execute if `cardinalExpression` did not match any of the listed matching expressions.
 
+----
+
 ### For and For-Each
 
 ```csharp
@@ -360,6 +366,8 @@ The **for** provides **repetitive execution of code**, where the repetition occu
 : `enumerableCollection` is any object that represents a collection of values (i.e.: supports `IEnumerable`).
 : `variable` is an identifier to represent each item in the collection as it loops through the collection's items/elements.
 : `dataType` declares the data type of the variable. This is optional, and when omitted the data type of `variable` is inferred from the `enumerableCollection`.
+
+----
 
 ### While and Do-While
 
@@ -390,11 +398,79 @@ The **do-while** provides **repetitive execution of code**, where
 
 ## Objects, Classes and More
 
-- [ ] Object Instantiation
-- [ ] Initializer Lists
-- [ ] Classes and Inheritance
-- [ ] Enum
-- [ ] Interface
-- [ ] Delegate
-- [ ] Event
 
+### Object Instantiation
+
+```csharp
+new ClassName(argList)
+```
+
+### Initializer Lists
+
+```csharp
+new ClassName
+{
+  initializerList
+}
+```
+
+### Classes and Inheritance
+
+```csharp
+[accessModifier] class ClassName : BaseClassOrInterface[, InterfaceList]
+{
+  // ClassMembers
+}
+```
+
+This grammar offers additional details over the earlier [**Class Definition**](#class-definition), where
+: `BaseClassOrInterface` is the name of either another class or an [interface](#interface-declaration)
+: `InterfaceList` is a comma-separated list of interface names
+
+### Enum Declaration
+
+**Enumerations** are programmer-defined *primitive* data types. They essentially represent a set of **named constants** that can be distinguished between each other.
+
+```csharp
+[accessModifier] enum EnumerationName
+{
+  EnumeratedNames
+}
+```
+
+An **Enum Definition** describes a new data type where
+: `[accessModifier]` is either `public` or `internal`. If no access modifier is provided, then the default modifier is `internal`.
+: `EnumerationName` is the programmer-supplied name for the enum (in TitleCase format)
+: `EnumeratedNames` is a comma-separated list of "named values" (with or without an assigned underlying value)
+
+Each of the named values in the list of **`EnumeratedNames`** follows this grammar,
+
+```csharp
+NamedValue [= wholeNumber]
+```
+
+Named values are essentially similar to [variable declarations](#variable-declarations) where
+: The `NamedValue` is an identifier (in either title case or all upper-case)
+: An optional `wholeNumber` value is assigned to the named value
+
+### Interface Declaration
+
+```csharp
+[accessModifier] interface InterfaceName [: Interface]
+{
+  // PropertySignatures
+  // MethodSignatures
+}
+```
+
+### Delegate
+
+```csharp
+
+```
+
+### Event
+
+```csharp
+
+```
