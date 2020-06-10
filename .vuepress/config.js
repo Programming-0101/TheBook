@@ -91,6 +91,7 @@ module.exports = {
                 '',
                 'Examples/',
                 'Practice/',
+                'Uses',
                 ['/Topic/F/', '(Next →) Topic F'],
                 ['/Topic/D/', '(← Prev) Topic D']
             ],

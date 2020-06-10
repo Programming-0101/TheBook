@@ -7,7 +7,7 @@ The Student class introduces a slightly more complex example by offering more fi
 
 * Data Attributes of the Student class:
   * Name : String
-  * Gender : Character
+  * Status : Character
   * StudentId : Integer
   * Program : String
   * GradePointAverage : Double
@@ -32,9 +32,9 @@ namespace Topic.B.Examples
     public class Student
     {
         public string Name;                 // The full name of the student
-        public char Gender;                 // Gender can be 'M' or 'F'
+        public char Status;                 // Status can be 'C' for Current, 'G' for Graduate or 'W' for Withdrawn
         public int StudentId;               // The school-provided student ID
-        public string Program;              // The course program; e.g.: "CST"
+        public string Program;              // The course program; e.g.: "COMP"
         public double GradePointAverage;    // GPA is from 1.0 to 9.0
         public bool FullTime;               // If the student is enrolled full-time
     }
@@ -62,32 +62,32 @@ namespace Topic.B.Examples
             frank = new Student();
 
             bob.Name = "Bob McNalley";
-            bob.Gender = 'M';
-            bob.Program = "CST";
+            bob.Status = 'C'; // Current
+            bob.Program = "COMP";
             bob.StudentId = 200765789;
             bob.GradePointAverage = 6.76;
 
             mary.Name = "Mary McTavishski";
-            mary.Gender = 'F';
-            mary.Program = "CST";
+            mary.Gender = 'C'; //Current
+            mary.Program = "COMP";
             mary.StudentId = 200765790;
             mary.GradePointAverage = 5.76;
 
             joe.Name = "Joe Jetson";
-            joe.Gender = 'M';
-            joe.Program = "CST";
+            joe.Gender = 'C'; // Current
+            joe.Program = "COMP";
             joe.StudentId = 200765792;
             joe.GradePointAverage = 4.66;
 
             susan.Name = "Susan Orlando";
-            susan.Gender = 'F';
-            susan.Program = "CST";
+            susan.Gender = 'C'; // Current
+            susan.Program = "COMP";
             susan.StudentId = 200765795;
             susan.GradePointAverage = 8.54;
 
             frank.Name = "Frank Smith";
-            frank.Gender = 'M';
-            frank.Program = "CST";
+            frank.Gender = 'C'; // Current
+            frank.Program = "COMP";
             frank.StudentId = 200765797;
             frank.GradePointAverage = 8.52;
 

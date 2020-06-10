@@ -12,10 +12,11 @@ title: (R) Inheritance
 - `as`
 - `base`
 - `this` (previously introduced, but expanded upon here)
+- `abstract`
 
 ## LOGs
 
-Define the term "inheritance" as it relates to object-oriented probramming
+Define the term "inheritance" as it relates to object-oriented programming
 : Inheritance (sometimes called *class-based inheritance*) is a programming technique whereby one class uses another class as its "base" and thereby gains all the information (fields/properties) and behaviours (constructors and methods) of the base class as though it were its own members.
 
 Identify the default base class of all types in C#
@@ -38,7 +39,7 @@ Describe the syntax that is used to perform class-based inheritance
 
 Identify the base class and the subclass when using class-based inheritance
 
-Describe what is meant by a "class heirarchy"
+Describe what is meant by a "class hierarchy"
 
 List the benefits of inheritance
 

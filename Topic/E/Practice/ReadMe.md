@@ -18,5 +18,6 @@ title: Practice
 * [Cone](Cone.md) – The Cone class represents a conical object whose height and base radius is known. The class provides methods to determine the volume and surface area with this information.
 * [GravityCalculator](GravityCalculator.md) – The GravityCalculator provides static methods for determining an object's weight for the various planets in our solar system, given the equivalent weight as found on Earth.
 * [CurrencyCalculator](CurrencyCalculator.md) – The CurrencyCalculator allows the conversion of US dollars to four other currencies, given the current exchange rate of those currencies.
+* [ParkingCounter](ParkingCounter.md) - This class represents a simple counter to monitor whether a parking lot is full or not; it tracks vehicles entering and leaving the parking lot. Modify the class to add a method `ResetLotWithCars(int numberOfCars)`.
 
 For these exercises, compare your results with the unit tests for these classes.

@@ -9,7 +9,7 @@ This class reinforces the idea of encapsulation and constructors. It also demons
 
 Should…
 * Get/Set Name
-* Get/Set Gender
+* Get/Set Status
 * Get/Set Student Id
 * Get/Set GPA
 * Get/Set Program

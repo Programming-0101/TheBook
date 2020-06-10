@@ -9,8 +9,8 @@ This class represents a single six-sided die. This example is used to illustrate
 
 Write the code for the Die class. The solution must meet the following requirements:
 
-* Should generate a random value from 1 to 6, when initially created and when re-rolled
-* Should get the face value of the die
+* Should Randomly Generate FaceValue Between 1 And 6 From Constructor
+* Should Randomly Generate FaceValue Between 1 And 6 When Rolling
 
 Use the following class diagram when creating your solution. Note that this uses the Random class as a private static field.
 
@@ -33,7 +33,7 @@ namespace Topic.E.Examples
 
         public void Roll()
         {
-            FaceValue = rnd.Next(6000) % 6 + 1;
+            FaceValue = rnd.Next(1, 7);
         }
     }
 }

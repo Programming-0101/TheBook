@@ -9,7 +9,7 @@ This class reinforces the idea of encapsulation and constructors. It also introd
 public class Student
 {
     public readonly string Name;
-    public readonly char Gender;
+    public readonly char Status;
     public readonly int StudentId;
     public string _Program;
     public double _GradePointAverage;
@@ -18,28 +18,28 @@ public class Student
     public string Program
     {
         get { return ; }
-        set {  = value; }
+        set { _Program = value; }
     }
     public double GradePointAverage
     {
         get { return ; }
-        set {  = value; }
+        set { _GradePointAverage = value; }
     }
     public bool IsFullTime
     {
         get { return ; }
-        set {  = value; }
+        set { _IsFullTime = value; }
     }
 
     public Student(string name,
-                   char gender,
+                   char status,
                    int studentId,
                    string program,
                    double gradePointAverage,
                    bool isFullTime)
     {
         Name = name;
-        Gender = gender;
+        Status = status;
         StudentId = studentId;
         Program = program;
         GradePointAverage = gradePointAverage;
