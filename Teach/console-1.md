@@ -72,4 +72,4 @@ Since version 6 of the C# programming language, a cleaner alternative to these f
     System.Console.WriteLine($"Hello {name}");
 ```
 
-String interpolation is indicated by the dollar sign immediately preceeding the literal string. This way of concatenating string values has the benefit of being easier to read and understand where variable values are being inserted into the text.
+String interpolation is indicated by the dollar sign immediately preceding the literal string. This way of concatenating string values has the benefit of being easier to read and understand where variable values are being inserted into the text.
