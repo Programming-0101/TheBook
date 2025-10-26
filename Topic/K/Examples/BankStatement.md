@@ -1,5 +1,8 @@
 ---
---# BankStatement
+title: BankStatement
+---
+
+# BankStatement
 
 This class represents a bank statement for a BankAccount for a given month. The statement allows BankTransaction objects to be added, and performs deposits and withdrawals on the BankAccount. The statement reports the starting and ending balance and also summarizes the total amount deposited and withdrawn for the month. The following methods must be coded to complete the solution.
 

@@ -1,7 +1,7 @@
 ---
 title: TBA
 ---
-#Coin + CoinFace
+# Coin + CoinFace
 
 The CoinFace enumeration helps to describe the two sides of a Coin, which can then be used in a tossing game.
 

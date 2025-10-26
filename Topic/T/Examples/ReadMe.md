@@ -7,6 +7,7 @@ title: Examples
 1. Interfaces
     - [Measurement Interfaces](Interfaces/Measurements.md)
 1. Delegates
+    - [RoundingStrategy](Delegates/RoundingStrategy.md)
 1. Generics
     - [Limited Collection](Generics/LimitedCollection.md) - A class that acts as a collection with an fixed upper-limit of items allowed in the collection. (supports `IEnumerable<T>`)
     - Dependency Injection Container <!-- see https://github.com/Sandboxed-Forks/classes/blob/master/csharp/labs/07_generics/after/Calculator/Container.cs -->
